@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>WENCEY_PC</Machine>
+    <WindowsUser>Wang</WindowsUser>
+    <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <PackageIdentityName>b3132f6e-c76d-40a4-82b6-7d5e46403907</PackageIdentityName>
+    <IntermediateOutputPath>C:\Users\Wang\Source\Workspaces\Oranges\OrangeEndLess\OrangeEndLess\OrangeEndLess.Windows\obj\Debug\</IntermediateOutputPath>
+    <RegisteredManifestChecksum>865ADA99B5DA5E48CBFDF953FF8C494966BCAE87B762158B3BEF4FB391AAA4B4</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>b3132f6e-c76d-40a4-82b6-7d5e46403907_1.0.0.0_neutral__6xdskxrpft6bp</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>b3132f6e-c76d-40a4-82b6-7d5e46403907_6xdskxrpft6bp!App</RegisteredUserModeAppID>
+    <RegisteredPackageID>b3132f6e-c76d-40a4-82b6-7d5e46403907</RegisteredPackageID>
+    <RegisteredPackagePublisher>CN=Wang</RegisteredPackagePublisher>
+    <RegisteredVersion>1.0.0.0</RegisteredVersion>
+    <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\Users\Wang\Source\Workspaces\Oranges\OrangeEndLess\OrangeEndLess\OrangeEndLess.Windows\bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2014-07-12T09:15:41.569</Modified>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\Users\Wang\Source\Workspaces\Oranges\OrangeEndLess\OrangeEndLess\OrangeEndLess.Windows\bin\Debug\OrangeEndLess.Windows.exe">
+      <PackagePath>OrangeEndLess.Windows.exe</PackagePath>
+      <Modified>2014-07-12T09:17:26.045</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\BehaviorsXamlSDKManaged\12.0\References\CommonConfiguration\Neutral\Microsoft.Xaml.Interactions.dll">
+      <PackagePath>Microsoft.Xaml.Interactions.dll</PackagePath>
+      <Modified>2014-04-29T06:23:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\BehaviorsXamlSDKManaged\12.0\References\CommonConfiguration\Neutral\Microsoft.Xaml.Interactivity.dll">
+      <PackagePath>Microsoft.Xaml.Interactivity.dll</PackagePath>
+      <Modified>2014-04-29T06:23:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Wang\Source\Workspaces\Oranges\OrangeEndLess\packages\Microsoft.Bcl.Async.1.0.168\lib\win8\Microsoft.Threading.Tasks.dll">
+      <PackagePath>Microsoft.Threading.Tasks.dll</PackagePath>
+      <Modified>2014-07-10T06:41:43.205</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Wang\Source\Workspaces\Oranges\OrangeEndLess\packages\Microsoft.Bcl.Async.1.0.168\lib\win8\Microsoft.Threading.Tasks.Extensions.dll">
+      <PackagePath>Microsoft.Threading.Tasks.Extensions.dll</PackagePath>
+      <Modified>2014-07-10T06:41:43.221</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Wang\Source\Workspaces\Oranges\OrangeEndLess\packages\MVVM-Sidekick.Behaviors.0.3.0.0\lib\netcore45\MVVMSidekick.Behaviors_RT.dll">
+      <PackagePath>MVVMSidekick.Behaviors_RT.dll</PackagePath>
+      <Modified>2014-07-10T06:42:11.728</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Wang\Source\Workspaces\Oranges\OrangeEndLess\packages\MVVM-Sidekick.1.3.0.0\lib\win8\MVVMSidekick_Metro.dll">
+      <PackagePath>MVVMSidekick_Metro.dll</PackagePath>
+      <Modified>2014-07-10T06:42:08.567</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Wang\Source\Workspaces\Oranges\OrangeEndLess\packages\Rx-Core.2.2.4\lib\windows8\System.Reactive.Core.dll">
+      <PackagePath>System.Reactive.Core.dll</PackagePath>
+      <Modified>2014-07-10T06:41:58.633</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Wang\Source\Workspaces\Oranges\OrangeEndLess\packages\Rx-Interfaces.2.2.4\lib\windows8\System.Reactive.Interfaces.dll">
+      <PackagePath>System.Reactive.Interfaces.dll</PackagePath>
+      <Modified>2014-07-10T06:42:00.081</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Wang\Source\Workspaces\Oranges\OrangeEndLess\packages\Rx-Linq.2.2.4\lib\windows8\System.Reactive.Linq.dll">
+      <PackagePath>System.Reactive.Linq.dll</PackagePath>
+      <Modified>2014-07-10T06:42:02.606</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Wang\Source\Workspaces\Oranges\OrangeEndLess\packages\Rx-PlatformServices.2.2.4\lib\windows8\System.Reactive.PlatformServices.dll">
+      <PackagePath>System.Reactive.PlatformServices.dll</PackagePath>
+      <Modified>2014-07-10T06:42:05.513</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Wang\Source\Workspaces\Oranges\OrangeEndLess\packages\Rx-XAML.2.2.4\lib\windows8\System.Reactive.Windows.Threading.dll">
+      <PackagePath>System.Reactive.Windows.Threading.dll</PackagePath>
+      <Modified>2014-07-10T06:42:06.659</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Wang\Source\Workspaces\Oranges\OrangeEndLess\OrangeEndLess\OrangeEndLess.Windows\Assets\Logo.scale-100.png">
+      <PackagePath>Assets\Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2014-05-27T15:57:02.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Wang\Source\Workspaces\Oranges\OrangeEndLess\OrangeEndLess\OrangeEndLess.Windows\Assets\SmallLogo.scale-100.png">
+      <PackagePath>Assets\SmallLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2014-05-27T15:57:02.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Wang\Source\Workspaces\Oranges\OrangeEndLess\OrangeEndLess\OrangeEndLess.Windows\Assets\SplashScreen.scale-100.png">
+      <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2014-05-27T15:57:02.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Wang\Source\Workspaces\Oranges\OrangeEndLess\OrangeEndLess\OrangeEndLess.Windows\Assets\StoreLogo.scale-100.png">
+      <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2014-05-27T15:57:02.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Wang\Source\Workspaces\Oranges\OrangeEndLess\OrangeEndLess\OrangeEndLess.Windows\bin\Debug\App.xbf">
+      <PackagePath>App.xbf</PackagePath>
+      <Modified>2014-07-12T09:15:37.171</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Wang\Source\Workspaces\Oranges\OrangeEndLess\OrangeEndLess\OrangeEndLess.Windows\bin\Debug\MainPage.xbf">
+      <PackagePath>MainPage.xbf</PackagePath>
+      <Modified>2014-07-12T09:15:37.176</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Wang\Source\Workspaces\Oranges\OrangeEndLess\OrangeEndLess\OrangeEndLess.Windows\bin\Debug\OrangeEndLess.Windows.xr.xml">
+      <PackagePath>OrangeEndLess.Windows.xr.xml</PackagePath>
+      <Modified>2014-07-12T09:15:37.105</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Wang\Source\Workspaces\Oranges\OrangeEndLess\OrangeEndLess\OrangeEndLess.Windows\bin\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <Modified>2014-07-12T09:15:40.359</Modified>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>
