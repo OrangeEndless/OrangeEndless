@@ -132,6 +132,9 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
+    <Reference Include="AMicroblogAPI.XmlSerializers">
+      <HintPath>..\..\..\..\..\..\Desktop\AMicroblogAPI.XmlSerializers.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.Threading.Tasks">
       <HintPath>..\..\packages\Microsoft.Bcl.Async.1.0.168\lib\win8\Microsoft.Threading.Tasks.dll</HintPath>
     </Reference>

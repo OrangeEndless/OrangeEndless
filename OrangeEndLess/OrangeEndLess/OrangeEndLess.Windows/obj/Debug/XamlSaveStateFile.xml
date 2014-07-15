@@ -3,6 +3,7 @@
     <LocalAssembly PathName="c:\users\wang\source\workspaces\oranges\orangeendless\orangeendless\orangeendless.windows\obj\debug\intermediatexaml\orangeendless.windows.exe" HashGuid="85d24309-ace0-78ed-11e8-a8d295dd25a1" />
     <ReferenceAssembly PathName="c:\program files (x86)\microsoft sdks\windows\v8.1\extensionsdks\behaviorsxamlsdkmanaged\12.0\references\commonconfiguration\neutral\microsoft.xaml.interactions.dll" HashGuid="95a94f94-3917-d473-4f7c-18c4bd437046" />
     <ReferenceAssembly PathName="c:\program files (x86)\microsoft sdks\windows\v8.1\extensionsdks\behaviorsxamlsdkmanaged\12.0\references\commonconfiguration\neutral\microsoft.xaml.interactivity.dll" HashGuid="d25f59e6-dd81-900a-0dfc-55b39f6898ef" />
+    <ReferenceAssembly PathName="c:\users\wang\desktop\amicroblogapi.xmlserializers.dll" HashGuid="6f1869bb-3ff7-f1ff-0951-80cf00d13b59" />
     <ReferenceAssembly PathName="c:\users\wang\source\repos\orangeendless\orangeendless\packages\microsoft.bcl.async.1.0.168\lib\win8\microsoft.threading.tasks.dll" HashGuid="3a1beea5-1547-d5c6-af32-3b5c761c2a6a" />
     <ReferenceAssembly PathName="c:\users\wang\source\repos\orangeendless\orangeendless\packages\microsoft.bcl.async.1.0.168\lib\win8\microsoft.threading.tasks.extensions.dll" HashGuid="79a01987-c06c-c9d7-37eb-629809787680" />
     <ReferenceAssembly PathName="c:\users\wang\source\repos\orangeendless\orangeendless\packages\mvvm-sidekick.behaviors.0.3.0.0\lib\netcore45\mvvmsidekick.behaviors_rt.dll" HashGuid="68e77e82-f937-fc70-aafb-501596aee53e" />

@@ -128,15 +128,15 @@ namespace OrangeEndLess
         {
             Buildings.Add("Cursor", new Building("Cursor", 15m, 0.1m));
             Buildings.Add("Primary", new Building("Primary", 100m, 0.5m));
-            Building Farm = new Building("Farm", 500m, 4m);
-            Building Factory = new Building("Factory", 3000m, 10m);
-            Building Mine = new Building("Mine", 10000m, 40m);
-            Building Shipment = new Building("Shipment", 40000m, 100m);
-            Building Lab = new Building("Lab", 200000m, 400m);
-            Building Portal = new Building("Portal", 1666666m, 6666m);
-            Building TimeMachine = new Building("TimeMachine", 123456789m, 98765m);
-            Building DreamRecorder = new Building("DreamRecorder", 3999999999m, 999999m);
-            Building Prism = new Building("Prism", 75000000000m, 10000000m);
+            Buildings.Add("Farm", new Building("Farm", 500m, 4m));
+            Buildings.Add("Factory", new Building("Factory", 3000m, 10m));
+            Buildings.Add("Mine", new Building("Mine", 10000m, 40m));
+            Buildings.Add("Shipment", new Building("Shipment", 40000m, 100m));
+            Buildings.Add("Lab", new Building("Lab", 200000m, 400m));
+            Buildings.Add("Portal", new Building("Portal", 1666666m, 6666m));
+            Buildings.Add("TimeMachine", new Building("TimeMachine", 123456789m, 98765m));
+            Buildings.Add("DreamRecorder",new Building("DreamRecorder", 3999999999m, 999999m));
+            Buildings.Add("Prism",new Building("Prism", 75000000000m, 10000000m));
         }
         #endregion
 
@@ -168,7 +168,12 @@ namespace OrangeEndLess
         {
             get
             {
-                return Cursor.CPS + Primary.CPS + Farm.CPS + Factory.CPS + Mine.CPS + Shipment.CPS + Lab.CPS + Portal.CPS + TimeMachine.CPS + DreamRecorder.CPS + Prism.CPS;
+                decimal TEMP = 0;
+                foreach (var item in Buildings)
+                {
+                    TEMP += item.Value.CPS;
+                }
+                return TEMP;
             }
         }
 
@@ -224,6 +229,7 @@ namespace OrangeEndLess
             }
             Timers.Interval = new TimeSpan(0, 0, 0, 0, Convert.ToInt32(localSettings.Values["TimeToUpdate"]));
             Timers.Tick += Timers_Tick;
+            addtodictonary();
         }
 
 
