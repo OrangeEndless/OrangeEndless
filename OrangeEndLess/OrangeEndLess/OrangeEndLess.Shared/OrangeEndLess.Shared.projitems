@@ -29,4 +29,7 @@
   <ItemGroup>
     <PRIResource Include="$(MSBuildThisFileDirectory)Resource.resw" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="$(MSBuildThisFileDirectory)w.fw.png" />
+  </ItemGroup>
 </Project>

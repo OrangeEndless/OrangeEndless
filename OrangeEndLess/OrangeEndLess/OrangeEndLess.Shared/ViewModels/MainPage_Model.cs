@@ -13,6 +13,8 @@ using System.Threading.Tasks;
 using System.Collections.ObjectModel;
 using System.Runtime.Serialization;
 using Windows.Storage;
+using MVVMSidekick.Utilities;
+using Windows.UI.Xaml;
 
 
 namespace OrangeEndLess.ViewModels
@@ -22,50 +24,100 @@ namespace OrangeEndLess.ViewModels
     public class MainPage_Model : ViewModelBase<MainPage_Model>
     {
         Core GameCore = new Core();
-        // If you have install the code sniplets, use "propvm + [tab] +[tab]" create a property propcmd for command
-        // 如果您已经安装了 MVVMSidekick 代码片段，请用 propvm +tab +tab 输入属性 propcmd 输入命令
+
+        ApplicationDataContainer localSettings = ApplicationData.Current.RoamingSettings;
+
+        DispatcherTimer Timers = new DispatcherTimer();
 
         public MainPage_Model()
         {
-            if (IsInDesignMode)
+            if (localSettings.Values["TimeToUpdate"] == null)
             {
-                Title = "Title is a little different in Design mode";
+                localSettings.Values["TimeToUpdate"] = 200;
             }
-
+            Timers.Interval = new TimeSpan(0, 0, 0, 0, Convert.ToInt32(localSettings.Values["TimeToUpdate"]));
+            Timers.Tick += Timers_Tick;
         }
 
-        //propvm tab tab string tab Title
-
-        
-        public string MyProperty
+        void Timers_Tick(object sender, object e)
         {
-            get { return _MyPropertyLocator(this).Value; }
-            set { _MyPropertyLocator(this).SetValueAndTryNotify(value); }
+            GameCore.NumberOfOrange += (decimal)(GameCore.SpeedOfOrangeRise * (decimal)(Timers.Interval.TotalMilliseconds / 1000));
+
         }
-        #region Property string MyProperty Setup
-        protected Property<string> _MyProperty = new Property<string> { LocatorFunc = _MyPropertyLocator };
-        static Func<BindableBase, ValueContainer<string>> _MyPropertyLocator = RegisterContainerLocator<string>("MyProperty", model => model.Initialize("MyProperty", ref model._MyProperty, ref _MyPropertyLocator, _MyPropertyDefaultValueFactory));
-        static Func<string> _MyPropertyDefaultValueFactory = () => { return ApplicationData.Current.RoamingStorageQuota.ToString(); };
+
+        public CommandModel<ReactiveCommand, String> CommandRush
+        {
+            get { return _CommandRushLocator(this).Value; }
+            set { _CommandRushLocator(this).SetValueAndTryNotify(value); }
+        }
+        #region Property CommandModel<ReactiveCommand, String> CommandRush Setup
+        protected Property<CommandModel<ReactiveCommand, String>> _CommandRush = new Property<CommandModel<ReactiveCommand, String>> { LocatorFunc = _CommandRushLocator };
+        static Func<BindableBase, ValueContainer<CommandModel<ReactiveCommand, String>>> _CommandRushLocator = RegisterContainerLocator<CommandModel<ReactiveCommand, String>>("CommandRush", model => model.Initialize("CommandRush", ref model._CommandRush, ref _CommandRushLocator, _CommandRushDefaultValueFactory));
+        static Func<BindableBase, CommandModel<ReactiveCommand, String>> _CommandRushDefaultValueFactory =
+            model =>
+            {
+                var resource = "Rush";           // Command resource  
+                var commandId = "Rush";
+                var vm = CastToCurrentType(model);
+                var cmd = new ReactiveCommand(canExecute: true) { ViewModel = model }; //New Command Core
+                cmd
+                    .DoExecuteUIBusyTask(
+                        vm,
+                        async e =>
+                        {
+                            //Todo: Add Rush logic here, or
+                            vm.GameCore.Rush();
+
+                            await MVVMSidekick.Utilities.TaskExHelper.Yield();
+                        }
+                    )
+                    .DoNotifyDefaultEventRouter(vm, commandId)
+                    .Subscribe()
+                    .DisposeWith(vm);
+
+                var cmdmdl = cmd.CreateCommandModel(resource);
+                cmdmdl.ListenToIsUIBusy(model: vm, canExecuteWhenBusy: false);
+                return cmdmdl;
+            };
         #endregion
 
 
 
-        public String Title
+        public string CPSOfOrange
         {
-            get { return _TitleLocator(this).Value; }
-            set { _TitleLocator(this).SetValueAndTryNotify(value); }
+            get { return _CPSOfOrangeLocator(this).Value; }
+            set { _CPSOfOrangeLocator(this).SetValueAndTryNotify(value); }
         }
-
-
-        #region Property String Title Setup
-        protected Property<String> _Title = new Property<String> { LocatorFunc = _TitleLocator };
-        static Func<BindableBase, ValueContainer<String>> _TitleLocator = RegisterContainerLocator<String>("Title", model => model.Initialize("Title", ref model._Title, ref _TitleLocator, _TitleDefaultValueFactory));
-        static Func<String> _TitleDefaultValueFactory = () => "Title is Here";
+        #region Property string CPSOfOrange Setup
+        protected Property<string> _CPSOfOrange = new Property<string> { LocatorFunc = _CPSOfOrangeLocator };
+        static Func<BindableBase, ValueContainer<string>> _CPSOfOrangeLocator = RegisterContainerLocator<string>("CPSOfOrange", model => model.Initialize("CPSOfOrange", ref model._CPSOfOrange, ref _CPSOfOrangeLocator, _CPSOfOrangeDefaultValueFactory));
+        static Func<BindableBase, string> _CPSOfOrangeDefaultValueFactory =
+            model =>
+            {
+                var vm = CastToCurrentType(model);
+                return App.Current.Resources["CPS"] + vm.GameCore.SpeedOfOrangeRise.ToString() + App.Current.Resources["/s"];
+            };
         #endregion
 
 
+        public string NumberOfOrange
+        {
+            get { return _NumberOfOrangeLocator(this).Value; }
+            set { _NumberOfOrangeLocator(this).SetValueAndTryNotify(value); }
+        }
+        #region Property string NumberOfOrange Setup
+        protected Property<string> _NumberOfOrange = new Property<string> { LocatorFunc = _NumberOfOrangeLocator };
+        static Func<BindableBase, ValueContainer<string>> _NumberOfOrangeLocator = RegisterContainerLocator<string>("NumberOfOrange", model => model.Initialize("NumberOfOrange", ref model._NumberOfOrange, ref _NumberOfOrangeLocator, _NumberOfOrangeDefaultValueFactory));
+        static Func<BindableBase, string> _NumberOfOrangeDefaultValueFactory =
+            model =>
+            {
+                var vm = CastToCurrentType(model);
+                return vm.GameCore.NumberOfOrange.ToString();
+            };
+        #endregion
 
-        #region Life Time Event Handling
+
+        //#region Life Time Event Handling
 
         ///// <summary>
         ///// This will be invoked by view when this viewmodel instance is set to view's ViewModel property. 
@@ -121,7 +173,7 @@ namespace OrangeEndLess.ViewModels
         //    await TaskExHelper.Yield();
         //}
 
-        #endregion
+        //#endregion
 
 
     }

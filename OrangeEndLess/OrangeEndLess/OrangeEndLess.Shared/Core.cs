@@ -7,13 +7,26 @@ using Windows.Storage;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Input;
+using MVVMSidekick.ViewModels;
 
 namespace OrangeEndLess
 {
 
+
+
+
     class Building
     {
+
+        Random Randoms = new Random();
+
         ApplicationDataContainer localSettings = ApplicationData.Current.RoamingSettings;
+
+        DispatcherTimer EventTimer = new DispatcherTimer();
+
+        //        public delegate void EventHandler(object sender, EventArgs e);
+
+
         public string Title { get; set; }
         decimal PriceBase { get; set; }
         decimal StartCPS { get; set; }
@@ -22,7 +35,7 @@ namespace OrangeEndLess
         {
             get
             {
-                return Number * StartCPS * (Level + 1);
+                return Number * StartCPS * (Level);
             }
         }
 
@@ -42,11 +55,11 @@ namespace OrangeEndLess
         {
             get
             {
-                return Convert.ToDecimal(localSettings.Values["LevelOf" + Title]);
+                return Convert.ToDecimal(localSettings.Values["LevelOf" + Title]) + 1;
             }
             set
             {
-                localSettings.Values["LevelOf" + Title] = value;
+                localSettings.Values["LevelOf" + Title] = value - 1;
             }
         }
 
@@ -58,12 +71,12 @@ namespace OrangeEndLess
             }
         }
 
-        public decimal Buy(decimal number, ref decimal numberoforange)
+        public decimal Buy(decimal number, ref decimal numberofmoney)
         {
             decimal havebuy = 0;
-            while (numberoforange >= Price)
+            while (numberofmoney >= Price)
             {
-                numberoforange -= Price;
+                numberofmoney -= Price;
                 Number++;
                 havebuy++;
             }
@@ -72,21 +85,21 @@ namespace OrangeEndLess
 
 
 
-        public decimal Sell(decimal number, ref decimal numberoforange)
+        public decimal Sell(decimal number, ref decimal numberofmoney)
         {
             decimal havesell = 0;
             while (Number >= 1)
             {
-                numberoforange += Price;
+                numberofmoney += decimal.Ceiling((Price) * Randoms.Next(500, 900) / 1000);
                 Number--;
                 havesell++;
             }
             return havesell;
         }
 
-        public Building(object name, decimal startprice, decimal startcps)
+        public Building(string name, decimal startprice, decimal startcps)
         {
-            Title = (string)name;
+            Title = (string)App.Current.Resources["TitleOf" + name];
             PriceBase = startprice;
             StartCPS = startcps;
             if (localSettings.Values["LevelOf" + Title] == null)
@@ -102,20 +115,42 @@ namespace OrangeEndLess
 
     class Core
     {
+
+        Random Randoms = new Random();
+
         ApplicationDataContainer localSettings = ApplicationData.Current.RoamingSettings;
+
         #region Buildings
 
-        Building Cursor = new Building(App.Current.Resources["TitleOfCursor"], 15m, 0.1m);
-        Building Primary = new Building(App.Current.Resources["TitleOfPrimary"], 100m, 0.5m);
-        Building Farm = new Building(App.Current.Resources["TitleOfFarm"], 500m, 4m);
-        Building Factory = new Building(App.Current.Resources["TitleOfFactory"], 3000m, 10m);
-        Building Mine = new Building(App.Current.Resources["TitleOfMine"], 10000m, 40m);
-        Building Shipment = new Building(App.Current.Resources["TitleOfShipment"], 40000m, 100m);
-        Building Lab = new Building(App.Current.Resources["TitleOfLab"], 200000m, 400m);
-        Building Portal = new Building(App.Current.Resources["TitleOfPortal"], 1666666m, 6666m);
-        Building TimeMachine = new Building(App.Current.Resources["TitleOfTimeMachine"], 123456789m, 98765m);
-        Building DreamRecorder = new Building(App.Current.Resources["TitleOfDreamRecorder"], 3999999999m, 999999m);
-        Building Prism = new Building(App.Current.Resources["TitleOfPrism"], 75000000000m, 10000000m);
+        public Dictionary<string, Building> Buildings = new Dictionary<string, Building>();
+
+        void addtodictonary()
+        {
+            Buildings.Add("Cursor", new Building("Cursor", 15m, 0.1m));
+            Buildings.Add("Primary", new Building("Primary", 100m, 0.5m));
+            Building Farm = new Building("Farm", 500m, 4m);
+            Building Factory = new Building("Factory", 3000m, 10m);
+            Building Mine = new Building("Mine", 10000m, 40m);
+            Building Shipment = new Building("Shipment", 40000m, 100m);
+            Building Lab = new Building("Lab", 200000m, 400m);
+            Building Portal = new Building("Portal", 1666666m, 6666m);
+            Building TimeMachine = new Building("TimeMachine", 123456789m, 98765m);
+            Building DreamRecorder = new Building("DreamRecorder", 3999999999m, 999999m);
+            Building Prism = new Building("Prism", 75000000000m, 10000000m);
+        }
+        #endregion
+
+        public decimal LevelOfRush
+        {
+            get
+            {
+                return Convert.ToDecimal(localSettings.Values["LevelOfRush"]) + 1;
+            }
+            set
+            {
+                localSettings.Values["LevelOfRush"] = value - 1;
+            }
+        }
 
         public decimal NumberOfOrange
         {
@@ -129,7 +164,7 @@ namespace OrangeEndLess
             }
         }
 
-        decimal SpeedOfOrangeRise
+        public decimal SpeedOfOrangeRise
         {
             get
             {
@@ -137,9 +172,43 @@ namespace OrangeEndLess
             }
         }
 
+        public void Rush()
+        {
+            NumberOfOrange += (LevelOfRush);
+        }
 
 
-        #endregion
+
+        public decimal NumberOfMoney
+        {
+            get
+            {
+                return (decimal)localSettings.Values["Money"];
+            }
+
+            set
+            {
+                localSettings.Values["Money"] = value;
+            }
+        }
+
+        public decimal PriceOfMoney
+        {
+            get
+            {
+                return decimal.Ceiling((NumberOfMoney * NumberOfMoney + 10) * Randoms.Next(800, 1200) / 1000);
+            }
+        }
+
+        DispatcherTimer Timers = new DispatcherTimer();
+
+
+        void Timers_Tick(object sender, object e)
+        {
+            NumberOfOrange += (decimal)(SpeedOfOrangeRise * (decimal)(Timers.Interval.TotalMilliseconds / 1000));
+        }
+
+
         public Core()
         {
             if (localSettings.Values["GameIsStartV2"] == null)
@@ -157,12 +226,6 @@ namespace OrangeEndLess
             Timers.Tick += Timers_Tick;
         }
 
-        void Timers_Tick(object sender, object e)
-        {
-            NumberOfOrange += (decimal)(SpeedOfOrangeRise * (decimal)(Timers.Interval.TotalMilliseconds / 1000));
-        }
-
-        DispatcherTimer Timers = new DispatcherTimer();
 
     }
 }

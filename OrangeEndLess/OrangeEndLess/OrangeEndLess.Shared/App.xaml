@@ -20,7 +20,7 @@
         <x:String x:Key="About">关于</x:String>
 
         <x:String x:Key="Price">价格：</x:String>
-        <x:String x:Key="Rise">增速：</x:String>
+        <x:String x:Key="CPS">增速：</x:String>
         <x:String x:Key="/s">个/s</x:String>
 
 

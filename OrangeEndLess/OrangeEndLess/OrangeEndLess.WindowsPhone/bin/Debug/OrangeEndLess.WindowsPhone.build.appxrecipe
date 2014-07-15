@@ -76,6 +76,9 @@
       <PackagePath>Assets\WideLogo.scale-240.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Wang\Source\Workspaces\Oranges\OrangeEndLess\OrangeEndLess\OrangeEndLess.Shared\w.fw.png">
+      <PackagePath>w.fw.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Wang\Source\Workspaces\Oranges\OrangeEndLess\OrangeEndLess\OrangeEndLess.WindowsPhone\bin\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
     </AppxPackagedFile>

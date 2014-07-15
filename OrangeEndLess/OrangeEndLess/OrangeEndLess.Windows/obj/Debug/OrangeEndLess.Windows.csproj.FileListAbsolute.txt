@@ -68,6 +68,7 @@ C:\Users\Wang\Source\Workspaces\Oranges\OrangeEndLess\OrangeEndLess\OrangeEndLes
 C:\Users\Wang\Source\Workspaces\Oranges\OrangeEndLess\OrangeEndLess\OrangeEndLess.Windows\obj\Debug\ProjectArchitectures.txt
 C:\Users\Wang\Source\Workspaces\Oranges\OrangeEndLess\OrangeEndLess\OrangeEndLess.Windows\bin\Debug\Microsoft.Xaml.Interactions.dll
 C:\Users\Wang\Source\Workspaces\Oranges\OrangeEndLess\OrangeEndLess\OrangeEndLess.Windows\bin\Debug\Microsoft.Xaml.Interactivity.dll
+C:\Users\Wang\Source\Workspaces\Oranges\OrangeEndLess\OrangeEndLess\OrangeEndLess.Windows\obj\Debug\OrangeEndLess.Windows.csprojResolveAssemblyReference.cache
 C:\Users\Wang\Source\Workspaces\Oranges\OrangeEndLess\OrangeEndLess\OrangeEndLess.Windows\obj\Debug\System.Reactive.Core\layout.resfiles
 C:\Users\Wang\Source\Workspaces\Oranges\OrangeEndLess\OrangeEndLess\OrangeEndLess.Windows\obj\Debug\System.Reactive.Core\layout.resfiles.intermediate
 C:\Users\Wang\Source\Workspaces\Oranges\OrangeEndLess\OrangeEndLess\OrangeEndLess.Windows\obj\Debug\System.Reactive.Core\Resources.resfiles

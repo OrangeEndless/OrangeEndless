@@ -68,6 +68,9 @@
       <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Wang\Source\Workspaces\Oranges\OrangeEndLess\OrangeEndLess\OrangeEndLess.Shared\w.fw.png">
+      <PackagePath>w.fw.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Wang\Source\Workspaces\Oranges\OrangeEndLess\OrangeEndLess\OrangeEndLess.Windows\bin\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
     </AppxPackagedFile>
