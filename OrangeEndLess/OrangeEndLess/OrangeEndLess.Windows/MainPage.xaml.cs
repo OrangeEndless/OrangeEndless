@@ -26,6 +26,14 @@ namespace OrangeEndLess
         public MainPage()
         {
             this.InitializeComponent();
+#if DEBUG
+#endif
+        }
+
+        private void Grid_Loaded ( object sender , RoutedEventArgs e )
+        {
+            this.Frame.Navigate ( typeof ( About ) );
+
         }
     }
 }

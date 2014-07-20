@@ -1,1 +1,1 @@
-C:\Users\Wang\Source\Workspaces\Oranges\OrangeEndLess\OrangeEndLess\OrangeEndLess.Windows\OrangeEndLess.Windows.csproj;neutral
+C:\Users\Wang\Source\Repos\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.Windows\OrangeEndLess.Windows.csproj;neutral

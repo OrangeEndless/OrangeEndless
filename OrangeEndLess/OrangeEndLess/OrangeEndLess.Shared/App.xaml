@@ -63,7 +63,9 @@
         <x:String x:Key="LabelOfML">Translate From MineCraft Laboratory~</x:String>-->
         <x:String x:Key="TOP1">生产</x:String>
         <x:String x:Key="TOP2">记录</x:String>
-        <x:String x:Key="TOP3">帮手们</x:String>
+        <x:String x:Key="TOP3">交易</x:String>
+        
+        
     </Application.Resources>
     
 </Application>

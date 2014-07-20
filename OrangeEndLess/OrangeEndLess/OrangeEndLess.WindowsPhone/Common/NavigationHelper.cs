@@ -113,7 +113,7 @@ namespace OrangeEndLess.Common
         RelayCommand _goForwardCommand;
 
         /// <summary>
-        /// <see cref="RelayCommand"/> used to bind to the back Button's Command property
+        /// <see cref="RelayCommand"/> used to bind to the back Button's Commands property
         /// for navigating to the most recent item in back navigation history, if a Frame
         /// manages its own navigation history.
         /// 

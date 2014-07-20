@@ -29,7 +29,7 @@
     -->
     <!--End App Bar Binding Patch. If you don't need Binding  Top/Bottom Appbar please ignore these code -->
     <Grid x:Name="MainGird" Background="White" DataContext="{Binding Source={StaticResource DesignVM}}">
-        <Grid Background="White">
+        <Grid Background="White" Loaded="Grid_Loaded">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition/>
                 <ColumnDefinition Width="2*"/>

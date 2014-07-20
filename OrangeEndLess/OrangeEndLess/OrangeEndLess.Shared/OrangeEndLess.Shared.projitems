@@ -22,7 +22,10 @@
     <Compile Include="$(MSBuildThisFileDirectory)App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)Core.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)GameConsole.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)GameCore\Buildings.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)GameCore\Core.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)GameCore\RandomArgs.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Startups\StartupFunctions.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModels\MainPage_Model.cs" />
   </ItemGroup>
@@ -30,6 +33,9 @@
     <PRIResource Include="$(MSBuildThisFileDirectory)Resource.resw" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="$(MSBuildThisFileDirectory)a.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Photos\Orange.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Photos\Wencey.JPG" />
     <Content Include="$(MSBuildThisFileDirectory)w.fw.png" />
   </ItemGroup>
 </Project>
