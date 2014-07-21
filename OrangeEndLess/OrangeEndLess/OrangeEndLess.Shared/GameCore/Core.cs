@@ -11,7 +11,7 @@ using MVVMSidekick . ViewModels;
 
 namespace OrangeEndLess
 {
-    class Core
+    public class  Core
     {
 
         Random Randoms = new Random ( );

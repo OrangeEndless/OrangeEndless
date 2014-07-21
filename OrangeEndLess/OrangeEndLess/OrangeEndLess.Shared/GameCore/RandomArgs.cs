@@ -4,7 +4,7 @@ using System . Text;
 
 namespace OrangeEndLess
 {
-    class RandomArgs : EventArgs
+    public class RandomArgs : EventArgs
     {
         public string Title;
         public string Text;
