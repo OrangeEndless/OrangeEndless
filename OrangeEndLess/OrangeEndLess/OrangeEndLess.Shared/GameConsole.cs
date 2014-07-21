@@ -70,13 +70,11 @@ namespace OrangeEndLess
             {
                 foreach ( var item in GameCore . Buildings )
                 {
-                    foreach ( var str in item . Value . Keys )
+                    if ( item . Value . Title . StartsWith ( strs [ 1 ] ) )
                     {
-                        if ( strs [ 1 ] == str )
-                        {
-                            WriteLine ( "The number of " + item . Value . Title . ToUpper ( ) + " is" + item . Value . Number . ToString ( ) );
-                            return;
-                        }
+                        WriteLine ( "The number of " + item . Value . Title . ToUpper ( ) + " is" + item . Value . Number . ToString ( ) );
+                        return;
+
                     }
                 }
 
@@ -124,16 +122,14 @@ namespace OrangeEndLess
                 {
                     foreach ( var item in GameCore . Buildings )
                     {
-                        foreach ( var str in item . Value . Keys )
+                        if ( item . Value . Title . StartsWith ( strs [ 1 ] ) )
                         {
-                            if ( strs [ 1 ] == str )
-                            {
-                                decimal _havebuy,_havecost;
-                                item . Value . Buy ( Convert . ToDecimal ( strs [ 2 ] ) , GameCore . NumberOfMoney , out _havebuy , out _havecost );
-                                WriteLine ( "Have bought " + _havebuy . ToString ( ) + item . Value . Title . ToUpper ( ) + " and cost " + _havecost . ToString ( ) );
-                                return;
-                            }
+                            decimal _havebuy,_havecost;
+                            item . Value . Buy ( Convert . ToDecimal ( strs [ 2 ] ) , GameCore . NumberOfMoney , out _havebuy , out _havecost );
+                            WriteLine ( "Have bought " + _havebuy . ToString ( ) + item . Value . Title . ToUpper ( ) + " and cost " + _havecost . ToString ( ) );
+                            return;
                         }
+
                     }
                 }
                 else
@@ -151,19 +147,14 @@ namespace OrangeEndLess
                 {
                     foreach ( var item in GameCore . Buildings )
                     {
-                        foreach ( var str in item . Value . Keys )
+                        if ( item . Value . Title . StartsWith ( strs [ 1 ] ) )
                         {
-                            if ( strs [ 1 ] == str )
-                            {
-                                decimal _havesell,_haveget;
-
-                                item . Value . Sell ( Convert . ToDecimal ( strs [ 2 ] ) , GameCore . NumberOfMoney , out _havesell , out _haveget );
-                                WriteLine ( "Have sell " + _havesell . ToString ( ) + item . Value . Title . ToUpper ( ) + " and get " + _haveget . ToString ( ) );
-                                return;
-                            }
+                            decimal _havesell,_haveget;
+                            item . Value . Sell ( Convert . ToDecimal ( strs [ 2 ] ) , GameCore . NumberOfMoney , out _havesell , out _haveget );
+                            WriteLine ( "Have sell " + _havesell . ToString ( ) + item . Value . Title . ToUpper ( ) + " and get " + _haveget . ToString ( ) );
+                            return;
                         }
                     }
-
                 }
                 else
                 {

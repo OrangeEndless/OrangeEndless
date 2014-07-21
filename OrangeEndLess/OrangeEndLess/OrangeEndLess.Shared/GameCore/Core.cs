@@ -11,7 +11,7 @@ using MVVMSidekick . ViewModels;
 
 namespace OrangeEndLess
 {
-    public class  Core
+    public class Core
     {
 
         Random Randoms = new Random ( );
@@ -40,53 +40,17 @@ namespace OrangeEndLess
 
         void adddictonary ( )
         {
-
-            #region Cursor
-            Buildings . Add ( "Cursor" , new Building ( "Cursor" , 1m , 0.1m , new string [ ]
-        {
-            "c",
-            "cur",
-            "cursor",
-            "zhizhen",
-            "zhi",
-            "z"
-        } ) );
-            #endregion
-            
-            
-            #region Primary
-            Buildings . Add ( "Primary" , new Building ( "Primary" , 10m , 0.5m , new string [ ]
-        {
-            "prim",
-            "primary",
-            "xiaoxuesheng",
-            "xiao",
-            "xuesheng"
-        } ) );
-            #endregion
-
-            #region Farm
-            Buildings . Add ( "Farm" , new Building ( "Farm" , 100m , 4m , new string [ ]
-        {
-            "far",
-            "farm",
-            "n",
-            "xiao",
-            "xuesheng"
-        } ) );
-            #endregion
-
-            #region
-           //Buildings . Add ( "Factory" , new Building ( "Factory" , 300m , 10m ) );
-            #endregion
-
-            //Buildings . Add ( "Mine" , new Building ( "Mine" , 1400m , 40m ) );
-            //Buildings . Add ( "Shipment" , new Building ( "Shipment" , 4000m , 100m ) );
-            //Buildings . Add ( "Lab" , new Building ( "Lab" , 20000m , 400m ) );
-            //Buildings . Add ( "Portal" , new Building ( "Portal" , 480000m , 6000m ) );
-            //Buildings . Add ( "TimeMachine" , new Building ( "TimeMachine" , 12000000m , 100000m ) );
-            //Buildings . Add ( "DreamRecorder" , new Building ( "DreamRecorder" , 180000000m , 1000000m ) );
-            //Buildings . Add ( "Prism" , new Building ( "Prism" , 20000000000m , 100000000m ) );
+            Buildings . Add ( "Cursor" , new Building ( "Cursor" , 1m , 0.1m ) );
+            Buildings . Add ( "Primary" , new Building ( "Primary" , 10m , 0.5m ) );
+            Buildings . Add ( "Farm" , new Building ( "Farm" , 100m , 4m ) );
+            Buildings . Add ( "Factory" , new Building ( "Factory" , 300m , 10m ) );
+            Buildings . Add ( "Mine" , new Building ( "Mine" , 1400m , 40m ) );
+            Buildings . Add ( "Shipment" , new Building ( "Shipment" , 4000m , 100m ) );
+            Buildings . Add ( "Lab" , new Building ( "Lab" , 20000m , 400m ) );
+            Buildings . Add ( "Portal" , new Building ( "Portal" , 480000m , 6000m ) );
+            Buildings . Add ( "TimeMachine" , new Building ( "TimeMachine" , 12000000m , 100000m ) );
+            Buildings . Add ( "DreamRecorder" , new Building ( "DreamRecorder" , 180000000m , 1000000m ) );
+            Buildings . Add ( "Prism" , new Building ( "Prism" , 20000000000m , 100000000m ) );
         }
 
         #endregion
@@ -131,6 +95,7 @@ namespace OrangeEndLess
         public void Rush ( )
         {
             NumberOfOrange += ( LevelOfRush );
+            UpdateData . Invoke ( this , new EventArgs ( ) );
         }
 
         public decimal NumberOfMoney

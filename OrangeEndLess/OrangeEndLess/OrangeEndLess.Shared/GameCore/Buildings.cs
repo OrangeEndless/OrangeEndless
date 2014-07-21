@@ -20,11 +20,6 @@ namespace OrangeEndLess
 
         DispatcherTimer EventTimer = new DispatcherTimer ( );
 
-        //        public delegate void EventHandler(object sender, EventArgs e);
-
-        public string[] Keys;
-
-
         public string Title { get; set; }
         decimal PriceBase { get; set; }
         decimal StartCPS { get; set; }
@@ -86,7 +81,6 @@ namespace OrangeEndLess
         }
 
 
-
         public void Sell ( decimal number , object numberofmoney , out decimal havesell , out decimal haveget )
         {
             decimal _havesell = 0;
@@ -104,12 +98,11 @@ namespace OrangeEndLess
             haveget = _haveget;
         }
 
-        public Building ( string name , decimal startprice , decimal startcps , string [ ] keys )
+        public Building ( string name , decimal startprice , decimal startcps)
         {
             Title = ( string ) App . Current . Resources [ "TitleOf" + name ];
             PriceBase = startprice;
             StartCPS = startcps;
-            Keys = keys;
             if ( GameData . Values [ "LevelOf" + Title ] == null )
             {
                 GameData . Values [ "LevelOf" + Title ] = 0;
