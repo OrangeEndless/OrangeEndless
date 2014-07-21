@@ -23,6 +23,7 @@
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)GameConsole.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)GameCore\Achievement.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)GameCore\Buildings.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)GameCore\Core.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)GameCore\RandomArgs.cs" />

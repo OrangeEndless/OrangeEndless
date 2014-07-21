@@ -5,7 +5,7 @@ using Windows . UI . Xaml . Controls;
 
 namespace OrangeEndLess
 {
-    class GameConsole
+    public class GameConsole
     {
 
         #region StartMessage
@@ -31,6 +31,7 @@ namespace OrangeEndLess
 
         TextBox TBOut;
 
+        
         void WriteLine ( string str )
         {
             TBOut . Text += str + Environment . NewLine;
