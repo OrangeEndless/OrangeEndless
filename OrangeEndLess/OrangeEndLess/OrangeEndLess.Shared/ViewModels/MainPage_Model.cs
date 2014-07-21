@@ -15,6 +15,7 @@ using System . Runtime . Serialization;
 using Windows . Storage;
 using MVVMSidekick . Utilities;
 using Windows . UI . Xaml;
+using OrangeEndLess;
 
 
 namespace OrangeEndLess . ViewModels
@@ -23,7 +24,7 @@ namespace OrangeEndLess . ViewModels
     [DataContract]
     public class MainPage_Model : ViewModelBase<MainPage_Model>
     {
-        Core GameCore = new Core ( );
+        public Core GameCore = new Core ( );
 
         ApplicationDataContainer localSettings = ApplicationData . Current . RoamingSettings;
 

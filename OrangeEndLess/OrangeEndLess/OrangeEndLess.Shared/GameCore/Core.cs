@@ -52,7 +52,8 @@ namespace OrangeEndLess
             "z"
         } ) );
             #endregion
-
+            
+            
             #region Primary
             Buildings . Add ( "Primary" , new Building ( "Primary" , 10m , 0.5m , new string [ ]
         {
@@ -75,7 +76,10 @@ namespace OrangeEndLess
         } ) );
             #endregion
 
-            //Buildings . Add ( "Factory" , new Building ( "Factory" , 300m , 10m ) );
+            #region
+           //Buildings . Add ( "Factory" , new Building ( "Factory" , 300m , 10m ) );
+            #endregion
+
             //Buildings . Add ( "Mine" , new Building ( "Mine" , 1400m , 40m ) );
             //Buildings . Add ( "Shipment" , new Building ( "Shipment" , 4000m , 100m ) );
             //Buildings . Add ( "Lab" , new Building ( "Lab" , 20000m , 400m ) );
