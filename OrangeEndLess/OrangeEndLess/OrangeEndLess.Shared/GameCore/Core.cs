@@ -218,8 +218,10 @@ namespace OrangeEndLess
             TimersAPM . Tick += TimersAPM_Tick;
 
             adddictonary ( );
+
             TimersUpdateData . Start ( );
             TimersRandom . Start ( );
+            TimersAPM . Start ( );
         }
     }
 
