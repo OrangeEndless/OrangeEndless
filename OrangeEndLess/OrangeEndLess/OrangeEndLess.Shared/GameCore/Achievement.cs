@@ -18,7 +18,7 @@ namespace OrangeEndLess
         public string Title;
         public string Text;
 
-        Action<Core>  CheckFunc;
+        Func<Core,bool> _Check;
 
         public bool IsGet
         {
@@ -32,16 +32,20 @@ namespace OrangeEndLess
             }
         }
 
-        public void Get ( )
+        public void Check ( Core cor )
         {
-            IsGet = true;
+            if ( IsGet != true )
+            {
+                IsGet = _Check . Invoke ( cor );
+            }
         }
 
-        public Achievement ( string title , string text , Action<Core> func )
+
+        public Achievement ( int key , Func<Core , bool> func )
         {
             Title = title;
             Text = text;
-            CheckFunc = func;
+            _Check = func;
         }
     }
 }
