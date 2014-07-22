@@ -11,7 +11,7 @@ using MVVMSidekick . ViewModels;
 
 namespace OrangeEndLess
 {
-    public class Core
+    public partial class Core
     {
 
         Random Randoms = new Random ( );
@@ -37,6 +37,8 @@ namespace OrangeEndLess
         #region Buildings
 
         public Dictionary<string, Building> Buildings = new Dictionary<string , Building> ( );
+        public Dictionary<int, Achievement> Achievements = new Dictionary<int , Achievement> ( );
+
 
         void adddictonary ( )
         {

@@ -18,6 +18,8 @@ namespace OrangeEndLess
         public string Title;
         public string Text;
 
+        Action<Core>  CheckFunc;
+
         public bool IsGet
         {
             get
@@ -35,9 +37,11 @@ namespace OrangeEndLess
             IsGet = true;
         }
 
-        public Achievement ( )
+        public Achievement ( string title , string text , Action<Core> func )
         {
-
+            Title = title;
+            Text = text;
+            CheckFunc = func;
         }
     }
 }
