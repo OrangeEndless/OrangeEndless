@@ -31,6 +31,8 @@ namespace OrangeEndLess
 
         TextBox TBOut;
 
+
+
         
         void WriteLine ( string str )
         {
