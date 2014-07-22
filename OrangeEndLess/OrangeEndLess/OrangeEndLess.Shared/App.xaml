@@ -45,7 +45,7 @@
         <x:String x:Key="TitleOfLab">生物实验室</x:String>
         <x:String x:Key="LabelOfLab">祖传克隆橘子！！！</x:String>
 
-        <x:String x:Key="TitleOfPortal">门</x:String>
+        <x:String x:Key="TitleOfPortal">仓库大门</x:String>
         <x:String x:Key="LabelOfPortal">存放橘子的仓库的大门</x:String>
 
         <x:String x:Key="TitleOfTimeMachine">时间机器</x:String>

@@ -30,7 +30,6 @@ namespace OrangeEndLess
             }
         }
 
-
         public void Get ( )
         {
             IsGet = true;
