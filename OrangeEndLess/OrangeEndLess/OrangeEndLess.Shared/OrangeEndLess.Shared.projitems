@@ -26,6 +26,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)GameCore\Achievement.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)GameCore\Building.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)GameCore\Core.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)GameCore\GameAchievements.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)GameCore\GameBuildings.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)GameCore\RandomArgs.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Startups\StartupFunctions.cs" />

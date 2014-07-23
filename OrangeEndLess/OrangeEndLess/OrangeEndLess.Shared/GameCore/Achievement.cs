@@ -16,7 +16,6 @@ namespace OrangeEndLess
         ApplicationDataContainer GameData = ApplicationData . Current . RoamingSettings;
 
         public string Title;
-        public string Text;
 
         Func<Core,bool> _Check;
 
@@ -44,7 +43,6 @@ namespace OrangeEndLess
         public Achievement ( int key , Func<Core , bool> func )
         {
             Title = title;
-            Text = text;
             _Check = func;
         }
     }
