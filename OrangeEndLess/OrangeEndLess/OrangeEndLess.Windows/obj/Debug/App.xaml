@@ -45,7 +45,7 @@
         <x:String x:Key="TitleOfLab">生物实验室</x:String>
         <x:String x:Key="LabelOfLab">祖传克隆橘子！！！</x:String>
 
-        <x:String x:Key="TitleOfPortal">门</x:String>
+        <x:String x:Key="TitleOfPortal">仓库大门</x:String>
         <x:String x:Key="LabelOfPortal">存放橘子的仓库的大门</x:String>
 
         <x:String x:Key="TitleOfTimeMachine">时间机器</x:String>
@@ -56,11 +56,8 @@
 
         <x:String x:Key="TitleOfPrism">折跃棱镜</x:String>
         <x:String x:Key="LabelOfPrism">你的折跃门折跃出的怎么全是橘子？</x:String>
-
-        <!--<x:String x:Key="TitleOfReactor">反应堆</x:String>
-        <x:String x:Key="LabelOfReactor">通过核反应批量生产橘子</x:String>
-        <x:String x:Key="TitleOfML">矿井技术实验室</x:String>
-        <x:String x:Key="LabelOfML">Translate From MineCraft Laboratory~</x:String>-->
+        
+        
         <x:String x:Key="TOP1">生产</x:String>
         <x:String x:Key="TOP2">记录</x:String>
         <x:String x:Key="TOP3">交易</x:String>

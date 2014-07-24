@@ -1,20 +1,20 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Runtime.InteropServices.WindowsRuntime;
-using Windows.ApplicationModel;
-using Windows.ApplicationModel.Activation;
-using Windows.Foundation;
-using Windows.Foundation.Collections;
-using Windows.UI.Xaml;
-using Windows.UI.Xaml.Controls;
-using Windows.UI.Xaml.Controls.Primitives;
-using Windows.UI.Xaml.Data;
-using Windows.UI.Xaml.Input;
-using Windows.UI.Xaml.Media;
-using Windows.UI.Xaml.Media.Animation;
-using Windows.UI.Xaml.Navigation;
+using System . Collections . Generic;
+using System . IO;
+using System . Linq;
+using System . Runtime . InteropServices . WindowsRuntime;
+using Windows . ApplicationModel;
+using Windows . ApplicationModel . Activation;
+using Windows . Foundation;
+using Windows . Foundation . Collections;
+using Windows . UI . Xaml;
+using Windows . UI . Xaml . Controls;
+using Windows . UI . Xaml . Controls . Primitives;
+using Windows . UI . Xaml . Data;
+using Windows . UI . Xaml . Input;
+using Windows . UI . Xaml . Media;
+using Windows . UI . Xaml . Media . Animation;
+using Windows . UI . Xaml . Navigation;
 
 // The Blank Application template is documented at http://go.microsoft.com/fwlink/?LinkId=234227
 
@@ -25,6 +25,8 @@ namespace OrangeEndLess
     /// </summary>
     public sealed partial class App : Application
     {
+        public Core GameCore=new Core ( );
+
 #if WINDOWS_PHONE_APP
         private TransitionCollection transitions;
 #endif
@@ -33,10 +35,10 @@ namespace OrangeEndLess
         /// Initializes the singleton application object.  This is the first line of authored code
         /// executed, and as such is the logical equivalent of main() or WinMain().
         /// </summary>
-        public App()
+        public App ( )
         {
-            this.InitializeComponent();
-            this.Suspending += this.OnSuspending;
+            this . InitializeComponent ( );
+            this . Suspending += this . OnSuspending;
         }
 
         /// <summary>
@@ -45,66 +47,66 @@ namespace OrangeEndLess
         /// search results, and so forth.
         /// </summary>
         /// <param name="e">Details about the launch request and process.</param>
-        protected override void OnLaunched(LaunchActivatedEventArgs e)
+        protected override void OnLaunched ( LaunchActivatedEventArgs e )
         {
 #if DEBUG
-            if (System.Diagnostics.Debugger.IsAttached)
+            if ( System . Diagnostics . Debugger . IsAttached )
             {
-                this.DebugSettings.EnableFrameRateCounter = true;
+                this . DebugSettings . EnableFrameRateCounter = true;
             }
 #endif
             //Init MVVM-Sidekick Navigations:
-            MVVMSidekick.Startups.StartupFunctions.RunAllConfig();
+            MVVMSidekick . Startups . StartupFunctions . RunAllConfig ( );
 
-            Frame rootFrame = Window.Current.Content as Frame;
+            Frame rootFrame = Window . Current . Content as Frame;
 
             // Do not repeat app initialization when the Window already has content,
             // just ensure that the window is active
-            if (rootFrame == null)
+            if ( rootFrame == null )
             {
                 // Create a Frame to act as the navigation context and navigate to the first page
-                rootFrame = new Frame();
+                rootFrame = new Frame ( );
 
                 // TODO: change this value to a cache size that is appropriate for your application
-                rootFrame.CacheSize = 1;
+                rootFrame . CacheSize = 1;
 
-                if (e.PreviousExecutionState == ApplicationExecutionState.Terminated)
+                if ( e . PreviousExecutionState == ApplicationExecutionState . Terminated )
                 {
                     // TODO: Load state from previously suspended application
                 }
 
                 // Place the frame in the current Window
-                Window.Current.Content = rootFrame;
+                Window . Current . Content = rootFrame;
             }
 
-            if (rootFrame.Content == null)
+            if ( rootFrame . Content == null )
             {
 #if WINDOWS_PHONE_APP
                 // Removes the turnstile navigation for startup.
-                if (rootFrame.ContentTransitions != null)
+                if ( rootFrame . ContentTransitions != null )
                 {
-                    this.transitions = new TransitionCollection();
-                    foreach (var c in rootFrame.ContentTransitions)
+                    this . transitions = new TransitionCollection ( );
+                    foreach ( var c in rootFrame . ContentTransitions )
                     {
-                        this.transitions.Add(c);
+                        this . transitions . Add ( c );
                     }
                 }
 
-                rootFrame.ContentTransitions = null;
-                rootFrame.Navigated += this.RootFrame_FirstNavigated;
+                rootFrame . ContentTransitions = null;
+                rootFrame . Navigated += this . RootFrame_FirstNavigated;
 #endif
 
                 // When the navigation stack isn't restored navigate to the first page,
                 // configuring the new page by passing required information as a navigation
                 // parameter
-                if (!rootFrame.Navigate(typeof(MainPage), e.Arguments))
+                if ( !rootFrame . Navigate ( typeof ( MainPage ) , e . Arguments ) )
                 {
-                    throw new Exception("Failed to create initial page");
+                    throw new Exception ( "Failed to create initial page" );
                 }
             }
 
             // Ensure the current window is active
-            Window.Current.Activate();
+            Window . Current . Activate ( );
         }
 
 #if WINDOWS_PHONE_APP
@@ -113,11 +115,11 @@ namespace OrangeEndLess
         /// </summary>
         /// <param name="sender">The object where the handler is attached.</param>
         /// <param name="e">Details about the navigation event.</param>
-        private void RootFrame_FirstNavigated(object sender, NavigationEventArgs e)
+        private void RootFrame_FirstNavigated ( object sender , NavigationEventArgs e )
         {
             var rootFrame = sender as Frame;
-            rootFrame.ContentTransitions = this.transitions ?? new TransitionCollection() { new NavigationThemeTransition() };
-            rootFrame.Navigated -= this.RootFrame_FirstNavigated;
+            rootFrame . ContentTransitions = this . transitions ?? new TransitionCollection ( ) { new NavigationThemeTransition ( ) };
+            rootFrame . Navigated -= this . RootFrame_FirstNavigated;
         }
 #endif
 
@@ -128,12 +130,12 @@ namespace OrangeEndLess
         /// </summary>
         /// <param name="sender">The source of the suspend request.</param>
         /// <param name="e">Details about the suspend request.</param>
-        private void OnSuspending(object sender, SuspendingEventArgs e)
+        private void OnSuspending ( object sender , SuspendingEventArgs e )
         {
-            var deferral = e.SuspendingOperation.GetDeferral();
+            var deferral = e . SuspendingOperation . GetDeferral ( );
 
             // TODO: Save application state and stop any background activity
-            deferral.Complete();
+            deferral . Complete ( );
         }
     }
 }

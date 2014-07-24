@@ -211,4 +211,3 @@ C:\Users\Wang\Source\Repos\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLe
 C:\Users\Wang\Source\Repos\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.WindowsPhone\obj\Debug\MVVMSidekick.Behaviors_Wpa81.pri.xml
 C:\Users\Wang\Source\Repos\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.WindowsPhone\obj\Debug\MVVMSidekick_Wpa81.pri.xml
 C:\Users\Wang\Source\Repos\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.WindowsPhone\obj\Debug\ProjectArchitectures.txt
-C:\Users\Wang\Source\Repos\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.WindowsPhone\obj\Debug\OrangeEndLess.WindowsPhone.csprojResolveAssemblyReference.cache

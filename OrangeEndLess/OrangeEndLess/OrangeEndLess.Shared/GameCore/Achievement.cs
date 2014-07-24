@@ -42,7 +42,7 @@ namespace OrangeEndLess
 
         public Achievement ( int key , Func<Core , bool> func )
         {
-            Title = title;
+            //Title = title;
             _Check = func;
         }
     }

@@ -120,6 +120,10 @@ namespace OrangeEndLess
             Achievements . Add ( new Achievement ( Achievements . Count + 1 , ( Core cor ) => cor . Buildings [ "Prism" ] . Number >= 150 ) );
             Achievements . Add ( new Achievement ( Achievements . Count + 1 , ( Core cor ) => cor . Buildings [ "Prism" ] . Number >= 200 ) );
             Achievements . Add ( new Achievement ( Achievements . Count + 1 , ( Core cor ) => cor . Buildings [ "Prism" ] . NumberOfOrangeHaveMade >= 10000000000000 ) );
+            Achievements . Add ( new Achievement ( Achievements . Count + 1 , ( Core cor ) => cor . NumberOfBuilding >= 100 ) );
+            Achievements . Add ( new Achievement ( Achievements . Count + 1 , ( Core cor ) => cor . NumberOfBuilding >= 400 ) );
+            Achievements . Add ( new Achievement ( Achievements . Count + 1 , ( Core cor ) => cor . NumberOfBuilding >= 800 ) );
+            Achievements . Add ( new Achievement ( Achievements . Count + 1 , ( Core cor ) => cor . NumberOfBuilding >= 1500 ) );
 
 
 

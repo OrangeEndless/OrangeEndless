@@ -81,6 +81,19 @@ namespace OrangeEndLess
             }
         }
 
+        public decimal NumberOfBuilding
+        {
+            get
+            {
+                decimal temp=0;
+                foreach ( var item in Buildings )
+                {
+                    temp += item . Value . Number;
+                }
+                return temp;
+            }
+        }
+
         public decimal NumberOfOrange
         {
             get
