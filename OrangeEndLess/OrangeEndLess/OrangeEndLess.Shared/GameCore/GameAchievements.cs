@@ -124,6 +124,11 @@ namespace OrangeEndLess
             Achievements . Add ( new Achievement ( Achievements . Count + 1 , ( Core cor ) => cor . NumberOfBuilding >= 400 ) );
             Achievements . Add ( new Achievement ( Achievements . Count + 1 , ( Core cor ) => cor . NumberOfBuilding >= 800 ) );
             Achievements . Add ( new Achievement ( Achievements . Count + 1 , ( Core cor ) => cor . NumberOfBuilding >= 1500 ) );
+            Achievements . Add ( new Achievement ( Achievements . Count + 1 , ( Core cor ) => cor . NumberOfUpdateHavePromote >= 1 ) );
+            Achievements . Add ( new Achievement ( Achievements . Count + 1 , ( Core cor ) => cor . NumberOfUpdateHavePromote >= 20 ) );
+            Achievements . Add ( new Achievement ( Achievements . Count + 1 , ( Core cor ) => cor . NumberOfUpdateHavePromote >= 50 ) );
+            Achievements . Add ( new Achievement ( Achievements . Count + 1 , ( Core cor ) => cor . NumberOfUpdateHavePromote >= 100 ) );
+            Achievements . Add ( new Achievement ( Achievements . Count + 1 , ( Core cor ) => cor . NumberOfUpdateHavePromote >= 150 ) );
 
 
 

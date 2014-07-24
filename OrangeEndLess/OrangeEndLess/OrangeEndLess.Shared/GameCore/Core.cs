@@ -32,6 +32,19 @@ namespace OrangeEndLess
 
         public long APM  =0;
 
+
+        public decimal NumberOfUpdateHavePromote
+        {
+            get
+            {
+                return Convert . ToDecimal ( GameData . Values [ "NumberOfUpdateHavePromote" ] );
+            }
+            set
+            {
+                GameData . Values [ "NumberOfUpdateHavePromote" ] = value;
+            }
+        }
+
         public decimal NumberOfOrangeHaveGet
         {
             get
@@ -67,7 +80,6 @@ namespace OrangeEndLess
                 GameData . Values [ "NumberOfOrangeHaveMadeFromRush" ] = value;
             }
         }
-
 
         public decimal LevelOfRush
         {
