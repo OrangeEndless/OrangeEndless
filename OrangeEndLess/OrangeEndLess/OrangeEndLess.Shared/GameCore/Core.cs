@@ -32,9 +32,41 @@ namespace OrangeEndLess
 
         public long APM  =0;
 
-        public decimal NumberOfOrangeHaveGet;
+        public decimal NumberOfOrangeHaveGet
+        {
+            get
+            {
+                return Convert . ToDecimal ( GameData . Values [ "NumberOfOrangeHaveGet" ] );
+            }
+            set
+            {
+                GameData . Values [ "NumberOfOrangeHaveGet" ] = value;
+            }
+        }
 
-        public decimal NumberOfMoneyHaveGet;
+        public decimal NumberOfMoneyHaveGet
+        {
+            get
+            {
+                return Convert . ToDecimal ( GameData . Values [ "NumberOfMoneyHaveGet" ] );
+            }
+            set
+            {
+                GameData . Values [ "NumberOfMoneyHaveGet" ] = value;
+            }
+        }
+
+        public decimal NumberOfOrangeHaveMadeFromRush
+        {
+            get
+            {
+                return Convert . ToDecimal ( GameData . Values [ "NumberOfOrangeHaveMadeFromRush" ] );
+            }
+            set
+            {
+                GameData . Values [ "NumberOfOrangeHaveMadeFromRush" ] = value;
+            }
+        }
 
 
         public decimal LevelOfRush
@@ -81,6 +113,7 @@ namespace OrangeEndLess
         public void Rush ( )
         {
             NumberOfOrange += ( LevelOfRush );
+            NumberOfOrangeHaveMadeFromRush += LevelOfRush;
             UpdateData . Invoke ( this , new EventArgs ( ) );
         }
 
@@ -126,7 +159,16 @@ namespace OrangeEndLess
 
         void TimersUpdateData_Tick ( object sender , object e )
         {
-            NumberOfOrange += ( decimal ) ( SpeedOfOrangeRise * ( decimal ) ( TimersUpdateData . Interval . TotalMilliseconds / 1000 ) );
+            decimal time=( decimal ) ( TimersUpdateData . Interval . TotalMilliseconds / 1000 );
+            NumberOfOrange += ( decimal ) ( SpeedOfOrangeRise * time );
+            foreach ( var item in Buildings )
+            {
+                item . Value . NumberOfOrangeHaveMade += item . Value . CPS * time;
+            }
+            foreach ( var item in Achievements )
+            {
+                item . Check ( this );
+            }
             UpdateData . Invoke ( this , new EventArgs ( ) );
         }
 

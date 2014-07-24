@@ -24,6 +24,18 @@ namespace OrangeEndLess
         decimal PriceBase { get; set; }
         decimal StartCPS { get; set; }
 
+        public decimal NumberOfOrangeHaveMade
+        {
+            get
+            {
+                return Convert . ToDecimal ( GameData . Values [ "NumberOfOrangeHaveMadeFrom" + Title ] );
+            }
+            set
+            {
+                GameData . Values [ "NumberOfOrangeHaveMadeFrom" + Title ] = value;
+            }
+        }
+
         public decimal CPS
         {
             get
@@ -98,7 +110,7 @@ namespace OrangeEndLess
             haveget = _haveget;
         }
 
-        public Building ( string name , decimal startprice , decimal startcps)
+        public Building ( string name , decimal startprice , decimal startcps )
         {
             Title = ( string ) App . Current . Resources [ "TitleOf" + name ];
             PriceBase = startprice;
