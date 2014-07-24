@@ -13,6 +13,17 @@ namespace OrangeEndLess
 {
     class RandomEvent
     {
+        public  Action<Core> Event;
+
+        public string Title;
+
+        public string Text;
+
+        public RandomEvent ( int key , Action<Core> func )
+        {
+            Event = func;
+
+        }
 
     }
 }

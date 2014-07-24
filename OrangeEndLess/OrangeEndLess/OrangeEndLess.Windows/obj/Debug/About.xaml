@@ -12,13 +12,92 @@
 	xmlns:vm="using:OrangeEndLess.ViewModels"
 	mc:Ignorable="d">
 
-    <Page.Resources>
-        <!-- TODO: Delete this line if the key AppName is declared in App.xaml -->
-        <x:String x:Key="AppName">My Application</x:String>
-        <vm:About_Model x:Key="DesignVM"/>
-    </Page.Resources>
-    <!--Begin App Bar Binding Patch. If you don't need Binding Top/Bottom Appbar please ignore these code -->
-    <!--
+	<Page.Resources>
+		<!-- TODO: Delete this line if the key AppName is declared in App.xaml -->
+		<x:String x:Key="AppName">My Application</x:String>
+		<vm:About_Model x:Key="DesignVM"/>
+				<Style x:Key="NavigationBackButtonNormalStyle" TargetType="Button">
+			<Setter Property="Foreground" Value="{ThemeResource AppBarItemForegroundThemeBrush}"/>
+			<Setter Property="VerticalAlignment" Value="Top"/>
+			<Setter Property="HorizontalAlignment" Value="Left"/>
+			<Setter Property="FontFamily" Value="{ThemeResource ContentControlThemeFontFamily}"/>
+			<Setter Property="FontWeight" Value="Normal"/>
+			<Setter Property="Template">
+				<Setter.Value>
+					<ControlTemplate TargetType="Button">
+						<Grid Background="Transparent" x:Name="RootGrid">
+							<VisualStateManager.VisualStateGroups>
+								<VisualStateGroup x:Name="CommonStates">
+									<VisualState x:Name="Normal"/>
+									<VisualState x:Name="PointerOver">
+										<Storyboard>
+											<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Fill" Storyboard.TargetName="Ellipse">
+												<DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource AppBarItemPointerOverBackgroundThemeBrush}"/>
+											</ObjectAnimationUsingKeyFrames>
+											<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Foreground" Storyboard.TargetName="Content">
+												<DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource AppBarItemPointerOverForegroundThemeBrush}"/>
+											</ObjectAnimationUsingKeyFrames>
+										</Storyboard>
+									</VisualState>
+									<VisualState x:Name="Pressed">
+										<Storyboard>
+											<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Stroke" Storyboard.TargetName="Ellipse">
+												<DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource AppBarItemForegroundThemeBrush}"/>
+											</ObjectAnimationUsingKeyFrames>
+											<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Fill" Storyboard.TargetName="Ellipse">
+												<DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource AppBarItemForegroundThemeBrush}"/>
+											</ObjectAnimationUsingKeyFrames>
+											<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Foreground" Storyboard.TargetName="Content">
+												<DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource AppBarItemPressedForegroundThemeBrush}"/>
+											</ObjectAnimationUsingKeyFrames>
+										</Storyboard>
+									</VisualState>
+									<VisualState x:Name="Disabled">
+										<Storyboard>
+											<ObjectAnimationUsingKeyFrames Storyboard.TargetName="RootGrid" Storyboard.TargetProperty="Visibility">
+												<DiscreteObjectKeyFrame KeyTime="0" Value="Collapsed"/>
+											</ObjectAnimationUsingKeyFrames>
+										</Storyboard>
+									</VisualState>
+								</VisualStateGroup>
+								<VisualStateGroup x:Name="FocusStates">
+									<VisualState x:Name="Focused">
+										<Storyboard>
+											<DoubleAnimation Duration="0" To="1" Storyboard.TargetProperty="Opacity" Storyboard.TargetName="FocusVisualWhite"/>
+											<DoubleAnimation Duration="0" To="1" Storyboard.TargetProperty="Opacity" Storyboard.TargetName="FocusVisualBlack"/>
+										</Storyboard>
+									</VisualState>
+									<VisualState x:Name="Unfocused"/>
+									<VisualState x:Name="PointerFocused"/>
+								</VisualStateGroup>
+							</VisualStateManager.VisualStateGroups>
+							<Grid 
+							Height="41" 
+							Width="41">
+								<Ellipse
+								x:Name="Ellipse"
+								Fill="Transparent"
+								Stroke="White"
+								StrokeThickness="2"
+								UseLayoutRounding="False" />
+								<ContentPresenter 
+								x:Name="Content" 
+								Foreground="{TemplateBinding Foreground}" 
+								HorizontalAlignment="Stretch" 
+								VerticalAlignment="Stretch">
+									<PathIcon Data="F1 M 17.4126,18L 24.0752,11L 17.6558,11L 8.77931,20.4678L 8.77931,20.5322L 17.6558,30L 24.0752,30L 17.4126,23L 32,23L 32,18L 17.4126,18 Z " />
+								</ContentPresenter>
+							</Grid>
+							<Rectangle x:Name="FocusVisualWhite" IsHitTestVisible="False" Opacity="0" StrokeDashOffset="1.5" StrokeEndLineCap="Square" Stroke="{ThemeResource FocusVisualWhiteStrokeThemeBrush}" StrokeDashArray="1,1"/>
+							<Rectangle x:Name="FocusVisualBlack" IsHitTestVisible="False" Opacity="0" StrokeDashOffset="0.5" StrokeEndLineCap="Square" Stroke="{ThemeResource FocusVisualBlackStrokeThemeBrush}" StrokeDashArray="1,1"/>
+						</Grid>
+					</ControlTemplate>
+				</Setter.Value>
+			</Setter>
+		</Style>
+	</Page.Resources>
+	<!--Begin App Bar Binding Patch. If you don't need Binding Top/Bottom Appbar please ignore these code -->
+	<!--
 	<Page.DataContext>
 		<Binding  RelativeSource="{RelativeSource Mode=Self}" Path="ViewModel"/>
 	</Page.DataContext>
@@ -29,114 +108,82 @@
 		<AppBar d:DataContext="{StaticResource DesignVM}"><TextBlock TextWrapping="Wrap" Text="{Binding BindableInstanceId, Mode=OneWay}"/></AppBar>
 	</mvvm:MVVMPage.BottomAppBar>    
 	-->
-    <!--End App Bar Binding Patch. If you don't need Binding  Top/Bottom Appbar please ignore these code -->
-    <!--
+	<!--End App Bar Binding Patch. If you don't need Binding  Top/Bottom Appbar please ignore these code -->
+	<!--
 		This grid acts as a root panel for the page that defines two rows:
 		* Row 0 contains the back button and page title
 		* Row 1 contains the rest of the page layout
 	-->
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"  DataContext="{StaticResource DesignVM}">
-        <Grid.ChildrenTransitions>
-            <TransitionCollection>
-                <EntranceThemeTransition/>
-            </TransitionCollection>
-        </Grid.ChildrenTransitions>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="140"/>
-            <RowDefinition Height="*"/>
-        </Grid.RowDefinitions>
+	<Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"  DataContext="{StaticResource DesignVM}">
+		<Grid.ChildrenTransitions>
+			<TransitionCollection>
+				<EntranceThemeTransition/>
+			</TransitionCollection>
+		</Grid.ChildrenTransitions>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="140"/>
+			<RowDefinition Height="*"/>
+		</Grid.RowDefinitions>
 
-        <!-- Back button and page title -->
-        <Grid>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="120"/>
-                <ColumnDefinition Width="*"/>
-            </Grid.ColumnDefinitions>
-            <Button x:Name="backButton" Margin="39,59,39,0" Command="{Binding NavigationHelper.GoBackCommand, ElementName=pageRoot}"
+		<!-- Back button and page title -->
+		<Grid>
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition Width="120"/>
+				<ColumnDefinition Width="*"/>
+			</Grid.ColumnDefinitions>
+			<Rectangle Fill="#FFF9B763" HorizontalAlignment="Left" Height="140" Stroke="Black" VerticalAlignment="Top" Width="1366" Grid.ColumnSpan="2"/>
+			<Button x:Name="backButton" Margin="39,59,39,0" Command="{Binding NavigationHelper.GoBackCommand, ElementName=pageRoot}"
 						Style="{StaticResource NavigationBackButtonNormalStyle}"
 						VerticalAlignment="Top"
 						AutomationProperties.Name="Back"
 						AutomationProperties.AutomationId="BackButton"
-						AutomationProperties.ItemType="Navigation Button"/>
-            <TextBlock x:Name="pageTitle" Text="{Binding Title}" Style="{StaticResource HeaderTextBlockStyle}" Grid.Column="1" 
-						IsHitTestVisible="false" TextWrapping="NoWrap" VerticalAlignment="Bottom" Margin="0,0,30,40"/>
-        </Grid>
-        <ScrollViewer Margin="120,0,0,0" Grid.Row="1">
-            <StackPanel>
-                <TextBlock TextWrapping="Wrap" Text="制作组" FontSize="48"/>
-                <TextBlock TextWrapping="Wrap" FontSize="20">
-                	<Run Text="项目主页："/>
-                	<Hyperlink NavigateUri="http://orangenoend.ziju.pw">
-                		<Run Text="http://orangenoend.ziju.pw"/>
-                	</Hyperlink>
-                </TextBlock>
-                <TextBlock TextWrapping="Wrap" FontSize="14">
-                	<Run Text="Github:"/>
-                	<Run Text="&#x9;"/>
-                	<Hyperlink NavigateUri="http://github.com/OrangeNoEnd/OrangeNoend">
-                		<Run Text="http://github.com/OrangeNoEnd/OrangeNoend"/>
-                	</Hyperlink>
-                </TextBlock>
-                <Grid Height="462">
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="Auto"/>
-                        <RowDefinition Height="80"/>
-                        <RowDefinition/>
-                    </Grid.RowDefinitions>
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition/>
-                        <ColumnDefinition/>
-                    </Grid.ColumnDefinitions>
-                    <StackPanel Margin="0">
-                        <TextBlock x:ConnectionId='2' x:Name="TBOfWencey" TextWrapping="Wrap" Text="Wencey Wang" FontSize="36"                           />
-                        <TextBlock TextWrapping="Wrap" Text="衡自超" FontSize="20"/>
-                        <TextBlock TextWrapping="Wrap" Text="一个穷高中生，很穷。" FontSize="20"/>
-                        <TextBlock TextWrapping="Wrap" FontSize="20">
-                        	<Run Text="个人主页："/>
-                        	<Hyperlink NavigateUri="http://wencey.ziju.pw">
-                        		<Run Text="http://wencey.ziju.pw"/>
-                        	</Hyperlink>
-                        </TextBlock>
-                        <TextBlock TextWrapping="Wrap" FontSize="20">
-                        	<Run Text="联系我："/>
-                        	<Hyperlink NavigateUri="mailto:wencey@ziju.pw">
-                        		<Run Text="wencey@ziju.pw"/>
-                        	</Hyperlink>
-                        </TextBlock>
-                        <TextBlock TextWrapping="Wrap" FontSize="20">
-                        	<Run Text="新浪微博："/>
-                        	<Hyperlink NavigateUri="http://weibo.com/hengzichao">
-                        		<Run Text="@38d285a8d928ad60"/>
-                        	</Hyperlink>
-                        </TextBlock>
-                        <Image x:Name="PhotoOfWencey" Source="DSCF1114.JPG" Visibility="Collapsed"/>
-                    </StackPanel>
-                    <StackPanel Grid.Column="1" Margin="0">
-                        <TextBlock x:ConnectionId='1' x:Name="TBOfOrange" TextWrapping="Wrap" Text="徵橘" FontSize="36"                           />
-                        <TextBlock TextWrapping="Wrap" Text="Artbullet联合创始人，UI Designer研习中。" FontSize="20"/>
-                        <TextBlock TextWrapping="Wrap" Text="大概是一个点子很多的人。" FontSize="20"/>
-                        <TextBlock TextWrapping="Wrap" FontSize="20">
-                        	<Run Text="你可以通过 "/>
-                        	<Hyperlink NavigateUri="mailto:orange@ziju.pw">
-                        		<Run Text="orange@ziju.pw"/>
-                        	</Hyperlink>
-                        	<Run Text="以及 "/>
-                        	<Hyperlink NavigateUri="http://weibo.com/zhangziju">
-                        		<Run Text="http://weibo.com/zhangziju"/>
-                        	</Hyperlink>
-                        	<Run Text=" 找到我。"/>
-                        </TextBlock>
-                        <Image x:Name="PhotoOfOrange" Source="p.jpg" Visibility="Collapsed"/>
-                    </StackPanel>
-                    <StackPanel Grid.Row="2">
-                        <TextBlock TextWrapping="Wrap" Text="Amour light" FontSize="36"/>
-                        <TextBlock TextWrapping="Wrap" Text="一个没什么创意的 所谓的创意策划" FontSize="20"/>
-                        <TextBlock TextWrapping="Wrap" FontSize="20" Text="联系我：amourlight@live.cn&#xD;&#xA;新浪微博：@Microsoft驻青山办事处首席火法"/>
-                    </StackPanel>
-                </Grid>
-            </StackPanel>
-        </ScrollViewer>
-    </Grid>
+						AutomationProperties.ItemType="Navigation Button" Foreground="White"/>
+			<TextBlock x:Name="pageTitle" Text="ABOUT" Style="{StaticResource HeaderTextBlockStyle}" Grid.Column="1" 
+						IsHitTestVisible="false" TextWrapping="NoWrap" VerticalAlignment="Bottom" Margin="0,0,30,40" FontFamily="Segoe UI Black" FontWeight="Bold" Foreground="White"/>
+		</Grid>
+		<Image Margin="120,40,1121,463" Grid.Row="1" Source="1 (1).jpg" Stretch="Fill"/>
+		<Image Margin="120,195,1121,308" Grid.Row="1" Source="1.jpg" Stretch="Fill"/>
+		<Image Margin="120,350,1121,153" Grid.Row="1" Source="1 (2).jpg" Stretch="Fill"/>
+		<TextBlock HorizontalAlignment="Left" Margin="250,40,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Wencey Wang" VerticalAlignment="Top" Height="60" Width="350" FontFamily="Segoe UI Light" FontSize="48"/>
+		<TextBlock HorizontalAlignment="Left" Margin="250,195,0,0" Grid.Row="1" TextWrapping="Wrap" Text="徵橘" VerticalAlignment="Top" Height="60" Width="130" FontFamily="Segoe UI Light" FontSize="48"/>
+		<TextBlock HorizontalAlignment="Left" Margin="250,350,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Amour light" VerticalAlignment="Top" Height="60" Width="350" FontFamily="Segoe UI Light" FontSize="48"/>
+		<TextBlock HorizontalAlignment="Left" Margin="250,105,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Height="60" Width="350" FontSize="21.333">
+			<Run Text="衡自超"/>
+			<LineBreak/>
+			<Run Text="一个穷高中生，很穷。"/>
+		</TextBlock>
+		<TextBlock HorizontalAlignment="Left" Margin="250,260,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Height="60" Width="430" FontSize="21.333">
+			<Run Text="Artbullet"/>
+			<Run Text=" "/>
+			<Run Text="联合创始人，UI Designer"/>
+			<Run Text=" "/>
+			<Run Text="研习中"/>
+			<Run Text="。"/>
+			<LineBreak/>
+			<Run Text="大概是一个点子很多的人。"/>
+		</TextBlock>
+		<TextBlock HorizontalAlignment="Left" Margin="250,415,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Height="60" Width="400" FontSize="21.333">
+			<Run Text="游戏平衡性调校"/>
+			<LineBreak/>
+			<Run Text="一个没什么创意的、所谓的创意策划"/>
+			<Run Text="。"/>
+		</TextBlock>
+		<Button x:ConnectionId='1' x:Name="WWW" Content="" HorizontalAlignment="Left" Margin="800,37,0,0" Grid.Row="1" VerticalAlignment="Top" Height="131" Width="131"                  >
+			<Button.Background>
+				<ImageBrush Stretch="Fill" ImageSource="weibo.png"/>
+			</Button.Background>
+		</Button>
+		<Button x:ConnectionId='2' x:Name="ZJW" Content="" HorizontalAlignment="Left" Margin="800,192,0,0" Grid.Row="1" VerticalAlignment="Top" Height="131" Width="131"                  >
+			<Button.Background>
+				<ImageBrush Stretch="Fill" ImageSource="weibo.png"/>
+			</Button.Background>
+		</Button>
+		<Button x:ConnectionId='3' x:Name="ALW" Content="" HorizontalAlignment="Left" Margin="800,347,0,0" Grid.Row="1" VerticalAlignment="Top" Height="131" Width="131"                  >
+			<Button.Background>
+				<ImageBrush Stretch="Fill" ImageSource="weibo.png"/>
+			</Button.Background>
+		</Button>
+	</Grid>
 
 </mvvm:MVVMPage>
 
