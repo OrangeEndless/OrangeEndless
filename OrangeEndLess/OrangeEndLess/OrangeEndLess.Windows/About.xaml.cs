@@ -126,5 +126,20 @@ namespace OrangeEndLess
         {
 
         }
+
+        private void WWW_Click(object sender, RoutedEventArgs e)
+        {
+            //此处启动浏览器打开：http://weibo.com/hengzichao 
+        }
+
+        private void ZJW_Click(object sender, RoutedEventArgs e)
+        {
+            //此处启动浏览器打开：http://weibo.com/zhangziju 
+        }
+
+        private void ALW_Click(object sender, RoutedEventArgs e)
+        {
+            //此处启动浏览器打开：http://weibo.com/u/2481365921 
+        }
     }
 }

@@ -168,6 +168,21 @@
 			<Run Text="一个没什么创意的、所谓的创意策划"/>
 			<Run Text="。"/>
 		</TextBlock>
+		<Button x:Name="WWW" Content="" HorizontalAlignment="Left" Margin="800,37,0,0" Grid.Row="1" VerticalAlignment="Top" Height="131" Width="131" Click="WWW_Click">
+			<Button.Background>
+				<ImageBrush Stretch="Fill" ImageSource="weibo.png"/>
+			</Button.Background>
+		</Button>
+		<Button x:Name="ZJW" Content="" HorizontalAlignment="Left" Margin="800,192,0,0" Grid.Row="1" VerticalAlignment="Top" Height="131" Width="131" Click="ZJW_Click">
+			<Button.Background>
+				<ImageBrush Stretch="Fill" ImageSource="weibo.png"/>
+			</Button.Background>
+		</Button>
+		<Button x:Name="ALW" Content="" HorizontalAlignment="Left" Margin="800,347,0,0" Grid.Row="1" VerticalAlignment="Top" Height="131" Width="131" Click="ALW_Click">
+			<Button.Background>
+				<ImageBrush Stretch="Fill" ImageSource="weibo.png"/>
+			</Button.Background>
+		</Button>
 	</Grid>
 
 </mvvm:MVVMPage>

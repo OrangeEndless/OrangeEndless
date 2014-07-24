@@ -43,5 +43,6 @@
     <Content Include="$(MSBuildThisFileDirectory)Photos\Orange.jpg" />
     <Content Include="$(MSBuildThisFileDirectory)Photos\Wencey.JPG" />
     <Content Include="$(MSBuildThisFileDirectory)w.fw.png" />
+    <Content Include="$(MSBuildThisFileDirectory)weibo.png" />
   </ItemGroup>
 </Project>
