@@ -15,7 +15,7 @@ namespace OrangeEndLess
     {
         public List<Achievement>Achievements=new List<Achievement> ( );
 
-        void AddAchievements ( )
+        void LoadAchievements ( )
         {
             Achievements . Add ( new Achievement ( Achievements . Count + 1 , ( Core cor ) => cor . NumberOfOrangeHaveGet >= 1 ) );
             Achievements . Add ( new Achievement ( Achievements . Count + 1 , ( Core cor ) => cor . NumberOfOrangeHaveGet >= 100 ) );

@@ -33,7 +33,7 @@ namespace OrangeEndLess
 
 
 
-        
+
         void WriteLine ( string str )
         {
             TBOut . Text += str + Environment . NewLine;
@@ -128,7 +128,7 @@ namespace OrangeEndLess
                         if ( item . Value . Title . StartsWith ( strs [ 1 ] ) )
                         {
                             decimal _havebuy,_havecost;
-                            item . Value . Buy ( Convert . ToDecimal ( strs [ 2 ] ) , GameCore . NumberOfMoney , out _havebuy , out _havecost );
+                            item . Value . Buy ( Convert . ToDecimal ( strs [ 2 ] ) , GameCore , out _havebuy , out _havecost );
                             WriteLine ( "Have bought " + _havebuy . ToString ( ) + item . Value . Title . ToUpper ( ) + " and cost " + _havecost . ToString ( ) );
                             return;
                         }
@@ -153,7 +153,7 @@ namespace OrangeEndLess
                         if ( item . Value . Title . StartsWith ( strs [ 1 ] ) )
                         {
                             decimal _havesell,_haveget;
-                            item . Value . Sell ( Convert . ToDecimal ( strs [ 2 ] ) , GameCore . NumberOfMoney , out _havesell , out _haveget );
+                            item . Value . Sell ( Convert . ToDecimal ( strs [ 2 ] ) , GameCore , out _havesell , out _haveget );
                             WriteLine ( "Have sell " + _havesell . ToString ( ) + item . Value . Title . ToUpper ( ) + " and get " + _haveget . ToString ( ) );
                             return;
                         }

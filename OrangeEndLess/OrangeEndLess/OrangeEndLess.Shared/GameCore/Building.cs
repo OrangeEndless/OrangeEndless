@@ -76,24 +76,23 @@ namespace OrangeEndLess
             }
         }
 
-        public void Buy ( decimal number , object numberofmoney , out decimal havebuy , out decimal havecost )
+        public void Buy ( decimal number , Core cor , out decimal havebuy , out decimal havecost )
         {
             decimal _havebuy = 0;
             decimal _havecost = 0;
-            while ( ( decimal ) numberofmoney >= Price )
+            while ( cor . NumberOfMoney >= Price )
             {
-                numberofmoney = ( decimal ) numberofmoney - Price;
                 _havecost += Price;
-                Number++;
                 _havebuy++;
-
             }
+            cor . NumberOfMoney -= _havecost;
+            Number += _havebuy;
             havebuy = _havebuy;
             havecost = _havecost;
         }
 
 
-        public void Sell ( decimal number , object numberofmoney , out decimal havesell , out decimal haveget )
+        public void Sell ( decimal number , Core cor , out decimal havesell , out decimal haveget )
         {
             decimal _havesell = 0;
             decimal _haveget = 0;
@@ -101,11 +100,11 @@ namespace OrangeEndLess
             while ( Number >= 1 )
             {
                 _priceran = decimal . Ceiling ( ( Price ) * Randoms . Next ( 500 , 900 ) / 1000 );
-                numberofmoney = _priceran + ( decimal ) numberofmoney;
                 _haveget += _priceran;
-                Number--;
                 _havesell++;
             }
+            cor . NumberOfMoney += _haveget;
+            Number -= _havesell;
             havesell = _havesell;
             haveget = _haveget;
         }

@@ -15,7 +15,7 @@ namespace OrangeEndLess
     {
         public Dictionary<string, Building> Buildings = new Dictionary<string , Building> ( );
 
-        void AddBuildings ( )
+        void LoadBuildings ( )
         {
             Buildings . Add ( "Cursor" , new Building ( "Cursor" , 1m , 0.1m ) );
             Buildings . Add ( "Primary" , new Building ( "Primary" , 10m , 0.5m ) );

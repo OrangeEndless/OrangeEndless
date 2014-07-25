@@ -39,11 +39,14 @@ namespace OrangeEndLess
             }
         }
 
-
         public Achievement ( int key , Func<Core , bool> func )
         {
             //Title = title;
             _Check = func;
+            if ( GameData . Values [ Title + "IsGet" ] == null )
+            {
+                GameData . Values [ Title + "IsGet" ] = false;
+            }
         }
     }
 }

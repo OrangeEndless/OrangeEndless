@@ -15,6 +15,8 @@ namespace OrangeEndLess
     {
         public  Action<Core> Event;
 
+        public long Posibleiaty;
+
         public string Title;
 
         public string Text;

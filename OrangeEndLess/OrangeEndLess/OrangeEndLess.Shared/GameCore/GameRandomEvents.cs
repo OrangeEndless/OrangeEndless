@@ -13,8 +13,11 @@ namespace OrangeEndLess
 {
     public partial class Core
     {
-        public Dictionary<string, Building> RandomEvents = new Dictionary<string , Building> ( );
+        public Dictionary<string, RandomEvent > RandomEvents = new Dictionary<string , RandomEvent> ( );
 
+        void LoadRandomEvents ( )
+        {
 
+        }
     }
 }

@@ -200,6 +200,10 @@ namespace OrangeEndLess
         void TimersRandom_Tick ( object sender , object e )
         {
             int Ran=Randoms . Next ( 0 , 100000 );
+            foreach ( var item in RandomEvents )
+            {
+                item.Value.
+            }
             string Title=null;
             string Text=null;
             if ( Ran == 1 )
@@ -243,7 +247,9 @@ namespace OrangeEndLess
             TimersAPM . Interval = new TimeSpan ( 0 , 0 , 30 );
             TimersAPM . Tick += TimersAPM_Tick;
 
-            AddBuildings ( );
+            LoadBuildings ( );
+            LoadAchievements ( );
+            LoadRandomEvents ( );
 
             TimersUpdateData . Start ( );
             TimersRandom . Start ( );
