@@ -32,7 +32,7 @@ namespace OrangeEndLess
             }
             set
             {
-                GameData . Values [ "NumberOfOrangeHaveMadeFrom" + Title ] = value;
+                GameData . Values [ "NumberOfOrangeHaveMadeFrom" + Title ] = value . ToString ( );
             }
         }
 
@@ -52,7 +52,7 @@ namespace OrangeEndLess
             }
             set
             {
-                GameData . Values [ "NumberOf" + Title ] = value;
+                GameData . Values [ "NumberOf" + Title ] = value.ToString();
             }
         }
 
@@ -64,7 +64,7 @@ namespace OrangeEndLess
             }
             set
             {
-                GameData . Values [ "LevelOf" + Title ] = value - 1;
+                GameData . Values [ "LevelOf" + Title ] = ( value - 1 ) . ToString ( );
             }
         }
 
@@ -111,7 +111,7 @@ namespace OrangeEndLess
 
         public Building ( string name , decimal startprice , decimal startcps )
         {
-            Title = ( string ) App . Current . Resources [ "TitleOf" + name ];
+            Title = ( string ) App . Current . Resources [ ( "TitleOf" + name ) ];
             PriceBase = startprice;
             StartCPS = startcps;
             if ( GameData . Values [ "LevelOf" + Title ] == null )

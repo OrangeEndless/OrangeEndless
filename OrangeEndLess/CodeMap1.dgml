@@ -1,0 +1,221 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DirectedGraph DataVirtualized="True" Layout="ForceDirected" xmlns="http://schemas.microsoft.com/vs/2009/dgml">
+  <Nodes>
+    <Node Id="(@1 @2 Type=Achievement Member=(Name=.ctor OverloadingParameters=[(@4 @5 Type=Int32),(@4 @5 Type=(Name=Func GenericParameterCount=2 GenericArguments=[@3,(@4 @5 Type=Boolean)]))]))" Category="CodeSchema_Method" Bounds="315.306866666667,223.483653177103,110.88,25.24" CodeSchemaProperty_IsConstructor="True" CodeSchemaProperty_IsPublic="True" CommonLabel="Achievement" FunctionTypeFlags="构造函数" Label="Achievement" Language="{B5E9BD34-6D3E-4B5D-925E-8A43B79820B4}" SourceLocation="(Assembly=file:///C:/Users/Wang/Source/Repos/OrangeEndless/OrangeEndLess/OrangeEndLess/OrangeEndLess.Shared/GameCore/Achievement.cs StartLineNumber=41 StartCharacterOffset=8 EndLineNumber=41 EndCharacterOffset=8)" />
+    <Node Id="(@1 @2 Type=Achievement Member=(Name=Check OverloadingParameters=[@3]))" Category="CodeSchema_Method" Bounds="0,223.360369490465,70.7766666666667,25.24" CodeSchemaProperty_IsPublic="True" CommonLabel="Check" FunctionTypeFlags="方法" Label="Check" Language="{B5E9BD34-6D3E-4B5D-925E-8A43B79820B4}" SourceLocation="(Assembly=file:///C:/Users/Wang/Source/Repos/OrangeEndless/OrangeEndLess/OrangeEndLess/OrangeEndLess.Shared/GameCore/Achievement.cs StartLineNumber=33 StartCharacterOffset=8 EndLineNumber=33 EndCharacterOffset=8)" />
+    <Node Id="(@1 @2 Type=Achievement Member=_Check)" Category="CodeSchema_Field" Bounds="154.585634345375,55.24,77.1566666666666,25.24" CodeSchemaProperty_IsPrivate="True" Label="_Check" Language="{B5E9BD34-6D3E-4B5D-925E-8A43B79820B4}" SourceLocation="(Assembly=file:///C:/Users/Wang/Source/Repos/OrangeEndless/OrangeEndLess/OrangeEndLess/OrangeEndLess.Shared/GameCore/Achievement.cs StartLineNumber=19 StartCharacterOffset=24 EndLineNumber=19 EndCharacterOffset=24)" />
+    <Node Id="(@1 @2 Type=App Member=GameCore)" Category="CodeSchema_Field" Bounds="144.270816802904,-2.8421709430404E-14,97.66,25.24" CodeSchemaProperty_IsPublic="True" Label="GameCore" Language="{B5E9BD34-6D3E-4B5D-925E-8A43B79820B4}" SourceLocation="(Assembly=file:///C:/Users/Wang/Source/Repos/OrangeEndless/OrangeEndLess/OrangeEndLess/OrangeEndLess.Shared/App.xaml.cs StartLineNumber=27 StartCharacterOffset=20 EndLineNumber=27 EndCharacterOffset=20)" />
+    <Node Id="(@1 @2 Type=Building Member=(Name=Buy OverloadingParameters=[(@4 @5 Type=Decimal),@3,(@4 @5 Type=Decimal ParamKind=Ref),(@4 @5 Type=Decimal ParamKind=Ref)]))" Category="CodeSchema_Method" Bounds="164.395780476804,391.44,57.2733333333333,25.24" CodeSchemaProperty_IsPublic="True" CommonLabel="Buy" FunctionTypeFlags="方法" Label="Buy" Language="{B5E9BD34-6D3E-4B5D-925E-8A43B79820B4}" SourceLocation="(Assembly=file:///C:/Users/Wang/Source/Repos/OrangeEndless/OrangeEndLess/OrangeEndLess/OrangeEndLess.Shared/GameCore/Building.cs StartLineNumber=78 StartCharacterOffset=8 EndLineNumber=78 EndCharacterOffset=8)" />
+    <Node Id="(@1 @2 Type=Building Member=(Name=Sell OverloadingParameters=[(@4 @5 Type=Decimal),@3,(@4 @5 Type=Decimal ParamKind=Ref),(@4 @5 Type=Decimal ParamKind=Ref)]))" Category="CodeSchema_Method" Bounds="203.634036706684,336.2,56.1233333333334,25.24" CodeSchemaProperty_IsPublic="True" CommonLabel="Sell" FunctionTypeFlags="方法" Label="Sell" Language="{B5E9BD34-6D3E-4B5D-925E-8A43B79820B4}" SourceLocation="(Assembly=file:///C:/Users/Wang/Source/Repos/OrangeEndless/OrangeEndLess/OrangeEndLess/OrangeEndLess.Shared/GameCore/Building.cs StartLineNumber=94 StartCharacterOffset=8 EndLineNumber=94 EndCharacterOffset=8)" />
+    <Node Id="(@1 @2 Type=Core Member=.ctor)" Category="CodeSchema_Method" Bounds="120.776766666667,205.72,63.05,25.24" CodeSchemaProperty_IsConstructor="True" CodeSchemaProperty_IsPublic="True" CommonLabel="Core" FunctionTypeFlags="构造函数" Label="Core" Language="{B5E9BD34-6D3E-4B5D-925E-8A43B79820B4}" SourceLocation="(Assembly=file:///c:/users/wang/source/repos/orangeendless/orangeendless/orangeendless/orangeendless.shared/gamecore/core.cs StartLineNumber=222 StartCharacterOffset=8 EndLineNumber=222 EndCharacterOffset=8)" />
+    <Node Id="(@1 @2 Type=Core Member=LoadAchievements)" Category="CodeSchema_Method" Bounds="120.776766666667,260.96,144.53,25.24" CodeSchemaProperty_IsPrivate="True" CommonLabel="LoadAchievements" FunctionTypeFlags="方法" Label="LoadAchievements" Language="{B5E9BD34-6D3E-4B5D-925E-8A43B79820B4}" SourceLocation="(Assembly=file:///c:/users/wang/source/repos/orangeendless/orangeendless/orangeendless/orangeendless.shared/gamecore/gameachievements.cs StartLineNumber=17 StartCharacterOffset=8 EndLineNumber=17 EndCharacterOffset=8)" />
+    <Node Id="(@1 @2 Type=GameConsole Member=GameCore)" Category="CodeSchema_Field" Bounds="80.4548719509023,110.48,97.66,25.24" CodeSchemaProperty_IsPrivate="True" Label="GameCore" Language="{B5E9BD34-6D3E-4B5D-925E-8A43B79820B4}" SourceLocation="(Assembly=file:///C:/Users/Wang/Source/Repos/OrangeEndless/OrangeEndLess/OrangeEndLess/OrangeEndLess.Shared/GameConsole.cs StartLineNumber=29 StartCharacterOffset=13 EndLineNumber=29 EndCharacterOffset=13)" />
+    <Node Id="(@1 @2 Type=RandomEvent Member=(Name=.ctor OverloadingParameters=[(@4 @5 Type=Int32),(@4 @5 Type=(Name=Action GenericParameterCount=1 GenericArguments=[@3]))]))" Category="CodeSchema_Method" Bounds="135.059359101748,446.68,115.98,25.24" CodeSchemaProperty_IsConstructor="True" CodeSchemaProperty_IsPublic="True" CommonLabel="RandomEvent" FunctionTypeFlags="构造函数" Label="RandomEvent" Language="{B5E9BD34-6D3E-4B5D-925E-8A43B79820B4}" SourceLocation="(Assembly=file:///c:/users/wang/source/repos/orangeendless/orangeendless/orangeendless/orangeendless.shared/gamecore/randomevent.cs StartLineNumber=23 StartCharacterOffset=8 EndLineNumber=23 EndCharacterOffset=8)" />
+    <Node Id="(@1 @2 Type=RandomEvent Member=Event)" Category="CodeSchema_Field" Bounds="105.063936706684,336.2,68.57,25.24" CodeSchemaProperty_IsPublic="True" Label="Event" Language="{B5E9BD34-6D3E-4B5D-925E-8A43B79820B4}" SourceLocation="(Assembly=file:///c:/users/wang/source/repos/orangeendless/orangeendless/orangeendless/orangeendless.shared/gamecore/randomevent.cs StartLineNumber=15 StartCharacterOffset=29 EndLineNumber=15 EndCharacterOffset=29)" />
+    <Node Id="(@1 Namespace=OrangeEndLess.ViewModels Type=MainPage_Model Member=GameCore)" Category="CodeSchema_Field" Bounds="208.114971950902,110.48,97.66,25.24" CodeSchemaProperty_IsPublic="True" Label="GameCore" Language="{B5E9BD34-6D3E-4B5D-925E-8A43B79820B4}" SourceLocation="(Assembly=file:///C:/Users/Wang/Source/Repos/OrangeEndless/OrangeEndLess/OrangeEndLess/OrangeEndLess.Shared/ViewModels/MainPage_Model.cs StartLineNumber=26 StartCharacterOffset=20 EndLineNumber=26 EndCharacterOffset=20)" />
+    <Node Id="@3" Category="CodeSchema_Class" Bounds="100.776766666667,165.72,184.53,140.48" CodeSchemaProperty_IsPublic="True" CommonLabel="Core" DelayedChildNodesState="Incomplete" Group="Expanded" Icon="CodeSchema_Class" Label="Core" Language="{B5E9BD34-6D3E-4B5D-925E-8A43B79820B4}" SourceLocation="(Assembly=file:///c:/users/wang/source/repos/orangeendless/orangeendless/orangeendless/orangeendless.shared/gamecore/core.cs StartLineNumber=13 StartCharacterOffset=4 EndLineNumber=13 EndCharacterOffset=4)" />
+  </Nodes>
+  <Links>
+    <Link Source="(@1 @2 Type=Achievement Member=(Name=.ctor OverloadingParameters=[(@4 @5 Type=Int32),(@4 @5 Type=(Name=Func GenericParameterCount=2 GenericArguments=[@3,(@4 @5 Type=Boolean)]))]))" Target="@3" Category="References" Bounds="294.306763726019,236.041860557502,21.0001029406477,0.0169760547497617" />
+    <Link Source="(@1 @2 Type=Achievement Member=(Name=Check OverloadingParameters=[@3]))" Target="@3" Category="References" Bounds="70.7766666666667,235.973083866344,21.0001000751219,0.00271330176065021" />
+    <Link Source="(@1 @2 Type=Achievement Member=_Check)" Target="@3" Category="References" Bounds="193.099370520941,80.48,0.0554229949355545,76.2400023780803" />
+    <Link Source="(@1 @2 Type=App Member=GameCore)" Target="@3" Category="References" Bounds="144.451446533203,25.2399997711182,45.7797241210938,131.485982894897" />
+    <Link Source="(@1 @2 Type=Building Member=(Name=Buy OverloadingParameters=[(@4 @5 Type=Decimal),@3,(@4 @5 Type=Decimal ParamKind=Ref),(@4 @5 Type=Decimal ParamKind=Ref)]))" Target="@3" Category="References" Bounds="193.033146800715,315.199999986169,0.0042267724485896,76.2400000138314" />
+    <Link Source="(@1 @2 Type=Building Member=(Name=Sell OverloadingParameters=[(@4 @5 Type=Decimal),@3,(@4 @5 Type=Decimal ParamKind=Ref),(@4 @5 Type=Decimal ParamKind=Ref)]))" Target="@3" Category="References" Bounds="220.014741318611,314.714460181336,7.35868063316988,21.4855398186636" />
+    <Link Source="(@1 @2 Type=GameConsole Member=GameCore)" Target="@3" Category="References" Bounds="136.414164980434,135.72,12.5208559610857,22.163937093673" />
+    <Link Source="(@1 @2 Type=RandomEvent Member=(Name=.ctor OverloadingParameters=[(@4 @5 Type=Int32),(@4 @5 Type=(Name=Action GenericParameterCount=1 GenericArguments=[@3]))]))" Target="@3" Category="References" Bounds="154.261596679688,315.178558349609,33.3561553955078,131.501434326172" />
+    <Link Source="(@1 @2 Type=RandomEvent Member=Event)" Target="@3" Category="References" Bounds="145.352866478923,314.327142521043,10.4059508892131,21.8728574789572" />
+    <Link Source="(@1 Namespace=OrangeEndLess.ViewModels Type=MainPage_Model Member=GameCore)" Target="@3" Category="References" Bounds="237.247265360267,135.72,12.5520531200779,22.1682888805182" />
+    <Link Source="@3" Target="(@1 @2 Type=Core Member=.ctor)" Category="Contains" FetchingParent="@3" />
+    <Link Source="@3" Target="(@1 @2 Type=Core Member=LoadAchievements)" Category="Contains" FetchingParent="@3" />
+  </Links>
+  <Categories>
+    <Category Id="CodeSchema_Class" Label="类" BasedOn="CodeSchema_Type" CanBeDataDriven="True" DefaultAction="Node:Both:CodeSchema_Member" Icon="CodeSchema_Class" NavigationActionLabel="类" />
+    <Category Id="CodeSchema_Field" Label="字段" BasedOn="CodeSchema_Member" CanBeDataDriven="True" DefaultAction="Microsoft.Contains" Icon="CodeSchema_Field" NavigationActionLabel="字段" />
+    <Category Id="CodeSchema_Member" Label="编号" CanBeDataDriven="True" DefaultAction="Microsoft.Contains" Icon="CodeSchema_Field" NavigationActionLabel="成员" />
+    <Category Id="CodeSchema_Method" Label="方法" BasedOn="CodeSchema_Member" CanBeDataDriven="True" DefaultAction="Link:Forward:CodeSchema_Calls" Icon="CodeSchema_Method" NavigationActionLabel="方法" />
+    <Category Id="CodeSchema_Type" Label="类型" CanBeDataDriven="True" DefaultAction="Node:Both:CodeSchema_Member" Icon="CodeSchema_Class" NavigationActionLabel="类型" />
+    <Category Id="Contains" Label="包含" Description="链接的源是否包含目标对象" CanBeDataDriven="False" CanLinkedNodesBeDataDriven="True" IncomingActionLabel="包含者" IsContainment="True" OutgoingActionLabel="包含" />
+    <Category Id="References" Label="引用" CanBeDataDriven="True" CanLinkedNodesBeDataDriven="True" IncomingActionLabel="引用者" OutgoingActionLabel="引用" />
+  </Categories>
+  <Properties>
+    <Property Id="Bounds" DataType="System.Windows.Rect" />
+    <Property Id="CanBeDataDriven" Label="CanBeDataDriven" Description="CanBeDataDriven" DataType="System.Boolean" />
+    <Property Id="CanLinkedNodesBeDataDriven" Label="CanLinkedNodesBeDataDriven" Description="CanLinkedNodesBeDataDriven" DataType="System.Boolean" />
+    <Property Id="CodeSchemaProperty_IsConstructor" Label="是构造函数" Description="一个标志，用于指示该方法是构造函数" DataType="System.Boolean" />
+    <Property Id="CodeSchemaProperty_IsPrivate" Label="是私有的" Description="一个标志，用于指示该范围是“私有”范围" DataType="System.Boolean" />
+    <Property Id="CodeSchemaProperty_IsPublic" Label="是公共的" Description="一个标志，用于指示该范围是“公共”范围" DataType="System.Boolean" />
+    <Property Id="CommonLabel" DataType="System.String" />
+    <Property Id="DataVirtualized" Label="已虚拟化数据" Description="如果为 true，则图中可以包含表示虚拟化节点/链接(即，不在图中实际创建)的数据的节点和链接。" DataType="System.Boolean" />
+    <Property Id="DefaultAction" Label="DefaultAction" Description="DefaultAction" DataType="System.String" />
+    <Property Id="DelayedChildNodesState" Label="延迟的子节点状态" Description="如果未指定延迟的子节点状态，则为 Unspecified。如果尚未将组包含的子节点提取到关系图中，则为 NotFetched。如果已提取组内的所有延迟的子节点，则为 Fetched。" DataType="Microsoft.VisualStudio.GraphModel.DelayedDataState" />
+    <Property Id="Expression" DataType="System.String" />
+    <Property Id="FetchingParent" DataType="Microsoft.VisualStudio.GraphModel.GraphNodeId" />
+    <Property Id="FunctionTypeFlags" Label="FunctionTypeFlags" Description="FunctionTypeFlags" DataType="System.String" />
+    <Property Id="Group" Label="组" Description="将节点显示为组" DataType="Microsoft.VisualStudio.GraphModel.GraphGroupStyle" />
+    <Property Id="GroupLabel" DataType="System.String" />
+    <Property Id="Icon" Label="图标" Description="图标" DataType="System.String" />
+    <Property Id="IncomingActionLabel" Label="IncomingActionLabel" Description="IncomingActionLabel" DataType="System.String" />
+    <Property Id="IsContainment" DataType="System.Boolean" />
+    <Property Id="IsEnabled" DataType="System.Boolean" />
+    <Property Id="Label" Label="标签" Description="可批注对象的可显示标签" DataType="System.String" />
+    <Property Id="Language" Label="语言" Description="语言" DataType="System.String" />
+    <Property Id="Layout" DataType="System.String" />
+    <Property Id="NavigationActionLabel" Label="NavigationActionLabel" Description="NavigationActionLabel" DataType="System.String" />
+    <Property Id="OutgoingActionLabel" Label="OutgoingActionLabel" Description="OutgoingActionLabel" DataType="System.String" />
+    <Property Id="SourceLocation" Label="起始行号" DataType="Microsoft.VisualStudio.GraphModel.CodeSchema.SourceLocation" />
+    <Property Id="TargetType" DataType="System.Type" />
+    <Property Id="Value" DataType="System.String" />
+    <Property Id="ValueLabel" DataType="System.String" />
+    <Property Id="Visibility" Label="Visibility" Description="Defines whether a node in the graph is visible or not" DataType="System.Windows.Visibility" />
+  </Properties>
+  <QualifiedNames>
+    <Name Id="Assembly" Label="程序集" ValueType="Uri" />
+    <Name Id="GenericArguments" Label="泛型实参" ValueType="Microsoft.VisualStudio.GraphModel.GraphNodeIdCollection" />
+    <Name Id="GenericParameterCount" Label="泛型形参计数" ValueType="System.String" />
+    <Name Id="Member" Label="编号" ValueType="System.Object" />
+    <Name Id="Name" Label="名称" ValueType="System.String" />
+    <Name Id="Namespace" Label="命名空间" ValueType="System.String" />
+    <Name Id="OverloadingParameters" Label="参数" ValueType="Microsoft.VisualStudio.GraphModel.GraphNodeIdCollection" Formatter="NameValueNoEscape" />
+    <Name Id="ParamKind" Label="参数种类" ValueType="Microsoft.VisualStudio.GraphModel.CodeSchema.ParamKind" />
+    <Name Id="Type" Label="类型" ValueType="System.Object" />
+  </QualifiedNames>
+  <IdentifierAliases>
+    <Alias n="1" Uri="Assembly=$(2ef079fb-05ab-4d1a-a2d4-ab1e2dfd2240.OutputPathUri)" />
+    <Alias n="2" Id="Namespace=OrangeEndLess" />
+    <Alias n="3" Id="(@1 @2 Type=Core)" />
+    <Alias n="4" Uri="Assembly=$(FxReferenceAssembliesUri)/WindowsPhoneApp/v8.1/System.Runtime.dll" />
+    <Alias n="5" Id="Namespace=System" />
+  </IdentifierAliases>
+  <Styles>
+    <Style TargetType="Node" GroupLabel="结果" ValueLabel="True">
+      <Condition Expression="HasCategory('QueryResult')" />
+      <Setter Property="Background" Value="#FFBCFFBE" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="程序集" ValueLabel="具有类别">
+      <Condition Expression="HasCategory('CodeSchema_Assembly')" />
+      <Setter Property="Background" Value="#FF094167" />
+      <Setter Property="Stroke" Value="#FF094167" />
+      <Setter Property="Icon" Value="CodeSchema_Assembly" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="命名空间" ValueLabel="具有类别">
+      <Condition Expression="HasCategory('CodeSchema_Namespace')" />
+      <Setter Property="Background" Value="#FF0E619A" />
+      <Setter Property="Stroke" Value="#FF0E619A" />
+      <Setter Property="Icon" Value="CodeSchema_Namespace" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="接口" ValueLabel="具有类别">
+      <Condition Expression="HasCategory('CodeSchema_Interface')" />
+      <Setter Property="Background" Value="#FF1382CE" />
+      <Setter Property="Stroke" Value="#FF1382CE" />
+      <Setter Property="Icon" Value="CodeSchema_Interface" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="结构" ValueLabel="具有类别">
+      <Condition Expression="HasCategory('CodeSchema_Struct')" />
+      <Setter Property="Background" Value="#FF1382CE" />
+      <Setter Property="Stroke" Value="#FF1382CE" />
+      <Setter Property="Icon" Value="CodeSchema_Struct" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="枚举" ValueLabel="具有类别">
+      <Condition Expression="HasCategory('CodeSchema_Enum')" />
+      <Setter Property="Background" Value="#FF1382CE" />
+      <Setter Property="Stroke" Value="#FF1382CE" />
+      <Setter Property="Icon" Value="CodeSchema_Enum" />
+      <Setter Property="LayoutSettings" Value="List" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="委托" ValueLabel="具有类别">
+      <Condition Expression="HasCategory('CodeSchema_Delegate')" />
+      <Setter Property="Background" Value="#FF1382CE" />
+      <Setter Property="Stroke" Value="#FF1382CE" />
+      <Setter Property="Icon" Value="CodeSchema_Delegate" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="类" ValueLabel="具有类别">
+      <Condition Expression="HasCategory('CodeSchema_Type')" />
+      <Setter Property="Background" Value="#FF1382CE" />
+      <Setter Property="Stroke" Value="#FF1382CE" />
+      <Setter Property="Icon" Value="CodeSchema_Class" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="属性" ValueLabel="具有类别">
+      <Condition Expression="HasCategory('CodeSchema_Property')" />
+      <Setter Property="Background" Value="#FFE0E0E0" />
+      <Setter Property="Stroke" Value="#FFE0E0E0" />
+      <Setter Property="Icon" Value="CodeSchema_Property" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="方法" ValueLabel="具有类别">
+      <Condition Expression="HasCategory('CodeSchema_Method') Or HasCategory('CodeSchema_CallStackUnresolvedMethod')" />
+      <Setter Property="Background" Value="#FFE0E0E0" />
+      <Setter Property="Stroke" Value="#FFE0E0E0" />
+      <Setter Property="Icon" Value="CodeSchema_Method" />
+      <Setter Property="LayoutSettings" Value="List" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="事件" ValueLabel="具有类别">
+      <Condition Expression="HasCategory('CodeSchema_Event')" />
+      <Setter Property="Background" Value="#FFE0E0E0" />
+      <Setter Property="Stroke" Value="#FFE0E0E0" />
+      <Setter Property="Icon" Value="CodeSchema_Event" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="字段" ValueLabel="具有类别">
+      <Condition Expression="HasCategory('CodeSchema_Field')" />
+      <Setter Property="Background" Value="#FFE0E0E0" />
+      <Setter Property="Stroke" Value="#FFE0E0E0" />
+      <Setter Property="Icon" Value="CodeSchema_Field" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Out Parameter" ValueLabel="True">
+      <Condition Expression="CodeSchemaProperty_IsOut = 'True'" />
+      <Setter Property="Icon" Value="CodeSchema_OutParameter" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Parameter" ValueLabel="True">
+      <Condition Expression="HasCategory('CodeSchema_Parameter')" />
+      <Setter Property="Icon" Value="CodeSchema_Parameter" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Local Variable" ValueLabel="True">
+      <Condition Expression="HasCategory('CodeSchema_LocalExpression')" />
+      <Setter Property="Icon" Value="CodeSchema_LocalExpression" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="外部" ValueLabel="具有类别">
+      <Condition Expression="HasCategory('Externals')" />
+      <Setter Property="Background" Value="#FF424242" />
+      <Setter Property="Stroke" Value="#FF424242" />
+    </Style>
+    <Style TargetType="Link" GroupLabel="Inherits From" ValueLabel="True" Visibility="Hidden">
+      <Condition Expression="HasCategory('InheritsFrom') And Target.HasCategory('CodeSchema_Class')" />
+      <Setter Property="TargetDecorator" Value="OpenArrow" />
+    </Style>
+    <Style TargetType="Link" GroupLabel="Implements" ValueLabel="True" Visibility="Hidden">
+      <Condition Expression="HasCategory('Implements') And Target.HasCategory('CodeSchema_Interface')" />
+      <Setter Property="TargetDecorator" Value="OpenArrow" />
+    </Style>
+    <Style TargetType="Link" GroupLabel="Field Read" ValueLabel="True" Visibility="Hidden">
+      <Condition Expression="Target.HasCategory('CodeSchema_Field') And HasCategory('CodeSchema_FieldRead')" />
+      <Setter Property="StrokeDashArray" Value="2 2" />
+    </Style>
+    <Style TargetType="Link" GroupLabel="Comment Link" ValueLabel="True" Visibility="Hidden">
+      <Condition Expression="Source.HasCategory('Comment')" />
+      <Setter Property="Stroke" Value="#FFE5C365" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Cursor Location Changed" ValueLabel="True" Visibility="Hidden">
+      <Condition Expression="IsCursorLocation" />
+      <Setter Property="IndicatorWest" Value="WestIndicator" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Disabled Breakpoint Location Changed" ValueLabel="True" Visibility="Hidden">
+      <Condition Expression="DisabledBreakpointCount" />
+      <Setter Property="IndicatorWest" Value="WestIndicator" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Enabled Breakpoint Location Changed" ValueLabel="True" Visibility="Hidden">
+      <Condition Expression="EnabledBreakpointCount" />
+      <Setter Property="IndicatorWest" Value="WestIndicator" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Instruction Pointer Location Changed" ValueLabel="True" Visibility="Hidden">
+      <Condition Expression="IsInstructionPointerLocation" />
+      <Setter Property="IndicatorWest" Value="WestIndicator" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Current Callstack Changed" ValueLabel="True" Visibility="Hidden">
+      <Condition Expression="IsCurrentCallstackFrame" />
+      <Setter Property="IndicatorWest" Value="WestIndicator" />
+    </Style>
+  </Styles>
+  <Paths>
+    <Path Id="2ef079fb-05ab-4d1a-a2d4-ab1e2dfd2240.OutputPathUri" Value="file:///C:/Users/Wang/Source/Repos/OrangeEndless/OrangeEndLess/OrangeEndLess/OrangeEndLess.WindowsPhone/bin/Debug/OrangeEndLess.WindowsPhone.exe" />
+    <Path Id="FxReferenceAssembliesUri" Value="file:///C:/Program Files (x86)/Reference Assemblies/Microsoft/Framework" />
+  </Paths>
+</DirectedGraph>

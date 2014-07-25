@@ -25,7 +25,7 @@ namespace OrangeEndLess
     /// </summary>
     public sealed partial class App : Application
     {
-        public Core GameCore=new Core ( );
+       // public Core GameCore=new Core ( );
 
 #if WINDOWS_PHONE_APP
         private TransitionCollection transitions;

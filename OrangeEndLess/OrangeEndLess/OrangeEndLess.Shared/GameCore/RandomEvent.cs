@@ -11,11 +11,11 @@ using MVVMSidekick . ViewModels;
 
 namespace OrangeEndLess
 {
-    class RandomEvent
+    public class RandomEvent
     {
         public  Action<Core> Event;
 
-        public long Posibleiaty;
+        public int Probability;
 
         public string Title;
 

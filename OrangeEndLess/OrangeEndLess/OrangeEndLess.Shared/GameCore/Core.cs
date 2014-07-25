@@ -200,19 +200,15 @@ namespace OrangeEndLess
         void TimersRandom_Tick ( object sender , object e )
         {
             int Ran=Randoms . Next ( 0 , 100000 );
+            int _Loop=0;
             foreach ( var item in RandomEvents )
             {
-                item.Value.
-            }
-            string Title=null;
-            string Text=null;
-            if ( Ran == 1 )
-            {
-
-            }
-            if ( Title != null && Text != null )
-            {
-                RandomEvent . Invoke ( this , new RandomArgs ( Title , Text ) );
+                if ( Ran >= _Loop && Ran < _Loop + item . Value . Probability )
+                {
+                    item . Value . Event . Invoke ( this );
+                    RandomEvent . Invoke ( this , new RandomArgs ( item . Value . Title , item . Value . Text ) );
+                    return;
+                }
             }
         }
 

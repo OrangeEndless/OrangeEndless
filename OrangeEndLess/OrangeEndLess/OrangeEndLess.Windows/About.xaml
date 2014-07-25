@@ -131,7 +131,7 @@
 				<ColumnDefinition Width="120"/>
 				<ColumnDefinition Width="*"/>
 			</Grid.ColumnDefinitions>
-			<Rectangle Fill="#FFF9B763" HorizontalAlignment="Left" Height="140" Stroke="Black" VerticalAlignment="Top" Width="1366" Grid.ColumnSpan="2"/>
+			<Rectangle Fill="#FFF9B763" HorizontalAlignment="Left" Height="140" VerticalAlignment="Top" Width="1366" Grid.ColumnSpan="2"/>
 			<Button x:Name="backButton" Margin="39,59,39,0" Command="{Binding NavigationHelper.GoBackCommand, ElementName=pageRoot}"
 						Style="{StaticResource NavigationBackButtonNormalStyle}"
 						VerticalAlignment="Top"
