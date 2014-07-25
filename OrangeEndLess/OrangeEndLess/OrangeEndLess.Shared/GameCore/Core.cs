@@ -18,12 +18,6 @@ namespace OrangeEndLess
 
         ApplicationDataContainer GameData = ApplicationData . Current . RoamingSettings;
 
-        DispatcherTimer TimersUpdateData = new DispatcherTimer ( );
-
-        DispatcherTimer TimersRandom = new DispatcherTimer ( );
-
-        DispatcherTimer TimersAPM=new DispatcherTimer ( );
-
         public delegate void RandomEventHandler ( object sender , RandomArgs e );
 
         public event RandomEventHandler RandomEvent;
@@ -53,7 +47,7 @@ namespace OrangeEndLess
             }
             set
             {
-                GameData . Values [ "NumberOfOrangeHaveGet" ] = value;
+                GameData . Values [ "NumberOfOrangeHaveGet" ] = value . ToString ( );
             }
         }
 
@@ -184,7 +178,7 @@ namespace OrangeEndLess
 
         void TimersUpdateData_Tick ( object sender , object e )
         {
-            decimal time=( decimal ) ( TimersUpdateData . Interval . TotalMilliseconds / 1000 );
+            decimal time=( decimal ) ( Timers [ "UpdateData" ] . Interval . TotalMilliseconds / 1000 );
             NumberOfOrange += ( decimal ) ( SpeedOfOrangeRise * time );
             foreach ( var item in Buildings )
             {
@@ -214,10 +208,9 @@ namespace OrangeEndLess
 
         void TimersAPM_Tick ( object sender , object e )
         {
-            TimersRandom . Interval = new TimeSpan ( 0 , 0 , 0 , 0 , Convert . ToInt32 ( 60 / APM * 1000 ) );
+            TimersRandom . Interval = new TimeSpan ( 0 , 0 , 0 , 0 , Convert . ToInt32 ( 60 / ( ( APM * 1000 ) + 1 ) ) );
             GameData . Values [ "BestAPM" ] = Math . Max ( ( ( long ) GameData . Values [ "BestAPM" ] ) , APM );
             APM = 0;
-
         }
 
         public Core ( )
@@ -226,30 +219,21 @@ namespace OrangeEndLess
             {
                 ApplicationData . Current . ClearAsync ( );
                 GameData . Values [ "GameIsStartV2" ] = true;
-                GameData . Values [ "NumberOfOrange" ] = 0;
-                GameData . Values [ "TimeToUpdate" ] = 200;
             }
             if ( GameData . Values [ "TimeToUpdate" ] == null )
             {
                 GameData . Values [ "TimeToUpdate" ] = 200;
             }
+            if ( GameData . Values [ "LevelOfRush" ] == null )
+            {
+                GameData . Values [ "LevelOfRush" ] = 0;
+            }
+            if ( GameData . Values [ "BestAPM" ] == null )
+            {
+                GameData . Values [ "BestAPM" ] = 0;
+            }
 
-            TimersUpdateData . Interval = new TimeSpan ( 0 , 0 , 0 , 0 , Convert . ToInt32 ( GameData . Values [ "TimeToUpdate" ] ) );
-            TimersUpdateData . Tick += TimersUpdateData_Tick;
 
-            TimersRandom . Interval = new TimeSpan ( 0 , 0 , 0 , 1 );
-            TimersRandom . Tick += TimersRandom_Tick;
-
-            TimersAPM . Interval = new TimeSpan ( 0 , 0 , 30 );
-            TimersAPM . Tick += TimersAPM_Tick;
-
-            LoadBuildings ( );
-            LoadAchievements ( );
-            LoadRandomEvents ( );
-
-            TimersUpdateData . Start ( );
-            TimersRandom . Start ( );
-            TimersAPM . Start ( );
         }
     }
 

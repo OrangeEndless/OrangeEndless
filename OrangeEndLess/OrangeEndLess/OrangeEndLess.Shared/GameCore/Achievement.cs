@@ -19,6 +19,12 @@ namespace OrangeEndLess
 
         Func<Core,bool> _Check;
 
+        public void Clean ( )
+        {
+            IsGet = false;
+        }
+
+
         public bool IsGet
         {
             get

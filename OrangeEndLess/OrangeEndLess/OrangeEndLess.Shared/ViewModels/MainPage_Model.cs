@@ -68,7 +68,6 @@ namespace OrangeEndLess . ViewModels
                         {
                             //Todo: Add Rush logic here, or
                             vm . GameCore . Rush ( );
-
                             await MVVMSidekick . Utilities . TaskExHelper . Yield ( );
                         }
                     )

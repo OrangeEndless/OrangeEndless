@@ -13,9 +13,28 @@ namespace OrangeEndLess
 {
     public class RandomEvent
     {
+        ApplicationDataContainer GameData = ApplicationData . Current . RoamingSettings;
+
         public  Action<Core> Event;
 
         public int Probability;
+
+        public void Clean()
+        {
+            TimesHaveCalled = 0;
+        }
+
+        public decimal TimesHaveCalled
+        {
+            get
+            {
+                return Convert . ToDecimal ( GameData . Values [ "TimeHaveCalled" ] );
+            }
+            set
+            {
+                GameData . Values [ "TimeHaveCalled" ] = value.ToString();
+            }
+        }
 
         public string Title;
 
@@ -24,7 +43,6 @@ namespace OrangeEndLess
         public RandomEvent ( int key , Action<Core> func )
         {
             Event = func;
-
         }
 
     }

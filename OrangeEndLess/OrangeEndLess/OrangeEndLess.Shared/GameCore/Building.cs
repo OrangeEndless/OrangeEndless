@@ -24,6 +24,11 @@ namespace OrangeEndLess
         decimal PriceBase { get; set; }
         decimal StartCPS { get; set; }
 
+        public void Clean ( )
+        {
+            GameData . Values [ "NumberOfOrangeHaveMadeFrom" + Title ] = GameData . Values [ "NumberOf" + Title ] = GameData . Values [ "LevelOf" + Title ] = 0;
+        }
+
         public decimal NumberOfOrangeHaveMade
         {
             get
@@ -52,7 +57,7 @@ namespace OrangeEndLess
             }
             set
             {
-                GameData . Values [ "NumberOf" + Title ] = value.ToString();
+                GameData . Values [ "NumberOf" + Title ] = value . ToString ( );
             }
         }
 
