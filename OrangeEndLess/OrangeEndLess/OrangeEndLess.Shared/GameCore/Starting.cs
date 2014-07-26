@@ -11,7 +11,7 @@ using MVVMSidekick . ViewModels;
 
 namespace OrangeEndLess
 {
-    class Core
+    public partial class Core
     {
         void Starting ( )
         {
@@ -32,6 +32,7 @@ namespace OrangeEndLess
             GameData . Values [ "NumberOfMoneyHaveGet" ] = 0;
             GameData . Values [ "NumberOfOrangeHaveGet" ] = 0;
             GameData . Values [ "NumberOfUpdateHavePromote" ] = 0;
+            GameData . Values [ "GameIsStartV2" ] = true;
             foreach ( var item in Buildings )
             {
                 item . Value . Clean ( );
@@ -40,9 +41,9 @@ namespace OrangeEndLess
             {
                 item . Clean ( );
             }
-            foreach ( var item in RandomEvents  )
+            foreach ( var item in RandomEvents )
             {
-                
+                item . Value . Clean ( );
             }
         }
 

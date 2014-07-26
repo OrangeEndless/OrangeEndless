@@ -11,7 +11,7 @@ using MVVMSidekick . ViewModels;
 
 namespace OrangeEndLess
 {
-    class Core
+    public partial class Core
     {
         public  Dictionary <string,DispatcherTimer> Timers;
 

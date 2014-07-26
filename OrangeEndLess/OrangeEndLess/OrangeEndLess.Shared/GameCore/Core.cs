@@ -133,7 +133,7 @@ namespace OrangeEndLess
         {
             NumberOfOrange += ( LevelOfRush );
             NumberOfOrangeHaveMadeFromRush += LevelOfRush;
-            UpdateData . Invoke ( this , new EventArgs ( ) );
+            UpdateData ( this , new EventArgs ( ) );
         }
 
         public decimal NumberOfMoney
@@ -208,7 +208,7 @@ namespace OrangeEndLess
 
         void TimersAPM_Tick ( object sender , object e )
         {
-            TimersRandom . Interval = new TimeSpan ( 0 , 0 , 0 , 0 , Convert . ToInt32 ( 60 / ( ( APM * 1000 ) + 1 ) ) );
+            Timers [ "Random" ] . Interval = new TimeSpan ( 0 , 0 , 0 , 0 , Convert . ToInt32 ( 60 / ( ( APM * 1000 ) + 1 ) ) );
             GameData . Values [ "BestAPM" ] = Math . Max ( ( ( long ) GameData . Values [ "BestAPM" ] ) , APM );
             APM = 0;
         }
@@ -218,6 +218,7 @@ namespace OrangeEndLess
             if ( GameData . Values [ "GameIsStartV2" ] == null )
             {
                 ApplicationData . Current . ClearAsync ( );
+                Setup ( );
                 GameData . Values [ "GameIsStartV2" ] = true;
             }
             if ( GameData . Values [ "TimeToUpdate" ] == null )
@@ -233,6 +234,7 @@ namespace OrangeEndLess
                 GameData . Values [ "BestAPM" ] = 0;
             }
 
+            Starting ( );
 
         }
     }
