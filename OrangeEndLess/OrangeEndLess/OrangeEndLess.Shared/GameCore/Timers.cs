@@ -13,18 +13,18 @@ namespace OrangeEndLess
 {
     public partial class Core
     {
-        public  Dictionary <string,DispatcherTimer> Timers;
+
+        DispatcherTimer TimersUpdateNumberOfOrange = new DispatcherTimer ( );
+
+        DispatcherTimer TimersRandom = new DispatcherTimer ( );
+
+        DispatcherTimer TimersAPM=new DispatcherTimer ( );
+
 
         void LoadTimer ( )
         {
-            DispatcherTimer TimersUpdateData = new DispatcherTimer ( );
-
-            DispatcherTimer TimersRandom = new DispatcherTimer ( );
-
-            DispatcherTimer TimersAPM=new DispatcherTimer ( );
-
-            TimersUpdateData . Interval = new TimeSpan ( 0 , 0 , 0 , 0 , Convert . ToInt32 ( GameData . Values [ "TimeToUpdate" ] ) );
-            TimersUpdateData . Tick += TimersUpdateData_Tick;
+            TimersUpdateNumberOfOrange . Interval = new TimeSpan ( 0 , 0 , 0 , 0 , Convert . ToInt32 ( GameData . Values [ "TimeToUpdateNumberOfOrange" ] ) );
+            TimersUpdateNumberOfOrange . Tick += TimersUpdateNumberOfOrange_Tick;
 
             TimersRandom . Interval = new TimeSpan ( 0 , 0 , 0 , 1 );
             TimersRandom . Tick += TimersRandom_Tick;
@@ -32,13 +32,10 @@ namespace OrangeEndLess
             TimersAPM . Interval = new TimeSpan ( 0 , 0 , 30 );
             TimersAPM . Tick += TimersAPM_Tick;
 
-            TimersUpdateData . Start ( );
+            TimersUpdateNumberOfOrange . Start ( );
             TimersRandom . Start ( );
             TimersAPM . Start ( );
-
-            Timers . Add ( "UpdateData" , TimersUpdateData );
-            Timers . Add ( "Random" , TimersRandom );
-            Timers . Add ( "APM" , TimersAPM );
         }
+
     }
 }

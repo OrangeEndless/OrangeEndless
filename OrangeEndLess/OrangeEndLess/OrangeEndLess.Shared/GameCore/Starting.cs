@@ -18,13 +18,14 @@ namespace OrangeEndLess
             LoadBuildings ( );
             LoadAchievements ( );
             LoadRandomEvents ( );
+            LoadTimer ( );
         }
 
         void Setup ( )
         {
-            GameData . Values [ "TimeToUpdate" ] = 200;
+            GameData . Values [ "TimeToUpdate" ] = 500;
             GameData . Values [ "LevelOfRush" ] = 0;
-            GameData . Values [ "BestAPM" ] = 0;
+            GameData . Values [ "BestAPM" ] = 0L;
             GameData . Values [ "Money" ] = 0;
             GameData . Values [ "NumberOfOrange" ] = 0;
             GameData . Values [ "LevelOfRush" ] = 0;

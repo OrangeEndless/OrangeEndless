@@ -19,7 +19,7 @@ namespace OrangeEndLess
 
         public int Probability;
 
-        public void Clean()
+        public void Clean ( )
         {
             TimesHaveCalled = 0;
         }
@@ -28,11 +28,11 @@ namespace OrangeEndLess
         {
             get
             {
-                return Convert . ToDecimal ( GameData . Values [ "TimeHaveCalled" ] );
+                return Convert . ToDecimal ( GameData . Values [ "TimesHaveCalled" + Title ] );
             }
             set
             {
-                GameData . Values [ "TimeHaveCalled" ] = value.ToString();
+                GameData . Values [ "TimesHaveCalled" + Title ] = value . ToString ( );
             }
         }
 

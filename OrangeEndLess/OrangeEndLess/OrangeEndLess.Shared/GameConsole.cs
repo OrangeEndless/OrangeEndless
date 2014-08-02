@@ -63,7 +63,8 @@ namespace OrangeEndLess
             #region Commands NumberOfOrange
             if ( command == "noo" || command == "numberoforange" || command == "numberoforanges" )
             {
-                WriteLine ( "The number of ORANGE is " + GameCore . NumberOfOrange . ToString ( ) );
+
+                WriteLine ( string . Format ( "The number of ORANGE is {0}" , GameCore . NumberOfOrange . ToString ( ) ) );
                 return;
             }
             #endregion
@@ -75,9 +76,8 @@ namespace OrangeEndLess
                 {
                     if ( item . Value . Title . StartsWith ( strs [ 1 ] ) )
                     {
-                        WriteLine ( "The number of " + item . Value . Title . ToUpper ( ) + " is" + item . Value . Number . ToString ( ) );
+                        WriteLine ( string . Format ( "The number of {0} is {1}" , item . Value . Title . ToUpper ( ) , item . Value . Number . ToString ( ) ) );
                         return;
-
                     }
                 }
 
@@ -88,7 +88,7 @@ namespace OrangeEndLess
             if ( command == "nom" || command == "numberofmoney" || command == "numberofcoin" || command == "numberofcoins" )
             {
 
-                WriteLine ( "The number of MONEY is " + GameCore . NumberOfMoney . ToString ( ) );
+                WriteLine ( string . Format ( "The number of MONEY is {0}" , GameCore . NumberOfMoney . ToString ( ) ) );
                 return;
             }
             #endregion
@@ -96,7 +96,7 @@ namespace OrangeEndLess
             #region Commands SpeedOfOrangeRise
             if ( ( command == "speed" || command == "speedoforangerise" || command == "speedoforange" || command == "soo" || command == "soor" ) && strs . Length == 1 )
             {
-                WriteLine ( "The speed of ORANGE rise is " + GameCore . SpeedOfOrangeRise . ToString ( ) + "/s" );
+                WriteLine ( string . Format ( "The speed of ORANGE rise is {0}/s" , GameCore . SpeedOfOrangeRise . ToString ( ) ) );
             }
             #endregion
 
@@ -108,7 +108,7 @@ namespace OrangeEndLess
                     decimal _MoneyHaveBuy=0;
                     decimal _OrangeHaveSell=0;
                     GameCore . SellOrange ( Convert . ToDecimal ( strs [ 1 ] ) , out  _MoneyHaveBuy , out _OrangeHaveSell );
-                    WriteLine ( "Have sell " + _OrangeHaveSell . ToString ( ) + " Oranges and get " + _MoneyHaveBuy . ToString ( ) );
+                    WriteLine ( string . Format ( "Have sell {0} Oranges and get ${1}" , _OrangeHaveSell . ToString ( ) , _MoneyHaveBuy . ToString ( ) ) );
                     return;
                 }
                 else
@@ -129,7 +129,7 @@ namespace OrangeEndLess
                         {
                             decimal _havebuy,_havecost;
                             item . Value . Buy ( Convert . ToDecimal ( strs [ 2 ] ) , GameCore , out _havebuy , out _havecost );
-                            WriteLine ( "Have bought " + _havebuy . ToString ( ) + item . Value . Title . ToUpper ( ) + " and cost " + _havecost . ToString ( ) );
+                            WriteLine ( string . Format ( "Have bought {0} {1} and cost {2}" , _havebuy . ToString ( ) , item . Value . Title . ToUpper ( ) , _havecost . ToString ( ) ) );
                             return;
                         }
 

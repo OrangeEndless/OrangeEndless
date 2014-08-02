@@ -31,7 +31,7 @@ namespace OrangeEndLess . ViewModels
 
         public MainPage_Model ( )
         {
-            GameCore . UpdateData += GameCore_UpdateData;
+            GameCore . UpdateAllData += GameCore_UpdateData;
             GameCore . RandomEvent += GameCore_RandomEvent;
         }
 

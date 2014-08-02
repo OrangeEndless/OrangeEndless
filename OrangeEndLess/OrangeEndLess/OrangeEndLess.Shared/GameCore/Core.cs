@@ -22,9 +22,21 @@ namespace OrangeEndLess
 
         public event RandomEventHandler RandomEvent;
 
-        public event EventHandler UpdateData;
+        public event EventHandler UpdateAllData;
 
-        public long APM  =0;
+        public event EventHandler UpdateNumberOfOrange;
+
+        public event EventHandler UpdateBuildings;
+
+        public event EventHandler UpdateAchevements;
+
+        public event EventHandler UpdateNumberOfMoney;
+
+        public event EventHandler UpdateAchevements;
+
+
+
+        public long _APM  =0;
 
 
         public decimal NumberOfUpdateHavePromote
@@ -133,7 +145,7 @@ namespace OrangeEndLess
         {
             NumberOfOrange += ( LevelOfRush );
             NumberOfOrangeHaveMadeFromRush += LevelOfRush;
-            UpdateData ( this , new EventArgs ( ) );
+            UpdateNumberOfOrange ( this , new EventArgs ( ) );
         }
 
         public decimal NumberOfMoney
@@ -178,8 +190,6 @@ namespace OrangeEndLess
 
         void TimersUpdateData_Tick ( object sender , object e )
         {
-            decimal time=( decimal ) ( Timers [ "UpdateData" ] . Interval . TotalMilliseconds / 1000 );
-            NumberOfOrange += ( decimal ) ( SpeedOfOrangeRise * time );
             foreach ( var item in Buildings )
             {
                 item . Value . NumberOfOrangeHaveMade += item . Value . CPS * time;
@@ -188,7 +198,13 @@ namespace OrangeEndLess
             {
                 item . Check ( this );
             }
-            UpdateData . Invoke ( this , new EventArgs ( ) );
+            UpdateAllData ( this , new EventArgs ( ) );
+        }
+
+        void TimersUpdateNumberOfOrange_Tick ( object sender , object e )
+        {
+            NumberOfOrange += ( decimal ) ( SpeedOfOrangeRise * ( decimal ) ( TimersUpdateNumberOfOrange . Interval . TotalMilliseconds / 1000 ) );
+            UpdateNumberOfOrange ( this , new EventArgs ( ) );
         }
 
         void TimersRandom_Tick ( object sender , object e )
@@ -208,32 +224,20 @@ namespace OrangeEndLess
 
         void TimersAPM_Tick ( object sender , object e )
         {
-            Timers [ "Random" ] . Interval = new TimeSpan ( 0 , 0 , 0 , 0 , Convert . ToInt32 ( 60 / ( ( APM * 1000 ) + 1 ) ) );
-            GameData . Values [ "BestAPM" ] = Math . Max ( ( ( long ) GameData . Values [ "BestAPM" ] ) , APM );
-            APM = 0;
+            TimersRandom . Interval = new TimeSpan ( 0 , 0 , 0 , 0 , Convert . ToInt32 ( 60 / ( ( _APM * 1000 ) + 1 ) ) );
+            GameData . Values [ "BestAPM" ] = Math . Max ( ( ( long ) GameData . Values [ "BestAPM" ] ) , _APM );
+            _APM = 0;
         }
 
         public Core ( )
         {
+            Setup ( );
             if ( GameData . Values [ "GameIsStartV2" ] == null )
             {
                 ApplicationData . Current . ClearAsync ( );
                 Setup ( );
                 GameData . Values [ "GameIsStartV2" ] = true;
             }
-            if ( GameData . Values [ "TimeToUpdate" ] == null )
-            {
-                GameData . Values [ "TimeToUpdate" ] = 200;
-            }
-            if ( GameData . Values [ "LevelOfRush" ] == null )
-            {
-                GameData . Values [ "LevelOfRush" ] = 0;
-            }
-            if ( GameData . Values [ "BestAPM" ] == null )
-            {
-                GameData . Values [ "BestAPM" ] = 0;
-            }
-
             Starting ( );
 
         }
