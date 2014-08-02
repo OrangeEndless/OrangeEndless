@@ -22,8 +22,6 @@ namespace OrangeEndLess
 
         public event RandomEventHandler RandomEvent;
 
-        public event EventHandler UpdateAllData;
-
         public event EventHandler UpdateNumberOfOrange;
 
         public event EventHandler UpdateBuildings;
@@ -31,8 +29,6 @@ namespace OrangeEndLess
         public event EventHandler UpdateAchevements;
 
         public event EventHandler UpdateNumberOfMoney;
-
-        public event EventHandler UpdateAchevements;
 
 
 
@@ -71,7 +67,7 @@ namespace OrangeEndLess
             }
             set
             {
-                GameData . Values [ "NumberOfMoneyHaveGet" ] = value;
+                GameData . Values [ "NumberOfMoneyHaveGet" ] = value . ToString ( );
             }
         }
 
@@ -83,7 +79,7 @@ namespace OrangeEndLess
             }
             set
             {
-                GameData . Values [ "NumberOfOrangeHaveMadeFromRush" ] = value;
+                GameData . Values [ "NumberOfOrangeHaveMadeFromRush" ] = value . ToString ( );
             }
         }
 
@@ -95,7 +91,7 @@ namespace OrangeEndLess
             }
             set
             {
-                GameData . Values [ "LevelOfRush" ] = value - 1;
+                GameData . Values [ "LevelOfRush" ] = ( value - 1 ) . ToString ( );
             }
         }
 
@@ -125,6 +121,7 @@ namespace OrangeEndLess
                     NumberOfOrangeHaveGet += value - NumberOfOrange;
                 }
                 GameData . Values [ "NumberOfOrange" ] = value . ToString ( );
+                UpdateNumberOfOrange ( this , new EventArgs ( ) );
             }
         }
 
@@ -162,6 +159,7 @@ namespace OrangeEndLess
                     NumberOfMoneyHaveGet += value - NumberOfMoney;
                 }
                 GameData . Values [ "Money" ] = value;
+                UpdateNumberOfMoney ( this , new EventArgs ( ) );
             }
         }
 
@@ -188,47 +186,6 @@ namespace OrangeEndLess
             OrangeHaveSell = _OrangeHaveSell;
         }
 
-        void TimersUpdateData_Tick ( object sender , object e )
-        {
-            foreach ( var item in Buildings )
-            {
-                item . Value . NumberOfOrangeHaveMade += item . Value . CPS * time;
-            }
-            foreach ( var item in Achievements )
-            {
-                item . Check ( this );
-            }
-            UpdateAllData ( this , new EventArgs ( ) );
-        }
-
-        void TimersUpdateNumberOfOrange_Tick ( object sender , object e )
-        {
-            NumberOfOrange += ( decimal ) ( SpeedOfOrangeRise * ( decimal ) ( TimersUpdateNumberOfOrange . Interval . TotalMilliseconds / 1000 ) );
-            UpdateNumberOfOrange ( this , new EventArgs ( ) );
-        }
-
-        void TimersRandom_Tick ( object sender , object e )
-        {
-            int Ran=Randoms . Next ( 0 , 100000 );
-            int _Loop=0;
-            foreach ( var item in RandomEvents )
-            {
-                if ( Ran >= _Loop && Ran < _Loop + item . Value . Probability )
-                {
-                    item . Value . Event . Invoke ( this );
-                    RandomEvent . Invoke ( this , new RandomArgs ( item . Value . Title , item . Value . Text ) );
-                    return;
-                }
-            }
-        }
-
-        void TimersAPM_Tick ( object sender , object e )
-        {
-            TimersRandom . Interval = new TimeSpan ( 0 , 0 , 0 , 0 , Convert . ToInt32 ( 60 / ( ( _APM * 1000 ) + 1 ) ) );
-            GameData . Values [ "BestAPM" ] = Math . Max ( ( ( long ) GameData . Values [ "BestAPM" ] ) , _APM );
-            _APM = 0;
-        }
-
         public Core ( )
         {
             Setup ( );
@@ -239,7 +196,6 @@ namespace OrangeEndLess
                 GameData . Values [ "GameIsStartV2" ] = true;
             }
             Starting ( );
-
         }
     }
 

@@ -49,9 +49,9 @@
                     <ColumnDefinition Width="0.7*"/>
                     <ColumnDefinition Width="1.3*"/>
                 </Grid.ColumnDefinitions>
-                <TextBlock x:Name="NumberOfOrangeOut" Margin="0,32,0,0" TextWrapping="WrapWholeWords" VerticalAlignment="Top" TextAlignment="Center" Height="67" FontSize="56" Text="{Binding NumberOfOrange}"/>
+                <TextBlock x:Name="NumberOfOrangeOut" Margin="0,32,0,0" TextWrapping="WrapWholeWords" VerticalAlignment="Top" TextAlignment="Center" Height="67" FontSize="56" Text="{Binding NumberOfOrange}" ToolTipService.ToolTip="{Binding NumberOfOrangeHaveGet}"/>
                 <TextBlock Margin="0,10,0,0" TextWrapping="Wrap" Text="{StaticResource NumberOfOrange}" VerticalAlignment="Top" FontSize="18" TextAlignment="Center"/>
-                <Button x:Name="BRush" Content="{StaticResource Rush}" HorizontalAlignment="Stretch" Margin="0" VerticalAlignment="Bottom" Grid.Row="1" FontSize="56" Command="{Binding CommandRush}"/>
+                <Button x:Name="BRush" Content="{StaticResource Rush}" HorizontalAlignment="Stretch" Margin="0" VerticalAlignment="Bottom" Grid.Row="1" FontSize="56" Command="{Binding CommandRush}" ToolTipService.ToolTip="{Binding CPSOfOrange}"/>
                 <TextBlock x:Name="SpeedOfOrangeRiseOut" Margin="0,99,0,0" TextWrapping="Wrap" VerticalAlignment="Top" TextAlignment="Center" FontSize="20" Text="{Binding CPSOfOrange}"/>
                 <ScrollViewer  Height="Auto"  Width="Auto" Margin="0" Grid.Column="2" ZoomMode="Disabled" HorizontalScrollMode="Disabled" Grid.RowSpan="2" IsVerticalRailEnabled="False" BorderThickness="0" Background="{x:Null}" BorderBrush="#FF4DFFD2">
                     <StackPanel VerticalAlignment="Top">

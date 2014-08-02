@@ -13,6 +13,7 @@ namespace OrangeEndLess
 {
     public partial class Core
     {
+
         void Starting ( )
         {
             LoadBuildings ( );
@@ -23,7 +24,6 @@ namespace OrangeEndLess
 
         void Setup ( )
         {
-            GameData . Values [ "TimeToUpdate" ] = 500;
             GameData . Values [ "LevelOfRush" ] = 0;
             GameData . Values [ "BestAPM" ] = 0L;
             GameData . Values [ "Money" ] = 0;
@@ -33,7 +33,10 @@ namespace OrangeEndLess
             GameData . Values [ "NumberOfMoneyHaveGet" ] = 0;
             GameData . Values [ "NumberOfOrangeHaveGet" ] = 0;
             GameData . Values [ "NumberOfUpdateHavePromote" ] = 0;
-            GameData . Values [ "GameIsStartV2" ] = true;
+            GameData . Values [ "TimeToUpdateNumberOfOrange" ] = 100;
+            GameData . Values [ "TimeToUpdateAchevement" ] = 100000;
+            GameData . Values [ "TimeToUpdateBuilding" ] = 10000;
+
             foreach ( var item in Buildings )
             {
                 item . Value . Clean ( );
@@ -46,7 +49,7 @@ namespace OrangeEndLess
             {
                 item . Value . Clean ( );
             }
+            GameData . Values [ "GameIsStartV2" ] = true;
         }
-
     }
 }

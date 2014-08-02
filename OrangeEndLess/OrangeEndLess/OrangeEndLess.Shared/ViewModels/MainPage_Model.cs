@@ -31,20 +31,40 @@ namespace OrangeEndLess . ViewModels
 
         public MainPage_Model ( )
         {
-            GameCore . UpdateAllData += GameCore_UpdateData;
             GameCore . RandomEvent += GameCore_RandomEvent;
+            GameCore . UpdateAchevements += GameCore_UpdateAchevements;
+            GameCore . UpdateBuildings += GameCore_UpdateBuildings;
+            GameCore . UpdateNumberOfMoney += GameCore_UpdateNumberOfMoney;
+            GameCore . UpdateNumberOfOrange += GameCore_UpdateNumberOfOrange;
+        }
+
+        void GameCore_UpdateNumberOfOrange ( object sender , EventArgs e )
+        {
+            NumberOfOrange = decimal . Floor ( GameCore . NumberOfOrange ) . ToString ( );
+            NumberOfOrangeHaveGet = string . Format ( "你制造的橘子总数：{0}" , decimal . Floor ( GameCore . NumberOfOrangeHaveGet ) . ToString ( ) );
+
+            NumberOfOrangeHaveMadeFromRush = decimal . Floor ( GameCore . NumberOfOrangeHaveGet ) . ToString ( );
+        }
+
+        void GameCore_UpdateNumberOfMoney ( object sender , EventArgs e )
+        {
+
+        }
+
+        void GameCore_UpdateBuildings ( object sender , EventArgs e )
+        {
+
+        }
+
+        void GameCore_UpdateAchevements ( object sender , EventArgs e )
+        {
+
         }
 
         void GameCore_RandomEvent ( object sender , RandomArgs e )
         {
 
         }
-
-        void GameCore_UpdateData ( object sender , EventArgs e )
-        {
-            NumberOfOrange = decimal . Floor ( GameCore . NumberOfOrange ) . ToString ( );
-        }
-
 
         public CommandModel<ReactiveCommand , String> CommandRush
         {
@@ -117,6 +137,39 @@ namespace OrangeEndLess . ViewModels
         #endregion
 
 
+
+        public string NumberOfOrangeHaveGet
+        {
+            get { return _NumberOfOrangeHaveGetLocator ( this ) . Value; }
+            set { _NumberOfOrangeHaveGetLocator ( this ) . SetValueAndTryNotify ( value ); }
+        }
+        #region Property string NumberOfOrangeHaveGet Setup
+        protected Property<string> _NumberOfOrangeHaveGet = new Property<string> { LocatorFunc = _NumberOfOrangeHaveGetLocator };
+        static Func<BindableBase,ValueContainer<string>> _NumberOfOrangeHaveGetLocator= RegisterContainerLocator<string> ( "NumberOfOrangeHaveGet" , model => model . Initialize ( "NumberOfOrangeHaveGet" , ref model . _NumberOfOrangeHaveGet , ref _NumberOfOrangeHaveGetLocator , _NumberOfOrangeHaveGetDefaultValueFactory ) );
+        static Func<BindableBase,string> _NumberOfOrangeHaveGetDefaultValueFactory = 
+            model =>
+            {
+                var vm = CastToCurrentType ( model );
+                return string . Format ( "你制造的橘子总数：{0}" , decimal . Floor ( vm . GameCore . NumberOfOrangeHaveGet ) . ToString ( ) );S
+            };
+        #endregion
+
+
+        public string NumberOfOrangeHaveMadeFromRush
+        {
+            get { return _NumberOfOrangeHaveMadeFromRushLocator ( this ) . Value; }
+            set { _NumberOfOrangeHaveMadeFromRushLocator ( this ) . SetValueAndTryNotify ( value ); }
+        }
+        #region Property string NumberOfOrangeHaveMadeFromRush Setup
+        protected Property<string> _NumberOfOrangeHaveMadeFromRush = new Property<string> { LocatorFunc = _NumberOfOrangeHaveMadeFromRushLocator };
+        static Func<BindableBase,ValueContainer<string>> _NumberOfOrangeHaveMadeFromRushLocator= RegisterContainerLocator<string> ( "NumberOfOrangeHaveMadeFromRush" , model => model . Initialize ( "NumberOfOrangeHaveMadeFromRush" , ref model . _NumberOfOrangeHaveMadeFromRush , ref _NumberOfOrangeHaveMadeFromRushLocator , _NumberOfOrangeHaveMadeFromRushDefaultValueFactory ) );
+        static Func<BindableBase,string> _NumberOfOrangeHaveMadeFromRushDefaultValueFactory = 
+            model =>
+            {
+                var vm = CastToCurrentType ( model );
+                return decimal . Floor ( vm . GameCore . NumberOfOrangeHaveMadeFromRush ) . ToString ( );
+            };
+        #endregion
 
 
     }

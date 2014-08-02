@@ -6,6 +6,7 @@
     <RootPropertyPathName Name="CPSOfOrange" />
     <RootPropertyPathName Name="CommandRush" />
     <RootPropertyPathName Name="NumberOfOrange" />
+    <RootPropertyPathName Name="NumberOfOrangeHaveGet" />
   </Roots.PropertyPathNames>
   <Roots.RootTypes>
     <RootType FullName="Windows.UI.Xaml.Application">
@@ -187,6 +188,10 @@
     </RootType>
     <RootType FullName="OrangeEndLess.About" />
     <RootType FullName="OrangeEndLess.ViewModels.MainPage_Model" />
+    <RootType FullName="Windows.UI.Xaml.Controls.ToolTipService">
+      <RootMethod Name="GetToolTip" />
+      <RootMethod Name="SetToolTip" />
+    </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ScrollViewer">
       <RootProperty Name="Height" />
       <RootProperty Name="Width" />

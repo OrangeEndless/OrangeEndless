@@ -16,6 +16,10 @@ namespace OrangeEndLess
 
         DispatcherTimer TimersUpdateNumberOfOrange = new DispatcherTimer ( );
 
+        DispatcherTimer TimersUpdateAchevement = new DispatcherTimer ( );
+
+        DispatcherTimer TimersUpdateBuilding = new DispatcherTimer ( );
+
         DispatcherTimer TimersRandom = new DispatcherTimer ( );
 
         DispatcherTimer TimersAPM=new DispatcherTimer ( );
@@ -26,15 +30,21 @@ namespace OrangeEndLess
             TimersUpdateNumberOfOrange . Interval = new TimeSpan ( 0 , 0 , 0 , 0 , Convert . ToInt32 ( GameData . Values [ "TimeToUpdateNumberOfOrange" ] ) );
             TimersUpdateNumberOfOrange . Tick += TimersUpdateNumberOfOrange_Tick;
 
+            TimersUpdateAchevement . Interval = new TimeSpan ( 0 , 0 , 0 , 0 , Convert . ToInt32 ( GameData . Values [ "TimeToUpdateAchevement" ] ) );
+            TimersUpdateAchevement . Tick += TimersUpdateAchevement_Tick;
+
+            TimersUpdateBuilding . Interval = new TimeSpan ( 0 , 0 , 0 , 0 , Convert . ToInt32 ( GameData . Values [ "TimeToUpdateBuilding" ] ) );
+            TimersUpdateBuilding . Tick += TimersUpdateBuilding_Tick;
+
             TimersRandom . Interval = new TimeSpan ( 0 , 0 , 0 , 1 );
             TimersRandom . Tick += TimersRandom_Tick;
 
             TimersAPM . Interval = new TimeSpan ( 0 , 0 , 30 );
             TimersAPM . Tick += TimersAPM_Tick;
 
-            TimersUpdateNumberOfOrange . Start ( );
-            TimersRandom . Start ( );
-            TimersAPM . Start ( );
+            //TimersUpdateNumberOfOrange . Start ( );
+            //TimersRandom . Start ( );
+            //TimersAPM . Start ( );
         }
 
     }
