@@ -3,4 +3,9 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
     <DeviceId>A6BAF594-9315-40C3-AD16-F5B8A425A7AB</DeviceId>
   </PropertyGroup>
+  <PropertyGroup>
+    <AppxPackageIsForStore>True</AppxPackageIsForStore>
+    <AppxShowAllApps>True</AppxShowAllApps>
+    <AppxBuildConfigurationSelection>neutral</AppxBuildConfigurationSelection>
+  </PropertyGroup>
 </Project>

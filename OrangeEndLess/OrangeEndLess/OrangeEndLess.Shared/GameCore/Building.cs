@@ -21,6 +21,7 @@ namespace OrangeEndLess
         DispatcherTimer EventTimer = new DispatcherTimer ( );
 
         public string Title { get; set; }
+        public string Label { get; set; }
         decimal PriceBase { get; set; }
         decimal StartCPS { get; set; }
 
@@ -94,6 +95,7 @@ namespace OrangeEndLess
             Number += _havebuy;
             havebuy = _havebuy;
             havecost = _havecost;
+            cor . UpdateBuildingsFromBuilding ( this );
         }
 
 
@@ -112,10 +114,12 @@ namespace OrangeEndLess
             Number -= _havesell;
             havesell = _havesell;
             haveget = _haveget;
+            cor . UpdateBuildingsFromBuilding ( this );
         }
 
         public Building ( string name , decimal startprice , decimal startcps )
         {
+            Label = name;
             Title = ( string ) App . Current . Resources [ ( "TitleOf" + name ) ];
             PriceBase = startprice;
             StartCPS = startcps;

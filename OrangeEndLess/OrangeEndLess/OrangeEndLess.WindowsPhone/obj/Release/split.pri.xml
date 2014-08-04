@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<PriInfo>
+	<ResourceMap name="61042WenceyWang.60660BB7A0C1" version="1.0" primary="true">
+		<Qualifiers>
+			<Language>EN-US</Language>
+			<Scale>240</Scale>
+		</Qualifiers>
+		<ResourceMapSubtree name="Files">
+			<NamedResource name="1 (1).jpg" uri="ms-resource://61042WenceyWang.60660BB7A0C1/Files/1%20%281%29.jpg">
+				<Candidate type="Path">
+					<Value>1 (1).jpg</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="1 (2).jpg" uri="ms-resource://61042WenceyWang.60660BB7A0C1/Files/1%20%282%29.jpg">
+				<Candidate type="Path">
+					<Value>1 (2).jpg</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="1.jpg" uri="ms-resource://61042WenceyWang.60660BB7A0C1/Files/1.jpg">
+				<Candidate type="Path">
+					<Value>1.jpg</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="a.jpg" uri="ms-resource://61042WenceyWang.60660BB7A0C1/Files/a.jpg">
+				<Candidate type="Path">
+					<Value>a.jpg</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="About.xbf" uri="ms-resource://61042WenceyWang.60660BB7A0C1/Files/About.xbf">
+				<Candidate type="Path">
+					<Value>About.xbf</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="App.xbf" uri="ms-resource://61042WenceyWang.60660BB7A0C1/Files/App.xbf">
+				<Candidate type="Path">
+					<Value>App.xbf</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="MainPage.xbf" uri="ms-resource://61042WenceyWang.60660BB7A0C1/Files/MainPage.xbf">
+				<Candidate type="Path">
+					<Value>MainPage.xbf</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="OrangeEndLess.WindowsPhone.xr.xml" uri="ms-resource://61042WenceyWang.60660BB7A0C1/Files/OrangeEndLess.WindowsPhone.xr.xml">
+				<Candidate type="Path">
+					<Value>OrangeEndLess.WindowsPhone.xr.xml</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="w.fw.png" uri="ms-resource://61042WenceyWang.60660BB7A0C1/Files/w.fw.png">
+				<Candidate type="Path">
+					<Value>w.fw.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="weibo.png" uri="ms-resource://61042WenceyWang.60660BB7A0C1/Files/weibo.png">
+				<Candidate type="Path">
+					<Value>weibo.png</Value>
+				</Candidate>
+			</NamedResource>
+			<ResourceMapSubtree name="Assets">
+				<NamedResource name="Logo.png" uri="ms-resource://61042WenceyWang.60660BB7A0C1/Files/Assets/Logo.png">
+					<Candidate qualifiers="Scale-240" isDefault="true" type="Path">
+						<Value>Assets\Logo.scale-240.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="SmallLogo.png" uri="ms-resource://61042WenceyWang.60660BB7A0C1/Files/Assets/SmallLogo.png">
+					<Candidate qualifiers="Scale-240" isDefault="true" type="Path">
+						<Value>Assets\SmallLogo.scale-240.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="SplashScreen.png" uri="ms-resource://61042WenceyWang.60660BB7A0C1/Files/Assets/SplashScreen.png">
+					<Candidate qualifiers="Scale-240" isDefault="true" type="Path">
+						<Value>Assets\SplashScreen.scale-240.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Square71x71Logo.png" uri="ms-resource://61042WenceyWang.60660BB7A0C1/Files/Assets/Square71x71Logo.png">
+					<Candidate qualifiers="Scale-240" isDefault="true" type="Path">
+						<Value>Assets\Square71x71Logo.scale-240.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="StoreLogo.png" uri="ms-resource://61042WenceyWang.60660BB7A0C1/Files/Assets/StoreLogo.png">
+					<Candidate qualifiers="Scale-240" isDefault="true" type="Path">
+						<Value>Assets\StoreLogo.scale-240.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="WideLogo.png" uri="ms-resource://61042WenceyWang.60660BB7A0C1/Files/Assets/WideLogo.png">
+					<Candidate qualifiers="Scale-240" isDefault="true" type="Path">
+						<Value>Assets\WideLogo.scale-240.png</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="Photos">
+				<NamedResource name="Orange.jpg" uri="ms-resource://61042WenceyWang.60660BB7A0C1/Files/Photos/Orange.jpg">
+					<Candidate type="Path">
+						<Value>Photos\Orange.jpg</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Wencey.JPG" uri="ms-resource://61042WenceyWang.60660BB7A0C1/Files/Photos/Wencey.JPG">
+					<Candidate type="Path">
+						<Value>Photos\Wencey.JPG</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+		</ResourceMapSubtree>
+		<ResourceMapSubtree name="Microsoft.Xaml.Interactions">
+			<ResourceMapSubtree name="Strings">
+				<NamedResource name="CallMethodActionValidMethodNotFoundExceptionMessage" uri="ms-resource://61042WenceyWang.60660BB7A0C1/Microsoft.Xaml.Interactions/Strings/CallMethodActionValidMethodNotFoundExceptionMessage">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Cannot find method named {0} on object of type {1} that matches the expected signature.</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="CannotAttachBehaviorMultipleTimesExceptionMessage" uri="ms-resource://61042WenceyWang.60660BB7A0C1/Microsoft.Xaml.Interactions/Strings/CannotAttachBehaviorMultipleTimesExceptionMessage">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>An instance of a behavior cannot be attached to more than one object at a time.</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="CannotFindEventNameExceptionMessage" uri="ms-resource://61042WenceyWang.60660BB7A0C1/Microsoft.Xaml.Interactions/Strings/CannotFindEventNameExceptionMessage">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Cannot find an event named {0} on type {1}.</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="ChangePropertyActionCannotFindPropertyNameExceptionMessage" uri="ms-resource://61042WenceyWang.60660BB7A0C1/Microsoft.Xaml.Interactions/Strings/ChangePropertyActionCannotFindPropertyNameExceptionMessage">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Cannot find a property named {0} on type {1}.</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="ChangePropertyActionCannotSetValueExceptionMessage" uri="ms-resource://61042WenceyWang.60660BB7A0C1/Microsoft.Xaml.Interactions/Strings/ChangePropertyActionCannotSetValueExceptionMessage">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Cannot assign value of type {0} to property {1} of type {2}. The {1} property can be assigned only values of type {2}.</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="ChangePropertyActionPropertyIsReadOnlyExceptionMessage" uri="ms-resource://61042WenceyWang.60660BB7A0C1/Microsoft.Xaml.Interactions/Strings/ChangePropertyActionPropertyIsReadOnlyExceptionMessage">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Property {0} defined by type {1} does not expose a set method and therefore cannot be modified.</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="EventNotSupportedExceptionMessage" uri="ms-resource://61042WenceyWang.60660BB7A0C1/Microsoft.Xaml.Interactions/Strings/EventNotSupportedExceptionMessage">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Event {0} is not supported. Consider implementing a custom IBehavior to respond to this event.</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="GoToStateActionTargetHasNoStateGroups" uri="ms-resource://61042WenceyWang.60660BB7A0C1/Microsoft.Xaml.Interactions/Strings/GoToStateActionTargetHasNoStateGroups">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Target {0} does not define any VisualStateGroups.</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="InvalidLeftOperand" uri="ms-resource://61042WenceyWang.60660BB7A0C1/Microsoft.Xaml.Interactions/Strings/InvalidLeftOperand">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Binding property of type {0} cannot be used with operator {1}.</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="InvalidOperands" uri="ms-resource://61042WenceyWang.60660BB7A0C1/Microsoft.Xaml.Interactions/Strings/InvalidOperands">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Binding property of type {0} and Value property of type {1} cannot be used with operator {2}.</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="InvalidRightOperand" uri="ms-resource://61042WenceyWang.60660BB7A0C1/Microsoft.Xaml.Interactions/Strings/InvalidRightOperand">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Value property of type {0} cannot be used with operator {1}.</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+		</ResourceMapSubtree>
+		<ResourceMapSubtree name="Microsoft.Xaml.Interactivity">
+			<ResourceMapSubtree name="Strings">
+				<NamedResource name="CannotAttachBehaviorMultipleTimesExceptionMessage" uri="ms-resource://61042WenceyWang.60660BB7A0C1/Microsoft.Xaml.Interactivity/Strings/CannotAttachBehaviorMultipleTimesExceptionMessage">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>An instance of a behavior cannot be attached to more than one object at a time.</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="DuplicateBehaviorInCollectionExceptionMessage" uri="ms-resource://61042WenceyWang.60660BB7A0C1/Microsoft.Xaml.Interactivity/Strings/DuplicateBehaviorInCollectionExceptionMessage">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Cannot add an instance of a behavior to a BehaviorCollection more than once.</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="NonActionAddedToActionCollectionExceptionMessage" uri="ms-resource://61042WenceyWang.60660BB7A0C1/Microsoft.Xaml.Interactivity/Strings/NonActionAddedToActionCollectionExceptionMessage">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Only IAction types are supported in an ActionCollection.</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="NonBehaviorAddedToBehaviorCollectionExceptionMessage" uri="ms-resource://61042WenceyWang.60660BB7A0C1/Microsoft.Xaml.Interactivity/Strings/NonBehaviorAddedToBehaviorCollectionExceptionMessage">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Only IBehavior types are supported in a BehaviorCollection.</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+		</ResourceMapSubtree>
+		<ResourceMapSubtree name="Resource">
+			<NamedResource name="Title" uri="ms-resource://61042WenceyWang.60660BB7A0C1/Resource/Title">
+				<Candidate type="String">
+					<Value>a</Value>
+				</Candidate>
+			</NamedResource>
+		</ResourceMapSubtree>
+		<ResourceMapSubtree name="System.Reactive.Strings_Core">
+			<NamedResource name="CANT_OBTAIN_SCHEDULER" uri="ms-resource://61042WenceyWang.60660BB7A0C1/System.Reactive.Strings_Core/CANT_OBTAIN_SCHEDULER">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Using the Scheduler.{0} property is no longer supported due to refactoring of the API surface and elimination of platform-specific dependencies. Please include System.Reactive.PlatformServices for your target platform and use the {0}Scheduler type instead. If you're building a Windows Store app, notice some schedulers are no longer supported. Consider using Scheduler.Default instead.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="COMPLETED_NO_VALUE" uri="ms-resource://61042WenceyWang.60660BB7A0C1/System.Reactive.Strings_Core/COMPLETED_NO_VALUE">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>OnCompleted notification doesn't have a value.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="DISPOSABLE_ALREADY_ASSIGNED" uri="ms-resource://61042WenceyWang.60660BB7A0C1/System.Reactive.Strings_Core/DISPOSABLE_ALREADY_ASSIGNED">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Disposable has already been assigned.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="FAILED_CLOCK_MONITORING" uri="ms-resource://61042WenceyWang.60660BB7A0C1/System.Reactive.Strings_Core/FAILED_CLOCK_MONITORING">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Failed to start monitoring system clock changes.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="HEAP_EMPTY" uri="ms-resource://61042WenceyWang.60660BB7A0C1/System.Reactive.Strings_Core/HEAP_EMPTY">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Heap is empty.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="OBSERVER_TERMINATED" uri="ms-resource://61042WenceyWang.60660BB7A0C1/System.Reactive.Strings_Core/OBSERVER_TERMINATED">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Observer has already terminated.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="REENTRANCY_DETECTED" uri="ms-resource://61042WenceyWang.60660BB7A0C1/System.Reactive.Strings_Core/REENTRANCY_DETECTED">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Reentrancy has been detected.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="SCHEDULER_OPERATION_ALREADY_AWAITED" uri="ms-resource://61042WenceyWang.60660BB7A0C1/System.Reactive.Strings_Core/SCHEDULER_OPERATION_ALREADY_AWAITED">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>This scheduler operation has already been awaited.</Value>
+				</Candidate>
+			</NamedResource>
+		</ResourceMapSubtree>
+		<ResourceMapSubtree name="System.Reactive.Strings_Linq">
+			<NamedResource name="CANT_ADVANCE_WHILE_RUNNING" uri="ms-resource://61042WenceyWang.60660BB7A0C1/System.Reactive.Strings_Linq/CANT_ADVANCE_WHILE_RUNNING">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>{0} cannot be called when the scheduler is already running. Try using Sleep instead.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="COULD_NOT_FIND_INSTANCE_EVENT" uri="ms-resource://61042WenceyWang.60660BB7A0C1/System.Reactive.Strings_Linq/COULD_NOT_FIND_INSTANCE_EVENT">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Could not find event '{0}' on object of type '{1}'.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="COULD_NOT_FIND_STATIC_EVENT" uri="ms-resource://61042WenceyWang.60660BB7A0C1/System.Reactive.Strings_Linq/COULD_NOT_FIND_STATIC_EVENT">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Could not find event '{0}' on type '{1}'.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="EVENT_ADD_METHOD_SHOULD_TAKE_ONE_PARAMETER" uri="ms-resource://61042WenceyWang.60660BB7A0C1/System.Reactive.Strings_Linq/EVENT_ADD_METHOD_SHOULD_TAKE_ONE_PARAMETER">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Add method should take 1 parameter.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="EVENT_ARGS_NOT_ASSIGNABLE" uri="ms-resource://61042WenceyWang.60660BB7A0C1/System.Reactive.Strings_Linq/EVENT_ARGS_NOT_ASSIGNABLE">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>The second parameter of the event delegate must be assignable to '{0}'.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="EVENT_MISSING_ADD_METHOD" uri="ms-resource://61042WenceyWang.60660BB7A0C1/System.Reactive.Strings_Linq/EVENT_MISSING_ADD_METHOD">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Event is missing the add method.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="EVENT_MISSING_REMOVE_METHOD" uri="ms-resource://61042WenceyWang.60660BB7A0C1/System.Reactive.Strings_Linq/EVENT_MISSING_REMOVE_METHOD">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Event is missing the remove method.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="EVENT_MUST_RETURN_VOID" uri="ms-resource://61042WenceyWang.60660BB7A0C1/System.Reactive.Strings_Linq/EVENT_MUST_RETURN_VOID">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>The event delegate must have a void return type.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="EVENT_PATTERN_REQUIRES_TWO_PARAMETERS" uri="ms-resource://61042WenceyWang.60660BB7A0C1/System.Reactive.Strings_Linq/EVENT_PATTERN_REQUIRES_TWO_PARAMETERS">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>The event delegate must have exactly two parameters.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="EVENT_REMOVE_METHOD_SHOULD_TAKE_ONE_PARAMETER" uri="ms-resource://61042WenceyWang.60660BB7A0C1/System.Reactive.Strings_Linq/EVENT_REMOVE_METHOD_SHOULD_TAKE_ONE_PARAMETER">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Remove method should take 1 parameter.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="EVENT_SENDER_NOT_ASSIGNABLE" uri="ms-resource://61042WenceyWang.60660BB7A0C1/System.Reactive.Strings_Linq/EVENT_SENDER_NOT_ASSIGNABLE">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>The first parameter of the event delegate must be assignable to '{0}'.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="EVENT_WINRT_REMOVE_METHOD_SHOULD_TAKE_ERT" uri="ms-resource://61042WenceyWang.60660BB7A0C1/System.Reactive.Strings_Linq/EVENT_WINRT_REMOVE_METHOD_SHOULD_TAKE_ERT">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Remove method of a WinRT event should take an EventRegistrationToken.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="MORE_THAN_ONE_ELEMENT" uri="ms-resource://61042WenceyWang.60660BB7A0C1/System.Reactive.Strings_Linq/MORE_THAN_ONE_ELEMENT">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Sequence contains more than one element.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="MORE_THAN_ONE_MATCHING_ELEMENT" uri="ms-resource://61042WenceyWang.60660BB7A0C1/System.Reactive.Strings_Linq/MORE_THAN_ONE_MATCHING_ELEMENT">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Sequence contains more than one matching element.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="NO_ELEMENTS" uri="ms-resource://61042WenceyWang.60660BB7A0C1/System.Reactive.Strings_Linq/NO_ELEMENTS">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Sequence contains no elements.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="NO_MATCHING_ELEMENTS" uri="ms-resource://61042WenceyWang.60660BB7A0C1/System.Reactive.Strings_Linq/NO_MATCHING_ELEMENTS">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Sequence contains no matching element.</Value>
+				</Candidate>
+			</NamedResource>
+		</ResourceMapSubtree>
+		<ResourceMapSubtree name="System.Reactive.Strings_PlatformServices">
+			<NamedResource name="WINRT_NO_SUB1MS_TIMERS" uri="ms-resource://61042WenceyWang.60660BB7A0C1/System.Reactive.Strings_PlatformServices/WINRT_NO_SUB1MS_TIMERS">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>The WinRT thread pool doesn't support creating periodic timers with a period below 1 millisecond.</Value>
+				</Candidate>
+			</NamedResource>
+		</ResourceMapSubtree>
+		<ResourceMapSubtree name="System.Reactive.Strings_WindowsThreading">
+			<NamedResource name="NO_DISPATCHER_CURRENT_THREAD" uri="ms-resource://61042WenceyWang.60660BB7A0C1/System.Reactive.Strings_WindowsThreading/NO_DISPATCHER_CURRENT_THREAD">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>The current thread has no Dispatcher associated with it.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="NO_WINDOW_CURRENT" uri="ms-resource://61042WenceyWang.60660BB7A0C1/System.Reactive.Strings_WindowsThreading/NO_WINDOW_CURRENT">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>No current Window object found to obtain a CoreDispatcher from.</Value>
+				</Candidate>
+			</NamedResource>
+		</ResourceMapSubtree>
+	</ResourceMap>
+</PriInfo>

@@ -1,0 +1,6 @@
+﻿[ResourceMetadata]
+"ResourceId"			"split.language-fr"
+"ResourceDimensions"		"language-fr-fr"
+
+[Files]
+"C:\Users\Wang\Source\Repos\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.WindowsPhone\obj\Release\split.language-fr.pri"			"resources.pri"

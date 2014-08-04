@@ -51,11 +51,11 @@ namespace OrangeEndLess
         {
             get
             {
-                return Convert . ToDecimal ( GameData . Values [ "NumberOfOrangeHaveGet" ] );
+                return Convert . ToDecimal ( GameData . Values [ "TextBlockNumberOfOrangeOutTip" ] );
             }
             set
             {
-                GameData . Values [ "NumberOfOrangeHaveGet" ] = value . ToString ( );
+                GameData . Values [ "TextBlockNumberOfOrangeOutTip" ] = value . ToString ( );
             }
         }
 
@@ -75,11 +75,11 @@ namespace OrangeEndLess
         {
             get
             {
-                return Convert . ToDecimal ( GameData . Values [ "NumberOfOrangeHaveMadeFromRush" ] );
+                return Convert . ToDecimal ( GameData . Values [ "ButtonRushTip" ] );
             }
             set
             {
-                GameData . Values [ "NumberOfOrangeHaveMadeFromRush" ] = value . ToString ( );
+                GameData . Values [ "ButtonRushTip" ] = value . ToString ( );
             }
         }
 
@@ -142,7 +142,6 @@ namespace OrangeEndLess
         {
             NumberOfOrange += ( LevelOfRush );
             NumberOfOrangeHaveMadeFromRush += LevelOfRush;
-            UpdateNumberOfOrange ( this , new EventArgs ( ) );
         }
 
         public decimal NumberOfMoney

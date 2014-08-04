@@ -29,9 +29,9 @@ namespace OrangeEndLess
             GameData . Values [ "Money" ] = 0;
             GameData . Values [ "NumberOfOrange" ] = 0;
             GameData . Values [ "LevelOfRush" ] = 0;
-            GameData . Values [ "NumberOfOrangeHaveMadeFromRush" ] = 0;
+            GameData . Values [ "ButtonRushTip" ] = 0;
             GameData . Values [ "NumberOfMoneyHaveGet" ] = 0;
-            GameData . Values [ "NumberOfOrangeHaveGet" ] = 0;
+            GameData . Values [ "TextBlockNumberOfOrangeOutTip" ] = 0;
             GameData . Values [ "NumberOfUpdateHavePromote" ] = 0;
             GameData . Values [ "TimeToUpdateNumberOfOrange" ] = 100;
             GameData . Values [ "TimeToUpdateAchevement" ] = 100000;
