@@ -672,22 +672,22 @@ namespace OrangeEndLess.OrangeEndLess_Windows_XamlTypeInfo
             var that = (global::OrangeEndLess.ViewModels.MainPage_Model)instance;
             that.NumberOfOrange = (global::System.String)Value;
         }
-        private object get_24_MainPage_Model_NumberOfOrangeHaveGet(object instance)
+        private object get_24_MainPage_Model_TextBlockNumberOfOrangeOutTip(object instance)
         {
             var that = (global::OrangeEndLess.ViewModels.MainPage_Model)instance;
             return that.TextBlockNumberOfOrangeOutTip;
         }
-        private void set_24_MainPage_Model_NumberOfOrangeHaveGet(object instance, object Value)
+        private void set_24_MainPage_Model_TextBlockNumberOfOrangeOutTip(object instance, object Value)
         {
             var that = (global::OrangeEndLess.ViewModels.MainPage_Model)instance;
             that.TextBlockNumberOfOrangeOutTip = (global::System.String)Value;
         }
-        private object get_25_MainPage_Model_NumberOfOrangeHaveMadeFromRush(object instance)
+        private object get_25_MainPage_Model_ButtonRushTip(object instance)
         {
             var that = (global::OrangeEndLess.ViewModels.MainPage_Model)instance;
             return that.ButtonRushTip;
         }
-        private void set_25_MainPage_Model_NumberOfOrangeHaveMadeFromRush(object instance, object Value)
+        private void set_25_MainPage_Model_ButtonRushTip(object instance, object Value)
         {
             var that = (global::OrangeEndLess.ViewModels.MainPage_Model)instance;
             that.ButtonRushTip = (global::System.String)Value;
@@ -913,14 +913,14 @@ namespace OrangeEndLess.OrangeEndLess_Windows_XamlTypeInfo
             case "OrangeEndLess.ViewModels.MainPage_Model.TextBlockNumberOfOrangeOutTip":
                 userType = (global::OrangeEndLess.OrangeEndLess_Windows_XamlTypeInfo.XamlUserType)GetXamlTypeByName("OrangeEndLess.ViewModels.MainPage_Model");
                 xamlMember = new global::OrangeEndLess.OrangeEndLess_Windows_XamlTypeInfo.XamlMember(this, "TextBlockNumberOfOrangeOutTip", "String");
-                xamlMember.Getter = get_24_MainPage_Model_NumberOfOrangeHaveGet;
-                xamlMember.Setter = set_24_MainPage_Model_NumberOfOrangeHaveGet;
+                xamlMember.Getter = get_24_MainPage_Model_TextBlockNumberOfOrangeOutTip;
+                xamlMember.Setter = set_24_MainPage_Model_TextBlockNumberOfOrangeOutTip;
                 break;
             case "OrangeEndLess.ViewModels.MainPage_Model.ButtonRushTip":
                 userType = (global::OrangeEndLess.OrangeEndLess_Windows_XamlTypeInfo.XamlUserType)GetXamlTypeByName("OrangeEndLess.ViewModels.MainPage_Model");
                 xamlMember = new global::OrangeEndLess.OrangeEndLess_Windows_XamlTypeInfo.XamlMember(this, "ButtonRushTip", "String");
-                xamlMember.Getter = get_25_MainPage_Model_NumberOfOrangeHaveMadeFromRush;
-                xamlMember.Setter = set_25_MainPage_Model_NumberOfOrangeHaveMadeFromRush;
+                xamlMember.Getter = get_25_MainPage_Model_ButtonRushTip;
+                xamlMember.Setter = set_25_MainPage_Model_ButtonRushTip;
                 break;
             case "MVVMSidekick.ViewModels.ViewModelBase`1<OrangeEndLess.ViewModels.MainPage_Model>.IsDisposingWhenUnbindRequired":
                 userType = (global::OrangeEndLess.OrangeEndLess_Windows_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MVVMSidekick.ViewModels.ViewModelBase`1<OrangeEndLess.ViewModels.MainPage_Model>");

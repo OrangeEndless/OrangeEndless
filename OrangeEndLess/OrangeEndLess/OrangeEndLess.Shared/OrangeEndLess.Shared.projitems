@@ -41,13 +41,17 @@
     <PRIResource Include="$(MSBuildThisFileDirectory)Resource.resw" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="$(MSBuildThisFileDirectory)1 (1).jpg" />
-    <Content Include="$(MSBuildThisFileDirectory)1 (2).jpg" />
-    <Content Include="$(MSBuildThisFileDirectory)1.jpg" />
     <Content Include="$(MSBuildThisFileDirectory)a.jpg" />
     <Content Include="$(MSBuildThisFileDirectory)Photos\Orange.jpg" />
     <Content Include="$(MSBuildThisFileDirectory)Photos\Wencey.JPG" />
     <Content Include="$(MSBuildThisFileDirectory)w.fw.png" />
     <Content Include="$(MSBuildThisFileDirectory)weibo.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="$(MSBuildThisFileDirectory)UI\Styles.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
 </Project>
