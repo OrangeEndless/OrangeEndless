@@ -38,7 +38,7 @@ namespace OrangeEndLess
         {
             foreach ( var item in Achievements )
             {
-                item . Check ( this );
+                item . Check ( );
             }
             UpdateAchevements ( this , new EventArgs ( ) );
         }

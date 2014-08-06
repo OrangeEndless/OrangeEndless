@@ -17,41 +17,45 @@ namespace OrangeEndLess
 
         public string Title;
 
-        Func<Core,bool> _Check;
+        public string Lebel;
+
+        Core GameCore;
+
+        Func<Core,bool> FuncIsGet;
 
         public void Clean ( )
         {
             IsGet = false;
         }
 
-
         public bool IsGet
         {
             get
             {
-                return ( bool ) GameData . Values [ Title + "IsGet" ];
+                return ( bool ) GameData . Values [ Lebel + "IsGet" ];
             }
             set
             {
-                GameData . Values [ Title + "IsGet" ] = value;
+                GameData . Values [ Lebel + "IsGet" ] = value;
             }
         }
 
-        public void Check ( Core cor )
+        public void Check ( )
         {
             if ( IsGet != true )
             {
-                IsGet = _Check . Invoke ( cor );
+                IsGet = FuncIsGet . Invoke ( GameCore );
             }
         }
 
-        public Achievement ( int key , Func<Core , bool> func )
+        public Achievement ( int key , Core gamecore , Func<Core , bool> func )
         {
             //Title = title;
-            _Check = func;
-            if ( GameData . Values [ Title + "IsGet" ] == null )
+            GameCore = gamecore;
+            FuncIsGet = func;
+            if ( GameData . Values [ Lebel + "IsGet" ] == null )
             {
-                GameData . Values [ Title + "IsGet" ] = false;
+                GameData . Values [ Lebel + "IsGet" ] = false;
             }
         }
     }

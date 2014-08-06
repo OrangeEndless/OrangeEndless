@@ -62,5 +62,8 @@
       <RootProperty Name="TargetType" />
       <RootProperty Name="Template" />
     </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Image">
+      <RootProperty Name="Source" />
+    </RootType>
   </Roots.RootTypes>
 </Roots>

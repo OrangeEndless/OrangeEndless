@@ -128,7 +128,7 @@ namespace OrangeEndLess
                         if ( item . Value . Title . StartsWith ( strs [ 1 ] ) )
                         {
                             decimal _havebuy,_havecost;
-                            item . Value . Buy ( Convert . ToDecimal ( strs [ 2 ] ) , GameCore , out _havebuy , out _havecost );
+                            item . Value . Buy ( Convert . ToDecimal ( strs [ 2 ] ) , out _havebuy , out _havecost );
                             WriteLine ( string . Format ( "Have bought {0} {1} and cost {2}" , _havebuy . ToString ( ) , item . Value . Title . ToUpper ( ) , _havecost . ToString ( ) ) );
                             return;
                         }
@@ -153,7 +153,7 @@ namespace OrangeEndLess
                         if ( item . Value . Title . StartsWith ( strs [ 1 ] ) )
                         {
                             decimal _havesell,_haveget;
-                            item . Value . Sell ( Convert . ToDecimal ( strs [ 2 ] ) , GameCore , out _havesell , out _haveget );
+                            item . Value . Sell ( Convert . ToDecimal ( strs [ 2 ] ) , out _havesell , out _haveget );
                             WriteLine ( "Have sell " + _havesell . ToString ( ) + item . Value . Title . ToUpper ( ) + " and get " + _haveget . ToString ( ) );
                             return;
                         }

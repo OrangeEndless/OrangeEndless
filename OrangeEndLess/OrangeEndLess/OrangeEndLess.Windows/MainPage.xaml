@@ -25,7 +25,7 @@
         </Style>
         <vm:MainPage_Model x:Key="DesignVM"/>
         <ControlTemplate x:Key="HubSectionOranges" TargetType="HubSection">
-            <Grid Width="682">
+            <Grid Width="700">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="128"/>
                     <RowDefinition Height="Auto"/>
@@ -33,10 +33,11 @@
                     <RowDefinition Height="Auto"/>
                     <RowDefinition/>
                 </Grid.RowDefinitions>
+                <TextBlock HorizontalAlignment="Center" Margin="0" TextWrapping="Wrap" Text="{StaticResource NumberOfOrange}" FontSize="24" Grid.Row="1" Height="29" Width="120"/>
                 <TextBlock HorizontalAlignment="Center" Margin="0" TextWrapping="Wrap" Text="{Binding NumberOfOrange}" FontSize="56" Grid.Row="2"/>
-                <TextBlock HorizontalAlignment="Center" Margin="281,0" TextWrapping="Wrap" Text="{StaticResource NumberOfOrange}" FontSize="24" Grid.Row="1" Height="29" Width="120"/>
                 <TextBlock HorizontalAlignment="Center" Margin="0" TextWrapping="Wrap" Text="{Binding CPSOfOrange}" Grid.Row="3" FontSize="24"/>
                 <Button Content="Button" HorizontalAlignment="Center" Margin="0" Grid.Row="4" VerticalAlignment="Center" Style="{StaticResource ButtonRushStyle}" Width="100" Height="100" Command="{Binding CommandRush}"/>
+                <Rectangle Margin="0" Grid.Row="4"/>
             </Grid>
         </ControlTemplate>
     </Page.Resources>

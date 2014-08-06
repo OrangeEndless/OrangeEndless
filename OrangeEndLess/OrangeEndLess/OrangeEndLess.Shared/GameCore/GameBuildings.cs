@@ -22,8 +22,8 @@ namespace OrangeEndLess
 
         void LoadBuildings ( )
         {
-            Buildings . Add ( "Cursor" , new Building ( "Cursor" , 1m , 0.1m ) );
-            Buildings . Add ( "Primary" , new Building ( "Primary" , 10m , 0.5m ) );
+            Buildings . Add ( "Cursor" , new Building ( "Cursor" , 1m , 0.1m , this , ( Core cor ) => { return cor . NumberOfMoneyHaveGet >= 1; } , ( Core cor ) => { return cor . NumberOfOrangeHaveGet >= 1; } ) );
+            Buildings . Add ( "Primary" , new Building ( "Primary" , 10m , 0.5m , this , ( Core cor ) => { return Status . Dark; } ) );
             Buildings . Add ( "Farm" , new Building ( "Farm" , 100m , 4m ) );
             Buildings . Add ( "Factory" , new Building ( "Factory" , 300m , 10m ) );
             Buildings . Add ( "Mine" , new Building ( "Mine" , 1400m , 40m ) );

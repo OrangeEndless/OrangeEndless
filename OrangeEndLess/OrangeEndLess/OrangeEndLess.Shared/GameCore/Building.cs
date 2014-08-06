@@ -13,32 +13,54 @@ namespace OrangeEndLess
 {
     public class Building
     {
-
         Random Randoms = new Random ( );
 
         ApplicationDataContainer GameData = ApplicationData . Current . RoamingSettings;
 
-        DispatcherTimer EventTimer = new DispatcherTimer ( );
+        Func<Core,bool> FuncDark;
+
+        Func<Core,bool> FuncShow;
+
+        Core GameCore;
+
+        public Status Status
+        {
+            get
+            {
+                if ( FuncShow ( GameCore ) )
+                {
+                    return Status . Show;
+                }
+                if ( FuncDark ( GameCore ) )
+                {
+                    return Status . Dark;
+                }
+                return Status . Hide;
+            }
+        }
 
         public string Title { get; set; }
+
         public string Label { get; set; }
+
         decimal PriceBase { get; set; }
+
         decimal StartCPS { get; set; }
 
         public void Clean ( )
         {
-            GameData . Values [ "NumberOfOrangeHaveMadeFrom" + Title ] = GameData . Values [ "NumberOf" + Title ] = GameData . Values [ "LevelOf" + Title ] = 0;
+            GameData . Values [ "NumberOfOrangeHaveMadeFrom" + Label ] = GameData . Values [ "NumberOf" + Label ] = GameData . Values [ "LevelOf" + Label ] = 0;
         }
 
         public decimal NumberOfOrangeHaveMade
         {
             get
             {
-                return Convert . ToDecimal ( GameData . Values [ "NumberOfOrangeHaveMadeFrom" + Title ] );
+                return Convert . ToDecimal ( GameData . Values [ "NumberOfOrangeHaveMadeFrom" + Label ] );
             }
             set
             {
-                GameData . Values [ "NumberOfOrangeHaveMadeFrom" + Title ] = value . ToString ( );
+                GameData . Values [ "NumberOfOrangeHaveMadeFrom" + Label ] = value . ToString ( );
             }
         }
 
@@ -54,11 +76,11 @@ namespace OrangeEndLess
         {
             get
             {
-                return Convert . ToDecimal ( GameData . Values [ "NumberOf" + Title ] );
+                return Convert . ToDecimal ( GameData . Values [ "NumberOf" + Label ] );
             }
             set
             {
-                GameData . Values [ "NumberOf" + Title ] = value . ToString ( );
+                GameData . Values [ "NumberOf" + Label ] = value . ToString ( );
             }
         }
 
@@ -66,11 +88,11 @@ namespace OrangeEndLess
         {
             get
             {
-                return Convert . ToDecimal ( GameData . Values [ "LevelOf" + Title ] ) + 1;
+                return Convert . ToDecimal ( GameData . Values [ "LevelOf" + Label ] ) + 1;
             }
             set
             {
-                GameData . Values [ "LevelOf" + Title ] = ( value - 1 ) . ToString ( );
+                GameData . Values [ "LevelOf" + Label ] = ( value - 1 ) . ToString ( );
             }
         }
 
@@ -82,24 +104,24 @@ namespace OrangeEndLess
             }
         }
 
-        public void Buy ( decimal number , Core cor , out decimal havebuy , out decimal havecost )
+        public void Buy ( decimal number , out decimal havebuy , out decimal havecost )
         {
             decimal _havebuy = 0;
             decimal _havecost = 0;
-            while ( cor . NumberOfMoney >= Price )
+            while ( GameCore . NumberOfMoney >= Price )
             {
                 _havecost += Price;
                 _havebuy++;
             }
-            cor . NumberOfMoney -= _havecost;
+            GameCore . NumberOfMoney -= _havecost;
             Number += _havebuy;
             havebuy = _havebuy;
             havecost = _havecost;
-            cor . UpdateBuildingsFromBuilding ( this );
+            GameCore . UpdateBuildingsFromBuilding ( this );
         }
 
 
-        public void Sell ( decimal number , Core cor , out decimal havesell , out decimal haveget )
+        public void Sell ( decimal number , out decimal havesell , out decimal haveget )
         {
             decimal _havesell = 0;
             decimal _haveget = 0;
@@ -110,26 +132,29 @@ namespace OrangeEndLess
                 _haveget += _priceran;
                 _havesell++;
             }
-            cor . NumberOfMoney += _haveget;
+            GameCore . NumberOfMoney += _haveget;
             Number -= _havesell;
             havesell = _havesell;
             haveget = _haveget;
-            cor . UpdateBuildingsFromBuilding ( this );
+            GameCore . UpdateBuildingsFromBuilding ( this );
         }
 
-        public Building ( string name , decimal startprice , decimal startcps )
+        public Building ( string name , decimal startprice , decimal startcps , Core gamecore , Func<Core , bool> funcshow , Func<Core , bool> funcdark )
         {
             Label = name;
             Title = ( string ) App . Current . Resources [ ( "TitleOf" + name ) ];
             PriceBase = startprice;
             StartCPS = startcps;
-            if ( GameData . Values [ "LevelOf" + Title ] == null )
+            GameCore = gamecore;
+            FuncShow = funcshow;
+            FuncDark = funcdark;
+            if ( GameData . Values [ "LevelOf" + Label ] == null )
             {
-                GameData . Values [ "LevelOf" + Title ] = 0;
+                GameData . Values [ "LevelOf" + Label ] = 0;
             }
-            if ( GameData . Values [ "NumberOf" + Title ] == null )
+            if ( GameData . Values [ "NumberOf" + Label ] == null )
             {
-                GameData . Values [ "NumberOf" + Title ] = 0;
+                GameData . Values [ "NumberOf" + Label ] = 0;
             }
 
         }

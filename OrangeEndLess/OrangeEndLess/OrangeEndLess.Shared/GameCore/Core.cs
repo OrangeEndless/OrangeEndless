@@ -30,10 +30,7 @@ namespace OrangeEndLess
 
         public event EventHandler UpdateNumberOfMoney;
 
-
-
         public long _APM  =0;
-
 
         public decimal NumberOfUpdateHavePromote
         {

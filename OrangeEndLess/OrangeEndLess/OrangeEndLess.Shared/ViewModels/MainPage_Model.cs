@@ -38,6 +38,7 @@ namespace OrangeEndLess . ViewModels
             GameCore . UpdateNumberOfOrange += GameCore_UpdateNumberOfOrange;
         }
 
+
         void GameCore_UpdateNumberOfOrange ( object sender , EventArgs e )
         {
             NumberOfOrange = decimal . Floor ( GameCore . NumberOfOrange ) . ToString ( );
@@ -99,7 +100,8 @@ namespace OrangeEndLess . ViewModels
                 return cmdmdl;
             };
         #endregion
-        
+
+
         public string CPSOfOrange
         {
             get { return _CPSOfOrangeLocator ( this ) . Value; }
@@ -108,7 +110,12 @@ namespace OrangeEndLess . ViewModels
         #region Property string CPSOfOrange Setup
         protected Property<string> _CPSOfOrange = new Property<string> { LocatorFunc = _CPSOfOrangeLocator };
         static Func<BindableBase,ValueContainer<string>> _CPSOfOrangeLocator= RegisterContainerLocator<string> ( "CPSOfOrange" , model => model . Initialize ( "CPSOfOrange" , ref model . _CPSOfOrange , ref _CPSOfOrangeLocator , _CPSOfOrangeDefaultValueFactory ) );
-        static Func<string> _CPSOfOrangeDefaultValueFactory = ( ) => { return default ( string ); };
+        static Func<BindableBase,string> _CPSOfOrangeDefaultValueFactory = 
+            model =>
+            {
+                var vm = CastToCurrentType ( model );
+                return string . Format ( "橘子的增速：{0}/s" , vm . GameCore . SpeedOfOrangeRise . ToString ( ) );
+            };
         #endregion
 
         public string NumberOfOrange
@@ -119,7 +126,12 @@ namespace OrangeEndLess . ViewModels
         #region Property string NumberOfOrange Setup
         protected Property<string> _NumberOfOrange = new Property<string> { LocatorFunc = _NumberOfOrangeLocator };
         static Func<BindableBase,ValueContainer<string>> _NumberOfOrangeLocator= RegisterContainerLocator<string> ( "NumberOfOrange" , model => model . Initialize ( "NumberOfOrange" , ref model . _NumberOfOrange , ref _NumberOfOrangeLocator , _NumberOfOrangeDefaultValueFactory ) );
-        static Func<string> _NumberOfOrangeDefaultValueFactory = ( ) => { return default ( string ); };
+        static Func<BindableBase,string> _NumberOfOrangeDefaultValueFactory = 
+            model =>
+            {
+                var vm = CastToCurrentType ( model );
+                return decimal . Floor ( vm . GameCore . NumberOfOrange ) . ToString ( );
+            };
         #endregion
 
         public string TextBlockNumberOfOrangeOutTip
@@ -130,8 +142,14 @@ namespace OrangeEndLess . ViewModels
         #region Property string TextBlockNumberOfOrangeOutTip Setup
         protected Property<string> _TextBlockNumberOfOrangeOutTip = new Property<string> { LocatorFunc = _TextBlockNumberOfOrangeOutTipLocator };
         static Func<BindableBase,ValueContainer<string>> _TextBlockNumberOfOrangeOutTipLocator= RegisterContainerLocator<string> ( "TextBlockNumberOfOrangeOutTip" , model => model . Initialize ( "TextBlockNumberOfOrangeOutTip" , ref model . _TextBlockNumberOfOrangeOutTip , ref _TextBlockNumberOfOrangeOutTipLocator , _TextBlockNumberOfOrangeOutTipDefaultValueFactory ) );
-        static Func<string> _TextBlockNumberOfOrangeOutTipDefaultValueFactory = ( ) => { return default ( string ); };
+        static Func<BindableBase,string> _TextBlockNumberOfOrangeOutTipDefaultValueFactory = 
+            model =>
+            {
+                var vm = CastToCurrentType ( model );
+                return string . Format ( "你制造的橘子总数：{0}" , decimal . Floor ( vm . GameCore . NumberOfOrangeHaveGet ) . ToString ( ) );
+            };
         #endregion
+
 
         public string ButtonRushTip
         {
@@ -141,7 +159,12 @@ namespace OrangeEndLess . ViewModels
         #region Property string ButtonRushTip Setup
         protected Property<string> _ButtonRushTip = new Property<string> { LocatorFunc = _ButtonRushTipLocator };
         static Func<BindableBase,ValueContainer<string>> _ButtonRushTipLocator= RegisterContainerLocator<string> ( "ButtonRushTip" , model => model . Initialize ( "ButtonRushTip" , ref model . _ButtonRushTip , ref _ButtonRushTipLocator , _ButtonRushTipDefaultValueFactory ) );
-        static Func<string> _ButtonRushTipDefaultValueFactory = ( ) => { return default ( string ); };
+        static Func<BindableBase,string> _ButtonRushTipDefaultValueFactory = 
+            model =>
+            {
+                var vm = CastToCurrentType ( model );
+                return decimal . Floor ( vm . GameCore . NumberOfOrangeHaveGet ) . ToString ( );
+            };
         #endregion
 
 
