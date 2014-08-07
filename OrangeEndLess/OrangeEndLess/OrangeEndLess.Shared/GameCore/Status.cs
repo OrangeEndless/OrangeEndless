@@ -2,8 +2,9 @@
 {
     public enum Status
     {
-        Show = 1 ,
+        Active = 1 ,
         Dark = 2 ,
-        Hide = 3
+        Black = 3 ,
+        Hide = 4
     }
 }

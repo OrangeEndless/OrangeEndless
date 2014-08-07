@@ -26,22 +26,23 @@
 
         <x:String x:Key="TitleOfCursor">指针</x:String>
         <x:String x:Key="LabelOfCursor">鼠标的指针~不是C里面的那个~可以帮你点击那个写着“摇”的按钮</x:String>
-        
+
+
         <x:String x:Key="TitleOfPrimary">小学生</x:String>
         <x:String x:Key="LabelOfPrimary">香甜的橘子可以诱惑一些正在玩锑尔号的小学生来帮你摇树</x:String>
-        
+
         <x:String x:Key="TitleOfFarm">农场</x:String>
         <x:String x:Key="LabelOfFarm">农场里可以出产橘子~只是在冬天需要水结冰来拯救橘子们</x:String>
-        
+
         <x:String x:Key="TitleOfFactory">工厂</x:String>
         <x:String x:Key="LabelOfFactory">这是专业生产橘子的工厂</x:String>
-        
+
         <x:String x:Key="TitleOfMine">矿井</x:String>
         <x:String x:Key="LabelOfMine">矿井里面可以挖出还没有变成化石的橘子</x:String>
-        
+
         <x:String x:Key="TitleOfShipment">宇宙飞船</x:String>
         <x:String x:Key="LabelOfShipment">Oh!这里有一个由橘子组成的星球！</x:String>
-        
+
         <x:String x:Key="TitleOfLab">生物实验室</x:String>
         <x:String x:Key="LabelOfLab">祖传克隆橘子！！！</x:String>
 
@@ -56,13 +57,13 @@
 
         <x:String x:Key="TitleOfPrism">折跃棱镜</x:String>
         <x:String x:Key="LabelOfPrism">你的折跃门折跃出的怎么全是橘子？</x:String>
-        
-        
+
+
         <x:String x:Key="TOP1">生产</x:String>
         <x:String x:Key="TOP2">记录</x:String>
         <x:String x:Key="TOP3">交易</x:String>
-        
-        
+
+
     </Application.Resources>
-    
+
 </Application>

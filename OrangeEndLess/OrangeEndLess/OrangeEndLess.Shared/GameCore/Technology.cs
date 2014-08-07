@@ -11,15 +11,15 @@ using MVVMSidekick . ViewModels;
 
 namespace OrangeEndLess
 {
-    class Update
+    public class Technology
     {
         ApplicationDataContainer GameData = ApplicationData . Current . RoamingSettings;
 
         Core GameCore;
 
-        Action<Core> Do;
+        Action<Core> ActionBeforePromote;
 
-        Action<Core> a;
+        Action<Core> ActionAfterPromote;
 
         Func<Core,bool> CanPromote;
 
@@ -39,7 +39,7 @@ namespace OrangeEndLess
             {
                 if ( FuncShow ( GameCore ) )
                 {
-                    return Status . Show;
+                    return Status . Active;
                 }
                 if ( FuncDark ( GameCore ) )
                 {
@@ -61,9 +61,14 @@ namespace OrangeEndLess
             }
         }
 
-        public void Promote()
+        public void Promote ( )
         {
-            
+            if ( CanPromote ( GameCore ) )
+            {
+                ActionBeforePromote ( GameCore );
+                IsPromoted = true;
+                ActionAfterPromote ( GameCore );
+            }
         }
 
     }

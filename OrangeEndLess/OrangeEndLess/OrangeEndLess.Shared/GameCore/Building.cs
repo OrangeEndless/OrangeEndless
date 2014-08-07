@@ -17,35 +17,43 @@ namespace OrangeEndLess
 
         ApplicationDataContainer GameData = ApplicationData . Current . RoamingSettings;
 
-        Func<Core,bool> FuncDark;
+        Func<Core,bool> FuncBlack;
 
         Func<Core,bool> FuncShow;
 
         Core GameCore;
 
+        public string Title;
+
+        public string Label;
+
+        decimal PriceBase;
+
+        decimal StartCPS;
+
         public Status Status
         {
             get
             {
-                if ( FuncShow ( GameCore ) )
+                if ( FuncShow ( GameCore ) && FuncBlack ( GameCore ) && GameCore . NumberOfMoney >= Price )
                 {
-                    return Status . Show;
+                    return Status . Active;
                 }
-                if ( FuncDark ( GameCore ) )
+                if ( FuncShow ( GameCore ) && FuncBlack ( GameCore ) && GameCore . NumberOfMoney < Price )
                 {
                     return Status . Dark;
+                }
+                if ( FuncBlack ( GameCore ) && ( FuncShow ( GameCore ) == false ) )
+                {
+                    return Status . Black;
+                }
+                if ( FuncBlack ( GameCore ) == false )
+                {
+                    return Status . Hide;
                 }
                 return Status . Hide;
             }
         }
-
-        public string Title { get; set; }
-
-        public string Label { get; set; }
-
-        decimal PriceBase { get; set; }
-
-        decimal StartCPS { get; set; }
 
         public void Clean ( )
         {
@@ -120,7 +128,6 @@ namespace OrangeEndLess
             GameCore . UpdateBuildingsFromBuilding ( this );
         }
 
-
         public void Sell ( decimal number , out decimal havesell , out decimal haveget )
         {
             decimal _havesell = 0;
@@ -139,15 +146,25 @@ namespace OrangeEndLess
             GameCore . UpdateBuildingsFromBuilding ( this );
         }
 
+
+        /// <summary>
+        /// 创建一个建筑
+        /// </summary>
+        /// <param name="name">建筑的标识</param>
+        /// <param name="startprice">价格的初始值</param>
+        /// <param name="startcps"></param>
+        /// <param name="gamecore">传入当前核心</param>
+        /// <param name="funcshow">判断建筑是否显示详细信息</param>
+        /// <param name="funcdark">判断建筑是否显示轮廓</param>
         public Building ( string name , decimal startprice , decimal startcps , Core gamecore , Func<Core , bool> funcshow , Func<Core , bool> funcdark )
         {
             Label = name;
-            Title = ( string ) App . Current . Resources [ ( "TitleOf" + name ) ];
+            Title = ( string ) App . Current . Resources [ ( "TitleOf" + Level ) ];
             PriceBase = startprice;
             StartCPS = startcps;
             GameCore = gamecore;
             FuncShow = funcshow;
-            FuncDark = funcdark;
+            FuncBlack = funcdark;
             if ( GameData . Values [ "LevelOf" + Label ] == null )
             {
                 GameData . Values [ "LevelOf" + Label ] = 0;

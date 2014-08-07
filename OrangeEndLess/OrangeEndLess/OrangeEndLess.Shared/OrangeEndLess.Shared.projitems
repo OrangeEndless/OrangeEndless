@@ -30,12 +30,13 @@
     <Compile Include="$(MSBuildThisFileDirectory)GameCore\GameAchievements.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)GameCore\GameBuildings.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)GameCore\GameRandomEvents.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)GameCore\GameTechnologys.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)GameCore\RandomArgs.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)GameCore\RandomEvent.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)GameCore\Starting.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)GameCore\Status.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)GameCore\Timers.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)GameCore\Update.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)GameCore\Technology.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Startups\StartupFunctions.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModels\MainPage_Model.cs" />
   </ItemGroup>
