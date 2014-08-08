@@ -38,7 +38,6 @@ namespace OrangeEndLess . ViewModels
             GameCore . UpdateNumberOfOrange += GameCore_UpdateNumberOfOrange;
         }
 
-
         void GameCore_UpdateNumberOfOrange ( object sender , EventArgs e )
         {
             NumberOfOrange = decimal . Floor ( GameCore . NumberOfOrange ) . ToString ( );
@@ -54,6 +53,17 @@ namespace OrangeEndLess . ViewModels
         void GameCore_UpdateBuildings ( object sender , EventArgs e )
         {
             CPSOfOrange = string . Format ( "橘子的增速：{0}/s" , GameCore . SpeedOfOrangeRise . ToString ( ) );
+            string Temp=string . Empty;
+            foreach ( var item in GameCore . Buildings )
+            {
+                if ( item . Value . Status == Status . Active || item . Value . Status == Status . Dark )
+                {
+                    Temp += string . Format ( "{0}:{1}/s" + System . Environment . NewLine , item . Value . Title , item . Value . CPS );
+                }
+            }
+            Temp = Temp . Trim ( );
+            Temp += string . Format ( System . Environment . NewLine + "总和:{0}/s" , GameCore . SpeedOfOrangeRise );
+            TextBlockCPSOfOrangeOutTip = Temp . Trim ( );
         }
 
         void GameCore_UpdateAchevements ( object sender , EventArgs e )
@@ -164,6 +174,33 @@ namespace OrangeEndLess . ViewModels
             {
                 var vm = CastToCurrentType ( model );
                 return decimal . Floor ( vm . GameCore . NumberOfOrangeHaveGet ) . ToString ( );
+            };
+        #endregion
+
+
+        public string TextBlockCPSOfOrangeOutTip
+        {
+            get { return _TextBlockCPSOfOrangeOutTipLocator ( this ) . Value; }
+            set { _TextBlockCPSOfOrangeOutTipLocator ( this ) . SetValueAndTryNotify ( value ); }
+        }
+        #region Property string TextBlockCPSOfOrangeOutTip Setup
+        protected Property<string> _TextBlockCPSOfOrangeOutTip = new Property<string> { LocatorFunc = _TextBlockCPSOfOrangeOutTipLocator };
+        static Func<BindableBase,ValueContainer<string>> _TextBlockCPSOfOrangeOutTipLocator= RegisterContainerLocator<string> ( "TextBlockCPSOfOrangeOutTip" , model => model . Initialize ( "TextBlockCPSOfOrangeOutTip" , ref model . _TextBlockCPSOfOrangeOutTip , ref _TextBlockCPSOfOrangeOutTipLocator , _TextBlockCPSOfOrangeOutTipDefaultValueFactory ) );
+        static Func<BindableBase,string> _TextBlockCPSOfOrangeOutTipDefaultValueFactory = 
+            model =>
+            {
+                var vm = CastToCurrentType ( model );
+                string Temp=string . Empty;
+                foreach ( var item in vm . GameCore . Buildings )
+                {
+                    if ( item . Value . Status == Status . Active || item . Value . Status == Status . Dark )
+                    {
+                        Temp += string . Format ( "{0}:{1}/s" + System . Environment . NewLine , item . Value . Title , item . Value . CPS );
+                    }
+                }
+                Temp = Temp . Trim ( );
+                Temp += string . Format ( System . Environment . NewLine + "总和:{0}/s" , vm . GameCore . SpeedOfOrangeRise );
+                return Temp . Trim ( );
             };
         #endregion
 

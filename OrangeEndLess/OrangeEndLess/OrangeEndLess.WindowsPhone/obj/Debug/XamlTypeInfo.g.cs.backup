@@ -434,6 +434,8 @@ namespace OrangeEndLess.OrangeEndLess_WindowsPhone_XamlTypeInfo
                 userType.AddMemberName("CommandRush");
                 userType.AddMemberName("CPSOfOrange");
                 userType.AddMemberName("NumberOfOrange");
+                userType.AddMemberName("TextBlockNumberOfOrangeOutTip");
+                userType.AddMemberName("ButtonRushTip");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -670,67 +672,87 @@ namespace OrangeEndLess.OrangeEndLess_WindowsPhone_XamlTypeInfo
             var that = (global::OrangeEndLess.ViewModels.MainPage_Model)instance;
             that.NumberOfOrange = (global::System.String)Value;
         }
-        private object get_24_ViewModelBase_IsDisposingWhenUnbindRequired(object instance)
+        private object get_24_MainPage_Model_TextBlockNumberOfOrangeOutTip(object instance)
+        {
+            var that = (global::OrangeEndLess.ViewModels.MainPage_Model)instance;
+            return that.TextBlockNumberOfOrangeOutTip;
+        }
+        private void set_24_MainPage_Model_TextBlockNumberOfOrangeOutTip(object instance, object Value)
+        {
+            var that = (global::OrangeEndLess.ViewModels.MainPage_Model)instance;
+            that.TextBlockNumberOfOrangeOutTip = (global::System.String)Value;
+        }
+        private object get_25_MainPage_Model_ButtonRushTip(object instance)
+        {
+            var that = (global::OrangeEndLess.ViewModels.MainPage_Model)instance;
+            return that.ButtonRushTip;
+        }
+        private void set_25_MainPage_Model_ButtonRushTip(object instance, object Value)
+        {
+            var that = (global::OrangeEndLess.ViewModels.MainPage_Model)instance;
+            that.ButtonRushTip = (global::System.String)Value;
+        }
+        private object get_26_ViewModelBase_IsDisposingWhenUnbindRequired(object instance)
         {
             var that = (global::MVVMSidekick.ViewModels.ViewModelBase<global::OrangeEndLess.ViewModels.MainPage_Model>)instance;
             return that.IsDisposingWhenUnbindRequired;
         }
-        private object get_25_ViewModelBase_IsDisposingWhenUnloadRequired(object instance)
+        private object get_27_ViewModelBase_IsDisposingWhenUnloadRequired(object instance)
         {
             var that = (global::MVVMSidekick.ViewModels.ViewModelBase<global::OrangeEndLess.ViewModels.MainPage_Model>)instance;
             return that.IsDisposingWhenUnloadRequired;
         }
-        private object get_26_ViewModelBase_StageManager(object instance)
+        private object get_28_ViewModelBase_StageManager(object instance)
         {
             var that = (global::MVVMSidekick.ViewModels.ViewModelBase<global::OrangeEndLess.ViewModels.MainPage_Model>)instance;
             return that.StageManager;
         }
-        private void set_26_ViewModelBase_StageManager(object instance, object Value)
+        private void set_28_ViewModelBase_StageManager(object instance, object Value)
         {
             var that = (global::MVVMSidekick.ViewModels.ViewModelBase<global::OrangeEndLess.ViewModels.MainPage_Model>)instance;
             that.StageManager = (global::MVVMSidekick.Views.StageManager)Value;
         }
-        private object get_27_ViewModelBase_HaveReturnValue(object instance)
+        private object get_29_ViewModelBase_HaveReturnValue(object instance)
         {
             var that = (global::MVVMSidekick.ViewModels.ViewModelBase<global::OrangeEndLess.ViewModels.MainPage_Model>)instance;
             return that.HaveReturnValue;
         }
-        private object get_28_ViewModelBase_IsUIBusy(object instance)
+        private object get_30_ViewModelBase_IsUIBusy(object instance)
         {
             var that = (global::MVVMSidekick.ViewModels.ViewModelBase<global::OrangeEndLess.ViewModels.MainPage_Model>)instance;
             return that.IsUIBusy;
         }
-        private void set_28_ViewModelBase_IsUIBusy(object instance, object Value)
+        private void set_30_ViewModelBase_IsUIBusy(object instance, object Value)
         {
             var that = (global::MVVMSidekick.ViewModels.ViewModelBase<global::OrangeEndLess.ViewModels.MainPage_Model>)instance;
             that.IsUIBusy = (global::System.Boolean)Value;
         }
-        private object get_29_ViewModelBase_Dispatcher(object instance)
+        private object get_31_ViewModelBase_Dispatcher(object instance)
         {
             var that = (global::MVVMSidekick.ViewModels.ViewModelBase<global::OrangeEndLess.ViewModels.MainPage_Model>)instance;
             return that.Dispatcher;
         }
-        private object get_30_BindableBase_BindableInstanceId(object instance)
+        private object get_32_BindableBase_BindableInstanceId(object instance)
         {
             var that = (global::MVVMSidekick.ViewModels.BindableBase<global::OrangeEndLess.ViewModels.MainPage_Model>)instance;
             return that.BindableInstanceId;
         }
-        private object get_31_BindableBase_Error(object instance)
+        private object get_33_BindableBase_Error(object instance)
         {
             var that = (global::MVVMSidekick.ViewModels.BindableBase<global::OrangeEndLess.ViewModels.MainPage_Model>)instance;
             return that.Error;
         }
-        private object get_32_BindableBase_HasErrors(object instance)
+        private object get_34_BindableBase_HasErrors(object instance)
         {
             var that = (global::MVVMSidekick.ViewModels.BindableBase<global::OrangeEndLess.ViewModels.MainPage_Model>)instance;
             return that.HasErrors;
         }
-        private object get_33_BindableBase_EventRouter(object instance)
+        private object get_35_BindableBase_EventRouter(object instance)
         {
             var that = (global::MVVMSidekick.ViewModels.BindableBase<global::OrangeEndLess.ViewModels.MainPage_Model>)instance;
             return that.EventRouter;
         }
-        private void set_33_BindableBase_EventRouter(object instance, object Value)
+        private void set_35_BindableBase_EventRouter(object instance, object Value)
         {
             var that = (global::MVVMSidekick.ViewModels.BindableBase<global::OrangeEndLess.ViewModels.MainPage_Model>)instance;
             that.EventRouter = (global::MVVMSidekick.EventRouting.EventRouter)Value;
@@ -888,65 +910,77 @@ namespace OrangeEndLess.OrangeEndLess_WindowsPhone_XamlTypeInfo
                 xamlMember.Getter = get_23_MainPage_Model_NumberOfOrange;
                 xamlMember.Setter = set_23_MainPage_Model_NumberOfOrange;
                 break;
+            case "OrangeEndLess.ViewModels.MainPage_Model.TextBlockNumberOfOrangeOutTip":
+                userType = (global::OrangeEndLess.OrangeEndLess_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("OrangeEndLess.ViewModels.MainPage_Model");
+                xamlMember = new global::OrangeEndLess.OrangeEndLess_WindowsPhone_XamlTypeInfo.XamlMember(this, "TextBlockNumberOfOrangeOutTip", "String");
+                xamlMember.Getter = get_24_MainPage_Model_TextBlockNumberOfOrangeOutTip;
+                xamlMember.Setter = set_24_MainPage_Model_TextBlockNumberOfOrangeOutTip;
+                break;
+            case "OrangeEndLess.ViewModels.MainPage_Model.ButtonRushTip":
+                userType = (global::OrangeEndLess.OrangeEndLess_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("OrangeEndLess.ViewModels.MainPage_Model");
+                xamlMember = new global::OrangeEndLess.OrangeEndLess_WindowsPhone_XamlTypeInfo.XamlMember(this, "ButtonRushTip", "String");
+                xamlMember.Getter = get_25_MainPage_Model_ButtonRushTip;
+                xamlMember.Setter = set_25_MainPage_Model_ButtonRushTip;
+                break;
             case "MVVMSidekick.ViewModels.ViewModelBase`1<OrangeEndLess.ViewModels.MainPage_Model>.IsDisposingWhenUnbindRequired":
                 userType = (global::OrangeEndLess.OrangeEndLess_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MVVMSidekick.ViewModels.ViewModelBase`1<OrangeEndLess.ViewModels.MainPage_Model>");
                 xamlMember = new global::OrangeEndLess.OrangeEndLess_WindowsPhone_XamlTypeInfo.XamlMember(this, "IsDisposingWhenUnbindRequired", "Boolean");
-                xamlMember.Getter = get_24_ViewModelBase_IsDisposingWhenUnbindRequired;
+                xamlMember.Getter = get_26_ViewModelBase_IsDisposingWhenUnbindRequired;
                 xamlMember.SetIsReadOnly();
                 break;
             case "MVVMSidekick.ViewModels.ViewModelBase`1<OrangeEndLess.ViewModels.MainPage_Model>.IsDisposingWhenUnloadRequired":
                 userType = (global::OrangeEndLess.OrangeEndLess_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MVVMSidekick.ViewModels.ViewModelBase`1<OrangeEndLess.ViewModels.MainPage_Model>");
                 xamlMember = new global::OrangeEndLess.OrangeEndLess_WindowsPhone_XamlTypeInfo.XamlMember(this, "IsDisposingWhenUnloadRequired", "Boolean");
-                xamlMember.Getter = get_25_ViewModelBase_IsDisposingWhenUnloadRequired;
+                xamlMember.Getter = get_27_ViewModelBase_IsDisposingWhenUnloadRequired;
                 xamlMember.SetIsReadOnly();
                 break;
             case "MVVMSidekick.ViewModels.ViewModelBase`1<OrangeEndLess.ViewModels.MainPage_Model>.StageManager":
                 userType = (global::OrangeEndLess.OrangeEndLess_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MVVMSidekick.ViewModels.ViewModelBase`1<OrangeEndLess.ViewModels.MainPage_Model>");
                 xamlMember = new global::OrangeEndLess.OrangeEndLess_WindowsPhone_XamlTypeInfo.XamlMember(this, "StageManager", "MVVMSidekick.Views.StageManager");
-                xamlMember.Getter = get_26_ViewModelBase_StageManager;
-                xamlMember.Setter = set_26_ViewModelBase_StageManager;
+                xamlMember.Getter = get_28_ViewModelBase_StageManager;
+                xamlMember.Setter = set_28_ViewModelBase_StageManager;
                 break;
             case "MVVMSidekick.ViewModels.ViewModelBase`1<OrangeEndLess.ViewModels.MainPage_Model>.HaveReturnValue":
                 userType = (global::OrangeEndLess.OrangeEndLess_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MVVMSidekick.ViewModels.ViewModelBase`1<OrangeEndLess.ViewModels.MainPage_Model>");
                 xamlMember = new global::OrangeEndLess.OrangeEndLess_WindowsPhone_XamlTypeInfo.XamlMember(this, "HaveReturnValue", "Boolean");
-                xamlMember.Getter = get_27_ViewModelBase_HaveReturnValue;
+                xamlMember.Getter = get_29_ViewModelBase_HaveReturnValue;
                 xamlMember.SetIsReadOnly();
                 break;
             case "MVVMSidekick.ViewModels.ViewModelBase`1<OrangeEndLess.ViewModels.MainPage_Model>.IsUIBusy":
                 userType = (global::OrangeEndLess.OrangeEndLess_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MVVMSidekick.ViewModels.ViewModelBase`1<OrangeEndLess.ViewModels.MainPage_Model>");
                 xamlMember = new global::OrangeEndLess.OrangeEndLess_WindowsPhone_XamlTypeInfo.XamlMember(this, "IsUIBusy", "Boolean");
-                xamlMember.Getter = get_28_ViewModelBase_IsUIBusy;
-                xamlMember.Setter = set_28_ViewModelBase_IsUIBusy;
+                xamlMember.Getter = get_30_ViewModelBase_IsUIBusy;
+                xamlMember.Setter = set_30_ViewModelBase_IsUIBusy;
                 break;
             case "MVVMSidekick.ViewModels.ViewModelBase`1<OrangeEndLess.ViewModels.MainPage_Model>.Dispatcher":
                 userType = (global::OrangeEndLess.OrangeEndLess_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MVVMSidekick.ViewModels.ViewModelBase`1<OrangeEndLess.ViewModels.MainPage_Model>");
                 xamlMember = new global::OrangeEndLess.OrangeEndLess_WindowsPhone_XamlTypeInfo.XamlMember(this, "Dispatcher", "Windows.UI.Core.CoreDispatcher");
-                xamlMember.Getter = get_29_ViewModelBase_Dispatcher;
+                xamlMember.Getter = get_31_ViewModelBase_Dispatcher;
                 xamlMember.SetIsReadOnly();
                 break;
             case "MVVMSidekick.ViewModels.BindableBase`1<OrangeEndLess.ViewModels.MainPage_Model>.BindableInstanceId":
                 userType = (global::OrangeEndLess.OrangeEndLess_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MVVMSidekick.ViewModels.BindableBase`1<OrangeEndLess.ViewModels.MainPage_Model>");
                 xamlMember = new global::OrangeEndLess.OrangeEndLess_WindowsPhone_XamlTypeInfo.XamlMember(this, "BindableInstanceId", "String");
-                xamlMember.Getter = get_30_BindableBase_BindableInstanceId;
+                xamlMember.Getter = get_32_BindableBase_BindableInstanceId;
                 xamlMember.SetIsReadOnly();
                 break;
             case "MVVMSidekick.ViewModels.BindableBase`1<OrangeEndLess.ViewModels.MainPage_Model>.Error":
                 userType = (global::OrangeEndLess.OrangeEndLess_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MVVMSidekick.ViewModels.BindableBase`1<OrangeEndLess.ViewModels.MainPage_Model>");
                 xamlMember = new global::OrangeEndLess.OrangeEndLess_WindowsPhone_XamlTypeInfo.XamlMember(this, "Error", "String");
-                xamlMember.Getter = get_31_BindableBase_Error;
+                xamlMember.Getter = get_33_BindableBase_Error;
                 xamlMember.SetIsReadOnly();
                 break;
             case "MVVMSidekick.ViewModels.BindableBase`1<OrangeEndLess.ViewModels.MainPage_Model>.HasErrors":
                 userType = (global::OrangeEndLess.OrangeEndLess_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MVVMSidekick.ViewModels.BindableBase`1<OrangeEndLess.ViewModels.MainPage_Model>");
                 xamlMember = new global::OrangeEndLess.OrangeEndLess_WindowsPhone_XamlTypeInfo.XamlMember(this, "HasErrors", "Boolean");
-                xamlMember.Getter = get_32_BindableBase_HasErrors;
+                xamlMember.Getter = get_34_BindableBase_HasErrors;
                 xamlMember.SetIsReadOnly();
                 break;
             case "MVVMSidekick.ViewModels.BindableBase`1<OrangeEndLess.ViewModels.MainPage_Model>.EventRouter":
                 userType = (global::OrangeEndLess.OrangeEndLess_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MVVMSidekick.ViewModels.BindableBase`1<OrangeEndLess.ViewModels.MainPage_Model>");
                 xamlMember = new global::OrangeEndLess.OrangeEndLess_WindowsPhone_XamlTypeInfo.XamlMember(this, "EventRouter", "MVVMSidekick.EventRouting.EventRouter");
-                xamlMember.Getter = get_33_BindableBase_EventRouter;
-                xamlMember.Setter = set_33_BindableBase_EventRouter;
+                xamlMember.Getter = get_35_BindableBase_EventRouter;
+                xamlMember.Setter = set_35_BindableBase_EventRouter;
                 break;
             }
             return xamlMember;

@@ -15,6 +15,12 @@ namespace OrangeEndLess
     {
         public Dictionary<string, Technology> Technologys = new Dictionary<string , Technology> ( );
 
+        void LoadTechnologys ( )
+        {
+            Technologys . Add ( "Store" , new Technology ( ) );
+            Technologys . Add ( "Primary" , new Technology ( ) );
+            Technologys . Add ( "Farm" , new Technology ( ) );
 
+        }
     }
 }

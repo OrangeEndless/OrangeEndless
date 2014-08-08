@@ -23,9 +23,13 @@ namespace OrangeEndLess
 
         Func<Core,bool> CanPromote;
 
-        Func<Core,bool> FuncDark;
+        Func<Core,bool> FuncBlack;
 
         Func<Core,bool> FuncShow;
+
+        public TimeSpan TimeToResearch;
+
+        DispatcherTimer TimerResearch;
 
         public string Title;
 
@@ -37,13 +41,17 @@ namespace OrangeEndLess
         {
             get
             {
-                if ( FuncShow ( GameCore ) )
+                if ( FuncShow ( GameCore ) && FuncBlack ( GameCore ) && CanPromote ( GameCore ) )
                 {
                     return Status . Active;
                 }
-                if ( FuncDark ( GameCore ) )
+                if ( FuncShow ( GameCore ) && FuncBlack ( GameCore ) && ( CanPromote ( GameCore ) == false ) )
                 {
                     return Status . Dark;
+                }
+                if ( FuncBlack ( GameCore ) && ( FuncShow ( GameCore ) == false ) )
+                {
+                    return Status . Black;
                 }
                 return Status . Hide;
             }
@@ -66,10 +74,25 @@ namespace OrangeEndLess
             if ( CanPromote ( GameCore ) )
             {
                 ActionBeforePromote ( GameCore );
-                IsPromoted = true;
+                TimerResearch . Start ( );
                 ActionAfterPromote ( GameCore );
             }
         }
 
+        public Technology ( )
+        {
+            if ( GameData . Values [ Lebel + "IsPromoted" ] == null )
+            {
+                GameData . Values [ Lebel + "IsPromoted" ] = false;
+            }
+            TimerResearch . Interval = TimeToResearch;
+            TimerResearch . Tick += TimerResearch_Tick;
+        }
+
+        void TimerResearch_Tick ( object sender , object e )
+        {
+            IsPromoted = true;
+            TimerResearch . Stop ( );
+        }
     }
 }

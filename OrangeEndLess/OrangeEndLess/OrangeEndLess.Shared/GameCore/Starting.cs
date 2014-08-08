@@ -16,6 +16,7 @@ namespace OrangeEndLess
 
         void Starting ( )
         {
+            LoadTechnologys ( );
             LoadBuildings ( );
             LoadAchievements ( );
             LoadRandomEvents ( );

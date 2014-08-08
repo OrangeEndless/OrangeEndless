@@ -35,5 +35,9 @@ namespace OrangeEndLess
             //this . Frame . Navigate ( typeof ( About ) );
 
         }
+
+        private void ButtonRush_Loaded ( object sender , RoutedEventArgs e )
+        {
+        }
     }
 }

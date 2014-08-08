@@ -4,8 +4,11 @@
     <RootPropertyPathName Name="NavigationHelper" />
     <RootPropertyPathName Name="GoBackCommand" />
     <RootPropertyPathName Name="CommandRush" />
+    <RootPropertyPathName Name="Height" />
     <RootPropertyPathName Name="CPSOfOrange" />
+    <RootPropertyPathName Name="TextBlockCPSOfOrangeOutTip" />
     <RootPropertyPathName Name="NumberOfOrange" />
+    <RootPropertyPathName Name="TextBlockNumberOfOrangeOutTip" />
   </Roots.PropertyPathNames>
   <Roots.RootTypes>
     <RootType FullName="Windows.UI.Xaml.Application">
@@ -75,6 +78,7 @@
       <RootProperty Name="Style" />
       <RootProperty Name="Foreground" />
       <RootEvent Name="Click" />
+      <RootEvent Name="Loaded" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Media.ImageBrush">
       <RootProperty Name="Stretch" />
@@ -93,7 +97,6 @@
       <RootProperty Name="Height" />
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Width" />
-      <RootProperty Name="Margin" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Automation.AutomationProperties">
       <RootMethod Name="GetName" />
@@ -105,6 +108,7 @@
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Data.Binding">
       <RootProperty Name="ElementName" />
+      <RootProperty Name="RelativeSource" />
       <RootProperty Name="Source" />
     </RootType>
     <RootType FullName="OrangeEndLess.About" />
@@ -115,6 +119,13 @@
     <RootType FullName="Windows.UI.Xaml.Controls.ControlTemplate">
       <RootProperty Name="TargetType" />
       <RootProperty Name="Template" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ToolTipService">
+      <RootMethod Name="GetToolTip" />
+      <RootMethod Name="SetToolTip" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Data.RelativeSource">
+      <RootProperty Name="Mode" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Setter">
       <RootProperty Name="Property" />

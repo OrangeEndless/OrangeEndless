@@ -25,7 +25,7 @@
         </Style>
         <vm:MainPage_Model x:Key="DesignVM"/>
         <ControlTemplate x:Key="HubSectionOranges" TargetType="HubSection">
-            <Grid Width="700">
+            <Grid>
                 <Grid.RowDefinitions>
                     <RowDefinition Height="128"/>
                     <RowDefinition Height="Auto"/>
@@ -34,11 +34,13 @@
                     <RowDefinition/>
                 </Grid.RowDefinitions>
                 <TextBlock HorizontalAlignment="Center" Margin="0" TextWrapping="Wrap" Text="{StaticResource NumberOfOrange}" FontSize="24" Grid.Row="1" Height="29" Width="120"/>
-                <TextBlock HorizontalAlignment="Center" Margin="0" TextWrapping="Wrap" Text="{Binding NumberOfOrange}" FontSize="56" Grid.Row="2"/>
-                <TextBlock HorizontalAlignment="Center" Margin="0" TextWrapping="Wrap" Text="{Binding CPSOfOrange}" Grid.Row="3" FontSize="24"/>
-                <Button Content="Button" HorizontalAlignment="Center" Margin="0" Grid.Row="4" VerticalAlignment="Center" Style="{StaticResource ButtonRushStyle}" Width="100" Height="100" Command="{Binding CommandRush}"/>
-                <Rectangle Margin="0" Grid.Row="4"/>
+                <TextBlock HorizontalAlignment="Center" Margin="0" TextWrapping="Wrap" Text="{Binding NumberOfOrange}" FontSize="56" Grid.Row="2" ToolTipService.ToolTip="{Binding TextBlockNumberOfOrangeOutTip}"/>
+                <TextBlock HorizontalAlignment="Center" Margin="0" TextWrapping="Wrap" Text="{Binding CPSOfOrange}" Grid.Row="3" FontSize="24" ToolTipService.ToolTip="{Binding TextBlockCPSOfOrangeOutTip}"/>
+                <Button x:ConnectionId='1' x:Name="ButtonRush" Content="Button" HorizontalAlignment="Stretch" Margin="50" Grid.Row="4" VerticalAlignment="Stretch" Style="{StaticResource ButtonRushStyle}" Command="{Binding CommandRush}"                            Width="{Binding Height, RelativeSource={RelativeSource Mode=Self}}"/>
             </Grid>
+        </ControlTemplate>
+        <ControlTemplate x:Key="HubSectionMoney" TargetType="HubSection">
+            <Grid Width="367"/>
         </ControlTemplate>
     </Page.Resources>
     <!--Begin App Bar Binding Patch. If you don't need Binding Top/Bottom Appbar please ignore these code -->
@@ -60,7 +62,7 @@
                     <Grid/>
                 </DataTemplate>
             </HubSection>
-            <HubSection Header="HubSection 1">
+            <HubSection Header="HubSection 1" Template="{StaticResource HubSectionMoney}">
                 <DataTemplate>
                     <Grid/>
                 </DataTemplate>

@@ -47,10 +47,6 @@ namespace OrangeEndLess
                 {
                     return Status . Black;
                 }
-                if ( FuncBlack ( GameCore ) == false )
-                {
-                    return Status . Hide;
-                }
                 return Status . Hide;
             }
         }
@@ -76,7 +72,7 @@ namespace OrangeEndLess
         {
             get
             {
-                return Number * StartCPS * ( Level );
+                return Number * StartCPS;
             }
         }
 
@@ -159,7 +155,7 @@ namespace OrangeEndLess
         public Building ( string name , decimal startprice , decimal startcps , Core gamecore , Func<Core , bool> funcshow , Func<Core , bool> funcdark )
         {
             Label = name;
-            Title = ( string ) App . Current . Resources [ ( "TitleOf" + Level ) ];
+            Title = ( string ) App . Current . Resources [ ( "TitleOf" + Label ) ];
             PriceBase = startprice;
             StartCPS = startcps;
             GameCore = gamecore;
