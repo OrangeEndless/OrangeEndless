@@ -52,7 +52,7 @@ namespace OrangeEndLess
 #if DEBUG
             if ( System . Diagnostics . Debugger . IsAttached )
             {
-                this . DebugSettings . EnableFrameRateCounter = true;
+                this . DebugSettings . EnableFrameRateCounter = !true;
             }
 #endif
             //Init MVVM-Sidekick Navigations:

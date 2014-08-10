@@ -16,7 +16,7 @@ namespace OrangeEndLess
 
         void Starting ( )
         {
-            LoadTechnologys ( );
+            //LoadTechnologys ( );
             LoadBuildings ( );
             LoadAchievements ( );
             LoadRandomEvents ( );
@@ -27,14 +27,14 @@ namespace OrangeEndLess
         {
             GameData . Values [ "LevelOfRush" ] = 0;
             GameData . Values [ "BestAPM" ] = 0L;
-            GameData . Values [ "Money" ] = 0;
-            GameData . Values [ "NumberOfOrange" ] = 0;
+            GameData . Values [ "NumberOfOrange" ] = 0m . ToString ( );
+            GameData . Values [ "Money" ] = 0m . ToString ( );
             GameData . Values [ "LevelOfRush" ] = 0;
             GameData . Values [ "ButtonRushTip" ] = 0;
             GameData . Values [ "NumberOfMoneyHaveGet" ] = 0;
-            GameData . Values [ "TextBlockNumberOfOrangeOutTip" ] = 0;
+            GameData . Values [ "NumberOfOrangeHaveGet" ] = 0;
             GameData . Values [ "NumberOfUpdateHavePromote" ] = 0;
-            GameData . Values [ "TimeToUpdateNumberOfOrange" ] = 100;
+            GameData . Values [ "TimeToUpdateNumberOfOrange" ] = 20;
             GameData . Values [ "TimeToUpdateAchevement" ] = 100000;
             GameData . Values [ "TimeToUpdateBuilding" ] = 10000;
 

@@ -15,6 +15,8 @@ using System . Runtime . Serialization;
 using Windows . Storage;
 using MVVMSidekick . Utilities;
 using Windows . UI . Xaml;
+using Windows . UI . Xaml . Media;
+using Windows . UI;
 using OrangeEndLess;
 
 
@@ -43,11 +45,15 @@ namespace OrangeEndLess . ViewModels
             NumberOfOrange = decimal . Floor ( GameCore . NumberOfOrange ) . ToString ( );
             TextBlockNumberOfOrangeOutTip = string . Format ( "你制造的橘子总数：{0}" , decimal . Floor ( GameCore . NumberOfOrangeHaveGet ) . ToString ( ) );
             ButtonRushTip = decimal . Floor ( GameCore . NumberOfOrangeHaveGet ) . ToString ( );
+            ProgressBarValue = Convert . ToDouble ( GameCore . NumberOfOrangeHaveGet );
+            ProgressBarBrush = new SolidColorBrush ( Color . FromArgb ( byte . MaxValue , Convert . ToByte ( ( ( decimal . MaxValue - GameCore . NumberOfOrangeHaveGet ) / decimal . MaxValue ) * 255 ) , Convert . ToByte ( ( ( GameCore . NumberOfOrangeHaveGet ) / decimal . MaxValue ) * 255 ) , 0 ) );
+            TextBlockNumberOfOrangeSmallOut = GameCore . NumberOfOrange . ToString ( );
+
         }
 
         void GameCore_UpdateNumberOfMoney ( object sender , EventArgs e )
         {
-
+            TextBlockNumberOfMoneySmallOut = GameCore . NumberOfMoney . ToString ( );
         }
 
         void GameCore_UpdateBuildings ( object sender , EventArgs e )
@@ -111,7 +117,6 @@ namespace OrangeEndLess . ViewModels
             };
         #endregion
 
-
         public string CPSOfOrange
         {
             get { return _CPSOfOrangeLocator ( this ) . Value; }
@@ -160,7 +165,6 @@ namespace OrangeEndLess . ViewModels
             };
         #endregion
 
-
         public string ButtonRushTip
         {
             get { return _ButtonRushTipLocator ( this ) . Value; }
@@ -176,7 +180,6 @@ namespace OrangeEndLess . ViewModels
                 return decimal . Floor ( vm . GameCore . NumberOfOrangeHaveGet ) . ToString ( );
             };
         #endregion
-
 
         public string TextBlockCPSOfOrangeOutTip
         {
@@ -201,6 +204,87 @@ namespace OrangeEndLess . ViewModels
                 Temp = Temp . Trim ( );
                 Temp += string . Format ( System . Environment . NewLine + "总和:{0}/s" , vm . GameCore . SpeedOfOrangeRise );
                 return Temp . Trim ( );
+            };
+        #endregion
+
+        public double ProgressBarMaximum
+        {
+            get { return _ProgressBarMaximumLocator ( this ) . Value; }
+            set { _ProgressBarMaximumLocator ( this ) . SetValueAndTryNotify ( value ); }
+        }
+        #region Property double ProgressBarMaximum Setup
+        protected Property<double> _ProgressBarMaximum = new Property<double> { LocatorFunc = _ProgressBarMaximumLocator };
+        static Func<BindableBase,ValueContainer<double>> _ProgressBarMaximumLocator= RegisterContainerLocator<double> ( "ProgressBarMaximum" , model => model . Initialize ( "ProgressBarMaximum" , ref model . _ProgressBarMaximum , ref _ProgressBarMaximumLocator , _ProgressBarMaximumDefaultValueFactory ) );
+        static Func<BindableBase,double> _ProgressBarMaximumDefaultValueFactory = 
+            model =>
+            {
+                return Convert . ToDouble ( decimal . MaxValue );
+            };
+        #endregion
+
+        public Brush ProgressBarBrush
+        {
+            get { return _ProgressBarBrushLocator ( this ) . Value; }
+            set { _ProgressBarBrushLocator ( this ) . SetValueAndTryNotify ( value ); }
+        }
+        #region Property Brush ProgressBarBrush Setup
+        protected Property<Brush> _ProgressBarBrush = new Property<Brush> { LocatorFunc = _ProgressBarBrushLocator };
+        static Func<BindableBase,ValueContainer<Brush>> _ProgressBarBrushLocator= RegisterContainerLocator<Brush> ( "ProgressBarBrush" , model => model . Initialize ( "ProgressBarBrush" , ref model . _ProgressBarBrush , ref _ProgressBarBrushLocator , _ProgressBarBrushDefaultValueFactory ) );
+        static Func<BindableBase,Brush> _ProgressBarBrushDefaultValueFactory = 
+            model =>
+            {
+                var vm = CastToCurrentType ( model );
+                return new SolidColorBrush ( Color . FromArgb ( byte . MaxValue , Convert . ToByte ( ( ( decimal . MaxValue - vm . GameCore . NumberOfOrangeHaveGet ) / decimal . MaxValue ) * 255 ) , Convert . ToByte ( ( ( vm . GameCore . NumberOfOrangeHaveGet ) / decimal . MaxValue ) * 255 ) , 0 ) ); ;
+            };
+        #endregion
+
+        public double ProgressBarValue
+        {
+            get { return _ProgressBarValueLocator ( this ) . Value; }
+            set { _ProgressBarValueLocator ( this ) . SetValueAndTryNotify ( value ); }
+        }
+        #region Property double ProgressBarValue Setup
+        protected Property<double> _ProgressBarValue = new Property<double> { LocatorFunc = _ProgressBarValueLocator };
+        static Func<BindableBase,ValueContainer<double>> _ProgressBarValueLocator= RegisterContainerLocator<double> ( "ProgressBarValue" , model => model . Initialize ( "ProgressBarValue" , ref model . _ProgressBarValue , ref _ProgressBarValueLocator , _ProgressBarValueDefaultValueFactory ) );
+        static Func<BindableBase,double> _ProgressBarValueDefaultValueFactory = 
+            model =>
+            {
+                var vm = CastToCurrentType ( model );
+                return Convert . ToDouble ( vm . GameCore . NumberOfOrangeHaveGet );
+            };
+        #endregion
+
+
+        public string TextBlockNumberOfOrangeSmallOut
+        {
+            get { return _TextBlockNumberOfOrangeSmallOutLocator ( this ) . Value; }
+            set { _TextBlockNumberOfOrangeSmallOutLocator ( this ) . SetValueAndTryNotify ( value ); }
+        }
+        #region Property string TextBlockNumberOfOrangeSmallOut Setup
+        protected Property<string> _TextBlockNumberOfOrangeSmallOut = new Property<string> { LocatorFunc = _TextBlockNumberOfOrangeSmallOutLocator };
+        static Func<BindableBase,ValueContainer<string>> _TextBlockNumberOfOrangeSmallOutLocator= RegisterContainerLocator<string> ( "TextBlockNumberOfOrangeSmallOut" , model => model . Initialize ( "TextBlockNumberOfOrangeSmallOut" , ref model . _TextBlockNumberOfOrangeSmallOut , ref _TextBlockNumberOfOrangeSmallOutLocator , _TextBlockNumberOfOrangeSmallOutDefaultValueFactory ) );
+        static Func<BindableBase,string> _TextBlockNumberOfOrangeSmallOutDefaultValueFactory = 
+            model =>
+            {
+                var vm = CastToCurrentType ( model );
+                return vm . GameCore . NumberOfOrange . ToString ( );
+            };
+        #endregion
+
+
+        public string TextBlockNumberOfMoneySmallOut
+        {
+            get { return _TextBlockNumberOfMoneySmallOutLocator ( this ) . Value; }
+            set { _TextBlockNumberOfMoneySmallOutLocator ( this ) . SetValueAndTryNotify ( value ); }
+        }
+        #region Property string TextBlockNumberOfMoneySmallOut Setup
+        protected Property<string> _TextBlockNumberOfMoneySmallOut = new Property<string> { LocatorFunc = _TextBlockNumberOfMoneySmallOutLocator };
+        static Func<BindableBase,ValueContainer<string>> _TextBlockNumberOfMoneySmallOutLocator= RegisterContainerLocator<string> ( "TextBlockNumberOfMoneySmallOut" , model => model . Initialize ( "TextBlockNumberOfMoneySmallOut" , ref model . _TextBlockNumberOfMoneySmallOut , ref _TextBlockNumberOfMoneySmallOutLocator , _TextBlockNumberOfMoneySmallOutDefaultValueFactory ) );
+        static Func<BindableBase,string> _TextBlockNumberOfMoneySmallOutDefaultValueFactory = 
+            model =>
+            {
+                var vm = CastToCurrentType ( model );
+                return vm . GameCore . NumberOfMoney . ToString ( );
             };
         #endregion
 

@@ -29,7 +29,7 @@
     -->
     <!--End App Bar Binding Patch. If you don't need Binding  Top/Bottom Appbar please ignore these code -->
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"  DataContext="{StaticResource DesignVM}">
-        <TextBlock TextWrapping="Wrap" x:Name="pageTitle" Grid.Column="1"  Text="{Binding Title}" Style="{StaticResource HeaderTextBlockStyle}"/>
+        <TextBlock TextWrapping="Wrap" x:Name="pageTitle" Grid.Column="1"  Text="{StaticResource Rush}" Style="{StaticResource HeaderTextBlockStyle}"/>
     </Grid>
 </mvvm:MVVMPage>
 

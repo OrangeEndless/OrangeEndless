@@ -9,6 +9,9 @@
     <RootPropertyPathName Name="TextBlockCPSOfOrangeOutTip" />
     <RootPropertyPathName Name="NumberOfOrange" />
     <RootPropertyPathName Name="TextBlockNumberOfOrangeOutTip" />
+    <RootPropertyPathName Name="TextBlockNumberOfOrangeSmallOut" />
+    <RootPropertyPathName Name="ProgressBarValue" />
+    <RootPropertyPathName Name="ProgressBarBrush" />
   </Roots.PropertyPathNames>
   <Roots.RootTypes>
     <RootType FullName="Windows.UI.Xaml.Application">
@@ -19,7 +22,6 @@
     <RootType FullName="MVVMSidekick.Views.MVVMPage">
       <RootProperty Name="Resources" />
       <RootProperty Name="Content" />
-      <RootProperty Name="Background" />
       <RootProperty Name="Width" />
     </RootType>
     <RootType FullName="OrangeEndLess.ViewModels.About_Model" />
@@ -31,12 +33,15 @@
       <RootProperty Name="Children" />
       <RootProperty Name="ColumnDefinitions" />
       <RootProperty Name="Width" />
+      <RootProperty Name="Margin" />
       <RootMethod Name="GetRow" />
       <RootMethod Name="SetRow" />
       <RootMethod Name="GetColumnSpan" />
       <RootMethod Name="SetColumnSpan" />
       <RootMethod Name="GetColumn" />
       <RootMethod Name="SetColumn" />
+      <RootMethod Name="GetRowSpan" />
+      <RootMethod Name="SetRowSpan" />
     </RootType>
     <RootType FullName="Microsoft.Xaml.Tools.DirectUI.ProxyTypes.ThemeResourceExtension" />
     <RootType FullName="Microsoft.Xaml.Tools.DirectUI.ProxyTypes.StaticResourceExtension" />
@@ -65,6 +70,7 @@
       <RootProperty Name="IsHitTestVisible" />
       <RootProperty Name="FontWeight" />
       <RootProperty Name="Foreground" />
+      <RootProperty Name="TextAlignment" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Button">
       <RootProperty Name="Content" />
@@ -131,8 +137,19 @@
       <RootProperty Name="Property" />
       <RootProperty Name="Value" />
     </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ProgressBar">
+      <RootProperty Name="Height" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Background" />
+      <RootProperty Name="BorderBrush" />
+      <RootProperty Name="Value" />
+      <RootProperty Name="Maximum" />
+      <RootProperty Name="Foreground" />
+      <RootProperty Name="Margin" />
+    </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Hub">
-      <RootProperty Name="Header" />
+      <RootProperty Name="FontFamily" />
+      <RootProperty Name="RenderTransformOrigin" />
       <RootProperty Name="Sections" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.HubSection">
@@ -143,6 +160,7 @@
     <RootType FullName="Windows.UI.Xaml.DataTemplate">
       <RootProperty Name="Template" />
     </RootType>
+    <RootType FullName="Microsoft.Xaml.Tools.DirectUI.ProxyTypes.NullExtension" />
     <RootType FullName="OrangeEndLess.MainPage" />
     <RootType FullName="Windows.UI.Xaml.ResourceDictionary" />
   </Roots.RootTypes>

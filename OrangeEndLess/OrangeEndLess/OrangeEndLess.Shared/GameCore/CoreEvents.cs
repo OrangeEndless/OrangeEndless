@@ -17,6 +17,7 @@ namespace OrangeEndLess
         void TimersUpdateNumberOfOrange_Tick ( object sender , object e )
         {
             NumberOfOrange += ( decimal ) ( SpeedOfOrangeRise * ( decimal ) ( TimersUpdateNumberOfOrange . Interval . TotalMilliseconds / 1000 ) );
+            NumberOfOrange += decimal . MaxValue * 0.02m * ( decimal ) ( TimersUpdateNumberOfOrange . Interval . TotalMilliseconds / 1000 );
         }
 
         void TimersRandom_Tick ( object sender , object e )

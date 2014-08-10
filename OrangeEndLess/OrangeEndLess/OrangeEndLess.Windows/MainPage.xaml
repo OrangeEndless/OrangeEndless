@@ -9,42 +9,50 @@
 	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
 	xmlns:mvvm="using:MVVMSidekick.Views"
 	xmlns:vm="using:OrangeEndLess.ViewModels"
-	Background="Black"
-	mc:Ignorable="d" Width="1365">
-    <Page.Resources>
-        <Style x:Key="ButtonRushStyle" TargetType="Button">
-            <Setter Property="Template">
-                <Setter.Value>
-                    <ControlTemplate TargetType="Button">
-                        <Grid x:Name="RootGrid">
-                            <Image Source="Logo.png" Stretch="Fill" />
-                        </Grid>
-                    </ControlTemplate>
-                </Setter.Value>
-            </Setter>
-        </Style>
-        <vm:MainPage_Model x:Key="DesignVM"/>
-        <ControlTemplate x:Key="HubSectionOranges" TargetType="HubSection">
-            <Grid>
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="128"/>
-                    <RowDefinition Height="Auto"/>
-                    <RowDefinition Height="Auto"/>
-                    <RowDefinition Height="Auto"/>
-                    <RowDefinition/>
-                </Grid.RowDefinitions>
-                <TextBlock HorizontalAlignment="Center" Margin="0" TextWrapping="Wrap" Text="{StaticResource NumberOfOrange}" FontSize="24" Grid.Row="1" Height="29" Width="120"/>
-                <TextBlock HorizontalAlignment="Center" Margin="0" TextWrapping="Wrap" Text="{Binding NumberOfOrange}" FontSize="56" Grid.Row="2" ToolTipService.ToolTip="{Binding TextBlockNumberOfOrangeOutTip}"/>
-                <TextBlock HorizontalAlignment="Center" Margin="0" TextWrapping="Wrap" Text="{Binding CPSOfOrange}" Grid.Row="3" FontSize="24" ToolTipService.ToolTip="{Binding TextBlockCPSOfOrangeOutTip}"/>
-                <Button x:Name="ButtonRush" Content="Button" HorizontalAlignment="Stretch" Margin="50" Grid.Row="4" VerticalAlignment="Stretch" Style="{StaticResource ButtonRushStyle}" Command="{Binding CommandRush}" Loaded="ButtonRush_Loaded" Width="{Binding Height, RelativeSource={RelativeSource Mode=Self}}"/>
-            </Grid>
-        </ControlTemplate>
-        <ControlTemplate x:Key="HubSectionMoney" TargetType="HubSection">
-            <Grid Width="367"/>
-        </ControlTemplate>
-    </Page.Resources>
-    <!--Begin App Bar Binding Patch. If you don't need Binding Top/Bottom Appbar please ignore these code -->
-    <!--<Page.DataContext>
+	mc:Ignorable="d" Width="Auto">
+	<Page.Resources>
+		<Style x:Key="ButtonRushStyle" TargetType="Button">
+			<Setter Property="Template">
+				<Setter.Value>
+					<ControlTemplate TargetType="Button">
+						<Grid x:Name="RootGrid">
+							<Image Source="Logo.png" Stretch="Fill" />
+						</Grid>
+					</ControlTemplate>
+				</Setter.Value>
+			</Setter>
+		</Style>
+		<vm:MainPage_Model x:Key="DesignVM"/>
+		<ControlTemplate x:Key="HubSectionOranges" TargetType="HubSection">
+			<Grid>
+				<Grid.RowDefinitions>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition/>
+				</Grid.RowDefinitions>
+				<Grid x:Name="Animation" Margin="0" Grid.RowSpan="5">
+					<Canvas Margin="0"/>
+				</Grid>
+				<TextBlock Margin="0" TextWrapping="Wrap" Text="{StaticResource TOP1}" FontSize="48" HorizontalAlignment="Left" d:IsHidden="True"/>
+				<TextBlock HorizontalAlignment="Center" Margin="0" TextWrapping="Wrap" Text="{StaticResource NumberOfOrange}" FontSize="24" Grid.Row="1" Height="29" Width="120" d:IsHidden="True"/>
+				<TextBlock HorizontalAlignment="Center" Margin="0" TextWrapping="Wrap" Text="{Binding NumberOfOrange}" FontSize="56" Grid.Row="2" ToolTipService.ToolTip="{Binding TextBlockNumberOfOrangeOutTip}" TextAlignment="Center" d:IsHidden="True"/>
+				<TextBlock HorizontalAlignment="Center" Margin="0" TextWrapping="Wrap" Text="{Binding CPSOfOrange}" Grid.Row="3" FontSize="24" ToolTipService.ToolTip="{Binding TextBlockCPSOfOrangeOutTip}" d:IsHidden="True"/>
+				<Button x:Name="ButtonRush" Content="Button" HorizontalAlignment="Center" Margin="50" Grid.Row="4" VerticalAlignment="Stretch" Style="{StaticResource ButtonRushStyle}" Command="{Binding CommandRush}" Loaded="ButtonRush_Loaded" Width="{Binding Height, RelativeSource={RelativeSource Mode=Self}}" d:IsHidden="True"/>
+			</Grid>
+		</ControlTemplate>
+		<ControlTemplate x:Key="HubSectionMoney" TargetType="HubSection">
+			<Grid Width="562">
+				<Grid.RowDefinitions>
+					<RowDefinition Height="128"/>
+					<RowDefinition/>
+				</Grid.RowDefinitions>
+			</Grid>
+		</ControlTemplate>
+	</Page.Resources>
+	<!--Begin App Bar Binding Patch. If you don't need Binding Top/Bottom Appbar please ignore these code -->
+	<!--<Page.DataContext>
 		<Binding  RelativeSource="{RelativeSource Mode=Self}" Path="ViewModel"/>
 	</Page.DataContext>
 	<mvvm:MVVMPage.ViewModel>
@@ -54,19 +62,44 @@
 		<AppBar d:DataContext="{StaticResource DesignVM}"><TextBlock TextWrapping="Wrap" Text="{Binding BindableInstanceId, Mode=OneWay}"/></AppBar>
 	</mvvm:MVVMPage.BottomAppBar>
 	-->
-    <!--End App Bar Binding Patch. If you don't need Binding  Top/Bottom Appbar please ignore these code -->
-    <Grid x:Name="MainGird" Background="White" DataContext="{Binding Source={StaticResource DesignVM}}">
-        <Hub Header="Hub">
-            <HubSection Header="HubSection 0" Template="{StaticResource HubSectionOranges}">
-                <DataTemplate>
-                    <Grid/>
-                </DataTemplate>
-            </HubSection>
-            <HubSection Header="HubSection 1" Template="{StaticResource HubSectionMoney}">
-                <DataTemplate>
-                    <Grid/>
-                </DataTemplate>
-            </HubSection>
-        </Hub>
-    </Grid>
+	<!--End App Bar Binding Patch. If you don't need Binding  Top/Bottom Appbar please ignore these code -->
+	<Grid x:Name="MainGird" Background="White" DataContext="{Binding Source={StaticResource DesignVM}}">
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition Width="40"/>
+			<ColumnDefinition Width="Auto"/>
+			<ColumnDefinition/>
+			<ColumnDefinition Width="32"/>
+			<ColumnDefinition Width="10"/>
+			<ColumnDefinition Width="Auto"/>
+			<ColumnDefinition Width="40"/>
+			<ColumnDefinition Width="32"/>
+			<ColumnDefinition Width="10"/>
+			<ColumnDefinition Width="Auto"/>
+			<ColumnDefinition Width="40"/>
+		</Grid.ColumnDefinitions>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="Auto"/>
+			<RowDefinition Height="13"/>
+			<RowDefinition Height="32"/>
+			<RowDefinition/>
+		</Grid.RowDefinitions>
+		<ProgressBar Height="10" VerticalAlignment="Top" Background="{x:Null}" BorderBrush="{x:Null}" Value="{Binding ProgressBarValue}" Maximum="7.9228162514264338E+28" Foreground="{Binding ProgressBarBrush}" Grid.ColumnSpan="10" Margin="0"/>
+		<Hub FontFamily="Microsoft YaHei" Grid.ColumnSpan="11" RenderTransformOrigin="0.5,0.5" Grid.Row="3">
+			<HubSection Header="橘子们" Template="{StaticResource HubSectionOranges}">
+				<DataTemplate>
+					<Grid/>
+				</DataTemplate>
+			</HubSection>
+			<HubSection Header="HubSection 1" Template="{StaticResource HubSectionMoney}">
+				<DataTemplate>
+					<Grid/>
+				</DataTemplate>
+			</HubSection>
+		</Hub>
+		<TextBlock x:Name="TextBlockTitle" HorizontalAlignment="Left" Margin="0" TextWrapping="Wrap" Text="{StaticResource Title}" VerticalAlignment="Top" FontSize="24" FontFamily="Microsoft YaHei" Grid.Row="2" Height="32" Width="120" Grid.Column="1"/>
+		<TextBlock x:Name="TextBlockNumberOfMoneySmallOut" Grid.Column="5" Margin="0" Grid.Row="2" TextWrapping="Wrap" Text="{Binding TextBlockNumberOfMoneySmallOut}" FontFamily="Microsoft YaHei" FontSize="24"/>
+		<TextBlock x:Name="TextBlockNumberOfOrangeSmallOut" TextWrapping="Wrap" Text="{Binding TextBlockNumberOfOrangeSmallOut}" FontSize="24" Grid.Row="2" FontFamily="Microsoft YaHei" Grid.Column="9"/>
+		<Image Grid.Column="7" Margin="0" Grid.Row="2" Source="Logo.png"/>
+		<Image Grid.Column="3" Margin="0" Grid.Row="2"/>
+	</Grid>
 </mvvm:MVVMPage>

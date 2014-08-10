@@ -1,8 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Roots >
-  <Roots.PropertyPathNames>
-    <RootPropertyPathName Name="Title" />
-  </Roots.PropertyPathNames>
   <Roots.RootTypes>
     <RootType FullName="Windows.UI.Xaml.Application">
       <RootProperty Name="RequestedTheme" />
@@ -47,7 +44,6 @@
     </RootType>
     <RootType FullName="OrangeEndLess.About" />
     <RootType FullName="OrangeEndLess.ViewModels.MainPage_Model" />
-    <RootType FullName="Windows.UI.Xaml.Data.Binding" />
     <RootType FullName="OrangeEndLess.MainPage" />
     <RootType FullName="Windows.UI.Xaml.ResourceDictionary" />
     <RootType FullName="Windows.UI.Xaml.Controls.Button" />
