@@ -7,7 +7,7 @@
     >
 
     <Application.Resources>
-        <x:String x:Key="Title">无尽的橘子</x:String>
+        <x:String x:Key="Title">Orange Endless</x:String>
         <x:String x:Key="NumberOfOrange">橘子的个数</x:String>
         <x:String x:Key="Rush">摇</x:String>
         <x:String x:Key="LebelOfBuy1">购买一个</x:String>
@@ -59,9 +59,11 @@
         <x:String x:Key="LabelOfPrism">你的折跃门折跃出的怎么全是橘子？</x:String>
 
 
-        <x:String x:Key="TOP1">生产</x:String>
-        <x:String x:Key="TOP2">记录</x:String>
-        <x:String x:Key="TOP3">交易</x:String>
+        <x:String x:Key="TOP1">果园</x:String>
+        <x:String x:Key="TOP2">水果市场</x:String>
+        <x:String x:Key="TOP3">银行</x:String>
+        <x:String x:Key="Overview">概要</x:String>
+        <x:String x:Key="VOID"></x:String>
 
 
     </Application.Resources>

@@ -30,13 +30,8 @@ namespace OrangeEndLess
 #endif
         }
 
-        private void Grid_Loaded ( object sender , RoutedEventArgs e )
-        {
-            //this . Frame . Navigate ( typeof ( About ) );
 
-        }
-
-        private void ButtonRush_Loaded ( object sender , RoutedEventArgs e )
+        private void REOverView_Checked ( object sender , RoutedEventArgs e )
         {
         }
     }
