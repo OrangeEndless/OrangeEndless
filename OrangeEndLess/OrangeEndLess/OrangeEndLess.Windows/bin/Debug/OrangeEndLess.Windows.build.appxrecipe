@@ -68,6 +68,12 @@
       <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Wang\Source\Repos\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.Shared\Images\ProduceWhite.png">
+      <PackagePath>Images\ProduceWhite.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Wang\Source\Repos\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.Shared\Images\ProduceBlack.png">
+      <PackagePath>Images\ProduceBlack.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Wang\Source\Repos\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.Shared\Images\OverviewWhite.png">
       <PackagePath>Images\OverviewWhite.png</PackagePath>
     </AppxPackagedFile>

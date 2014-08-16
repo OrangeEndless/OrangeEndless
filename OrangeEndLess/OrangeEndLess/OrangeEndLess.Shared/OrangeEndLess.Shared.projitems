@@ -46,6 +46,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="$(MSBuildThisFileDirectory)a.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Images\ProduceWhite.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Images\ProduceBlack.png" />
     <Content Include="$(MSBuildThisFileDirectory)Images\OverviewWhite.png" />
     <Content Include="$(MSBuildThisFileDirectory)Images\OverviewBlack.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

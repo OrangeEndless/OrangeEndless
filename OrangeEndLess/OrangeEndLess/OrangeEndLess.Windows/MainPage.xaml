@@ -94,6 +94,7 @@
         <ScrollViewer Grid.Row="1">
             <StackPanel Height="199" VerticalAlignment="Top">
                 <local:ListItem d:LayoutOverrides="Width, Height" Text1="{StaticResource Overview}" Text2="{StaticResource VOID}" ImageBlack="Images/OverviewBlack.png" ImageWhite="Images/OverviewWhite.png" Margin="0,20,0,0" IsDefault="True"/>
+                <local:ListItem d:LayoutOverrides="Width, Height" ImageBlack="Images/ProduceBlack.png" Text1="{StaticResource Produce}" Text2="{StaticResource VOID}" ImageWhite="Images/ProduceWhite.png"/>
 
             </StackPanel>
             

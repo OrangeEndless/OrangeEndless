@@ -20,13 +20,13 @@
     <AppXManifest Include="C:\Users\Wang\Source\Repos\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.Windows\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2014-08-16T12:55:06.048</Modified>
+      <Modified>2014-08-16T15:05:20.930</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Wang\Source\Repos\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.Windows\bin\Debug\OrangeEndLess.Windows.exe">
       <PackagePath>OrangeEndLess.Windows.exe</PackagePath>
-      <Modified>2014-08-16T13:40:03.764</Modified>
+      <Modified>2014-08-16T15:05:17.877</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\BehaviorsXamlSDKManaged\12.0\References\CommonConfiguration\Neutral\Microsoft.Xaml.Interactions.dll">
       <PackagePath>Microsoft.Xaml.Interactions.dll</PackagePath>
@@ -92,6 +92,14 @@
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2014-07-22T15:40:26.551</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Wang\Source\Repos\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.Shared\Images\ProduceWhite.png">
+      <PackagePath>Images\ProduceWhite.png</PackagePath>
+      <Modified>2014-08-16T15:03:52.248</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Wang\Source\Repos\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.Shared\Images\ProduceBlack.png">
+      <PackagePath>Images\ProduceBlack.png</PackagePath>
+      <Modified>2013-04-13T02:58:44.000</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Wang\Source\Repos\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.Shared\Images\OverviewWhite.png">
       <PackagePath>Images\OverviewWhite.png</PackagePath>
       <Modified>2014-08-15T03:50:06.745</Modified>
@@ -126,7 +134,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Wang\Source\Repos\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.Windows\bin\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2014-08-16T12:54:57.860</Modified>
+      <Modified>2014-08-16T15:05:16.559</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Wang\Source\Repos\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.Windows\bin\Debug\UI\Styles.xbf">
       <PackagePath>UI\Styles.xbf</PackagePath>
@@ -138,11 +146,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Wang\Source\Repos\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.Windows\bin\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2014-08-16T13:40:02.668</Modified>
+      <Modified>2014-08-16T15:05:16.565</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Wang\Source\Repos\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.Windows\bin\Debug\UI\ListItem.xbf">
       <PackagePath>UI\ListItem.xbf</PackagePath>
-      <Modified>2014-08-16T13:40:02.669</Modified>
+      <Modified>2014-08-16T15:05:16.570</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Wang\Source\Repos\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.Windows\bin\Debug\OrangeEndLess.Windows.xr.xml">
       <PackagePath>OrangeEndLess.Windows.xr.xml</PackagePath>
@@ -150,7 +158,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Wang\Source\Repos\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.Windows\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2014-08-16T13:39:19.542</Modified>
+      <Modified>2014-08-16T15:05:19.122</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
