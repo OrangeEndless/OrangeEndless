@@ -124,7 +124,7 @@ namespace OrangeEndLess.OrangeEndLess_Windows_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[36];
+            _typeNameTable = new string[38];
             _typeNameTable[0] = "MVVMSidekick.Views.MVVMPage";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
@@ -160,9 +160,11 @@ namespace OrangeEndLess.OrangeEndLess_Windows_XamlTypeInfo
             _typeNameTable[32] = "MVVMSidekick.ViewModels.BindableBase`1<MVVMSidekick.ViewModels.CommandModel`2<MVVMSidekick.Reactive.ReactiveCommand, String>>";
             _typeNameTable[33] = "Double";
             _typeNameTable[34] = "Windows.UI.Xaml.Media.Brush";
-            _typeNameTable[35] = "OrangeEndLess.MainPage";
+            _typeNameTable[35] = "OrangeEndLess.ListItem";
+            _typeNameTable[36] = "Windows.UI.Xaml.Media.ImageSource";
+            _typeNameTable[37] = "OrangeEndLess.MainPage";
 
-            _typeTable = new global::System.Type[36];
+            _typeTable = new global::System.Type[38];
             _typeTable[0] = typeof(global::MVVMSidekick.Views.MVVMPage);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
@@ -198,7 +200,9 @@ namespace OrangeEndLess.OrangeEndLess_Windows_XamlTypeInfo
             _typeTable[32] = typeof(global::MVVMSidekick.ViewModels.BindableBase<MVVMSidekick.ViewModels.CommandModel<global::MVVMSidekick.Reactive.ReactiveCommand, global::System.String>>);
             _typeTable[33] = typeof(global::System.Double);
             _typeTable[34] = typeof(global::Windows.UI.Xaml.Media.Brush);
-            _typeTable[35] = typeof(global::OrangeEndLess.MainPage);
+            _typeTable[35] = typeof(global::OrangeEndLess.ListItem);
+            _typeTable[36] = typeof(global::Windows.UI.Xaml.Media.ImageSource);
+            _typeTable[37] = typeof(global::OrangeEndLess.MainPage);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -240,7 +244,8 @@ namespace OrangeEndLess.OrangeEndLess_Windows_XamlTypeInfo
         private object Activate_26_About() { return new global::OrangeEndLess.About(); }
         private object Activate_28_MainPage_Model() { return new global::OrangeEndLess.ViewModels.MainPage_Model(); }
         private object Activate_31_CommandModel() { return new global::MVVMSidekick.ViewModels.CommandModel<global::MVVMSidekick.Reactive.ReactiveCommand, global::System.String>(); }
-        private object Activate_35_MainPage() { return new global::OrangeEndLess.MainPage(); }
+        private object Activate_35_ListItem() { return new global::OrangeEndLess.ListItem(); }
+        private object Activate_37_MainPage() { return new global::OrangeEndLess.MainPage(); }
         private void VectorAdd_19_IList(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::MVVMSidekick.ViewModels.DisposeEntry>)instance;
@@ -489,9 +494,26 @@ namespace OrangeEndLess.OrangeEndLess_Windows_XamlTypeInfo
                 xamlType = new global::OrangeEndLess.OrangeEndLess_Windows_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 35:   //  OrangeEndLess.MainPage
+            case 35:   //  OrangeEndLess.ListItem
+                userType = new global::OrangeEndLess.OrangeEndLess_Windows_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
+                userType.Activator = Activate_35_ListItem;
+                userType.AddMemberName("Text1");
+                userType.AddMemberName("Text2");
+                userType.AddMemberName("ImageBlack");
+                userType.AddMemberName("ImageWhite");
+                userType.AddMemberName("IsDefault");
+                userType.AddMemberName("IsChecked");
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 36:   //  Windows.UI.Xaml.Media.ImageSource
+                xamlType = new global::OrangeEndLess.OrangeEndLess_Windows_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 37:   //  OrangeEndLess.MainPage
                 userType = new global::OrangeEndLess.OrangeEndLess_Windows_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("MVVMSidekick.Views.MVVMPage"));
-                userType.Activator = Activate_35_MainPage;
+                userType.Activator = Activate_37_MainPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -835,6 +857,66 @@ namespace OrangeEndLess.OrangeEndLess_Windows_XamlTypeInfo
             var that = (global::MVVMSidekick.ViewModels.BindableBase<global::OrangeEndLess.ViewModels.MainPage_Model>)instance;
             that.EventRouter = (global::MVVMSidekick.EventRouting.EventRouter)Value;
         }
+        private object get_42_ListItem_Text1(object instance)
+        {
+            var that = (global::OrangeEndLess.ListItem)instance;
+            return that.Text1;
+        }
+        private void set_42_ListItem_Text1(object instance, object Value)
+        {
+            var that = (global::OrangeEndLess.ListItem)instance;
+            that.Text1 = (global::System.String)Value;
+        }
+        private object get_43_ListItem_Text2(object instance)
+        {
+            var that = (global::OrangeEndLess.ListItem)instance;
+            return that.Text2;
+        }
+        private void set_43_ListItem_Text2(object instance, object Value)
+        {
+            var that = (global::OrangeEndLess.ListItem)instance;
+            that.Text2 = (global::System.String)Value;
+        }
+        private object get_44_ListItem_ImageBlack(object instance)
+        {
+            var that = (global::OrangeEndLess.ListItem)instance;
+            return that.ImageBlack;
+        }
+        private void set_44_ListItem_ImageBlack(object instance, object Value)
+        {
+            var that = (global::OrangeEndLess.ListItem)instance;
+            that.ImageBlack = (global::Windows.UI.Xaml.Media.ImageSource)Value;
+        }
+        private object get_45_ListItem_ImageWhite(object instance)
+        {
+            var that = (global::OrangeEndLess.ListItem)instance;
+            return that.ImageWhite;
+        }
+        private void set_45_ListItem_ImageWhite(object instance, object Value)
+        {
+            var that = (global::OrangeEndLess.ListItem)instance;
+            that.ImageWhite = (global::Windows.UI.Xaml.Media.ImageSource)Value;
+        }
+        private object get_46_ListItem_IsDefault(object instance)
+        {
+            var that = (global::OrangeEndLess.ListItem)instance;
+            return that.IsDefault;
+        }
+        private void set_46_ListItem_IsDefault(object instance, object Value)
+        {
+            var that = (global::OrangeEndLess.ListItem)instance;
+            that.IsDefault = (global::System.Boolean)Value;
+        }
+        private object get_47_ListItem_IsChecked(object instance)
+        {
+            var that = (global::OrangeEndLess.ListItem)instance;
+            return that.IsChecked;
+        }
+        private void set_47_ListItem_IsChecked(object instance, object Value)
+        {
+            var that = (global::OrangeEndLess.ListItem)instance;
+            that.IsChecked = (global::System.Boolean)Value;
+        }
 
         private global::Windows.UI.Xaml.Markup.IXamlMember CreateXamlMember(string longMemberName)
         {
@@ -1095,6 +1177,42 @@ namespace OrangeEndLess.OrangeEndLess_Windows_XamlTypeInfo
                 xamlMember = new global::OrangeEndLess.OrangeEndLess_Windows_XamlTypeInfo.XamlMember(this, "EventRouter", "MVVMSidekick.EventRouting.EventRouter");
                 xamlMember.Getter = get_41_BindableBase_EventRouter;
                 xamlMember.Setter = set_41_BindableBase_EventRouter;
+                break;
+            case "OrangeEndLess.ListItem.Text1":
+                userType = (global::OrangeEndLess.OrangeEndLess_Windows_XamlTypeInfo.XamlUserType)GetXamlTypeByName("OrangeEndLess.ListItem");
+                xamlMember = new global::OrangeEndLess.OrangeEndLess_Windows_XamlTypeInfo.XamlMember(this, "Text1", "String");
+                xamlMember.Getter = get_42_ListItem_Text1;
+                xamlMember.Setter = set_42_ListItem_Text1;
+                break;
+            case "OrangeEndLess.ListItem.Text2":
+                userType = (global::OrangeEndLess.OrangeEndLess_Windows_XamlTypeInfo.XamlUserType)GetXamlTypeByName("OrangeEndLess.ListItem");
+                xamlMember = new global::OrangeEndLess.OrangeEndLess_Windows_XamlTypeInfo.XamlMember(this, "Text2", "String");
+                xamlMember.Getter = get_43_ListItem_Text2;
+                xamlMember.Setter = set_43_ListItem_Text2;
+                break;
+            case "OrangeEndLess.ListItem.ImageBlack":
+                userType = (global::OrangeEndLess.OrangeEndLess_Windows_XamlTypeInfo.XamlUserType)GetXamlTypeByName("OrangeEndLess.ListItem");
+                xamlMember = new global::OrangeEndLess.OrangeEndLess_Windows_XamlTypeInfo.XamlMember(this, "ImageBlack", "Windows.UI.Xaml.Media.ImageSource");
+                xamlMember.Getter = get_44_ListItem_ImageBlack;
+                xamlMember.Setter = set_44_ListItem_ImageBlack;
+                break;
+            case "OrangeEndLess.ListItem.ImageWhite":
+                userType = (global::OrangeEndLess.OrangeEndLess_Windows_XamlTypeInfo.XamlUserType)GetXamlTypeByName("OrangeEndLess.ListItem");
+                xamlMember = new global::OrangeEndLess.OrangeEndLess_Windows_XamlTypeInfo.XamlMember(this, "ImageWhite", "Windows.UI.Xaml.Media.ImageSource");
+                xamlMember.Getter = get_45_ListItem_ImageWhite;
+                xamlMember.Setter = set_45_ListItem_ImageWhite;
+                break;
+            case "OrangeEndLess.ListItem.IsDefault":
+                userType = (global::OrangeEndLess.OrangeEndLess_Windows_XamlTypeInfo.XamlUserType)GetXamlTypeByName("OrangeEndLess.ListItem");
+                xamlMember = new global::OrangeEndLess.OrangeEndLess_Windows_XamlTypeInfo.XamlMember(this, "IsDefault", "Boolean");
+                xamlMember.Getter = get_46_ListItem_IsDefault;
+                xamlMember.Setter = set_46_ListItem_IsDefault;
+                break;
+            case "OrangeEndLess.ListItem.IsChecked":
+                userType = (global::OrangeEndLess.OrangeEndLess_Windows_XamlTypeInfo.XamlUserType)GetXamlTypeByName("OrangeEndLess.ListItem");
+                xamlMember = new global::OrangeEndLess.OrangeEndLess_Windows_XamlTypeInfo.XamlMember(this, "IsChecked", "Boolean");
+                xamlMember.Getter = get_47_ListItem_IsChecked;
+                xamlMember.Setter = set_47_ListItem_IsChecked;
                 break;
             }
             return xamlMember;

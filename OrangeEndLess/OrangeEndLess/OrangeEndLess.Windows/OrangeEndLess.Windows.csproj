@@ -119,6 +119,9 @@
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startups\About.cs" />
+    <Compile Include="UI\ListItem.xaml.cs">
+      <DependentUpon>ListItem.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ViewModels\About_Model.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -142,6 +145,10 @@
     <Page Include="MainPage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UI\ListItem.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
   <ItemGroup>
@@ -179,7 +186,7 @@
     </SDKReference>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="UI\" />
+    <Folder Include="Themes\" />
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '12.0' ">
     <VisualStudioVersion>12.0</VisualStudioVersion>

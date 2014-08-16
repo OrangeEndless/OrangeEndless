@@ -62,6 +62,8 @@
         <x:String x:Key="TOP1">果园</x:String>
         <x:String x:Key="TOP2">水果市场</x:String>
         <x:String x:Key="TOP3">银行</x:String>
+        <x:String x:Key="Overview">概要</x:String>
+        <x:String x:Key="VOID"></x:String>
 
 
     </Application.Resources>

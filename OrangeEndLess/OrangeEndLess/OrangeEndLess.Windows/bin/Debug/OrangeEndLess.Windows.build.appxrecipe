@@ -104,6 +104,9 @@
     <AppxPackagedFile Include="C:\Users\Wang\Source\Repos\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.Windows\bin\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Wang\Source\Repos\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.Windows\bin\Debug\UI\ListItem.xbf">
+      <PackagePath>UI\ListItem.xbf</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Wang\Source\Repos\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.Windows\bin\Debug\OrangeEndLess.Windows.xr.xml">
       <PackagePath>OrangeEndLess.Windows.xr.xml</PackagePath>
     </AppxPackagedFile>
