@@ -46,12 +46,18 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="$(MSBuildThisFileDirectory)a.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Images\ConsoleBlack.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Images\ConsoleWhite.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Images\MarketBlack.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Images\MarketWhite.png" />
     <Content Include="$(MSBuildThisFileDirectory)Images\ProduceWhite.png" />
     <Content Include="$(MSBuildThisFileDirectory)Images\ProduceBlack.png" />
     <Content Include="$(MSBuildThisFileDirectory)Images\OverviewWhite.png" />
     <Content Include="$(MSBuildThisFileDirectory)Images\OverviewBlack.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="$(MSBuildThisFileDirectory)Images\SettingBlack.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Images\SettingWhite.png" />
     <Content Include="$(MSBuildThisFileDirectory)Photos\Orange.jpg" />
     <Content Include="$(MSBuildThisFileDirectory)Photos\Wencey.JPG" />
     <Content Include="$(MSBuildThisFileDirectory)w.fw.png" />

@@ -38,6 +38,7 @@ namespace OrangeEndLess
             GameData . Values [ "TimeToUpdateAchevement" ] = 100000;
             GameData . Values [ "TimeToUpdateBuilding" ] = 10000;
 
+
             foreach ( var item in Buildings )
             {
                 item . Value . Clean ( );

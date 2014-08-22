@@ -16,8 +16,6 @@
         <x:String x:Key="LebelOfSell10">销售十个</x:String>
         <x:String x:Key="LebelOfSellAll">全部销售</x:String>
 
-        <x:String x:Key="Setting">设置</x:String>
-        <x:String x:Key="About">关于</x:String>
 
         <x:String x:Key="Price">价格：</x:String>
         <x:String x:Key="CPS">增速：</x:String>
@@ -63,6 +61,13 @@
         <x:String x:Key="TOP2">水果市场</x:String>
         <x:String x:Key="TOP3">银行</x:String>
         <x:String x:Key="Overview">概要</x:String>
+        <x:String x:Key="Produce">生产</x:String>
+        <x:String x:Key="Market">市场</x:String>
+        <x:String x:Key="Console">命令行</x:String>
+        <x:String x:Key="Setting">设置</x:String>
+        <x:String x:Key="About">关于</x:String>
+
+
         <x:String x:Key="VOID"></x:String>
 
 

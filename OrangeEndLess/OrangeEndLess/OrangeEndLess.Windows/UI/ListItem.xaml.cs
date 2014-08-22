@@ -165,7 +165,7 @@ namespace OrangeEndLess
             }
             else
             {
-                VisualStateManager . GoToState ( this , "UncheckedPointerOver" , false );
+                VisualStateManager . GoToState ( this , "Unchecked" , false );
                 ImageLL . Source = ImageWhite;
             }
 
