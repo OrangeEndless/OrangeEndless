@@ -23,13 +23,13 @@
     <Compile Include="$(MSBuildThisFileDirectory)App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)GameConsole.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)GameCore\Achievement.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)GameCore\Building.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)GameCore\Core.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)GameCore\CoreEvents.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)GameCore\GameAchievements.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)GameCore\GameBuildings.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)GameCore\GameConsole.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)GameCore\GameRandomEvents.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)GameCore\GameTechnologys.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)GameCore\RandomArgs.cs" />
@@ -38,7 +38,13 @@
     <Compile Include="$(MSBuildThisFileDirectory)GameCore\Status.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)GameCore\Timers.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)GameCore\Technology.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Startups\StartupFunctions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)UI\ListItem.xaml.cs">
+      <DependentUpon>ListItem.xaml</DependentUpon>
+    </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)ViewModels\MainPage_Model.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -65,7 +71,11 @@
     <Content Include="$(MSBuildThisFileDirectory)Logo.png" />
   </ItemGroup>
   <ItemGroup>
-    <Page Include="$(MSBuildThisFileDirectory)UI\Styles.xaml">
+    <Page Include="$(MSBuildThisFileDirectory)MainPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="$(MSBuildThisFileDirectory)UI\ListItem.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

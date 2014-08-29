@@ -7,14 +7,16 @@
     >
 
     <Application.Resources>
-        <x:String x:Key="Title">Orange Endless</x:String>
-        <x:String x:Key="NumberOfOrange">橘子的个数</x:String>
+		<x:String x:Key="Title">Orange EndLess</x:String>
+		<x:String x:Key="NumberOfOrange">橘子的个数</x:String>
         <x:String x:Key="Rush">摇</x:String>
         <x:String x:Key="LebelOfBuy1">购买一个</x:String>
         <x:String x:Key="LebelOfBuy10">购买十个</x:String>
         <x:String x:Key="LebelOfSell1">销售一个</x:String>
         <x:String x:Key="LebelOfSell10">销售十个</x:String>
-        <x:String x:Key="LebelOfSellAll">全部销售</x:String>
+        <x:String x:Key="LebelOfSellAll">邓畅
+是个狂热的Microsoft爱好者，偶尔维护@WRFans论坛 的官博，目前在台北读开南职高，梦想很多点子超多，执行力0%，微博经常分享台北生活琐事。可以通过dengchang@live.com以及http://weibo.com/MicrosoftFans 找到我。
+        </x:String>
 
 
         <x:String x:Key="Price">价格：</x:String>
@@ -57,20 +59,32 @@
         <x:String x:Key="LabelOfPrism">你的折跃门折跃出的怎么全是橘子？</x:String>
 
 
-        <x:String x:Key="TOP1">果园</x:String>
+        <!--<x:String x:Key="TOP1">果园</x:String>
         <x:String x:Key="TOP2">水果市场</x:String>
-        <x:String x:Key="TOP3">银行</x:String>
+        <x:String x:Key="TOP3">银行</x:String>-->
         <x:String x:Key="Overview">概要</x:String>
         <x:String x:Key="Produce">生产</x:String>
-        <x:String x:Key="Market">市场</x:String>
+        <x:String x:Key="Store">商店</x:String>
+		<x:String x:Key="Achievement">成就</x:String>
         <x:String x:Key="Console">命令行</x:String>
         <x:String x:Key="Setting">设置</x:String>
-        <x:String x:Key="About">关于</x:String>
+		<x:String x:Key="Data">数据</x:String>
+
+		<x:String x:Key="About">关于</x:String>
 
 
         <x:String x:Key="VOID"></x:String>
 
-
+        <x:String x:Key="Warning">光敏性癫痫警告
+极小部分人可能会在看到特定视觉图像（包括可能出现在本游戏中的闪烁效果或图案）时出现癫痫症状。甚至没有癫痫史的人也可能具有某种未确诊的身体状况，可在观看本游戏时导致“光敏性癫痫发作”。
+癫痫发作时可能有多种症状，包括头晕目眩、眼睛或面部抽搐、四肢痉挛或发抖、神志不清、混乱或暂时失去意识。癫痫发作也可能导致意识丧失或痉挛，进而导致患者因跌倒或撞击到旁边的物体而受伤。
+如果您出现任何症状，请立即停止游戏并咨询医生。家长应留意或询问孩子是否出现上述症状。儿童和青少年比成年人更容易出现癫痫发作的情况。
+可通过采取以下预防措施降低光敏性癫痫发作的风险：
+•	在光线明亮的房间内播放
+•	如果您昏昏欲睡或疲劳，则请勿玩游戏
+如果您或您的亲人有癫痫史，请在玩本游戏前请咨询医生。
+        </x:String>
+        
     </Application.Resources>
 
 </Application>

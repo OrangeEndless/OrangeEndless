@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 using System.Reflection ;
 namespace MVVMSidekick.Startups
 {
-    public static partial class StartupFunctions
-    {
-        
-     
-      	static List<Action> AllConfig ;
+	public static partial class StartupFunctions
+	{
+		
+	 
+		static List<Action> AllConfig ;
 
 		public static Action CreateAndAddToAllConfig(this Action action)
 		{
@@ -32,5 +32,5 @@ namespace MVVMSidekick.Startups
 		}
 
 
-    }
+	}
 }
