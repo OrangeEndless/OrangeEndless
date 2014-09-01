@@ -1,22 +1,22 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <Machine>WENCEY_WANG-PC</Machine>
-    <WindowsUser>Class 4</WindowsUser>
+    <Machine>WENCEY_PC</Machine>
+    <WindowsUser>Wang</WindowsUser>
     <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
     <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
     <PackageArchitecture>neutral</PackageArchitecture>
     <PackageIdentityName>b3132f6e-c76d-40a4-82b6-7d5e46403907</PackageIdentityName>
-    <IntermediateOutputPath>C:\Users\Class 4\Documents\Visual Studio 2013\Projects\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.Windows\obj\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\Wang\Source\Repos\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.Windows\obj\Debug\</IntermediateOutputPath>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\Class 4\Documents\Visual Studio 2013\Projects\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.Windows\bin\Debug\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\Wang\Source\Repos\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.Windows\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\Class 4\Documents\Visual Studio 2013\Projects\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.Windows\bin\Debug\OrangeEndLess.Windows.exe">
+    <AppxPackagedFile Include="C:\Users\Wang\Source\Repos\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.Windows\bin\Debug\OrangeEndLess.Windows.exe">
       <PackagePath>OrangeEndLess.Windows.exe</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\BehaviorsXamlSDKManaged\12.0\References\CommonConfiguration\Neutral\Microsoft.Xaml.Interactions.dll">
@@ -25,113 +25,116 @@
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\BehaviorsXamlSDKManaged\12.0\References\CommonConfiguration\Neutral\Microsoft.Xaml.Interactivity.dll">
       <PackagePath>Microsoft.Xaml.Interactivity.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Class 4\Documents\Visual Studio 2013\Projects\OrangeEndless\OrangeEndLess\packages\Microsoft.Bcl.Async.1.0.168\lib\win8\Microsoft.Threading.Tasks.dll">
+    <AppxPackagedFile Include="C:\Users\Wang\Source\Repos\OrangeEndless\OrangeEndLess\packages\Microsoft.Bcl.Async.1.0.168\lib\win8\Microsoft.Threading.Tasks.dll">
       <PackagePath>Microsoft.Threading.Tasks.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Class 4\Documents\Visual Studio 2013\Projects\OrangeEndless\OrangeEndLess\packages\Microsoft.Bcl.Async.1.0.168\lib\win8\Microsoft.Threading.Tasks.Extensions.dll">
+    <AppxPackagedFile Include="C:\Users\Wang\Source\Repos\OrangeEndless\OrangeEndLess\packages\Microsoft.Bcl.Async.1.0.168\lib\win8\Microsoft.Threading.Tasks.Extensions.dll">
       <PackagePath>Microsoft.Threading.Tasks.Extensions.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Class 4\Documents\Visual Studio 2013\Projects\OrangeEndless\OrangeEndLess\packages\MVVM-Sidekick.Behaviors.0.3.0.0\lib\netcore45\MVVMSidekick.Behaviors_RT.dll">
+    <AppxPackagedFile Include="C:\Users\Wang\Source\Repos\OrangeEndless\OrangeEndLess\packages\MVVM-Sidekick.Behaviors.0.3.0.0\lib\netcore45\MVVMSidekick.Behaviors_RT.dll">
       <PackagePath>MVVMSidekick.Behaviors_RT.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Class 4\Documents\Visual Studio 2013\Projects\OrangeEndless\OrangeEndLess\packages\MVVM-Sidekick.1.3.0.0\lib\win8\MVVMSidekick_Metro.dll">
+    <AppxPackagedFile Include="C:\Users\Wang\Source\Repos\OrangeEndless\OrangeEndLess\packages\MVVM-Sidekick.1.3.0.0\lib\win8\MVVMSidekick_Metro.dll">
       <PackagePath>MVVMSidekick_Metro.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Class 4\Documents\Visual Studio 2013\Projects\OrangeEndless\OrangeEndLess\packages\Rx-Core.2.2.4\lib\windows8\System.Reactive.Core.dll">
+    <AppxPackagedFile Include="C:\Users\Wang\Source\Repos\OrangeEndless\OrangeEndLess\packages\Rx-Core.2.2.4\lib\windows8\System.Reactive.Core.dll">
       <PackagePath>System.Reactive.Core.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Class 4\Documents\Visual Studio 2013\Projects\OrangeEndless\OrangeEndLess\packages\Rx-Interfaces.2.2.4\lib\windows8\System.Reactive.Interfaces.dll">
+    <AppxPackagedFile Include="C:\Users\Wang\Source\Repos\OrangeEndless\OrangeEndLess\packages\Rx-Interfaces.2.2.4\lib\windows8\System.Reactive.Interfaces.dll">
       <PackagePath>System.Reactive.Interfaces.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Class 4\Documents\Visual Studio 2013\Projects\OrangeEndless\OrangeEndLess\packages\Rx-Linq.2.2.4\lib\windows8\System.Reactive.Linq.dll">
+    <AppxPackagedFile Include="C:\Users\Wang\Source\Repos\OrangeEndless\OrangeEndLess\packages\Rx-Linq.2.2.4\lib\windows8\System.Reactive.Linq.dll">
       <PackagePath>System.Reactive.Linq.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Class 4\Documents\Visual Studio 2013\Projects\OrangeEndless\OrangeEndLess\packages\Rx-PlatformServices.2.2.4\lib\windows8\System.Reactive.PlatformServices.dll">
+    <AppxPackagedFile Include="C:\Users\Wang\Source\Repos\OrangeEndless\OrangeEndLess\packages\Rx-PlatformServices.2.2.4\lib\windows8\System.Reactive.PlatformServices.dll">
       <PackagePath>System.Reactive.PlatformServices.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Class 4\Documents\Visual Studio 2013\Projects\OrangeEndless\OrangeEndLess\packages\Rx-XAML.2.2.4\lib\windows8\System.Reactive.Windows.Threading.dll">
+    <AppxPackagedFile Include="C:\Users\Wang\Source\Repos\OrangeEndless\OrangeEndLess\packages\Rx-XAML.2.2.4\lib\windows8\System.Reactive.Windows.Threading.dll">
       <PackagePath>System.Reactive.Windows.Threading.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Class 4\Documents\Visual Studio 2013\Projects\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.Windows\Assets\Logo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\Wang\Source\Repos\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.Windows\Assets\Logo.scale-100.png">
       <PackagePath>Assets\Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Class 4\Documents\Visual Studio 2013\Projects\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.Windows\Assets\SmallLogo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\Wang\Source\Repos\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.Windows\Assets\SmallLogo.scale-100.png">
       <PackagePath>Assets\SmallLogo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Class 4\Documents\Visual Studio 2013\Projects\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.Windows\Assets\SplashScreen.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\Wang\Source\Repos\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.Windows\Assets\SplashScreen.scale-100.png">
       <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Class 4\Documents\Visual Studio 2013\Projects\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.Windows\Assets\StoreLogo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\Wang\Source\Repos\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.Windows\Assets\StoreLogo.scale-100.png">
       <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Class 4\Documents\Visual Studio 2013\Projects\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.Shared\Images\ConsoleBlack.png">
+    <AppxPackagedFile Include="C:\Users\Wang\Source\Repos\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.Shared\Images\ConsoleBlack.png">
       <PackagePath>Images\ConsoleBlack.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Class 4\Documents\Visual Studio 2013\Projects\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.Shared\Images\ConsoleWhite.png">
+    <AppxPackagedFile Include="C:\Users\Wang\Source\Repos\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.Shared\Images\ConsoleWhite.png">
       <PackagePath>Images\ConsoleWhite.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Class 4\Documents\Visual Studio 2013\Projects\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.Shared\Images\MarketBlack.png">
+    <AppxPackagedFile Include="C:\Users\Wang\Source\Repos\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.Shared\Images\MarketBlack.png">
       <PackagePath>Images\MarketBlack.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Class 4\Documents\Visual Studio 2013\Projects\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.Shared\Images\MarketWhite.png">
+    <AppxPackagedFile Include="C:\Users\Wang\Source\Repos\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.Shared\Images\MarketWhite.png">
       <PackagePath>Images\MarketWhite.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Class 4\Documents\Visual Studio 2013\Projects\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.Shared\Images\ProduceWhite.png">
+    <AppxPackagedFile Include="C:\Users\Wang\Source\Repos\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.Shared\Images\ProduceWhite.png">
       <PackagePath>Images\ProduceWhite.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Class 4\Documents\Visual Studio 2013\Projects\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.Shared\Images\ProduceBlack.png">
+    <AppxPackagedFile Include="C:\Users\Wang\Source\Repos\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.Shared\Images\ProduceBlack.png">
       <PackagePath>Images\ProduceBlack.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Class 4\Documents\Visual Studio 2013\Projects\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.Shared\Images\OverviewWhite.png">
+    <AppxPackagedFile Include="C:\Users\Wang\Source\Repos\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.Shared\Images\OverviewWhite.png">
       <PackagePath>Images\OverviewWhite.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Class 4\Documents\Visual Studio 2013\Projects\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.Shared\Images\OverviewBlack.png">
+    <AppxPackagedFile Include="C:\Users\Wang\Source\Repos\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.Shared\Images\OverviewBlack.png">
       <PackagePath>Images\OverviewBlack.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Class 4\Documents\Visual Studio 2013\Projects\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.Shared\Images\SettingBlack.png">
+    <AppxPackagedFile Include="C:\Users\Wang\Source\Repos\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.Shared\Images\SettingBlack.png">
       <PackagePath>Images\SettingBlack.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Class 4\Documents\Visual Studio 2013\Projects\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.Shared\Images\SettingWhite.png">
+    <AppxPackagedFile Include="C:\Users\Wang\Source\Repos\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.Shared\Images\SettingWhite.png">
       <PackagePath>Images\SettingWhite.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Class 4\Documents\Visual Studio 2013\Projects\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.Shared\w.fw.png">
+    <AppxPackagedFile Include="C:\Users\Wang\Source\Repos\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.Shared\w.fw.png">
       <PackagePath>w.fw.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Class 4\Documents\Visual Studio 2013\Projects\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.Shared\weibo.png">
+    <AppxPackagedFile Include="C:\Users\Wang\Source\Repos\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.Shared\weibo.png">
       <PackagePath>weibo.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Class 4\Documents\Visual Studio 2013\Projects\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.Shared\Logo.png">
+    <AppxPackagedFile Include="C:\Users\Wang\Source\Repos\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.Shared\Logo.png">
       <PackagePath>Logo.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Class 4\Documents\Visual Studio 2013\Projects\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.Shared\a.jpg">
+    <AppxPackagedFile Include="C:\Users\Wang\Source\Repos\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.Shared\a.jpg">
       <PackagePath>a.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Class 4\Documents\Visual Studio 2013\Projects\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.Shared\Photos\Orange.jpg">
+    <AppxPackagedFile Include="C:\Users\Wang\Source\Repos\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.Shared\Photos\Orange.jpg">
       <PackagePath>Photos\Orange.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Class 4\Documents\Visual Studio 2013\Projects\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.Shared\Photos\Wencey.JPG">
+    <AppxPackagedFile Include="C:\Users\Wang\Source\Repos\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.Shared\Photos\Wencey.JPG">
       <PackagePath>Photos\Wencey.JPG</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Class 4\Documents\Visual Studio 2013\Projects\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.Shared\Images\无标题-1.gif">
-      <PackagePath>Images\无标题-1.gif</PackagePath>
+    <AppxPackagedFile Include="C:\Users\Wang\Source\Repos\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.Shared\无标题-1.mp4">
+      <PackagePath>无标题-1.mp4</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Class 4\Documents\Visual Studio 2013\Projects\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.Windows\bin\Debug\App.xbf">
+    <AppxPackagedFile Include="C:\Users\Wang\Source\Repos\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.Windows\bin\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Class 4\Documents\Visual Studio 2013\Projects\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.Windows\bin\Debug\MainPage.xbf">
+    <AppxPackagedFile Include="C:\Users\Wang\Source\Repos\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.Windows\bin\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Class 4\Documents\Visual Studio 2013\Projects\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.Windows\bin\Debug\UI\ListItem.xbf">
+    <AppxPackagedFile Include="C:\Users\Wang\Source\Repos\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.Windows\bin\Debug\UI\ListButton.xbf">
+      <PackagePath>UI\ListButton.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Wang\Source\Repos\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.Windows\bin\Debug\UI\ListItem.xbf">
       <PackagePath>UI\ListItem.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Class 4\Documents\Visual Studio 2013\Projects\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.Windows\bin\Debug\OrangeEndLess.Windows.xr.xml">
+    <AppxPackagedFile Include="C:\Users\Wang\Source\Repos\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.Windows\bin\Debug\OrangeEndLess.Windows.xr.xml">
       <PackagePath>OrangeEndLess.Windows.xr.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Class 4\Documents\Visual Studio 2013\Projects\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.Windows\bin\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\Wang\Source\Repos\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.Windows\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>

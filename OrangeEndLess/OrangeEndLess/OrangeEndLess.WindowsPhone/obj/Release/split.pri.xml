@@ -6,34 +6,19 @@
 			<Scale>240</Scale>
 		</Qualifiers>
 		<ResourceMapSubtree name="Files">
-			<NamedResource name="1 (1).jpg" uri="ms-resource://61042WenceyWang.60660BB7A0C1/Files/1%20%281%29.jpg">
-				<Candidate type="Path">
-					<Value>1 (1).jpg</Value>
-				</Candidate>
-			</NamedResource>
-			<NamedResource name="1 (2).jpg" uri="ms-resource://61042WenceyWang.60660BB7A0C1/Files/1%20%282%29.jpg">
-				<Candidate type="Path">
-					<Value>1 (2).jpg</Value>
-				</Candidate>
-			</NamedResource>
-			<NamedResource name="1.jpg" uri="ms-resource://61042WenceyWang.60660BB7A0C1/Files/1.jpg">
-				<Candidate type="Path">
-					<Value>1.jpg</Value>
-				</Candidate>
-			</NamedResource>
 			<NamedResource name="a.jpg" uri="ms-resource://61042WenceyWang.60660BB7A0C1/Files/a.jpg">
 				<Candidate type="Path">
 					<Value>a.jpg</Value>
 				</Candidate>
 			</NamedResource>
-			<NamedResource name="About.xbf" uri="ms-resource://61042WenceyWang.60660BB7A0C1/Files/About.xbf">
-				<Candidate type="Path">
-					<Value>About.xbf</Value>
-				</Candidate>
-			</NamedResource>
 			<NamedResource name="App.xbf" uri="ms-resource://61042WenceyWang.60660BB7A0C1/Files/App.xbf">
 				<Candidate type="Path">
 					<Value>App.xbf</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Logo.png" uri="ms-resource://61042WenceyWang.60660BB7A0C1/Files/Logo.png">
+				<Candidate type="Path">
+					<Value>Logo.png</Value>
 				</Candidate>
 			</NamedResource>
 			<NamedResource name="MainPage.xbf" uri="ms-resource://61042WenceyWang.60660BB7A0C1/Files/MainPage.xbf">
@@ -54,6 +39,11 @@
 			<NamedResource name="weibo.png" uri="ms-resource://61042WenceyWang.60660BB7A0C1/Files/weibo.png">
 				<Candidate type="Path">
 					<Value>weibo.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="无标题-1.mp4" uri="ms-resource://61042WenceyWang.60660BB7A0C1/Files/无标题-1.mp4">
+				<Candidate type="Path">
+					<Value>无标题-1.mp4</Value>
 				</Candidate>
 			</NamedResource>
 			<ResourceMapSubtree name="Assets">
@@ -88,6 +78,58 @@
 					</Candidate>
 				</NamedResource>
 			</ResourceMapSubtree>
+			<ResourceMapSubtree name="Images">
+				<NamedResource name="ConsoleBlack.png" uri="ms-resource://61042WenceyWang.60660BB7A0C1/Files/Images/ConsoleBlack.png">
+					<Candidate type="Path">
+						<Value>Images\ConsoleBlack.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="ConsoleWhite.png" uri="ms-resource://61042WenceyWang.60660BB7A0C1/Files/Images/ConsoleWhite.png">
+					<Candidate type="Path">
+						<Value>Images\ConsoleWhite.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="MarketBlack.png" uri="ms-resource://61042WenceyWang.60660BB7A0C1/Files/Images/MarketBlack.png">
+					<Candidate type="Path">
+						<Value>Images\MarketBlack.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="MarketWhite.png" uri="ms-resource://61042WenceyWang.60660BB7A0C1/Files/Images/MarketWhite.png">
+					<Candidate type="Path">
+						<Value>Images\MarketWhite.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="OverviewBlack.png" uri="ms-resource://61042WenceyWang.60660BB7A0C1/Files/Images/OverviewBlack.png">
+					<Candidate type="Path">
+						<Value>Images\OverviewBlack.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="OverviewWhite.png" uri="ms-resource://61042WenceyWang.60660BB7A0C1/Files/Images/OverviewWhite.png">
+					<Candidate type="Path">
+						<Value>Images\OverviewWhite.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="ProduceBlack.png" uri="ms-resource://61042WenceyWang.60660BB7A0C1/Files/Images/ProduceBlack.png">
+					<Candidate type="Path">
+						<Value>Images\ProduceBlack.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="ProduceWhite.png" uri="ms-resource://61042WenceyWang.60660BB7A0C1/Files/Images/ProduceWhite.png">
+					<Candidate type="Path">
+						<Value>Images\ProduceWhite.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="SettingBlack.png" uri="ms-resource://61042WenceyWang.60660BB7A0C1/Files/Images/SettingBlack.png">
+					<Candidate type="Path">
+						<Value>Images\SettingBlack.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="SettingWhite.png" uri="ms-resource://61042WenceyWang.60660BB7A0C1/Files/Images/SettingWhite.png">
+					<Candidate type="Path">
+						<Value>Images\SettingWhite.png</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
 			<ResourceMapSubtree name="Photos">
 				<NamedResource name="Orange.jpg" uri="ms-resource://61042WenceyWang.60660BB7A0C1/Files/Photos/Orange.jpg">
 					<Candidate type="Path">
@@ -97,6 +139,18 @@
 				<NamedResource name="Wencey.JPG" uri="ms-resource://61042WenceyWang.60660BB7A0C1/Files/Photos/Wencey.JPG">
 					<Candidate type="Path">
 						<Value>Photos\Wencey.JPG</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="UI">
+				<NamedResource name="ListButton.xbf" uri="ms-resource://61042WenceyWang.60660BB7A0C1/Files/UI/ListButton.xbf">
+					<Candidate type="Path">
+						<Value>UI\ListButton.xbf</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="ListItem.xbf" uri="ms-resource://61042WenceyWang.60660BB7A0C1/Files/UI/ListItem.xbf">
+					<Candidate type="Path">
+						<Value>UI\ListItem.xbf</Value>
 					</Candidate>
 				</NamedResource>
 			</ResourceMapSubtree>

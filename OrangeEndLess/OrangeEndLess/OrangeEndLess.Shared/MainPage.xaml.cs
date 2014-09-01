@@ -42,6 +42,8 @@ namespace OrangeEndLess
 		private void MainGird_Loaded ( object sender , RoutedEventArgs e )
 		{
 			LIOverView . TheControls . Add ( GridOverView );
+			LIOverView . TheControls . Add ( SPOverView );
+
 			LIProduce . TheControls . Add ( GridProduce );
 			LIStore . TheControls . Add ( GridStore );
 			LIAchievement . TheControls . Add ( GridAchievement );

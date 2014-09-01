@@ -33,7 +33,7 @@ namespace OrangeEndLess . ViewModels
 		public GameConsole Consoles;
 
 		public MainPage_Model ( )
-		{			
+		{
 			Consoles = new GameConsole ( GameCore );
 
 			GameCore . RandomEvent += GameCore_RandomEvent;
@@ -41,7 +41,7 @@ namespace OrangeEndLess . ViewModels
 			GameCore . UpdateBuildings += GameCore_UpdateBuildings;
 			GameCore . UpdateNumberOfMoney += GameCore_UpdateNumberOfMoney;
 			GameCore . UpdateNumberOfOrange += GameCore_UpdateNumberOfOrange;
-			Consoles . UpdateConsole += Consoles_UpdateConsole;	
+			Consoles . UpdateConsole += Consoles_UpdateConsole;
 
 		}
 
@@ -52,8 +52,8 @@ namespace OrangeEndLess . ViewModels
 
 		void GameCore_UpdateNumberOfOrange ( object sender , EventArgs e )
 		{
-			NumberOfOrange = decimal . Floor ( GameCore . NumberOfOrange ) . ToString ( );
-			TextBlockNumberOfOrangeOutTip = string . Format ( "你制造的橘子总数：{0}" , decimal . Floor ( GameCore . NumberOfOrangeHaveGet ) . ToString ( ) );
+			NOO = string . Format ( "橘子的个数：{0}" , decimal . Floor (  GameCore . NumberOfOrange ) . ToString ( ) );
+			NOOHG = string . Format ( "你制造的橘子总数：{0}" , decimal . Floor ( GameCore . NumberOfOrangeHaveGet ) . ToString ( ) );
 			ButtonRushTip = decimal . Floor ( GameCore . NumberOfOrangeHaveGet ) . ToString ( );
 			TextBlockNumberOfOrangeSmallOut = GameCore . NumberOfOrange . ToString ( );
 		}
@@ -65,7 +65,7 @@ namespace OrangeEndLess . ViewModels
 
 		void GameCore_UpdateBuildings ( object sender , EventArgs e )
 		{
-			CPSOfOrange = string . Format ( "橘子的增速：{0}/s" , GameCore . SpeedOfOrangeRise . ToString ( ) );
+			CPSOO = string . Format ( "橘子的增速：{0}/s" , GameCore . SpeedOfOrangeRise . ToString ( ) );
 			string Temp = string . Empty;
 			foreach ( var item in GameCore . Buildings )
 			{
@@ -89,82 +89,52 @@ namespace OrangeEndLess . ViewModels
 
 		}
 
-		public CommandModel<ReactiveCommand , String> CommandRush
-		{
-			get { return _CommandRushLocator ( this ) . Value; }
-			set { _CommandRushLocator ( this ) . SetValueAndTryNotify ( value ); }
-		}
-		#region Property CommandModel<ReactiveCommand, String> CommandRush Setup
-		protected Property<CommandModel<ReactiveCommand, String>> _CommandRush = new Property<CommandModel<ReactiveCommand , String>> { LocatorFunc = _CommandRushLocator };
-		static Func<BindableBase, ValueContainer<CommandModel<ReactiveCommand, String>>> _CommandRushLocator = RegisterContainerLocator<CommandModel<ReactiveCommand , String>> ( "CommandRush" , model => model . Initialize ( "CommandRush" , ref model . _CommandRush , ref _CommandRushLocator , _CommandRushDefaultValueFactory ) );
-		static Func<BindableBase, CommandModel<ReactiveCommand, String>> _CommandRushDefaultValueFactory =
-			model =>
-			{
-				var resource = "Rush";           // Commands resource  
-				var commandId = "Rush";
-				var vm = CastToCurrentType ( model );
-				var cmd = new ReactiveCommand ( canExecute: true ) { ViewModel = model }; //New Commands Core
-				cmd
-					. DoExecuteUIBusyTask (
-						vm ,
-						async e =>
-						{
-							//Todo: Add Rush logic here, or
-							vm . GameCore . Rush ( );
-							await MVVMSidekick . Utilities . TaskExHelper . Yield ( );
-						}
-					)
-					. DoNotifyDefaultEventRouter ( vm , commandId )
-					. Subscribe ( )
-					. DisposeWith ( vm );
 
-				var cmdmdl = cmd . CreateCommandModel ( resource );
-				cmdmdl . ListenToIsUIBusy ( model: vm , canExecuteWhenBusy: false );
-				return cmdmdl;
-			};
-		#endregion
 
-		public string CPSOfOrange
+		public string CPSOO
 		{
-			get { return _CPSOfOrangeLocator ( this ) . Value; }
-			set { _CPSOfOrangeLocator ( this ) . SetValueAndTryNotify ( value ); }
+			get { return _CPSOOLocator ( this ) . Value; }
+			set { _CPSOOLocator ( this ) . SetValueAndTryNotify ( value ); }
 		}
-		#region Property string CPSOfOrange Setup
-		protected Property<string> _CPSOfOrange = new Property<string> { LocatorFunc = _CPSOfOrangeLocator };
-		static Func<BindableBase, ValueContainer<string>> _CPSOfOrangeLocator = RegisterContainerLocator<string> ( "CPSOfOrange" , model => model . Initialize ( "CPSOfOrange" , ref model . _CPSOfOrange , ref _CPSOfOrangeLocator , _CPSOfOrangeDefaultValueFactory ) );
-		static Func<BindableBase, string> _CPSOfOrangeDefaultValueFactory =
+		#region Property string CPSOO Setup
+		protected Property<string> _CPSOO = new Property<string> { LocatorFunc = _CPSOOLocator };
+		static Func<BindableBase,ValueContainer<string>> _CPSOOLocator= RegisterContainerLocator<string> ( "CPSOO" , model => model . Initialize ( "CPSOO" , ref model . _CPSOO , ref _CPSOOLocator , _CPSOODefaultValueFactory ) );
+		static Func<BindableBase,string> _CPSOODefaultValueFactory = 
 			model =>
 			{
 				var vm = CastToCurrentType ( model );
+				//TODO: Add the logic that produce default value from vm current status.
 				return string . Format ( "橘子的增速：{0}/s" , vm . GameCore . SpeedOfOrangeRise . ToString ( ) );
 			};
 		#endregion
 
-		public string NumberOfOrange
+
+		public string NOO
 		{
-			get { return _NumberOfOrangeLocator ( this ) . Value; }
-			set { _NumberOfOrangeLocator ( this ) . SetValueAndTryNotify ( value ); }
+			get { return _NOOLocator ( this ) . Value; }
+			set { _NOOLocator ( this ) . SetValueAndTryNotify ( value ); }
 		}
-		#region Property string NumberOfOrange Setup
-		protected Property<string> _NumberOfOrange = new Property<string> { LocatorFunc = _NumberOfOrangeLocator };
-		static Func<BindableBase, ValueContainer<string>> _NumberOfOrangeLocator = RegisterContainerLocator<string> ( "NumberOfOrange" , model => model . Initialize ( "NumberOfOrange" , ref model . _NumberOfOrange , ref _NumberOfOrangeLocator , _NumberOfOrangeDefaultValueFactory ) );
-		static Func<BindableBase, string> _NumberOfOrangeDefaultValueFactory =
+		#region Property string NOO Setup
+		protected Property<string> _NOO = new Property<string> { LocatorFunc = _NOOLocator };
+		static Func<BindableBase,ValueContainer<string>> _NOOLocator= RegisterContainerLocator<string> ( "NOO" , model => model . Initialize ( "NOO" , ref model . _NOO , ref _NOOLocator , _NOODefaultValueFactory ) );
+		static Func<BindableBase,string> _NOODefaultValueFactory = 
 			model =>
 			{
 				var vm = CastToCurrentType ( model );
-				return decimal . Floor ( vm . GameCore . NumberOfOrange ) . ToString ( );
+				return string . Format ( "橘子的个数：{0}" , decimal . Floor ( vm . GameCore . NumberOfOrange ) . ToString ( ) );
 			};
 		#endregion
 
-		public string TextBlockNumberOfOrangeOutTip
+
+		public string NOOHG
 		{
-			get { return _TextBlockNumberOfOrangeOutTipLocator ( this ) . Value; }
-			set { _TextBlockNumberOfOrangeOutTipLocator ( this ) . SetValueAndTryNotify ( value ); }
+			get { return _NOOHGLocator ( this ) . Value; }
+			set { _NOOHGLocator ( this ) . SetValueAndTryNotify ( value ); }
 		}
-		#region Property string TextBlockNumberOfOrangeOutTip Setup
-		protected Property<string> _TextBlockNumberOfOrangeOutTip = new Property<string> { LocatorFunc = _TextBlockNumberOfOrangeOutTipLocator };
-		static Func<BindableBase, ValueContainer<string>> _TextBlockNumberOfOrangeOutTipLocator = RegisterContainerLocator<string> ( "TextBlockNumberOfOrangeOutTip" , model => model . Initialize ( "TextBlockNumberOfOrangeOutTip" , ref model . _TextBlockNumberOfOrangeOutTip , ref _TextBlockNumberOfOrangeOutTipLocator , _TextBlockNumberOfOrangeOutTipDefaultValueFactory ) );
-		static Func<BindableBase, string> _TextBlockNumberOfOrangeOutTipDefaultValueFactory =
+		#region Property string NOOHG Setup
+		protected Property<string> _NOOHG = new Property<string> { LocatorFunc = _NOOHGLocator };
+		static Func<BindableBase, ValueContainer<string>> _NOOHGLocator = RegisterContainerLocator<string> ( "NOOHG" , model => model . Initialize ( "NOOHG" , ref model . _NOOHG , ref _NOOHGLocator , _NOOHGDefaultValueFactory ) );
+		static Func<BindableBase, string> _NOOHGDefaultValueFactory =
 			model =>
 			{
 				var vm = CastToCurrentType ( model );
@@ -257,14 +227,14 @@ namespace OrangeEndLess . ViewModels
 		protected Property<string> _ConsoleText = new Property<string> { LocatorFunc = _ConsoleTextLocator };
 		static Func<BindableBase,ValueContainer<string>> _ConsoleTextLocator= RegisterContainerLocator<string> ( "ConsoleText" , model => model . Initialize ( "ConsoleText" , ref model . _ConsoleText , ref _ConsoleTextLocator , _ConsoleTextDefaultValueFactory ) );
 		static Func<BindableBase,string> _ConsoleTextDefaultValueFactory = 
-            model =>
+			model =>
 			{
 				var vm = CastToCurrentType ( model );
 				return vm . Consoles . TextOut;
 			};
 		#endregion
 
-		
+
 		public CommandModel<ReactiveCommand , String> CommandConsoleCommand
 		{
 			get { return _CommandConsoleCommandLocator ( this ) . Value; }
@@ -274,7 +244,7 @@ namespace OrangeEndLess . ViewModels
 		protected Property<CommandModel<ReactiveCommand, String>> _CommandConsoleCommand = new Property<CommandModel<ReactiveCommand , String>> { LocatorFunc = _CommandConsoleCommandLocator };
 		static Func<BindableBase,ValueContainer<CommandModel<ReactiveCommand, String>>> _CommandConsoleCommandLocator= RegisterContainerLocator<CommandModel<ReactiveCommand , String>> ( "CommandConsoleCommand" , model => model . Initialize ( "CommandConsoleCommand" , ref model . _CommandConsoleCommand , ref _CommandConsoleCommandLocator , _CommandConsoleCommandDefaultValueFactory ) );
 		static Func<BindableBase,CommandModel<ReactiveCommand, String>> _CommandConsoleCommandDefaultValueFactory =
-            model =>
+			model =>
 			{
 				var resource = "ConsoleCommand";           // Command resource  
 				var commandId = "ConsoleCommand";
@@ -285,7 +255,7 @@ namespace OrangeEndLess . ViewModels
 						vm ,
 						async e =>
 						{
-							vm . Consoles . Commands ( vm . TextConsoleCommand.TrimStart('>') );
+							vm . Consoles . Commands ( vm . TextConsoleCommand . TrimStart ( '>' ) );
 							vm . TextConsoleCommand = ">";
 							await MVVMSidekick . Utilities . TaskExHelper . Yield ( );
 						}
@@ -310,7 +280,7 @@ namespace OrangeEndLess . ViewModels
 		protected Property<string> _TextConsoleCommand = new Property<string> { LocatorFunc = _TextConsoleCommandLocator };
 		static Func<BindableBase,ValueContainer<string>> _TextConsoleCommandLocator= RegisterContainerLocator<string> ( "TextConsoleCommand" , model => model . Initialize ( "TextConsoleCommand" , ref model . _TextConsoleCommand , ref _TextConsoleCommandLocator , _TextConsoleCommandDefaultValueFactory ) );
 		static Func<BindableBase,string> _TextConsoleCommandDefaultValueFactory = 
-            model =>
+			model =>
 			{
 				var vm = CastToCurrentType ( model );
 				//TODO: Add the logic that produce default value from vm current status.

@@ -103,8 +103,6 @@ C:\Users\Wang\Source\Workspaces\Oranges\OrangeEndLess\OrangeEndLess\OrangeEndLes
 C:\Users\Wang\Source\Workspaces\Oranges\OrangeEndLess\OrangeEndLess\OrangeEndLess.Windows\obj\Debug\System.Reactive.Windows.Threading\priconfig.xml.intermediate
 C:\Users\Wang\Source\Repos\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.Windows\obj\Debug\App.g.i.cs
 C:\Users\Wang\Source\Repos\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.Windows\obj\Debug\App.g.cs
-C:\Users\Wang\Source\Repos\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.Windows\obj\Debug\About.g.i.cs
-C:\Users\Wang\Source\Repos\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.Windows\obj\Debug\About.g.cs
 C:\Users\Wang\Source\Repos\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.Windows\obj\Debug\MainPage.g.i.cs
 C:\Users\Wang\Source\Repos\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.Windows\obj\Debug\MainPage.g.cs
 C:\Users\Wang\Source\Repos\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.Windows\obj\Debug\XamlTypeInfo.g.cs
@@ -116,7 +114,6 @@ C:\Users\Wang\Source\Repos\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLe
 C:\Users\Wang\Source\Repos\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.Windows\obj\Debug\OrangeEndLess.Windows.exe
 C:\Users\Wang\Source\Repos\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.Windows\obj\Debug\OrangeEndLess.Windows.pdb
 C:\Users\Wang\Source\Repos\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.Windows\bin\Debug\App.xbf
-C:\Users\Wang\Source\Repos\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.Windows\bin\Debug\About.xbf
 C:\Users\Wang\Source\Repos\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.Windows\bin\Debug\MainPage.xbf
 C:\Users\Wang\Source\Repos\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.Windows\bin\Debug\OrangeEndLess.Windows.xr.xml
 C:\Users\Wang\Source\Repos\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.Windows\bin\Debug\OrangeEndLess.Windows.exe
@@ -147,8 +144,6 @@ C:\Users\Wang\Source\Repos\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLe
 C:\Users\Wang\Source\Repos\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.Windows\bin\Debug\System.Reactive.Linq.xml
 C:\Users\Wang\Source\Repos\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.Windows\bin\Debug\System.Reactive.PlatformServices.xml
 C:\Users\Wang\Source\Repos\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.Windows\bin\Debug\System.Reactive.Windows.Threading.xml
-C:\Users\Wang\Source\Repos\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.Windows\obj\Debug\About.xaml
-C:\Users\Wang\Source\Repos\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.Windows\obj\Debug\About.xbf
 C:\Users\Wang\Source\Repos\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.Windows\obj\Debug\System.Reactive.Core\en-US\System.Reactive.Strings_Core.resw
 C:\Users\Wang\Source\Repos\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.Windows\obj\Debug\System.Reactive.Linq\en-US\System.Reactive.Strings_Linq.resw
 C:\Users\Wang\Source\Repos\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.Windows\obj\Debug\System.Reactive.PlatformServices\en-US\System.Reactive.Strings_PlatformServices.resw
@@ -176,11 +171,6 @@ C:\Users\Wang\Source\Repos\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLe
 C:\Users\Wang\Source\Repos\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.Windows\obj\Debug\MVVMSidekick.Behaviors_RT.pri.xml
 C:\Users\Wang\Source\Repos\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.Windows\obj\Debug\MVVMSidekick_Metro.pri.xml
 C:\Users\Wang\Source\Repos\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.Windows\obj\Debug\ProjectArchitectures.txt
-C:\Users\Wang\Source\Repos\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.Windows\bin\Debug\UI\Styles.xbf
-C:\Users\Wang\Source\Repos\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.Windows\obj\Debug\UI\Styles.g.i.cs
-C:\Users\Wang\Source\Repos\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.Windows\obj\Debug\UI\Styles.g.cs
-C:\Users\Wang\Source\Repos\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.Windows\obj\Debug\UI\Styles.xaml
-C:\Users\Wang\Source\Repos\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.Windows\obj\Debug\UI\Styles.xbf
 C:\Users\Wang\Source\Repos\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.Windows\bin\Debug\Images\OverviewBlack.png
 C:\Users\Wang\Source\Repos\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.Windows\bin\Debug\UI\ListItem.xbf
 C:\Users\Wang\Source\Repos\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.Windows\obj\Debug\UI\ListItem.g.i.cs
@@ -188,11 +178,6 @@ C:\Users\Wang\Source\Repos\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLe
 C:\Users\Wang\Source\Repos\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.Windows\obj\Debug\UI\ListItem.xaml
 C:\Users\Wang\Source\Repos\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.Windows\obj\Debug\UI\ListItem.xbf
 C:\Users\Wang\Source\Repos\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.Windows\obj\Debug\OrangeEndLess.Windows.csprojResolveAssemblyReference.cache
-C:\Users\Wang\Source\Repos\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.Windows\bin\Debug\StartPage.xbf
-C:\Users\Wang\Source\Repos\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.Windows\obj\Debug\StartPage.g.i.cs
-C:\Users\Wang\Source\Repos\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.Windows\obj\Debug\StartPage.g.cs
-C:\Users\Wang\Source\Repos\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.Windows\obj\Debug\StartPage.xaml
-C:\Users\Wang\Source\Repos\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.Windows\obj\Debug\StartPage.xbf
 C:\Users\Class 4\Documents\Visual Studio 2013\Projects\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.Windows\bin\Debug\Images\OverviewBlack.png
 C:\Users\Class 4\Documents\Visual Studio 2013\Projects\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.Windows\bin\Debug\App.xbf
 C:\Users\Class 4\Documents\Visual Studio 2013\Projects\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.Windows\bin\Debug\MainPage.xbf
@@ -302,3 +287,8 @@ C:\Users\Class 4\Documents\Visual Studio 2013\Projects\OrangeEndless\OrangeEndLe
 C:\Users\Class 4\Documents\Visual Studio 2013\Projects\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.Windows\obj\Debug\System.Reactive.Windows.Threading\pri.resfiles.intermediate
 C:\Users\Class 4\Documents\Visual Studio 2013\Projects\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.Windows\obj\Debug\System.Reactive.Windows.Threading\priconfig.xml
 C:\Users\Class 4\Documents\Visual Studio 2013\Projects\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.Windows\obj\Debug\System.Reactive.Windows.Threading\priconfig.xml.intermediate
+C:\Users\Wang\Source\Repos\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.Windows\bin\Debug\UI\ListButton.xbf
+C:\Users\Wang\Source\Repos\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.Windows\obj\Debug\UI\ListButton.g.i.cs
+C:\Users\Wang\Source\Repos\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.Windows\obj\Debug\UI\ListButton.g.cs
+C:\Users\Wang\Source\Repos\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.Windows\obj\Debug\UI\ListButton.xaml
+C:\Users\Wang\Source\Repos\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.Windows\obj\Debug\UI\ListButton.xbf

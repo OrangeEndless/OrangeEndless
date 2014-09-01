@@ -7,7 +7,7 @@
 
     有关程序包清单文件的详细信息，请参阅 http://go.microsoft.com/fwlink/?LinkID=241727
   -->
-  <Identity Name="61042WenceyWang.60660BB7A0C1" Publisher="CN=BDCC6598-35FE-44D1-AC6F-18927345AF0C" Version="2.0.0.2" ProcessorArchitecture="neutral" />
+  <Identity Name="61042WenceyWang.60660BB7A0C1" Publisher="CN=BDCC6598-35FE-44D1-AC6F-18927345AF0C" Version="2.0.0.3" ProcessorArchitecture="neutral" />
   <mp:PhoneIdentity PhoneProductId="ff918480-318c-42fa-a0f1-92676dfc4aba" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
     <DisplayName>无尽的橘子</DisplayName>
@@ -39,6 +39,10 @@
       <m3:VisualElements DisplayName="无尽的橘子" Square150x150Logo="Assets\Logo.png" Square44x44Logo="Assets\SmallLogo.png" Description="OrangeEndLess.WindowsPhone" ForegroundText="light" BackgroundColor="transparent">
         <m3:DefaultTile Wide310x150Logo="Assets\WideLogo.png" Square71x71Logo="Assets\Square71x71Logo.png"></m3:DefaultTile>
         <m3:SplashScreen Image="Assets\SplashScreen.png" />
+        <m3:InitialRotationPreference>
+          <m3:Rotation Preference="landscape" />
+          <m3:Rotation Preference="landscapeFlipped" />
+        </m3:InitialRotationPreference>
       </m3:VisualElements>
     </Application>
   </Applications>

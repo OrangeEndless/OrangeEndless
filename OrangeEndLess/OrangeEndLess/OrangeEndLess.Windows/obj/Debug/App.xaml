@@ -68,8 +68,9 @@
 		<x:String x:Key="Achievement">成就</x:String>
         <x:String x:Key="Console">命令行</x:String>
         <x:String x:Key="Setting">设置</x:String>
-		
-        <x:String x:Key="About">关于</x:String>
+		<x:String x:Key="Data">数据</x:String>
+
+		<x:String x:Key="About">关于</x:String>
 
 
         <x:String x:Key="VOID"></x:String>

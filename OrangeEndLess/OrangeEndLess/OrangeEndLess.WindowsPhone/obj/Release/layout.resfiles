@@ -1,18 +1,28 @@
-1 (1).jpg
-1 (2).jpg
-1.jpg
 a.jpg
+Images\ConsoleBlack.png
+Images\ConsoleWhite.png
+Images\MarketBlack.png
+Images\MarketWhite.png
+Images\OverviewBlack.png
+Images\OverviewWhite.png
+Images\ProduceBlack.png
+Images\ProduceWhite.png
+Images\SettingBlack.png
+Images\SettingWhite.png
+Logo.png
 Photos\Orange.jpg
 Photos\Wencey.JPG
 w.fw.png
 weibo.png
+无标题-1.mp4
 Assets\Logo.scale-240.png
 Assets\SmallLogo.scale-240.png
 Assets\SplashScreen.scale-240.png
 Assets\Square71x71Logo.scale-240.png
 Assets\StoreLogo.scale-240.png
 Assets\WideLogo.scale-240.png
-About.xbf
 App.xbf
 MainPage.xbf
 OrangeEndLess.WindowsPhone.xr.xml
+UI\ListButton.xbf
+UI\ListItem.xbf

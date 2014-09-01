@@ -9,12 +9,12 @@ Images\ProduceBlack.png
 Images\ProduceWhite.png
 Images\SettingBlack.png
 Images\SettingWhite.png
-Images\无标题-1.gif
 Logo.png
 Photos\Orange.jpg
 Photos\Wencey.JPG
 w.fw.png
 weibo.png
+无标题-1.mp4
 Assets\Logo.scale-240.png
 Assets\SmallLogo.scale-240.png
 Assets\SplashScreen.scale-240.png
@@ -24,4 +24,5 @@ Assets\WideLogo.scale-240.png
 App.xbf
 MainPage.xbf
 OrangeEndLess.WindowsPhone.xr.xml
+UI\ListButton.xbf
 UI\ListItem.xbf
