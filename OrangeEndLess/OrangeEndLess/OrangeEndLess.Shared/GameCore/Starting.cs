@@ -53,5 +53,13 @@ namespace OrangeEndLess
             }
             GameData . Values [ "GameIsStartV2" ] = true;
         }
+
+
+        ~Core()
+        {
+            GameData.Values["LastShutdown"] = DateTime.Now;
+            GameData.Values["SpeedOfOrangeRise"] = SpeedOfOrangeRise.ToString();
+        }
+
     }
 }
