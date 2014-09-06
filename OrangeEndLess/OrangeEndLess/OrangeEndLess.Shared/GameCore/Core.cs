@@ -1,26 +1,26 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using System.Threading;
-using System.Threading.Tasks;
-using Windows.Storage;
-using Windows.UI.Xaml;
-using Windows.UI.Xaml.Controls;
-using Windows.UI.Xaml.Input;
-using MVVMSidekick.ViewModels;
+using System . Collections . Generic;
+using System . Text;
+using System . Threading;
+using System . Threading . Tasks;
+using Windows . Storage;
+using Windows . UI . Xaml;
+using Windows . UI . Xaml . Controls;
+using Windows . UI . Xaml . Input;
+using MVVMSidekick . ViewModels;
 
 namespace OrangeEndLess
 {
     public partial class Core
     {
 
-        Random Randoms = new Random();
+        Random Randoms = new Random ( );
 
-        ApplicationDataContainer LocalData = ApplicationData.Current.LocalSettings;
+        ApplicationDataContainer LocalData = ApplicationData . Current . LocalSettings;
 
-        ApplicationDataContainer GameData = ApplicationData.Current.RoamingSettings;
+        ApplicationDataContainer GameData = ApplicationData . Current . RoamingSettings;
 
-        public delegate void RandomEventHandler(object sender, RandomArgs e);
+        public delegate void RandomEventHandler ( object sender , RandomArgs e );
 
         public event RandomEventHandler RandomEvent;
 
@@ -34,15 +34,22 @@ namespace OrangeEndLess
 
         public long _APM = 0;
 
+        public void PlusAPM ( )
+        {
+            _APM++;
+        }
+
+        public long APM { get; set; }
+
         public decimal NumberOfUpdateHavePromote
         {
             get
             {
-                return Convert.ToDecimal(GameData.Values["NumberOfUpdateHavePromote"]);
+                return Convert . ToDecimal ( GameData . Values [ "NumberOfUpdateHavePromote" ] );
             }
             set
             {
-                GameData.Values["NumberOfUpdateHavePromote"] = value;
+                GameData . Values [ "NumberOfUpdateHavePromote" ] = value;
             }
         }
 
@@ -50,11 +57,11 @@ namespace OrangeEndLess
         {
             get
             {
-                return Convert.ToDecimal(GameData.Values["NumberOfOrangeHaveGet"]);
+                return Convert . ToDecimal ( GameData . Values [ "NumberOfOrangeHaveGet" ] );
             }
             set
             {
-                GameData.Values["NumberOfOrangeHaveGet"] = value.ToString();
+                GameData . Values [ "NumberOfOrangeHaveGet" ] = value . ToString ( );
             }
         }
 
@@ -62,11 +69,11 @@ namespace OrangeEndLess
         {
             get
             {
-                return Convert.ToDecimal(GameData.Values["NumberOfMoneyHaveGet"]);
+                return Convert . ToDecimal ( GameData . Values [ "NumberOfMoneyHaveGet" ] );
             }
             set
             {
-                GameData.Values["NumberOfMoneyHaveGet"] = value.ToString();
+                GameData . Values [ "NumberOfMoneyHaveGet" ] = value . ToString ( );
             }
         }
 
@@ -74,11 +81,11 @@ namespace OrangeEndLess
         {
             get
             {
-                return Convert.ToDecimal(GameData.Values["ButtonRushTip"]);
+                return Convert . ToDecimal ( GameData . Values [ "ButtonRushTip" ] );
             }
             set
             {
-                GameData.Values["ButtonRushTip"] = value.ToString();
+                GameData . Values [ "ButtonRushTip" ] = value . ToString ( );
             }
         }
 
@@ -86,11 +93,11 @@ namespace OrangeEndLess
         {
             get
             {
-                return Convert.ToDecimal(GameData.Values["LevelOfRush"]) + 1;
+                return Convert . ToDecimal ( GameData . Values [ "LevelOfRush" ] ) + 1;
             }
             set
             {
-                GameData.Values["LevelOfRush"] = (value - 1).ToString();
+                GameData . Values [ "LevelOfRush" ] = ( value - 1 ) . ToString ( );
             }
         }
 
@@ -99,9 +106,9 @@ namespace OrangeEndLess
             get
             {
                 decimal temp = 0;
-                foreach (var item in Buildings)
+                foreach ( var item in Buildings )
                 {
-                    temp += item.Value.Number;
+                    temp += item . Value . Number;
                 }
                 return temp;
             }
@@ -111,16 +118,16 @@ namespace OrangeEndLess
         {
             get
             {
-                return Convert.ToDecimal(GameData.Values["NumberOfOrange"]);
+                return Convert . ToDecimal ( GameData . Values [ "NumberOfOrange" ] );
             }
             set
             {
-                if (NumberOfOrange < value)
+                if ( NumberOfOrange < value )
                 {
                     NumberOfOrangeHaveGet += value - NumberOfOrange;
                 }
-                GameData.Values["NumberOfOrange"] = value.ToString();
-                UpdateNumberOfOrange(this, new EventArgs());
+                GameData . Values [ "NumberOfOrange" ] = value . ToString ( );
+                UpdateNumberOfOrange ( this , new EventArgs ( ) );
             }
         }
 
@@ -129,35 +136,36 @@ namespace OrangeEndLess
             get
             {
                 decimal TEMP = 0;
-                foreach (var item in Buildings)
+                foreach ( var item in Buildings )
                 {
-                    TEMP += item.Value.CPS;
+                    TEMP += item . Value . CPS;
                 }
                 return TEMP;
             }
         }
 
-        public void Rush()
+        public void Rush ( )
         {
-            NumberOfOrange += (LevelOfRush);
+            NumberOfOrange += ( LevelOfRush );
             NumberOfOrangeHaveMadeFromRush += LevelOfRush;
+
         }
 
         public decimal NumberOfMoney
         {
             get
             {
-                return Convert.ToDecimal((string)GameData.Values["Money"]);
+                return Convert . ToDecimal ( ( string ) GameData . Values [ "Money" ] );
             }
 
             set
             {
-                if (NumberOfMoney < value)
+                if ( NumberOfMoney < value )
                 {
                     NumberOfMoneyHaveGet += value - NumberOfMoney;
                 }
-                GameData.Values["Money"] = value.ToString();
-                UpdateNumberOfMoney(this, new EventArgs());
+                GameData . Values [ "Money" ] = value . ToString ( );
+                UpdateNumberOfMoney ( this , new EventArgs ( ) );
             }
         }
 
@@ -165,15 +173,15 @@ namespace OrangeEndLess
         {
             get
             {
-                return decimal.Ceiling((NumberOfMoney * NumberOfMoney + 10) * Randoms.Next(800, 1200) / 1000);
+                return decimal . Ceiling ( ( NumberOfMoney * NumberOfMoney + 10 ) * Randoms . Next ( 800 , 1200 ) / 1000 );
             }
         }
 
-        public void SellOrange(decimal NumberOfMoneytToBuy, out decimal MoneyHaveBuy, out decimal OrangeHaveSell)
+        public void SellOrange ( decimal NumberOfMoneytToBuy , out decimal MoneyHaveBuy , out decimal OrangeHaveSell )
         {
             decimal _MoneyHaveBuy = 0;
             decimal _OrangeHaveSell = 0;
-            while (NumberOfOrange >= PriceOfMoney && _MoneyHaveBuy <= NumberOfMoneytToBuy)
+            while ( NumberOfOrange >= PriceOfMoney && _MoneyHaveBuy <= NumberOfMoneytToBuy )
             {
                 NumberOfOrange -= PriceOfMoney;
                 _OrangeHaveSell += PriceOfMoney;
@@ -184,24 +192,24 @@ namespace OrangeEndLess
             OrangeHaveSell = _OrangeHaveSell;
         }
 
-        public Core()
+        public Core ( )
         {
-            //Setup();
-            if (GameData.Values["GameIsStartV2"] == null)
+            Setup ( );
+            if ( GameData . Values [ "GameIsStartV2" ] == null )
             {
-                ApplicationData.Current.ClearAsync();
-                Setup();
-                Starting();
+                ApplicationData . Current . ClearAsync ( );
+                Setup ( );
+                Starting ( );
             }
             else
             {
-                if (DateTime.Now > (DateTime)GameData.Values["LastShutdown"])
+                if ( DateTime . Now > Convert . ToDateTime ( GameData . Values [ "LastShutdown" ] ) )
                 {
-                    NumberOfOrange += Convert.ToDecimal(GameData.Values["SpeedOfOrangeRise"]) * Convert.ToDecimal((DateTime.Now - (DateTime)GameData.Values["LastShutdown"]).TotalSeconds);
+                    NumberOfOrange += Convert . ToDecimal ( GameData . Values [ "SpeedOfOrangeRise" ] ) * Convert . ToDecimal ( ( DateTime . Now - Convert . ToDateTime ( GameData . Values [ "LastShutdown" ] ) ) . TotalSeconds );
                 }
                 else
                 {
-                    Setup();
+                    Setup ( );
                 }
             }
 

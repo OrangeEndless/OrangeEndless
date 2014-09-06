@@ -37,6 +37,7 @@ namespace OrangeEndLess
             GameData . Values [ "TimeToUpdateNumberOfOrange" ] = 20;
             GameData . Values [ "TimeToUpdateAchevement" ] = 100000;
             GameData . Values [ "TimeToUpdateBuilding" ] = 10000;
+            GameData . Values [ "LastShutdown" ] = Convert . ToString ( DateTime . Now );
 
 
             foreach ( var item in Buildings )
@@ -55,10 +56,10 @@ namespace OrangeEndLess
         }
 
 
-        ~Core()
+        ~Core ( )
         {
-            GameData.Values["LastShutdown"] = DateTime.Now;
-            GameData.Values["SpeedOfOrangeRise"] = SpeedOfOrangeRise.ToString();
+            GameData . Values [ "LastShutdown" ] = DateTime . Now;
+            GameData . Values [ "SpeedOfOrangeRise" ] = SpeedOfOrangeRise . ToString ( );
         }
 
     }

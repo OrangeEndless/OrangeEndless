@@ -11,6 +11,40 @@
 	xmlns:vm="using:OrangeEndLess.ViewModels"
 	mc:Ignorable="d" Width="Auto">
     <Page.Resources>
+        <ControlTemplate x:Key="ButtonConsole" TargetType="Button">
+            <Grid>
+                <VisualStateManager.VisualStateGroups>
+                    <VisualStateGroup x:Name="CommonStates">
+                        <VisualState x:Name="Normal"/>
+                        <VisualState x:Name="Pressed">
+                            <Storyboard>
+                                <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill)" Storyboard.TargetName="rectangle">
+                                    <DiscreteObjectKeyFrame KeyTime="0">
+                                        <DiscreteObjectKeyFrame.Value>
+                                            <SolidColorBrush Color="#99FFFFFF"/>
+                                        </DiscreteObjectKeyFrame.Value>
+                                    </DiscreteObjectKeyFrame>
+                                </ObjectAnimationUsingKeyFrames>
+                            </Storyboard>
+                        </VisualState>
+                        <VisualState x:Name="Disabled"/>
+                        <VisualState x:Name="PointerOver">
+                            <Storyboard>
+                                <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill)" Storyboard.TargetName="rectangle">
+                                    <DiscreteObjectKeyFrame KeyTime="0">
+                                        <DiscreteObjectKeyFrame.Value>
+                                            <SolidColorBrush Color="#66FFFFFF"/>
+                                        </DiscreteObjectKeyFrame.Value>
+                                    </DiscreteObjectKeyFrame>
+                                </ObjectAnimationUsingKeyFrames>
+                            </Storyboard>
+                        </VisualState>
+                    </VisualStateGroup>
+                </VisualStateManager.VisualStateGroups>
+                <Rectangle x:Name="rectangle" Fill="Black" StrokeThickness="0"/>
+                <TextBlock HorizontalAlignment="Center" Margin="0" TextWrapping="Wrap" Text="&gt;" VerticalAlignment="Center" FontSize="16"/>
+            </Grid>
+        </ControlTemplate>
         <vm:MainPage_Model x:Key="DesignVM"/>
         <Style x:Key="TextBoxConsole" TargetType="TextBox">
             <Setter Property="MinWidth" Value="{ThemeResource TextControlThemeMinWidth}"/>
@@ -39,7 +73,7 @@
 
                                                     <Border x:Name="BorderElement" BorderBrush="{ThemeResource TextBoxButtonBorderThemeBrush}" BorderThickness="{TemplateBinding BorderThickness}"/>
                                                     <Border x:Name="BackgroundElement" Background="{ThemeResource TextBoxButtonBackgroundThemeBrush}" Margin="{TemplateBinding BorderThickness}">
-                                                        <TextBlock x:Name="GlyphElement" AutomationProperties.AccessibilityView="Raw" Foreground="{ThemeResource TextBoxButtonForegroundThemeBrush}" FontStyle="Normal" FontFamily="{ThemeResource SymbolThemeFontFamily}" HorizontalAlignment="Center" Text="&#xE0A4;" VerticalAlignment="Center"/>
+                                                        <TextBlock x:Name="GlyphElement" AutomationProperties.AccessibilityView="Raw" Foreground="{ThemeResource TextBoxButtonForegroundThemeBrush}" FontStyle="Normal" HorizontalAlignment="Center" Text="&#xE0A4;" VerticalAlignment="Center"/>
                                                     </Border>
                                                 </Grid>
                                             </ControlTemplate>
@@ -67,13 +101,42 @@
             </Setter>
         </Style>
         <ControlTemplate x:Key="ButtonControl" TargetType="Button">
-            <Grid>
+            <Grid Width="85" Height="60">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="Auto"/>
                     <RowDefinition/>
                 </Grid.RowDefinitions>
+                <VisualStateManager.VisualStateGroups>
+                    <VisualStateGroup x:Name="CommonStates">
+                        <VisualState x:Name="Normal"/>
+                        <VisualState x:Name="Pressed">
+                            <Storyboard>
+                                <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill)" Storyboard.TargetName="rectangle">
+                                    <DiscreteObjectKeyFrame KeyTime="0">
+                                        <DiscreteObjectKeyFrame.Value>
+                                            <SolidColorBrush Color="#33FFFFFF"/>
+                                        </DiscreteObjectKeyFrame.Value>
+                                    </DiscreteObjectKeyFrame>
+                                </ObjectAnimationUsingKeyFrames>
+                            </Storyboard>
+                        </VisualState>
+                        <VisualState x:Name="Disabled"/>
+                        <VisualState x:Name="PointerOver">
+                            <Storyboard>
+                                <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill)" Storyboard.TargetName="rectangle">
+                                    <DiscreteObjectKeyFrame KeyTime="0">
+                                        <DiscreteObjectKeyFrame.Value>
+                                            <SolidColorBrush Color="#33FFFFFF"/>
+                                        </DiscreteObjectKeyFrame.Value>
+                                    </DiscreteObjectKeyFrame>
+                                </ObjectAnimationUsingKeyFrames>
+                            </Storyboard>
+                        </VisualState>
+                    </VisualStateGroup>
+                </VisualStateManager.VisualStateGroups>
+                <Rectangle x:Name="rectangle" Grid.RowSpan="2" StrokeThickness="0"/>
                 <Image HorizontalAlignment="Center" Height="32" Margin="0" Width="32" Source="{Binding Tag, RelativeSource={RelativeSource Mode=TemplatedParent}}"/>
-                <TextBlock HorizontalAlignment="Center" Margin="0" TextWrapping="Wrap" Text="{TemplateBinding Content}" VerticalAlignment="Top" FontSize="9" Foreground="White" Grid.Row="1"/>
+                <TextBlock HorizontalAlignment="Center" Margin="0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="9" Foreground="White" Grid.Row="1" Text="摇！"/>
             </Grid>
         </ControlTemplate>
     </Page.Resources>
@@ -133,19 +196,26 @@
                 <TextBlock Margin="0,10,0,0" TextWrapping="Wrap" Text="{StaticResource Overview}" FontSize="28"/>
                 <TextBlock HorizontalAlignment="Left" Margin="0,10,0,0" TextWrapping="Wrap" Text="{Binding NOO}" VerticalAlignment="Top" Grid.Row="1" Height="13" Width="72"/>
             </Grid>
-            <StackPanel x:Name="SPOverView" Grid.Column="1" HorizontalAlignment="Center" Margin="0" Grid.Row="2" Width="85"/>
+            <StackPanel x:Name="SPOverView" Grid.Column="1" HorizontalAlignment="Center" Margin="0" Grid.Row="2" Orientation="Horizontal">
+                <Button HorizontalAlignment="Stretch" VerticalAlignment="Top" Template="{StaticResource ButtonControl}"/>
+            </StackPanel>
             <Grid x:Name="GridProduce" Grid.Column="1" Margin="0" Grid.Row="1" d:IsHidden="True"/>
             <Grid x:Name="GridStore" Grid.Column="1" Margin="0" Grid.Row="1" d:IsHidden="True"/>
             <Grid x:Name="GridAchievement" Grid.Column="1" Margin="0" Grid.Row="1" d:IsHidden="True"/>
             <Grid x:Name="GridConsole" Grid.Column="1" Margin="0" Grid.Row="1" d:IsHidden="True">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1109*"/>
+                    <ColumnDefinition Width="70*"/>
+                </Grid.ColumnDefinitions>
                 <Grid.RowDefinitions>
                     <RowDefinition/>
                     <RowDefinition Height="Auto"/>
                 </Grid.RowDefinitions>
-                <TextBox TextWrapping="Wrap" Text="{Binding ConsoleText, Mode=TwoWay}" BorderThickness="0" Background="Black" BorderBrush="{x:Null}" Foreground="White" FontFamily="Microsoft YaHei UI" IsReadOnly="True" Padding="0" IsEnabled="False" Style="{StaticResource TextBoxConsole}" VerticalAlignment="Stretch" Margin="0"/>
-                <TextBox x:ConnectionId='8' x:Name="TBCommand" Margin="0" TextWrapping="Wrap" Text="{Binding TextConsoleCommand, Mode=TwoWay}" BorderThickness="0" Background="Black" BorderBrush="{x:Null}" Foreground="White" Grid.Row="1" Padding="0" MinHeight="10" Style="{StaticResource TextBoxConsole}"                        />
-                <Button Content="Button" HorizontalAlignment="Left" Margin="304,239,0,0" VerticalAlignment="Top" Command="{Binding CommandConsoleCommand}" MinHeight="0" MinWidth="0" BorderBrush="White" Foreground="White"/>
+                <TextBox TextWrapping="Wrap" Text="{Binding ConsoleText, Mode=TwoWay}" BorderThickness="0" Background="Black" BorderBrush="{x:Null}" Foreground="White" FontFamily="Microsoft YaHei UI" IsReadOnly="True" Padding="0" IsEnabled="False" Style="{StaticResource TextBoxConsole}" VerticalAlignment="Stretch" Margin="0" Grid.ColumnSpan="2"/>
+                <TextBox x:ConnectionId='8' x:Name="TBCommand" Margin="0" TextWrapping="Wrap" Text="{Binding TextConsoleCommand, Mode=TwoWay}" BorderThickness="0" BorderBrush="{x:Null}" Foreground="White" Grid.Row="1" Padding="0" MinHeight="10" Style="{StaticResource TextBoxConsole}"                         Background="Black" AcceptsReturn="True" Grid.ColumnSpan="2"/>
+                <Button Content="Button" HorizontalAlignment="Stretch" Margin="0" VerticalAlignment="Stretch" Command="{Binding CommandConsoleCommand}" MinHeight="0" MinWidth="0" BorderBrush="White" Foreground="White" Padding="0" Template="{StaticResource ButtonConsole}" Grid.Row="1" Grid.Column="1" BorderThickness="0"/>
             </Grid>
+
             <Grid x:Name="GridData" Grid.Column="1" Grid.Row="1" d:IsHidden="True">
                 <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="{StaticResource Data}" VerticalAlignment="Top" FontSize="36"/>
                 <TextBlock HorizontalAlignment="Left" Margin="10,53,0,0" TextWrapping="Wrap" Text="{Binding NOOHG}" VerticalAlignment="Top"/>
