@@ -8,55 +8,61 @@ using Windows . UI . Xaml;
 using Windows . UI . Xaml . Controls;
 using Windows . UI . Xaml . Input;
 using MVVMSidekick . ViewModels;
+using Windows . ApplicationModel . Resources;
 
 namespace OrangeEndLess
 {
-    public class Achievement
-    {
-        ApplicationDataContainer GameData = ApplicationData . Current . RoamingSettings;
+	public class Achievement
+	{
+		ApplicationDataContainer GameData = ApplicationData . Current . RoamingSettings;
 
-        public string Title;
+		public string Title;
 
-        public string Lebel;
+		public string Label;
 
-        Core GameCore;
+		public int Key;
 
-        Func<Core,bool> FuncIsGet;
+		Core GameCore;
 
-        public void Clean ( )
-        {
-            IsGet = false;
-        }
+		Func<Core,bool> FuncIsGet;
 
-        public bool IsGet
-        {
-            get
-            {
-                return ( bool ) GameData . Values [ Lebel + "IsGet" ];
-            }
-            set
-            {
-                GameData . Values [ Lebel + "IsGet" ] = value;
-            }
-        }
+		public void Clean ( )
+		{
+			IsGet = false;
+		}
 
-        public void Check ( )
-        {
-            if ( IsGet != true )
-            {
-                IsGet = FuncIsGet . Invoke ( GameCore );
-            }
-        }
+		public bool IsGet
+		{
+			get
+			{
+				return ( bool ) GameData . Values [ "Achevement" + Key . ToString ( ) + "IsGet" ];
+			}
+			set
+			{
+				GameData . Values [ "Achevement" + Key . ToString ( ) + "IsGet" ] = value;
+			}
+		}
 
-        public Achievement ( int key , Core gamecore , Func<Core , bool> func )
-        {
-            //Title = title;
-            GameCore = gamecore;
-            FuncIsGet = func;
-            if ( GameData . Values [ Lebel + "IsGet" ] == null )
-            {
-                GameData . Values [ Lebel + "IsGet" ] = false;
-            }
-        }
-    }
+		public void Check ( )
+		{
+			if ( IsGet != true )
+			{
+				IsGet = FuncIsGet . Invoke ( GameCore );
+			}
+		}
+
+		public Achievement ( int key , Core gamecore , Func<Core , bool> func )
+		{
+			Key = key;
+			ResourceLoader  Resources= ResourceLoader . GetForCurrentView ( "Resource" );
+			Title = Resources . GetString ( "Achevement" + key . ToString ( ) + "Title" );
+			Label = Resources . GetString ( "Achevement" + key . ToString ( ) + "Label" );
+			GameCore = gamecore;
+			FuncIsGet = func;
+			if ( GameData . Values [ "Achevement" + Key . ToString ( ) + "IsGet" ] == null )
+			{
+				GameData . Values [ "Achevement" + Key . ToString ( ) + "IsGet" ] = false;
+			}
+		}
+	}
 }

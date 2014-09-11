@@ -20,7 +20,7 @@ namespace OrangeEndLess
 
         DispatcherTimer TimersUpdateBuilding = new DispatcherTimer ( );
 
-        DispatcherTimer TimersRandom = new DispatcherTimer ( );
+		//DispatcherTimer TimersRandom = new DispatcherTimer ( );
 
         DispatcherTimer TimersAPM=new DispatcherTimer ( );
 
@@ -36,15 +36,15 @@ namespace OrangeEndLess
             TimersUpdateBuilding . Interval = new TimeSpan ( 0 , 0 , 0 , 0 , Convert . ToInt32 ( GameData . Values [ "TimeToUpdateBuilding" ] ) );
             TimersUpdateBuilding . Tick += TimersUpdateBuilding_Tick;
 
-            TimersRandom . Interval = new TimeSpan ( 0 , 0 , 0 , 1 );
-            TimersRandom . Tick += TimersRandom_Tick;
+			//TimersRandom . Interval = new TimeSpan ( 0 , 0 , 0 , 1 );
+			//TimersRandom . Tick += TimersRandom_Tick;
 
             TimersAPM . Interval = new TimeSpan ( 0 , 0 , 30 );
             TimersAPM . Tick += TimersAPM_Tick;
 
-            //TimersUpdateNumberOfOrange . Start ( );
-            //TimersRandom . Start ( );
-            //TimersAPM . Start ( );
+			TimersUpdateNumberOfOrange . Start ( );
+			//TimersRandom . Start ( );
+			TimersAPM . Start ( );
         }
 
     }

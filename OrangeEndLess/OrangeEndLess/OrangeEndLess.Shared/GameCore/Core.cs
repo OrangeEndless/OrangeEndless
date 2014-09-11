@@ -20,9 +20,9 @@ namespace OrangeEndLess
 
         ApplicationDataContainer GameData = ApplicationData . Current . RoamingSettings;
 
-        public delegate void RandomEventHandler ( object sender , RandomArgs e );
+		//public delegate void RandomEventHandler ( object sender , RandomArgs e );
 
-        public event RandomEventHandler RandomEvent;
+		//public event RandomEventHandler RandomEvent;
 
         public event EventHandler UpdateNumberOfOrange;
 
@@ -41,17 +41,17 @@ namespace OrangeEndLess
 
         public long APM { get; set; }
 
-        public decimal NumberOfUpdateHavePromote
-        {
-            get
-            {
-                return Convert . ToDecimal ( GameData . Values [ "NumberOfUpdateHavePromote" ] );
-            }
-            set
-            {
-                GameData . Values [ "NumberOfUpdateHavePromote" ] = value;
-            }
-        }
+		//public decimal NumberOfUpdateHavePromote
+		//{
+		//	get
+		//	{
+		//		return Convert . ToDecimal ( GameData . Values [ "NumberOfUpdateHavePromote" ] );
+		//	}
+		//	set
+		//	{
+		//		GameData . Values [ "NumberOfUpdateHavePromote" ] = value;
+		//	}
+		//}
 
         public decimal NumberOfOrangeHaveGet
         {
@@ -194,7 +194,10 @@ namespace OrangeEndLess
 
         public Core ( )
         {
+#if DEBUG
             Setup ( );
+            GameData . Values [ "GameIsStartV2" ] = null;
+#endif
             if ( GameData . Values [ "GameIsStartV2" ] == null )
             {
                 ApplicationData . Current . ClearAsync ( );

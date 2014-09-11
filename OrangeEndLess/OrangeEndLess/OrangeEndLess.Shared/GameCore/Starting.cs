@@ -35,7 +35,7 @@ namespace OrangeEndLess
             GameData . Values [ "NumberOfOrangeHaveGet" ] = 0;
             GameData . Values [ "NumberOfUpdateHavePromote" ] = 0;
             GameData . Values [ "TimeToUpdateNumberOfOrange" ] = 20;
-            GameData . Values [ "TimeToUpdateAchevement" ] = 100000;
+            GameData . Values [ "TimeToUpdateAchevement" ] = 5000;
             GameData . Values [ "TimeToUpdateBuilding" ] = 10000;
             GameData . Values [ "LastShutdown" ] = Convert . ToString ( DateTime . Now );
 
@@ -48,19 +48,11 @@ namespace OrangeEndLess
             {
                 item . Clean ( );
             }
-            foreach ( var item in RandomEvents )
-            {
-                item . Value . Clean ( );
-            }
+			//foreach ( var item in RandomEvents )
+			//{
+			//	item . Value . Clean ( );
+			//}
             GameData . Values [ "GameIsStartV2" ] = true;
         }
-
-
-        ~Core ( )
-        {
-            GameData . Values [ "LastShutdown" ] = DateTime . Now;
-            GameData . Values [ "SpeedOfOrangeRise" ] = SpeedOfOrangeRise . ToString ( );
-        }
-
     }
 }

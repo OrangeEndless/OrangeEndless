@@ -11,39 +11,39 @@ using MVVMSidekick . ViewModels;
 
 namespace OrangeEndLess
 {
-    public class RandomEvent
-    {
-        ApplicationDataContainer GameData = ApplicationData . Current . RoamingSettings;
+	//public class RandomEvent
+	//{
+	//	ApplicationDataContainer GameData = ApplicationData . Current . RoamingSettings;
 
-        public  Action<Core> Event;
+	//	public  Action<Core> Event;
 
-        public int Probability;
+	//	public int Probability;
 
-        public void Clean ( )
-        {
-            TimesHaveCalled = 0;
-        }
+	//	public void Clean ( )
+	//	{
+	//		TimesHaveCalled = 0;
+	//	}
 
-        public decimal TimesHaveCalled
-        {
-            get
-            {
-                return Convert . ToDecimal ( GameData . Values [ "TimesHaveCalled" + Title ] );
-            }
-            set
-            {
-                GameData . Values [ "TimesHaveCalled" + Title ] = value . ToString ( );
-            }
-        }
+	//	public decimal TimesHaveCalled
+	//	{
+	//		get
+	//		{
+	//			return Convert . ToDecimal ( GameData . Values [ "TimesHaveCalled" + Title ] );
+	//		}
+	//		set
+	//		{
+	//			GameData . Values [ "TimesHaveCalled" + Title ] = value . ToString ( );
+	//		}
+	//	}
 
-        public string Title;
+	//	public string Title;
 
-        public string Text;
+	//	public string Text;
 
-        public RandomEvent ( int key , Action<Core> func )
-        {
-            Event = func;
-        }
+	//	public RandomEvent ( int key , Action<Core> func )
+	//	{
+	//		Event = func;
+	//	}
 
-    }
+	//}
 }

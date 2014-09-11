@@ -84,6 +84,10 @@
 •	如果您昏昏欲睡或疲劳，则请勿玩游戏
 如果您或您的亲人有癫痫史，请在玩本游戏前请咨询医生。
         </x:String>
+		
+		<x:String x:Key="Promise">这个游戏使用本地时间来计算游戏信息</x:String>
+        
+        
         
     </Application.Resources>
 

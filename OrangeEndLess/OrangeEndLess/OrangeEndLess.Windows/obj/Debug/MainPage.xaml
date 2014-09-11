@@ -111,30 +111,18 @@
                         <VisualState x:Name="Normal"/>
                         <VisualState x:Name="Pressed">
                             <Storyboard>
-                                <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill)" Storyboard.TargetName="rectangle">
-                                    <DiscreteObjectKeyFrame KeyTime="0">
-                                        <DiscreteObjectKeyFrame.Value>
-                                            <SolidColorBrush Color="#33FFFFFF"/>
-                                        </DiscreteObjectKeyFrame.Value>
-                                    </DiscreteObjectKeyFrame>
-                                </ObjectAnimationUsingKeyFrames>
+                                <ColorAnimation Duration="0" To="#33FFFFFF" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="rectangle" d:IsOptimized="True"/>
                             </Storyboard>
                         </VisualState>
                         <VisualState x:Name="Disabled"/>
                         <VisualState x:Name="PointerOver">
                             <Storyboard>
-                                <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill)" Storyboard.TargetName="rectangle">
-                                    <DiscreteObjectKeyFrame KeyTime="0">
-                                        <DiscreteObjectKeyFrame.Value>
-                                            <SolidColorBrush Color="#33FFFFFF"/>
-                                        </DiscreteObjectKeyFrame.Value>
-                                    </DiscreteObjectKeyFrame>
-                                </ObjectAnimationUsingKeyFrames>
+                                <ColorAnimation Duration="0" To="#33FFFFFF" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="rectangle" d:IsOptimized="True"/>
                             </Storyboard>
                         </VisualState>
                     </VisualStateGroup>
                 </VisualStateManager.VisualStateGroups>
-                <Rectangle x:Name="rectangle" Grid.RowSpan="2" StrokeThickness="0"/>
+                <Rectangle x:Name="rectangle" Grid.RowSpan="2" StrokeThickness="0" Fill="Transparent"/>
                 <Image HorizontalAlignment="Center" Height="32" Margin="0" Width="32" Source="{Binding Tag, RelativeSource={RelativeSource Mode=TemplatedParent}}"/>
                 <TextBlock HorizontalAlignment="Center" Margin="0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="9" Foreground="White" Grid.Row="1" Text="摇！"/>
             </Grid>
@@ -153,7 +141,7 @@
 	-->
     <!--End App Bar Binding Patch. If you don't need Binding  Top/Bottom Appbar please ignore these code -->
     <Grid>
-        <Grid x:ConnectionId='1' x:Name="MainGird" Background="White" DataContext="{Binding Source={StaticResource DesignVM}}"                         >
+        <Grid x:ConnectionId='1' x:Name="MainGird" Background="White" DataContext="{Binding Source={StaticResource DesignVM}}"                          d:IsHidden="True">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="200"/>
                 <ColumnDefinition/>
@@ -163,9 +151,9 @@
                 <RowDefinition/>
                 <RowDefinition Height="60"/>
             </Grid.RowDefinitions>
-            <Rectangle Fill="#FFF9B763" Stroke="Black" StrokeThickness="0" Grid.RowSpan="3"/>
-            <Rectangle Fill="#FFFF8E41" HorizontalAlignment="Left" Height="60" Grid.Row="2" Stroke="Black" StrokeThickness="0" VerticalAlignment="Top" Width="1366" Grid.ColumnSpan="3"/>
-            <Grid Grid.ColumnSpan="3" d:IsLocked="True">
+            <Rectangle Fill="#FFF9B763" Stroke="Black" StrokeThickness="0" Grid.RowSpan="3" d:IsHidden="True"/>
+            <Rectangle Fill="#FFFF8E41" Grid.Row="2" Stroke="Black" StrokeThickness="0" Grid.ColumnSpan="3" d:IsHidden="True"/>
+            <Grid Grid.ColumnSpan="3" d:IsHidden="True">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="20"/>
                     <ColumnDefinition Width="Auto"/>
@@ -177,28 +165,30 @@
                     <ColumnDefinition Width="Auto"/>
                     <ColumnDefinition Width="40"/>
                 </Grid.ColumnDefinitions>
-                <Rectangle Fill="#FFFF8E41" Stroke="Black" StrokeThickness="0" Grid.ColumnSpan="9"/>
-                <TextBlock x:Name="TextBlockTitle" HorizontalAlignment="Left" TextWrapping="Wrap" Text="{StaticResource Title}" VerticalAlignment="Center" FontSize="18.667" FontFamily="Segoe UI" Grid.Column="1" Foreground="White" Margin="0"/>
-                <TextBlock x:Name="TextBlockNumberOfMoneySmallOut" Grid.Column="4" Margin="0,2,0,0" TextWrapping="Wrap" Text="{Binding TextBlockNumberOfMoneySmallOut}" FontFamily="Microsoft YaHei" FontSize="21.333" VerticalAlignment="Center" Foreground="White" Height="28"/>
-                <TextBlock x:Name="TextBlockNumberOfOrangeSmallOut" TextWrapping="Wrap" Text="{Binding TextBlockNumberOfOrangeSmallOut}" FontSize="21.333" FontFamily="Microsoft YaHei" Grid.Column="7" Margin="0,2,0,0" VerticalAlignment="Center" Foreground="White" Height="28"/>
-                <Image Grid.Column="6" Margin="0" Source="Logo.png" RenderTransformOrigin="0.5,0.5">
+                <Rectangle Fill="#FFFF8E41" Stroke="Black" StrokeThickness="0" Grid.ColumnSpan="9" d:IsHidden="True"/>
+                <TextBlock x:Name="TextBlockTitle" HorizontalAlignment="Left" TextWrapping="Wrap" Text="{StaticResource Title}" VerticalAlignment="Center" FontSize="18.667" FontFamily="Segoe UI" Grid.Column="1" Foreground="White" Margin="0" d:IsHidden="True"/>
+                <TextBlock x:Name="TextBlockNumberOfMoneySmallOut" Grid.Column="4" Margin="0,2,0,0" TextWrapping="Wrap" Text="{Binding TextBlockNumberOfMoneySmallOut}" FontFamily="Microsoft YaHei" FontSize="21.333" VerticalAlignment="Center" Foreground="White" Height="28" d:IsHidden="True"/>
+                <TextBlock x:Name="TextBlockNumberOfOrangeSmallOut" TextWrapping="Wrap" Text="{Binding TextBlockNumberOfOrangeSmallOut}" FontSize="21.333" FontFamily="Microsoft YaHei" Grid.Column="7" Margin="0,2,0,0" VerticalAlignment="Center" Foreground="White" Height="28" d:IsHidden="True"/>
+                <Image Grid.Column="6" Margin="0" Source="Logo.png" RenderTransformOrigin="0.5,0.5" d:IsHidden="True">
                     <Image.RenderTransform>
                         <CompositeTransform ScaleX="0.8" ScaleY="0.8"/>
                     </Image.RenderTransform>
                 </Image>
-                <Image Grid.Column="2" Margin="1006,0,13,0"/>
+                <Image Grid.Column="3" Margin="0" d:IsHidden="True"/>
             </Grid>
-            <Grid x:Name="GridOverView" Grid.Column="1" Margin="30,20,0,0" Grid.Row="1">
+            <Grid x:Name="GridOverView" Grid.Column="1" Margin="30,20,0,0" Grid.Row="1" d:IsHidden="True">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="Auto"/>
                     <RowDefinition/>
                 </Grid.RowDefinitions>
-                <TextBlock Margin="0,10,0,0" TextWrapping="Wrap" Text="{StaticResource Overview}" FontSize="28"/>
-                <TextBlock HorizontalAlignment="Left" Margin="0,10,0,0" TextWrapping="Wrap" Text="{Binding NOO}" VerticalAlignment="Top" Grid.Row="1" Height="13" Width="72"/>
+                <TextBlock Margin="0,10,0,0" TextWrapping="Wrap" Text="{StaticResource Overview}" FontSize="28" d:IsHidden="True"/>
+                <TextBlock HorizontalAlignment="Left" Margin="0,10,0,0" TextWrapping="Wrap" Text="{Binding NOO}" VerticalAlignment="Top" Grid.Row="1" Height="13" Width="72" d:IsHidden="True"/>
             </Grid>
-            <StackPanel x:Name="SPOverView" Grid.Column="1" HorizontalAlignment="Center" Margin="0" Grid.Row="2" Orientation="Horizontal">
-                <Button HorizontalAlignment="Stretch" VerticalAlignment="Top" Template="{StaticResource ButtonControl}"/>
-            </StackPanel>
+            <Grid Grid.Row="2" Grid.ColumnSpan="2" d:IsHidden="True">
+                <StackPanel x:Name="SPOverView" HorizontalAlignment="Center" Margin="0" Orientation="Horizontal" d:IsHidden="True">
+                    <Button HorizontalAlignment="Stretch" VerticalAlignment="Top" Template="{StaticResource ButtonControl}" Command="{Binding CommandRush}" d:IsHidden="True"/>
+                </StackPanel>
+            </Grid>
             <Grid x:Name="GridProduce" Grid.Column="1" Margin="0" Grid.Row="1" d:IsHidden="True"/>
             <Grid x:Name="GridStore" Grid.Column="1" Margin="0" Grid.Row="1" d:IsHidden="True"/>
             <Grid x:Name="GridAchievement" Grid.Column="1" Margin="0" Grid.Row="1" d:IsHidden="True"/>
@@ -211,33 +201,33 @@
                     <RowDefinition/>
                     <RowDefinition Height="Auto"/>
                 </Grid.RowDefinitions>
-                <TextBox TextWrapping="Wrap" Text="{Binding ConsoleText, Mode=TwoWay}" BorderThickness="0" Background="Black" BorderBrush="{x:Null}" Foreground="White" FontFamily="Microsoft YaHei UI" IsReadOnly="True" Padding="0" IsEnabled="False" Style="{StaticResource TextBoxConsole}" VerticalAlignment="Stretch" Margin="0" Grid.ColumnSpan="2"/>
-                <TextBox x:ConnectionId='8' x:Name="TBCommand" Margin="0" TextWrapping="Wrap" Text="{Binding TextConsoleCommand, Mode=TwoWay}" BorderThickness="0" BorderBrush="{x:Null}" Foreground="White" Grid.Row="1" Padding="0" MinHeight="10" Style="{StaticResource TextBoxConsole}"                         Background="Black" AcceptsReturn="True" Grid.ColumnSpan="2"/>
-                <Button Content="Button" HorizontalAlignment="Stretch" Margin="0" VerticalAlignment="Stretch" Command="{Binding CommandConsoleCommand}" MinHeight="0" MinWidth="0" BorderBrush="White" Foreground="White" Padding="0" Template="{StaticResource ButtonConsole}" Grid.Row="1" Grid.Column="1" BorderThickness="0"/>
+                <TextBox TextWrapping="Wrap" Text="{Binding ConsoleText, Mode=TwoWay}" BorderThickness="0" Background="Black" BorderBrush="{x:Null}" Foreground="White" FontFamily="Microsoft YaHei UI" IsReadOnly="True" Padding="0" IsEnabled="False" Style="{StaticResource TextBoxConsole}" VerticalAlignment="Stretch" Margin="0" Grid.ColumnSpan="2" d:IsHidden="True"/>
+                <TextBox x:ConnectionId='8' x:Name="TBCommand" Margin="0" TextWrapping="Wrap" Text="{Binding TextConsoleCommand, Mode=TwoWay}" BorderThickness="0" BorderBrush="{x:Null}" Foreground="White" Grid.Row="1" Padding="0" MinHeight="10" Style="{StaticResource TextBoxConsole}"                         Background="Black" AcceptsReturn="True" Grid.ColumnSpan="2" d:IsHidden="True"/>
+                <Button Content="Button" HorizontalAlignment="Stretch" Margin="0" VerticalAlignment="Stretch" Command="{Binding CommandConsoleCommand}" MinHeight="0" MinWidth="0" BorderBrush="White" Foreground="White" Padding="0" Template="{StaticResource ButtonConsole}" Grid.Row="1" Grid.Column="1" BorderThickness="0" d:IsHidden="True"/>
             </Grid>
 
             <Grid x:Name="GridData" Grid.Column="1" Grid.Row="1" d:IsHidden="True">
-                <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="{StaticResource Data}" VerticalAlignment="Top" FontSize="36"/>
-                <TextBlock HorizontalAlignment="Left" Margin="10,53,0,0" TextWrapping="Wrap" Text="{Binding NOOHG}" VerticalAlignment="Top"/>
-                <TextBlock HorizontalAlignment="Left" Margin="210,102,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
+                <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="{StaticResource Data}" VerticalAlignment="Top" FontSize="36" d:IsHidden="True"/>
+                <TextBlock HorizontalAlignment="Left" Margin="10,53,0,0" TextWrapping="Wrap" Text="{Binding NOOHG}" VerticalAlignment="Top" d:IsHidden="True"/>
+                <TextBlock HorizontalAlignment="Left" Margin="210,102,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" d:IsHidden="True"/>
             </Grid>
             <Grid x:Name="GridAbout" Margin="0" Grid.Row="1" Grid.Column="1" d:IsHidden="True"/>
             <Grid x:Name="GridSetting" Grid.Column="1" Margin="0" Grid.Row="1" d:IsHidden="True"/>
-            <ScrollViewer Margin="0" Grid.Row="1">
-                <ItemsControl x:Name="List" Margin="0,20,0,0">
-                    <local:ListItem x:ConnectionId='2' x:Name="LIOverView" Text1="{StaticResource Overview}" Text2="{StaticResource VOID}" ImageBlack="Images/OverviewBlack.png" ImageWhite="Images/OverviewWhite.png" Width="Auto" Height="Auto" IsChecked="True"                         />
-                    <local:ListItem x:ConnectionId='3' x:Name="LIProduce" ImageBlack="Images/ProduceBlack.png" Text1="{StaticResource Produce}" Text2="{StaticResource VOID}" ImageWhite="Images/ProduceWhite.png" Width="Auto" Height="Auto"                         />
-                    <local:ListItem x:ConnectionId='4' x:Name="LIStore" Text1="{StaticResource Store}" Text2="{StaticResource VOID}" ImageBlack="Images/MarketBlack.png" ImageWhite="Images/MarketWhite.png" Width="Auto" UseLayoutRounding="True" Margin="0" Height="Auto"                          />
-                    <local:ListItem x:ConnectionId='5' x:Name="LIAchievement" Text1="{StaticResource Achievement}" Text2="{StaticResource VOID}" Width="Auto" Height="Auto"                         />
-                    <local:ListItem x:ConnectionId='6' x:Name="LIConsole" Text1="{StaticResource Console}" Text2="{StaticResource VOID}" ImageBlack="Images/ConsoleBlack.png" ImageWhite="Images/ConsoleWhite.png" Width="Auto" Height="Auto"                         />
-                    <local:ListItem x:Name="LIData" HorizontalAlignment="Left" Text1="{StaticResource Data}" Text2="{StaticResource VOID}"/>
-                    <local:ListItem x:Name="LIAbout" HorizontalAlignment="Left" Text1="{StaticResource About}" Text2="{StaticResource VOID}"/>
-                    <local:ListItem x:ConnectionId='7' x:Name="LISetting" Text1="{StaticResource Setting}" Text2="{StaticResource VOID}" ImageBlack="Images/SettingBlack.png" ImageWhite="Images/SettingWhite.png" Width="Auto" Height="Auto"                         />
-                    <local:ListItem HorizontalAlignment="Left"/>
+            <ScrollViewer Margin="0" Grid.Row="1" d:IsHidden="True">
+                <ItemsControl x:Name="List" Margin="0,20,0,0" d:IsHidden="True">
+                    <local:ListItem x:ConnectionId='2' x:Name="LIOverView" Text1="{StaticResource Overview}" Text2="{StaticResource VOID}" ImageBlack="Images/OverviewBlack.png" ImageWhite="Images/OverviewWhite.png" Width="Auto" Height="Auto" IsChecked="True"                          d:IsHidden="True"/>
+                    <local:ListItem x:ConnectionId='3' x:Name="LIProduce" ImageBlack="Images/ProduceBlack.png" Text1="{StaticResource Produce}" Text2="{StaticResource VOID}" ImageWhite="Images/ProduceWhite.png" Width="Auto" Height="Auto"                          d:IsHidden="True"/>
+                    <local:ListItem x:ConnectionId='4' x:Name="LIStore" Text1="{StaticResource Store}" Text2="{StaticResource VOID}" ImageBlack="Images/MarketBlack.png" ImageWhite="Images/MarketWhite.png" Width="Auto" UseLayoutRounding="True" Margin="0" Height="Auto"                           d:IsHidden="True"/>
+                    <local:ListItem x:ConnectionId='5' x:Name="LIAchievement" Text1="{StaticResource Achievement}" Text2="{StaticResource VOID}" Width="Auto" Height="Auto"                          d:IsHidden="True"/>
+                    <local:ListItem x:ConnectionId='6' x:Name="LIConsole" Text1="{StaticResource Console}" Text2="{StaticResource VOID}" ImageBlack="Images/ConsoleBlack.png" ImageWhite="Images/ConsoleWhite.png" Width="Auto" Height="Auto"                          d:IsHidden="True"/>
+                    <local:ListItem x:Name="LIData" HorizontalAlignment="Left" Text1="{StaticResource Data}" Text2="{StaticResource VOID}" d:IsHidden="True"/>
+                    <local:ListItem x:Name="LIAbout" HorizontalAlignment="Left" Text1="{StaticResource About}" Text2="{StaticResource VOID}" d:IsHidden="True"/>
+                    <local:ListItem x:ConnectionId='7' x:Name="LISetting" Text1="{StaticResource Setting}" Text2="{StaticResource VOID}" ImageBlack="Images/SettingBlack.png" ImageWhite="Images/SettingWhite.png" Width="Auto" Height="Auto"                          d:IsHidden="True"/>
+                    <local:ListItem HorizontalAlignment="Left" d:IsHidden="True"/>
                 </ItemsControl>
             </ScrollViewer>
         </Grid>
-        <Grid x:Name="StartGrid" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"  DataContext="{StaticResource DesignVM}" Visibility="Collapsed" d:IsHidden="True">
+        <Grid x:Name="StartGrid" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"  DataContext="{StaticResource DesignVM}" >
             <Grid.ChildrenTransitions>
                 <TransitionCollection>
                     <EntranceThemeTransition/>
@@ -255,72 +245,12 @@
                 <Grid HorizontalAlignment="Center" Margin="0" VerticalAlignment="Top">
                     <TextBlock x:Name="TBWaiting" HorizontalAlignment="Left" Margin="0" TextWrapping="Wrap" Text="正在加载" VerticalAlignment="Top" FontSize="14"/>
                 </Grid>
-                <MediaElement Grid.Row="1" IsLooping="True" PosterSource="Images/无标题-1.gif" Width="129" Height="134" Source="Images/无标题-1.gif"/>
+                <MediaElement Grid.Row="1" IsLooping="True" Source="无标题-1.mp4" Width="130" Height="136" RealTimePlayback="True" IsMuted="True" HorizontalAlignment="Left" VerticalAlignment="Top" Stretch="None" d:IsHidden="True"/>
             </Grid>
         </Grid>
-        <Grid x:Name="EULAGrid" Background="#7F000000" Visibility="Collapsed" d:IsHidden="True">
-            <Grid HorizontalAlignment="Left" Height="461" Margin="351,168,0,0" VerticalAlignment="Top" Width="707" Background="White">
-                <TextBlock Margin="0" TextWrapping="Wrap" LineHeight="10">
-					<Run FontSize="22" Text="光敏性癫痫警告"/>
-					<LineBreak/>
-					<Span Foreground="Black">
-						<Run Text="极小部分人可能会在看到特定视觉图像（包括可能出现在本游戏中的闪烁效果或图案）时出现癫痫症状。甚至没有癫痫史的人也可能具有某种未确诊的身体状况，可在观看本游戏时导致光敏性癫痫发作。"/>
-					</Span>
-					<LineBreak/>
-					<Span Foreground="Black">
-						<Run Text="癫痫发作时可能有多种症状，包括头晕目眩、眼睛或面部抽搐、四肢痉挛或发抖、神志不清、混乱或暂时失去意识。癫痫发作也可能导致意识丧失或痉挛，进而导致患者因跌倒或撞击到旁边的物体而受伤。"/>
-					</Span>
-					<LineBreak/>
-					<Span Foreground="Black">
-						<Run Text="如果您出现任何症状，请立即停止游戏并咨询医生。家长应留意或询问孩子是否出现上述症状。儿童和青少年比成年人更容易出现癫痫发作的情况。"/>
-					</Span>
-					<LineBreak/>
-					<Span Foreground="Black">
-						<Run Text="可通过采取以下预防措施降低光敏性癫痫发作的风险："/>
-					</Span>
-					<LineBreak/>
-					<Span Foreground="Black">
-						<Run Text="•&#x9;在光线明亮的房间内播放"/>
-					</Span>
-					<LineBreak/>
-					<Span Foreground="Black">
-						<Run Text="•&#x9;如果您昏昏欲睡或疲劳，则请勿玩游戏"/>
-					</Span>
-					<LineBreak/>
-					<Run Text="如果您或您的亲人有癫痫史，请在玩本游戏前请咨询医生。光敏性癫痫警告"/>
-					<LineBreak/>
-					<Span Foreground="Black">
-						<Run Text="极小部分人可能会在看到特定视觉图像（包括可能出现在本游戏中的闪烁效果或图案）时出现癫痫症状。甚至没有癫痫史的人也可能具有某种未确诊的身体状况，可在观看本游戏时导致光敏性癫痫发作。"/>
-					</Span>
-					<LineBreak/>
-					<Span Foreground="Black">
-						<Run Text="癫痫发作时可能有多种症状，包括头晕目眩、眼睛或面部抽搐、四肢痉挛或发抖、神志不清、混乱或暂时失去意识。癫痫发作也可能导致意识丧失或痉挛，进而导致患者因跌倒或撞击到旁边的物体而受伤。"/>
-					</Span>
-					<LineBreak/>
-					<Run FontWeight="Bold" Text="如果您出现任何症状，请立即停止游戏并咨询医生。"/>
-					<Run Text="家长应留意或询问孩子是否出现上述症状。儿童和青少年比成年人更容易出现癫痫发作的情况。"/>
-					<LineBreak/>
-					<Span Foreground="Black">
-						<Run Text="可通过采取以下预防措施降低光敏性癫痫发作的风险："/>
-					</Span>
-					<LineBreak/>
-					<Span Foreground="Black">
-						<Run Text="•&#x9;在光线明亮的房间内播放"/>
-					</Span>
-					<LineBreak/>
-					<Span Foreground="Black">
-						<Run Text="•&#x9;如果您昏昏欲睡或疲劳，则请勿玩游戏"/>
-					</Span>
-					<LineBreak/>
-					<Span Foreground="Black">
-						<Run Text="如果您或您的亲人有癫痫史，请在玩本游戏前请咨询医生。"/>
-					</Span>
-					<LineBreak/>
-					<Span Foreground="Black">
-						<Run/>
-					</Span>
-                </TextBlock>
-            </Grid>
+
+        <Grid x:Name="EULAGrid" Background="#7F000000">
+            <Grid HorizontalAlignment="Left" Height="461" Margin="351,168,0,0" VerticalAlignment="Top" Width="707" Background="White" />
         </Grid>
     </Grid>
 </mvvm:MVVMPage>
