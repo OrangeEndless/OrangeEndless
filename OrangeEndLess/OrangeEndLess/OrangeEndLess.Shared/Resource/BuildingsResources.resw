@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
+							<xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+							<xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="resmimetype">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="version">
+		<value>1.3</value>
+	</resheader>
+	<resheader name="reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="TitleOfCursor" xml:space="preserve">    <value>指针</value>  </data>
+	<data name="LabelOfCursor" xml:space="preserve">    <value>鼠标的指针~不是C里面的那个~可以帮你点击那个写着“摇”的按钮</value>  </data>
+	<data name="TitleOfPrimary" xml:space="preserve">    <value>小学生</value>  </data>
+	<data name="LabelOfPrimary" xml:space="preserve">    <value>香甜的橘子可以诱惑一些正在玩锑尔号的小学生来帮你摇树</value>  </data>
+	<data name="TitleOfFarm" xml:space="preserve">    <value>农场</value>  </data>
+	<data name="LabelOfFarm" xml:space="preserve">    <value>农场里可以出产橘子~只是在冬天需要水结冰来拯救橘子们</value>  </data>
+	<data name="TitleOfFactory" xml:space="preserve">    <value>工厂</value>  </data>
+	<data name="LabelOfFactory" xml:space="preserve">    <value>这是专业生产橘子的工厂</value>  </data>
+	<data name="TitleOfMine" xml:space="preserve">    <value>矿井</value>  </data>
+	<data name="LabelOfMine" xml:space="preserve">    <value>矿井里面可以挖出还没有变成化石的橘子</value>  </data>
+	<data name="TitleOfShipment" xml:space="preserve">    <value>宇宙飞船</value>  </data>
+	<data name="LabelOfShipment" xml:space="preserve">    <value>Oh!这里有一个由橘子组成的星球！</value>  </data>
+	<data name="TitleOfLab" xml:space="preserve">    <value>生物实验室</value>  </data>
+	<data name="LabelOfLab" xml:space="preserve">    <value>祖传克隆橘子！！！</value>  </data>
+	<data name="TitleOfPortal" xml:space="preserve">    <value>仓库大门</value>  </data>
+	<data name="LabelOfPortal" xml:space="preserve">    <value>打开存放橘子的仓库的大门</value>  </data>
+	<data name="TitleOfTimeMachine" xml:space="preserve">    <value>时间机器</value>  </data>
+	<data name="LabelOfTimeMachine" xml:space="preserve">    <value>带你重回橘子统治世界的时代</value>  </data>
+	<data name="TitleOfDreamRecorder" xml:space="preserve">    <value>录梦机</value>  </data>
+	<data name="LabelOfDreamRecorder" xml:space="preserve">    <value>这绝不是一本仅仅包含爱意的小说，它还饱含着橘子</value>  </data>
+	<data name="TitleOfPrism" xml:space="preserve">    <value>棱镜</value>  </data>
+	<data name="LabelOfPrism" xml:space="preserve">    <value>折射出橘子</value>  </data>
+</root>

@@ -16,6 +16,8 @@ namespace OrangeEndLess
 	{
 		ApplicationDataContainer GameData = ApplicationData . Current . RoamingSettings;
 
+		//		Func<Core,bool> FuncDark;
+
 		public string Title;
 
 		public string Label;
@@ -30,6 +32,22 @@ namespace OrangeEndLess
 		{
 			IsGet = false;
 		}
+
+		public Status Status
+		{
+			get
+			{
+				if ( IsGet )
+				{
+					return Status . Active;
+				}
+				else
+				{
+					return Status . Dark;
+				}
+			}
+		}
+
 
 		public bool IsGet
 		{
@@ -54,7 +72,7 @@ namespace OrangeEndLess
 		public Achievement ( int key , Core gamecore , Func<Core , bool> func )
 		{
 			Key = key;
-			ResourceLoader  Resources= ResourceLoader . GetForCurrentView ( "Resource" );
+			ResourceLoader  Resources= ResourceLoader . GetForCurrentView ( "AchievementsResource" );
 			Title = Resources . GetString ( "Achevement" + key . ToString ( ) + "Title" );
 			Label = Resources . GetString ( "Achevement" + key . ToString ( ) + "Label" );
 			GameCore = gamecore;

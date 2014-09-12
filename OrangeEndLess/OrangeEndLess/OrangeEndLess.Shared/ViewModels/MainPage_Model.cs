@@ -30,24 +30,20 @@ namespace OrangeEndLess . ViewModels
 
 		ApplicationDataContainer localSettings = ApplicationData . Current . RoamingSettings;
 
-		public GameConsole Consoles;
-
 		public MainPage_Model ( )
 		{
-			Consoles = new GameConsole ( GameCore );
-
 			//GameCore . RandomEvent += GameCore_RandomEvent;
 			GameCore . UpdateAchevements += GameCore_UpdateAchevements;
 			GameCore . UpdateBuildings += GameCore_UpdateBuildings;
 			GameCore . UpdateNumberOfMoney += GameCore_UpdateNumberOfMoney;
 			GameCore . UpdateNumberOfOrange += GameCore_UpdateNumberOfOrange;
-			Consoles . UpdateConsole += Consoles_UpdateConsole;
+			GameCore . UpdateConsole += Consoles_UpdateConsole;
 
 		}
 
 		void Consoles_UpdateConsole ( object sender , EventArgs e )
 		{
-			ConsoleText = Consoles . TextOut;
+			ConsoleText = GameCore . ConsoleTextOut;
 		}
 
 		void GameCore_UpdateNumberOfOrange ( object sender , EventArgs e )
@@ -88,8 +84,6 @@ namespace OrangeEndLess . ViewModels
 		//{
 
 		//}
-
-
 
 		public string CPSOO
 		{
@@ -142,6 +136,7 @@ namespace OrangeEndLess . ViewModels
 			};
 		#endregion
 
+
 		public string ButtonRushTip
 		{
 			get { return _ButtonRushTipLocator ( this ) . Value; }
@@ -157,6 +152,7 @@ namespace OrangeEndLess . ViewModels
 				return decimal . Floor ( vm . GameCore . NumberOfOrangeHaveGet ) . ToString ( );
 			};
 		#endregion
+
 
 		public string TextBlockCPSOfOrangeOutTip
 		{
@@ -183,6 +179,7 @@ namespace OrangeEndLess . ViewModels
 				return Temp . Trim ( );
 			};
 		#endregion
+
 
 		public string TextBlockNumberOfOrangeSmallOut
 		{
@@ -230,7 +227,7 @@ namespace OrangeEndLess . ViewModels
 			model =>
 			{
 				var vm = CastToCurrentType ( model );
-				return vm . Consoles . TextOut;
+				return vm . GameCore . ConsoleTextOut;
 			};
 		#endregion
 
@@ -255,7 +252,7 @@ namespace OrangeEndLess . ViewModels
 						vm ,
 						async e =>
 						{
-							vm . Consoles . Commands ( vm . TextConsoleCommand . TrimStart ( '>' ) );
+							vm . GameCore . Commands ( vm . TextConsoleCommand . TrimStart ( '>' ) );
 							vm . TextConsoleCommand = ">";
 							await MVVMSidekick . Utilities . TaskExHelper . Yield ( );
 						}

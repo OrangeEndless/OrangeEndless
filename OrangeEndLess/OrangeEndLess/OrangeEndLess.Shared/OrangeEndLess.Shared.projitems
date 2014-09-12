@@ -51,7 +51,13 @@
     <Compile Include="$(MSBuildThisFileDirectory)ViewModels\MainPage_Model.cs" />
   </ItemGroup>
   <ItemGroup>
-    <PRIResource Include="$(MSBuildThisFileDirectory)Resource.resw" />
+    <PRIResource Include="$(MSBuildThisFileDirectory)Resource\AchievementsResource.resw">
+      <SubType>Designer</SubType>
+    </PRIResource>
+    <PRIResource Include="$(MSBuildThisFileDirectory)Resource\BuildingsResources.resw">
+      <SubType>Designer</SubType>
+    </PRIResource>
+    <PRIResource Include="$(MSBuildThisFileDirectory)Resource\ConsoleResources.resw" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="$(MSBuildThisFileDirectory)a.jpg" />

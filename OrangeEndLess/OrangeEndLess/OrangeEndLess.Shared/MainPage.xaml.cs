@@ -53,10 +53,6 @@ namespace OrangeEndLess
 
 		private void TBCommand_KeyUp ( object sender , KeyRoutedEventArgs e )
 		{
-			if ( e . Key == Windows . System . VirtualKey . Enter )
-			{
-				OrangeEndLess . ViewModels . MainPage_Model . CastToCurrentType ( new OrangeEndLess.ViewModels.MainPage_Model ( ) ) . Consoles . Commands ( TBCommand . Text );
-			}
 		}
 	}
 }
