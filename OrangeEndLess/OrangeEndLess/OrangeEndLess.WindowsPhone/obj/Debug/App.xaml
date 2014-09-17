@@ -24,7 +24,7 @@
         <x:String x:Key="/s">个/s</x:String>
 
 
-        <x:String x:Key="TitleOfCursor">指针</x:String>
+        <!--<x:String x:Key="TitleOfCursor">指针</x:String>
         <x:String x:Key="LabelOfCursor">鼠标的指针~不是C里面的那个~可以帮你点击那个写着“摇”的按钮</x:String>
 
 
@@ -56,7 +56,7 @@
         <x:String x:Key="LabelOfDreamRecorder">这绝不是一本仅仅包含爱意的小说，它还饱含着橘子</x:String>
 
         <x:String x:Key="TitleOfPrism">折跃棱镜</x:String>
-        <x:String x:Key="LabelOfPrism">你的折跃门折跃出的怎么全是橘子？</x:String>
+        <x:String x:Key="LabelOfPrism">你的折跃门折跃出的怎么全是橘子？</x:String>-->
 
 
         <!--<x:String x:Key="TOP1">果园</x:String>
@@ -85,7 +85,12 @@
 如果您或您的亲人有癫痫史，请在玩本游戏前请咨询医生。
         </x:String>
 		
-		<x:String x:Key="Promise">这个游戏使用本地时间来计算游戏信息</x:String>
+		<x:String x:Key="TextPromise">我们认为作弊是可耻的行为，我们不希望你通过修改时间作弊。所以，在开始游戏前，你需要保证你不会这样做。
+			在下面的文本框中输入：
+			我将不会试图通过修改时间作弊
+		</x:String>
+		
+		
         
         
         

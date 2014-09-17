@@ -222,7 +222,7 @@ namespace OrangeEndLess
 		//	WriteLine(e.Text);
 		//}
 
-		public void LoadConsole ( Core gamecore )
+		public void LoadConsole ( )
 		{
 			//GameCore.RandomEvent += GameCore_RandomEvent;
 			LocalData . Values [ "Console" ] = StartMessage;

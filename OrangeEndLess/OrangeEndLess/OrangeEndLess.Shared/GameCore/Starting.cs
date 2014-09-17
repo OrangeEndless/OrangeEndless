@@ -21,6 +21,7 @@ namespace OrangeEndLess
             LoadAchievements ( );
             LoadRandomEvents ( );
             LoadTimer ( );
+			LoadConsole ( );
         }
 
         void Setup ( )

@@ -19,7 +19,7 @@ using Windows . UI . Xaml . Navigation;
 namespace OrangeEndLess
 {
 	/// <summary>
-	/// An empty page that can be used on its own or navigated to within a Frame.
+	/// 主界面
 	/// </summary>
 	public sealed partial class MainPage : MVVMPage
 	{

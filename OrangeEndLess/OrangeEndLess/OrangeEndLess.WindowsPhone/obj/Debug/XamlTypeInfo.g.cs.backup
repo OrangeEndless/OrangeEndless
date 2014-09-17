@@ -124,7 +124,7 @@ namespace OrangeEndLess.OrangeEndLess_WindowsPhone_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[32];
+            _typeNameTable = new string[33];
             _typeNameTable[0] = "MVVMSidekick.Views.MVVMPage";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
@@ -156,9 +156,10 @@ namespace OrangeEndLess.OrangeEndLess_WindowsPhone_XamlTypeInfo
             _typeNameTable[28] = "OrangeEndLess.ListItem";
             _typeNameTable[29] = "Windows.UI.Xaml.Media.ImageSource";
             _typeNameTable[30] = "OrangeEndLess.MainPage";
-            _typeNameTable[31] = "OrangeEndLess.PageView";
+            _typeNameTable[31] = "OrangeEndLess.StartPage";
+            _typeNameTable[32] = "OrangeEndLess.PageView";
 
-            _typeTable = new global::System.Type[32];
+            _typeTable = new global::System.Type[33];
             _typeTable[0] = typeof(global::MVVMSidekick.Views.MVVMPage);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
@@ -190,7 +191,8 @@ namespace OrangeEndLess.OrangeEndLess_WindowsPhone_XamlTypeInfo
             _typeTable[28] = typeof(global::OrangeEndLess.ListItem);
             _typeTable[29] = typeof(global::Windows.UI.Xaml.Media.ImageSource);
             _typeTable[30] = typeof(global::OrangeEndLess.MainPage);
-            _typeTable[31] = typeof(global::OrangeEndLess.PageView);
+            _typeTable[31] = typeof(global::OrangeEndLess.StartPage);
+            _typeTable[32] = typeof(global::OrangeEndLess.PageView);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -232,7 +234,8 @@ namespace OrangeEndLess.OrangeEndLess_WindowsPhone_XamlTypeInfo
         private object Activate_24_Exception() { return new global::System.Exception(); }
         private object Activate_28_ListItem() { return new global::OrangeEndLess.ListItem(); }
         private object Activate_30_MainPage() { return new global::OrangeEndLess.MainPage(); }
-        private object Activate_31_PageView() { return new global::OrangeEndLess.PageView(); }
+        private object Activate_31_StartPage() { return new global::OrangeEndLess.StartPage(); }
+        private object Activate_32_PageView() { return new global::OrangeEndLess.PageView(); }
         private void VectorAdd_21_IList(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::MVVMSidekick.ViewModels.DisposeEntry>)instance;
@@ -454,9 +457,16 @@ namespace OrangeEndLess.OrangeEndLess_WindowsPhone_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 31:   //  OrangeEndLess.PageView
+            case 31:   //  OrangeEndLess.StartPage
+                userType = new global::OrangeEndLess.OrangeEndLess_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_31_StartPage;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 32:   //  OrangeEndLess.PageView
                 userType = new global::OrangeEndLess.OrangeEndLess_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
-                userType.Activator = Activate_31_PageView;
+                userType.Activator = Activate_32_PageView;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;

@@ -158,7 +158,7 @@ namespace OrangeEndLess
 		public Building ( string key , decimal startprice , decimal startcps , Core gamecore , Func<Core , bool> funcshow , Func<Core , bool> funcdark )
 		{			
 			Key = key;
-			ResourceLoader  Resources= ResourceLoader . GetForCurrentView ( "BuildingsResource" );
+			ResourceLoader  Resources= ResourceLoader . GetForCurrentView ( "BuildingsResources" );
 			Title = Resources . GetString ( "TitleOf" + Key );
 			Label = Resources . GetString ( "LabelOf" + Key );
 			PriceBase = startprice;
