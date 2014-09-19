@@ -153,7 +153,7 @@
 			</Grid.RowDefinitions>
 			<Rectangle Fill="#FFF9B763" Stroke="Black" StrokeThickness="0" Grid.RowSpan="3"/>
 			<Rectangle Fill="#FFFF8E41" Grid.Row="2" Stroke="Black" StrokeThickness="0" Grid.ColumnSpan="3"/>
-			<Grid Grid.ColumnSpan="3">
+			<Grid x:Name="GridTitle" Grid.ColumnSpan="3">
 				<Grid.ColumnDefinitions>
 					<ColumnDefinition Width="20"/>
 					<ColumnDefinition Width="Auto"/>
@@ -174,7 +174,11 @@
 						<CompositeTransform ScaleX="0.8" ScaleY="0.8"/>
 					</Image.RenderTransform>
 				</Image>
-				<Image Grid.Column="3" Margin="0"/>
+				<Image Grid.Column="3" Margin="0" Source="ms-appx:///Money.png" RenderTransformOrigin="0.5,0.5">
+					<Image.RenderTransform>
+						<CompositeTransform ScaleX="0.8" ScaleY="0.8"/>
+					</Image.RenderTransform>
+				</Image>
 			</Grid>
 			<Grid x:Name="GridOverView" Grid.Column="1" Margin="30,20,0,0" Grid.Row="1">
 				<Grid.RowDefinitions>
@@ -182,17 +186,23 @@
 					<RowDefinition/>
 				</Grid.RowDefinitions>
 				<TextBlock Margin="0,10,0,0" TextWrapping="Wrap" Text="{StaticResource Overview}" FontSize="28"/>
-				<TextBlock HorizontalAlignment="Left" Margin="0,10,0,0" TextWrapping="Wrap" Text="{Binding NOO}" VerticalAlignment="Top" Grid.Row="1" Height="13" Width="72"/>
+				<ScrollViewer Margin="0" Grid.Row="1">
+					<StackPanel>
+						<TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="{Binding NOO}" VerticalAlignment="Top"/>
+						<TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="{Binding CPSOO}" VerticalAlignment="Top" ToolTipService.ToolTip="{Binding CPSOOD}"/>
+						<TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="{Binding NOM}" VerticalAlignment="Top"/>
+					</StackPanel>
+				</ScrollViewer>
 			</Grid>
-			<Grid Grid.Row="2" Grid.ColumnSpan="2">
+			<Grid x:Name="ButtonsOverView" Grid.Row="2" Grid.Column="1">
 				<StackPanel x:Name="SPOverView" HorizontalAlignment="Center" Margin="0" Orientation="Horizontal">
 					<Button HorizontalAlignment="Stretch" VerticalAlignment="Top" Template="{StaticResource ButtonControl}" Command="{Binding CommandRush}"/>
 				</StackPanel>
 			</Grid>
-			<Grid x:Name="GridProduce" Grid.Column="1" Margin="0" Grid.Row="1"/>
-			<Grid x:Name="GridStore" Grid.Column="1" Margin="0" Grid.Row="1"/>
-			<Grid x:Name="GridAchievement" Grid.Column="1" Margin="0" Grid.Row="1"/>
-			<Grid x:Name="GridConsole" Grid.Column="1" Margin="0" Grid.Row="1">
+			<Grid x:Name="GridProduce" Grid.Column="1" Margin="0" Grid.Row="1" Visibility="Collapsed"/>
+			<Grid x:Name="GridStore" Grid.Column="1" Margin="0" Grid.Row="1" Visibility="Collapsed"/>
+			<Grid x:Name="GridAchievement" Grid.Column="1" Margin="0" Grid.Row="1" Visibility="Collapsed"/>
+			<Grid x:Name="GridConsole" Grid.Column="1" Margin="0" Grid.Row="1" Visibility="Collapsed">
 				<Grid.ColumnDefinitions>
 					<ColumnDefinition Width="1109*"/>
 					<ColumnDefinition Width="70*"/>
@@ -201,18 +211,18 @@
 					<RowDefinition/>
 					<RowDefinition Height="Auto"/>
 				</Grid.RowDefinitions>
-				<TextBox TextWrapping="Wrap" Text="{Binding ConsoleText, Mode=TwoWay}" BorderThickness="0" Background="Black" BorderBrush="{x:Null}" Foreground="White" FontFamily="Microsoft YaHei UI" IsReadOnly="True" Padding="0" IsEnabled="False" Style="{StaticResource TextBoxConsole}" VerticalAlignment="Stretch" Margin="0" Grid.ColumnSpan="2"/>
+				<TextBox TextWrapping="Wrap" Text="{Binding ConsoleText, Mode=TwoWay}" BorderThickness="0" Background="Black" BorderBrush="{x:Null}" Foreground="White" FontFamily="Microsoft YaHei UI" IsReadOnly="True" Padding="0" IsEnabled="False" Style="{StaticResource TextBoxConsole}" VerticalAlignment="Stretch" Margin="0" Grid.ColumnSpan="2" Visibility="Collapsed"/>
 				<TextBox x:Name="TBCommand" Margin="0" TextWrapping="Wrap" Text="{Binding TextConsoleCommand, Mode=TwoWay}" BorderThickness="0" BorderBrush="{x:Null}" Foreground="White" Grid.Row="1" Padding="0" MinHeight="10" Style="{StaticResource TextBoxConsole}" KeyUp="TBCommand_KeyUp" Background="Black" AcceptsReturn="True" Grid.ColumnSpan="2"/>
 				<Button Content="Button" HorizontalAlignment="Stretch" Margin="0" VerticalAlignment="Stretch" Command="{Binding CommandConsoleCommand}" MinHeight="0" MinWidth="0" BorderBrush="White" Foreground="White" Padding="0" Template="{StaticResource ButtonConsole}" Grid.Row="1" Grid.Column="1" BorderThickness="0"/>
 			</Grid>
 
-			<Grid x:Name="GridData" Grid.Column="1" Grid.Row="1">
+			<Grid x:Name="GridData" Grid.Column="1" Grid.Row="1" Visibility="Collapsed">
 				<TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="{StaticResource Data}" VerticalAlignment="Top" FontSize="36"/>
 				<TextBlock HorizontalAlignment="Left" Margin="10,53,0,0" TextWrapping="Wrap" Text="{Binding NOOHG}" VerticalAlignment="Top"/>
-				<TextBlock HorizontalAlignment="Left" Margin="210,102,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
+				<TextBlock HorizontalAlignment="Left" Margin="10,66,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
 			</Grid>
-			<Grid x:Name="GridAbout" Margin="0" Grid.Row="1" Grid.Column="1"/>
-			<Grid x:Name="GridSetting" Grid.Column="1" Margin="0" Grid.Row="1"/>
+			<Grid x:Name="GridAbout" Margin="0" Grid.Row="1" Grid.Column="1" Visibility="Collapsed"/>
+			<Grid x:Name="GridSetting" Grid.Column="1" Margin="0" Grid.Row="1" Visibility="Collapsed"/>
 			<ScrollViewer Margin="0" Grid.Row="1">
 				<ItemsControl x:Name="List" Margin="0,20,0,0">
 					<local:ListItem x:Name="LIOverView" Text1="{StaticResource Overview}" Text2="{StaticResource VOID}" ImageBlack="Images/OverviewBlack.png" ImageWhite="Images/OverviewWhite.png" Width="Auto" Height="Auto" IsChecked="True" Tapped="ListItem_Tapped"/>

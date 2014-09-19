@@ -267,6 +267,7 @@ C:\Users\Class 4\Documents\Visual Studio 2013\Projects\OrangeEndless\OrangeEndLe
 C:\Users\Class 4\Documents\Visual Studio 2013\Projects\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.WindowsPhone\obj\Debug\StartPage.g.cs
 C:\Users\Class 4\Documents\Visual Studio 2013\Projects\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.WindowsPhone\obj\Debug\StartPage.xaml
 C:\Users\Class 4\Documents\Visual Studio 2013\Projects\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.WindowsPhone\obj\Debug\StartPage.xbf
+C:\Users\Class 4\Documents\Visual Studio 2013\Projects\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.WindowsPhone\bin\Debug\Money.png
 C:\Users\Class 4\Documents\Visual Studio 2013\Projects\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.WindowsPhone\obj\Debug\System.Reactive.Core\layout.resfiles
 C:\Users\Class 4\Documents\Visual Studio 2013\Projects\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.WindowsPhone\obj\Debug\System.Reactive.Core\layout.resfiles.intermediate
 C:\Users\Class 4\Documents\Visual Studio 2013\Projects\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.WindowsPhone\obj\Debug\System.Reactive.Core\Resources.resfiles

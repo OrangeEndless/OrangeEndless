@@ -265,3 +265,4 @@ C:\Users\Class 4\Documents\Visual Studio 2013\Projects\OrangeEndless\OrangeEndLe
 C:\Users\Class 4\Documents\Visual Studio 2013\Projects\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.Windows\obj\Debug\StartPage.g.cs
 C:\Users\Class 4\Documents\Visual Studio 2013\Projects\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.Windows\obj\Debug\StartPage.xaml
 C:\Users\Class 4\Documents\Visual Studio 2013\Projects\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.Windows\obj\Debug\StartPage.xbf
+C:\Users\Class 4\Documents\Visual Studio 2013\Projects\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.Windows\bin\Debug\Money.png

@@ -96,134 +96,534 @@
 				<VisualState x:Name="Starting">
 					<Storyboard>
 						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="有">
-							<EasingDoubleKeyFrame KeyTime="0" Value="0"/>
-							<EasingDoubleKeyFrame KeyTime="0:0:1" Value="0"/>
-							<EasingDoubleKeyFrame KeyTime="0:0:2" Value="1"/>
-							<EasingDoubleKeyFrame KeyTime="0:0:3" Value="1"/>
-							<EasingDoubleKeyFrame KeyTime="0:0:4" Value="0"/>
-							<EasingDoubleKeyFrame KeyTime="0:0:7" Value="0"/>
-							<EasingDoubleKeyFrame KeyTime="0:0:8" Value="1"/>
-							<EasingDoubleKeyFrame KeyTime="0:0:9" Value="1"/>
-							<EasingDoubleKeyFrame KeyTime="0:0:10" Value="1"/>
-							<EasingDoubleKeyFrame KeyTime="0:0:11" Value="1"/>
-							<EasingDoubleKeyFrame KeyTime="0:0:13" Value="1"/>
-							<EasingDoubleKeyFrame KeyTime="0:0:14" Value="0"/>
+							<EasingDoubleKeyFrame KeyTime="0" Value="0">
+								<EasingDoubleKeyFrame.EasingFunction>
+									<ElasticEase EasingMode="EaseInOut"/>
+								</EasingDoubleKeyFrame.EasingFunction>
+							</EasingDoubleKeyFrame>
+							<EasingDoubleKeyFrame KeyTime="0:0:1" Value="0">
+								<EasingDoubleKeyFrame.EasingFunction>
+									<ElasticEase EasingMode="EaseInOut"/>
+								</EasingDoubleKeyFrame.EasingFunction>
+							</EasingDoubleKeyFrame>
+							<EasingDoubleKeyFrame KeyTime="0:0:2" Value="1">
+								<EasingDoubleKeyFrame.EasingFunction>
+									<ElasticEase EasingMode="EaseInOut"/>
+								</EasingDoubleKeyFrame.EasingFunction>
+							</EasingDoubleKeyFrame>
+							<EasingDoubleKeyFrame KeyTime="0:0:3" Value="1">
+								<EasingDoubleKeyFrame.EasingFunction>
+									<ElasticEase EasingMode="EaseInOut"/>
+								</EasingDoubleKeyFrame.EasingFunction>
+							</EasingDoubleKeyFrame>
+							<EasingDoubleKeyFrame KeyTime="0:0:4" Value="0">
+								<EasingDoubleKeyFrame.EasingFunction>
+									<ElasticEase EasingMode="EaseInOut"/>
+								</EasingDoubleKeyFrame.EasingFunction>
+							</EasingDoubleKeyFrame>
+							<EasingDoubleKeyFrame KeyTime="0:0:7" Value="0">
+								<EasingDoubleKeyFrame.EasingFunction>
+									<ElasticEase EasingMode="EaseInOut"/>
+								</EasingDoubleKeyFrame.EasingFunction>
+							</EasingDoubleKeyFrame>
+							<EasingDoubleKeyFrame KeyTime="0:0:8" Value="1">
+								<EasingDoubleKeyFrame.EasingFunction>
+									<ElasticEase EasingMode="EaseInOut"/>
+								</EasingDoubleKeyFrame.EasingFunction>
+							</EasingDoubleKeyFrame>
+							<EasingDoubleKeyFrame KeyTime="0:0:9" Value="1">
+								<EasingDoubleKeyFrame.EasingFunction>
+									<ElasticEase EasingMode="EaseInOut"/>
+								</EasingDoubleKeyFrame.EasingFunction>
+							</EasingDoubleKeyFrame>
+							<EasingDoubleKeyFrame KeyTime="0:0:10" Value="1">
+								<EasingDoubleKeyFrame.EasingFunction>
+									<ElasticEase EasingMode="EaseInOut"/>
+								</EasingDoubleKeyFrame.EasingFunction>
+							</EasingDoubleKeyFrame>
+							<EasingDoubleKeyFrame KeyTime="0:0:11" Value="1">
+								<EasingDoubleKeyFrame.EasingFunction>
+									<QuinticEase EasingMode="EaseInOut"/>
+								</EasingDoubleKeyFrame.EasingFunction>
+							</EasingDoubleKeyFrame>
+							<EasingDoubleKeyFrame KeyTime="0:0:13" Value="1">
+								<EasingDoubleKeyFrame.EasingFunction>
+									<ElasticEase EasingMode="EaseInOut"/>
+								</EasingDoubleKeyFrame.EasingFunction>
+							</EasingDoubleKeyFrame>
+							<EasingDoubleKeyFrame KeyTime="0:0:14" Value="0">
+								<EasingDoubleKeyFrame.EasingFunction>
+									<ElasticEase EasingMode="EaseInOut"/>
+								</EasingDoubleKeyFrame.EasingFunction>
+							</EasingDoubleKeyFrame>
 						</DoubleAnimationUsingKeyFrames>
 						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="一">
-							<EasingDoubleKeyFrame KeyTime="0" Value="0"/>
-							<EasingDoubleKeyFrame KeyTime="0:0:1" Value="0"/>
-							<EasingDoubleKeyFrame KeyTime="0:0:2" Value="1"/>
-							<EasingDoubleKeyFrame KeyTime="0:0:3" Value="1"/>
-							<EasingDoubleKeyFrame KeyTime="0:0:4" Value="0"/>
-							<EasingDoubleKeyFrame KeyTime="0:0:7" Value="0"/>
+							<EasingDoubleKeyFrame KeyTime="0" Value="0">
+								<EasingDoubleKeyFrame.EasingFunction>
+									<ElasticEase EasingMode="EaseInOut"/>
+								</EasingDoubleKeyFrame.EasingFunction>
+							</EasingDoubleKeyFrame>
+							<EasingDoubleKeyFrame KeyTime="0:0:1" Value="0">
+								<EasingDoubleKeyFrame.EasingFunction>
+									<ElasticEase EasingMode="EaseInOut"/>
+								</EasingDoubleKeyFrame.EasingFunction>
+							</EasingDoubleKeyFrame>
+							<EasingDoubleKeyFrame KeyTime="0:0:2" Value="1">
+								<EasingDoubleKeyFrame.EasingFunction>
+									<ElasticEase EasingMode="EaseInOut"/>
+								</EasingDoubleKeyFrame.EasingFunction>
+							</EasingDoubleKeyFrame>
+							<EasingDoubleKeyFrame KeyTime="0:0:3" Value="1">
+								<EasingDoubleKeyFrame.EasingFunction>
+									<ElasticEase EasingMode="EaseInOut"/>
+								</EasingDoubleKeyFrame.EasingFunction>
+							</EasingDoubleKeyFrame>
+							<EasingDoubleKeyFrame KeyTime="0:0:4" Value="0">
+								<EasingDoubleKeyFrame.EasingFunction>
+									<ElasticEase EasingMode="EaseInOut"/>
+								</EasingDoubleKeyFrame.EasingFunction>
+							</EasingDoubleKeyFrame>
+							<EasingDoubleKeyFrame KeyTime="0:0:7" Value="0">
+								<EasingDoubleKeyFrame.EasingFunction>
+									<ElasticEase EasingMode="EaseInOut"/>
+								</EasingDoubleKeyFrame.EasingFunction>
+							</EasingDoubleKeyFrame>
 						</DoubleAnimationUsingKeyFrames>
 						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="天">
-							<EasingDoubleKeyFrame KeyTime="0" Value="0"/>
-							<EasingDoubleKeyFrame KeyTime="0:0:1" Value="0"/>
-							<EasingDoubleKeyFrame KeyTime="0:0:2" Value="1"/>
-							<EasingDoubleKeyFrame KeyTime="0:0:3" Value="1"/>
-							<EasingDoubleKeyFrame KeyTime="0:0:4" Value="0"/>
-							<EasingDoubleKeyFrame KeyTime="0:0:7" Value="0"/>
+							<EasingDoubleKeyFrame KeyTime="0" Value="0">
+								<EasingDoubleKeyFrame.EasingFunction>
+									<ElasticEase EasingMode="EaseInOut"/>
+								</EasingDoubleKeyFrame.EasingFunction>
+							</EasingDoubleKeyFrame>
+							<EasingDoubleKeyFrame KeyTime="0:0:1" Value="0">
+								<EasingDoubleKeyFrame.EasingFunction>
+									<ElasticEase EasingMode="EaseInOut"/>
+								</EasingDoubleKeyFrame.EasingFunction>
+							</EasingDoubleKeyFrame>
+							<EasingDoubleKeyFrame KeyTime="0:0:2" Value="1">
+								<EasingDoubleKeyFrame.EasingFunction>
+									<ElasticEase EasingMode="EaseInOut"/>
+								</EasingDoubleKeyFrame.EasingFunction>
+							</EasingDoubleKeyFrame>
+							<EasingDoubleKeyFrame KeyTime="0:0:3" Value="1">
+								<EasingDoubleKeyFrame.EasingFunction>
+									<ElasticEase EasingMode="EaseInOut"/>
+								</EasingDoubleKeyFrame.EasingFunction>
+							</EasingDoubleKeyFrame>
+							<EasingDoubleKeyFrame KeyTime="0:0:4" Value="0">
+								<EasingDoubleKeyFrame.EasingFunction>
+									<ElasticEase EasingMode="EaseInOut"/>
+								</EasingDoubleKeyFrame.EasingFunction>
+							</EasingDoubleKeyFrame>
+							<EasingDoubleKeyFrame KeyTime="0:0:7" Value="0">
+								<EasingDoubleKeyFrame.EasingFunction>
+									<ElasticEase EasingMode="EaseInOut"/>
+								</EasingDoubleKeyFrame.EasingFunction>
+							</EasingDoubleKeyFrame>
 						</DoubleAnimationUsingKeyFrames>
 						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="Wencey">
-							<EasingDoubleKeyFrame KeyTime="0" Value="0"/>
-							<EasingDoubleKeyFrame KeyTime="0:0:4" Value="0"/>
-							<EasingDoubleKeyFrame KeyTime="0:0:5" Value="1"/>
-							<EasingDoubleKeyFrame KeyTime="0:0:6" Value="1"/>
-							<EasingDoubleKeyFrame KeyTime="0:0:7" Value="0"/>
+							<EasingDoubleKeyFrame KeyTime="0" Value="0">
+								<EasingDoubleKeyFrame.EasingFunction>
+									<ElasticEase EasingMode="EaseInOut"/>
+								</EasingDoubleKeyFrame.EasingFunction>
+							</EasingDoubleKeyFrame>
+							<EasingDoubleKeyFrame KeyTime="0:0:4" Value="0">
+								<EasingDoubleKeyFrame.EasingFunction>
+									<ElasticEase EasingMode="EaseInOut"/>
+								</EasingDoubleKeyFrame.EasingFunction>
+							</EasingDoubleKeyFrame>
+							<EasingDoubleKeyFrame KeyTime="0:0:5" Value="1">
+								<EasingDoubleKeyFrame.EasingFunction>
+									<ElasticEase EasingMode="EaseInOut"/>
+								</EasingDoubleKeyFrame.EasingFunction>
+							</EasingDoubleKeyFrame>
+							<EasingDoubleKeyFrame KeyTime="0:0:6" Value="1">
+								<EasingDoubleKeyFrame.EasingFunction>
+									<ElasticEase EasingMode="EaseInOut"/>
+								</EasingDoubleKeyFrame.EasingFunction>
+							</EasingDoubleKeyFrame>
+							<EasingDoubleKeyFrame KeyTime="0:0:7" Value="0">
+								<EasingDoubleKeyFrame.EasingFunction>
+									<ElasticEase EasingMode="EaseInOut"/>
+								</EasingDoubleKeyFrame.EasingFunction>
+							</EasingDoubleKeyFrame>
 						</DoubleAnimationUsingKeyFrames>
 						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="说">
-							<EasingDoubleKeyFrame KeyTime="0" Value="0"/>
-							<EasingDoubleKeyFrame KeyTime="0:0:4" Value="0"/>
-							<EasingDoubleKeyFrame KeyTime="0:0:5" Value="1"/>
-							<EasingDoubleKeyFrame KeyTime="0:0:6" Value="1"/>
-							<EasingDoubleKeyFrame KeyTime="0:0:7" Value="0"/>
+							<EasingDoubleKeyFrame KeyTime="0" Value="0">
+								<EasingDoubleKeyFrame.EasingFunction>
+									<ElasticEase EasingMode="EaseInOut"/>
+								</EasingDoubleKeyFrame.EasingFunction>
+							</EasingDoubleKeyFrame>
+							<EasingDoubleKeyFrame KeyTime="0:0:4" Value="0">
+								<EasingDoubleKeyFrame.EasingFunction>
+									<ElasticEase EasingMode="EaseInOut"/>
+								</EasingDoubleKeyFrame.EasingFunction>
+							</EasingDoubleKeyFrame>
+							<EasingDoubleKeyFrame KeyTime="0:0:5" Value="1">
+								<EasingDoubleKeyFrame.EasingFunction>
+									<ElasticEase EasingMode="EaseInOut"/>
+								</EasingDoubleKeyFrame.EasingFunction>
+							</EasingDoubleKeyFrame>
+							<EasingDoubleKeyFrame KeyTime="0:0:6" Value="1">
+								<EasingDoubleKeyFrame.EasingFunction>
+									<ElasticEase EasingMode="EaseInOut"/>
+								</EasingDoubleKeyFrame.EasingFunction>
+							</EasingDoubleKeyFrame>
+							<EasingDoubleKeyFrame KeyTime="0:0:7" Value="0">
+								<EasingDoubleKeyFrame.EasingFunction>
+									<ElasticEase EasingMode="EaseInOut"/>
+								</EasingDoubleKeyFrame.EasingFunction>
+							</EasingDoubleKeyFrame>
 						</DoubleAnimationUsingKeyFrames>
 						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="要">
-							<EasingDoubleKeyFrame KeyTime="0" Value="0"/>
-							<EasingDoubleKeyFrame KeyTime="0:0:7" Value="0"/>
-							<EasingDoubleKeyFrame KeyTime="0:0:8" Value="1"/>
-							<EasingDoubleKeyFrame KeyTime="0:0:9" Value="1"/>
-							<EasingDoubleKeyFrame KeyTime="0:0:10" Value="1"/>
-							<EasingDoubleKeyFrame KeyTime="0:0:11" Value="0"/>
+							<EasingDoubleKeyFrame KeyTime="0" Value="0">
+								<EasingDoubleKeyFrame.EasingFunction>
+									<ElasticEase EasingMode="EaseInOut"/>
+								</EasingDoubleKeyFrame.EasingFunction>
+							</EasingDoubleKeyFrame>
+							<EasingDoubleKeyFrame KeyTime="0:0:7" Value="0">
+								<EasingDoubleKeyFrame.EasingFunction>
+									<ElasticEase EasingMode="EaseInOut"/>
+								</EasingDoubleKeyFrame.EasingFunction>
+							</EasingDoubleKeyFrame>
+							<EasingDoubleKeyFrame KeyTime="0:0:8" Value="1">
+								<EasingDoubleKeyFrame.EasingFunction>
+									<ElasticEase EasingMode="EaseInOut"/>
+								</EasingDoubleKeyFrame.EasingFunction>
+							</EasingDoubleKeyFrame>
+							<EasingDoubleKeyFrame KeyTime="0:0:9" Value="1">
+								<EasingDoubleKeyFrame.EasingFunction>
+									<ElasticEase EasingMode="EaseInOut"/>
+								</EasingDoubleKeyFrame.EasingFunction>
+							</EasingDoubleKeyFrame>
+							<EasingDoubleKeyFrame KeyTime="0:0:10" Value="1">
+								<EasingDoubleKeyFrame.EasingFunction>
+									<ElasticEase EasingMode="EaseInOut"/>
+								</EasingDoubleKeyFrame.EasingFunction>
+							</EasingDoubleKeyFrame>
+							<EasingDoubleKeyFrame KeyTime="0:0:11" Value="0">
+								<EasingDoubleKeyFrame.EasingFunction>
+									<ElasticEase EasingMode="EaseInOut"/>
+								</EasingDoubleKeyFrame.EasingFunction>
+							</EasingDoubleKeyFrame>
 						</DoubleAnimationUsingKeyFrames>
 						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="无">
-							<EasingDoubleKeyFrame KeyTime="0" Value="0"/>
-							<EasingDoubleKeyFrame KeyTime="0:0:7" Value="0"/>
-							<EasingDoubleKeyFrame KeyTime="0:0:8" Value="1"/>
-							<EasingDoubleKeyFrame KeyTime="0:0:9" Value="1"/>
-							<EasingDoubleKeyFrame KeyTime="0:0:10" Value="1"/>
-							<EasingDoubleKeyFrame KeyTime="0:0:11" Value="1"/>
-							<EasingDoubleKeyFrame KeyTime="0:0:13" Value="1"/>
-							<EasingDoubleKeyFrame KeyTime="0:0:14" Value="0"/>
+							<EasingDoubleKeyFrame KeyTime="0" Value="0">
+								<EasingDoubleKeyFrame.EasingFunction>
+									<ElasticEase EasingMode="EaseInOut"/>
+								</EasingDoubleKeyFrame.EasingFunction>
+							</EasingDoubleKeyFrame>
+							<EasingDoubleKeyFrame KeyTime="0:0:7" Value="0">
+								<EasingDoubleKeyFrame.EasingFunction>
+									<ElasticEase EasingMode="EaseInOut"/>
+								</EasingDoubleKeyFrame.EasingFunction>
+							</EasingDoubleKeyFrame>
+							<EasingDoubleKeyFrame KeyTime="0:0:8" Value="1">
+								<EasingDoubleKeyFrame.EasingFunction>
+									<ElasticEase EasingMode="EaseInOut"/>
+								</EasingDoubleKeyFrame.EasingFunction>
+							</EasingDoubleKeyFrame>
+							<EasingDoubleKeyFrame KeyTime="0:0:9" Value="1">
+								<EasingDoubleKeyFrame.EasingFunction>
+									<ElasticEase EasingMode="EaseInOut"/>
+								</EasingDoubleKeyFrame.EasingFunction>
+							</EasingDoubleKeyFrame>
+							<EasingDoubleKeyFrame KeyTime="0:0:10" Value="1">
+								<EasingDoubleKeyFrame.EasingFunction>
+									<ElasticEase EasingMode="EaseInOut"/>
+								</EasingDoubleKeyFrame.EasingFunction>
+							</EasingDoubleKeyFrame>
+							<EasingDoubleKeyFrame KeyTime="0:0:11" Value="1">
+								<EasingDoubleKeyFrame.EasingFunction>
+									<QuinticEase EasingMode="EaseInOut"/>
+								</EasingDoubleKeyFrame.EasingFunction>
+							</EasingDoubleKeyFrame>
+							<EasingDoubleKeyFrame KeyTime="0:0:13" Value="1">
+								<EasingDoubleKeyFrame.EasingFunction>
+									<ElasticEase EasingMode="EaseInOut"/>
+								</EasingDoubleKeyFrame.EasingFunction>
+							</EasingDoubleKeyFrame>
+							<EasingDoubleKeyFrame KeyTime="0:0:14" Value="0">
+								<EasingDoubleKeyFrame.EasingFunction>
+									<ElasticEase EasingMode="EaseInOut"/>
+								</EasingDoubleKeyFrame.EasingFunction>
+							</EasingDoubleKeyFrame>
 						</DoubleAnimationUsingKeyFrames>
 						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="尽">
-							<EasingDoubleKeyFrame KeyTime="0" Value="0"/>
-							<EasingDoubleKeyFrame KeyTime="0:0:7" Value="0"/>
-							<EasingDoubleKeyFrame KeyTime="0:0:8" Value="1"/>
-							<EasingDoubleKeyFrame KeyTime="0:0:9" Value="1"/>
-							<EasingDoubleKeyFrame KeyTime="0:0:10" Value="1"/>
-							<EasingDoubleKeyFrame KeyTime="0:0:11" Value="1"/>
-							<EasingDoubleKeyFrame KeyTime="0:0:13" Value="1"/>
-							<EasingDoubleKeyFrame KeyTime="0:0:14" Value="0"/>
+							<EasingDoubleKeyFrame KeyTime="0" Value="0">
+								<EasingDoubleKeyFrame.EasingFunction>
+									<ElasticEase EasingMode="EaseInOut"/>
+								</EasingDoubleKeyFrame.EasingFunction>
+							</EasingDoubleKeyFrame>
+							<EasingDoubleKeyFrame KeyTime="0:0:7" Value="0">
+								<EasingDoubleKeyFrame.EasingFunction>
+									<ElasticEase EasingMode="EaseInOut"/>
+								</EasingDoubleKeyFrame.EasingFunction>
+							</EasingDoubleKeyFrame>
+							<EasingDoubleKeyFrame KeyTime="0:0:8" Value="1">
+								<EasingDoubleKeyFrame.EasingFunction>
+									<ElasticEase EasingMode="EaseInOut"/>
+								</EasingDoubleKeyFrame.EasingFunction>
+							</EasingDoubleKeyFrame>
+							<EasingDoubleKeyFrame KeyTime="0:0:9" Value="1">
+								<EasingDoubleKeyFrame.EasingFunction>
+									<ElasticEase EasingMode="EaseInOut"/>
+								</EasingDoubleKeyFrame.EasingFunction>
+							</EasingDoubleKeyFrame>
+							<EasingDoubleKeyFrame KeyTime="0:0:10" Value="1">
+								<EasingDoubleKeyFrame.EasingFunction>
+									<ElasticEase EasingMode="EaseInOut"/>
+								</EasingDoubleKeyFrame.EasingFunction>
+							</EasingDoubleKeyFrame>
+							<EasingDoubleKeyFrame KeyTime="0:0:11" Value="1">
+								<EasingDoubleKeyFrame.EasingFunction>
+									<QuinticEase EasingMode="EaseInOut"/>
+								</EasingDoubleKeyFrame.EasingFunction>
+							</EasingDoubleKeyFrame>
+							<EasingDoubleKeyFrame KeyTime="0:0:13" Value="1">
+								<EasingDoubleKeyFrame.EasingFunction>
+									<ElasticEase EasingMode="EaseInOut"/>
+								</EasingDoubleKeyFrame.EasingFunction>
+							</EasingDoubleKeyFrame>
+							<EasingDoubleKeyFrame KeyTime="0:0:14" Value="0">
+								<EasingDoubleKeyFrame.EasingFunction>
+									<ElasticEase EasingMode="EaseInOut"/>
+								</EasingDoubleKeyFrame.EasingFunction>
+							</EasingDoubleKeyFrame>
 						</DoubleAnimationUsingKeyFrames>
 						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="的">
-							<EasingDoubleKeyFrame KeyTime="0" Value="0"/>
-							<EasingDoubleKeyFrame KeyTime="0:0:7" Value="0"/>
-							<EasingDoubleKeyFrame KeyTime="0:0:8" Value="1"/>
-							<EasingDoubleKeyFrame KeyTime="0:0:9" Value="1"/>
-							<EasingDoubleKeyFrame KeyTime="0:0:10" Value="1"/>
-							<EasingDoubleKeyFrame KeyTime="0:0:11" Value="1"/>
-							<EasingDoubleKeyFrame KeyTime="0:0:13" Value="1"/>
-							<EasingDoubleKeyFrame KeyTime="0:0:14" Value="0"/>
+							<EasingDoubleKeyFrame KeyTime="0" Value="0">
+								<EasingDoubleKeyFrame.EasingFunction>
+									<ElasticEase EasingMode="EaseInOut"/>
+								</EasingDoubleKeyFrame.EasingFunction>
+							</EasingDoubleKeyFrame>
+							<EasingDoubleKeyFrame KeyTime="0:0:7" Value="0">
+								<EasingDoubleKeyFrame.EasingFunction>
+									<ElasticEase EasingMode="EaseInOut"/>
+								</EasingDoubleKeyFrame.EasingFunction>
+							</EasingDoubleKeyFrame>
+							<EasingDoubleKeyFrame KeyTime="0:0:8" Value="1">
+								<EasingDoubleKeyFrame.EasingFunction>
+									<ElasticEase EasingMode="EaseInOut"/>
+								</EasingDoubleKeyFrame.EasingFunction>
+							</EasingDoubleKeyFrame>
+							<EasingDoubleKeyFrame KeyTime="0:0:9" Value="1">
+								<EasingDoubleKeyFrame.EasingFunction>
+									<ElasticEase EasingMode="EaseInOut"/>
+								</EasingDoubleKeyFrame.EasingFunction>
+							</EasingDoubleKeyFrame>
+							<EasingDoubleKeyFrame KeyTime="0:0:10" Value="1">
+								<EasingDoubleKeyFrame.EasingFunction>
+									<ElasticEase EasingMode="EaseInOut"/>
+								</EasingDoubleKeyFrame.EasingFunction>
+							</EasingDoubleKeyFrame>
+							<EasingDoubleKeyFrame KeyTime="0:0:11" Value="1">
+								<EasingDoubleKeyFrame.EasingFunction>
+									<QuinticEase EasingMode="EaseInOut"/>
+								</EasingDoubleKeyFrame.EasingFunction>
+							</EasingDoubleKeyFrame>
+							<EasingDoubleKeyFrame KeyTime="0:0:13" Value="1">
+								<EasingDoubleKeyFrame.EasingFunction>
+									<ElasticEase EasingMode="EaseInOut"/>
+								</EasingDoubleKeyFrame.EasingFunction>
+							</EasingDoubleKeyFrame>
+							<EasingDoubleKeyFrame KeyTime="0:0:14" Value="0">
+								<EasingDoubleKeyFrame.EasingFunction>
+									<ElasticEase EasingMode="EaseInOut"/>
+								</EasingDoubleKeyFrame.EasingFunction>
+							</EasingDoubleKeyFrame>
 						</DoubleAnimationUsingKeyFrames>
 						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="橘">
-							<EasingDoubleKeyFrame KeyTime="0" Value="0"/>
-							<EasingDoubleKeyFrame KeyTime="0:0:7" Value="0"/>
-							<EasingDoubleKeyFrame KeyTime="0:0:8" Value="1"/>
-							<EasingDoubleKeyFrame KeyTime="0:0:9" Value="1"/>
-							<EasingDoubleKeyFrame KeyTime="0:0:10" Value="1"/>
-							<EasingDoubleKeyFrame KeyTime="0:0:11" Value="1"/>
-							<EasingDoubleKeyFrame KeyTime="0:0:13" Value="1"/>
-							<EasingDoubleKeyFrame KeyTime="0:0:14" Value="0"/>
+							<EasingDoubleKeyFrame KeyTime="0" Value="0">
+								<EasingDoubleKeyFrame.EasingFunction>
+									<ElasticEase EasingMode="EaseInOut"/>
+								</EasingDoubleKeyFrame.EasingFunction>
+							</EasingDoubleKeyFrame>
+							<EasingDoubleKeyFrame KeyTime="0:0:7" Value="0">
+								<EasingDoubleKeyFrame.EasingFunction>
+									<ElasticEase EasingMode="EaseInOut"/>
+								</EasingDoubleKeyFrame.EasingFunction>
+							</EasingDoubleKeyFrame>
+							<EasingDoubleKeyFrame KeyTime="0:0:8" Value="1">
+								<EasingDoubleKeyFrame.EasingFunction>
+									<ElasticEase EasingMode="EaseInOut"/>
+								</EasingDoubleKeyFrame.EasingFunction>
+							</EasingDoubleKeyFrame>
+							<EasingDoubleKeyFrame KeyTime="0:0:9" Value="1">
+								<EasingDoubleKeyFrame.EasingFunction>
+									<ElasticEase EasingMode="EaseInOut"/>
+								</EasingDoubleKeyFrame.EasingFunction>
+							</EasingDoubleKeyFrame>
+							<EasingDoubleKeyFrame KeyTime="0:0:10" Value="1">
+								<EasingDoubleKeyFrame.EasingFunction>
+									<ElasticEase EasingMode="EaseInOut"/>
+								</EasingDoubleKeyFrame.EasingFunction>
+							</EasingDoubleKeyFrame>
+							<EasingDoubleKeyFrame KeyTime="0:0:11" Value="1">
+								<EasingDoubleKeyFrame.EasingFunction>
+									<QuinticEase EasingMode="EaseInOut"/>
+								</EasingDoubleKeyFrame.EasingFunction>
+							</EasingDoubleKeyFrame>
+							<EasingDoubleKeyFrame KeyTime="0:0:13" Value="1">
+								<EasingDoubleKeyFrame.EasingFunction>
+									<ElasticEase EasingMode="EaseInOut"/>
+								</EasingDoubleKeyFrame.EasingFunction>
+							</EasingDoubleKeyFrame>
+							<EasingDoubleKeyFrame KeyTime="0:0:14" Value="0">
+								<EasingDoubleKeyFrame.EasingFunction>
+									<ElasticEase EasingMode="EaseInOut"/>
+								</EasingDoubleKeyFrame.EasingFunction>
+							</EasingDoubleKeyFrame>
 						</DoubleAnimationUsingKeyFrames>
 						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="子">
-							<EasingDoubleKeyFrame KeyTime="0" Value="0"/>
-							<EasingDoubleKeyFrame KeyTime="0:0:7" Value="0"/>
-							<EasingDoubleKeyFrame KeyTime="0:0:8" Value="1"/>
-							<EasingDoubleKeyFrame KeyTime="0:0:9" Value="1"/>
-							<EasingDoubleKeyFrame KeyTime="0:0:10" Value="1"/>
-							<EasingDoubleKeyFrame KeyTime="0:0:11" Value="1"/>
-							<EasingDoubleKeyFrame KeyTime="0:0:13" Value="1"/>
-							<EasingDoubleKeyFrame KeyTime="0:0:14" Value="0"/>
+							<EasingDoubleKeyFrame KeyTime="0" Value="0">
+								<EasingDoubleKeyFrame.EasingFunction>
+									<ElasticEase EasingMode="EaseInOut"/>
+								</EasingDoubleKeyFrame.EasingFunction>
+							</EasingDoubleKeyFrame>
+							<EasingDoubleKeyFrame KeyTime="0:0:7" Value="0">
+								<EasingDoubleKeyFrame.EasingFunction>
+									<ElasticEase EasingMode="EaseInOut"/>
+								</EasingDoubleKeyFrame.EasingFunction>
+							</EasingDoubleKeyFrame>
+							<EasingDoubleKeyFrame KeyTime="0:0:8" Value="1">
+								<EasingDoubleKeyFrame.EasingFunction>
+									<ElasticEase EasingMode="EaseInOut"/>
+								</EasingDoubleKeyFrame.EasingFunction>
+							</EasingDoubleKeyFrame>
+							<EasingDoubleKeyFrame KeyTime="0:0:9" Value="1">
+								<EasingDoubleKeyFrame.EasingFunction>
+									<ElasticEase EasingMode="EaseInOut"/>
+								</EasingDoubleKeyFrame.EasingFunction>
+							</EasingDoubleKeyFrame>
+							<EasingDoubleKeyFrame KeyTime="0:0:10" Value="1">
+								<EasingDoubleKeyFrame.EasingFunction>
+									<ElasticEase EasingMode="EaseInOut"/>
+								</EasingDoubleKeyFrame.EasingFunction>
+							</EasingDoubleKeyFrame>
+							<EasingDoubleKeyFrame KeyTime="0:0:11" Value="1">
+								<EasingDoubleKeyFrame.EasingFunction>
+									<QuinticEase EasingMode="EaseInOut"/>
+								</EasingDoubleKeyFrame.EasingFunction>
+							</EasingDoubleKeyFrame>
+							<EasingDoubleKeyFrame KeyTime="0:0:13" Value="1">
+								<EasingDoubleKeyFrame.EasingFunction>
+									<ElasticEase EasingMode="EaseInOut"/>
+								</EasingDoubleKeyFrame.EasingFunction>
+							</EasingDoubleKeyFrame>
+							<EasingDoubleKeyFrame KeyTime="0:0:14" Value="0">
+								<EasingDoubleKeyFrame.EasingFunction>
+									<ElasticEase EasingMode="EaseInOut"/>
+								</EasingDoubleKeyFrame.EasingFunction>
+							</EasingDoubleKeyFrame>
 						</DoubleAnimationUsingKeyFrames>
 						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="于">
-							<EasingDoubleKeyFrame KeyTime="0" Value="0"/>
-							<EasingDoubleKeyFrame KeyTime="0:0:11" Value="0"/>
-							<EasingDoubleKeyFrame KeyTime="0:0:12" Value="1"/>
-							<EasingDoubleKeyFrame KeyTime="0:0:13" Value="1"/>
-							<EasingDoubleKeyFrame KeyTime="0:0:14" Value="0"/>
+							<EasingDoubleKeyFrame KeyTime="0" Value="0">
+								<EasingDoubleKeyFrame.EasingFunction>
+									<ElasticEase EasingMode="EaseInOut"/>
+								</EasingDoubleKeyFrame.EasingFunction>
+							</EasingDoubleKeyFrame>
+							<EasingDoubleKeyFrame KeyTime="0:0:11" Value="0">
+								<EasingDoubleKeyFrame.EasingFunction>
+									<ElasticEase EasingMode="EaseInOut"/>
+								</EasingDoubleKeyFrame.EasingFunction>
+							</EasingDoubleKeyFrame>
+							<EasingDoubleKeyFrame KeyTime="0:0:12" Value="1">
+								<EasingDoubleKeyFrame.EasingFunction>
+									<ElasticEase EasingMode="EaseInOut"/>
+								</EasingDoubleKeyFrame.EasingFunction>
+							</EasingDoubleKeyFrame>
+							<EasingDoubleKeyFrame KeyTime="0:0:13" Value="1">
+								<EasingDoubleKeyFrame.EasingFunction>
+									<ElasticEase EasingMode="EaseInOut"/>
+								</EasingDoubleKeyFrame.EasingFunction>
+							</EasingDoubleKeyFrame>
+							<EasingDoubleKeyFrame KeyTime="0:0:14" Value="0">
+								<EasingDoubleKeyFrame.EasingFunction>
+									<ElasticEase EasingMode="EaseInOut"/>
+								</EasingDoubleKeyFrame.EasingFunction>
+							</EasingDoubleKeyFrame>
 						</DoubleAnimationUsingKeyFrames>
 						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="是">
-							<EasingDoubleKeyFrame KeyTime="0" Value="0"/>
-							<EasingDoubleKeyFrame KeyTime="0:0:11" Value="0"/>
-							<EasingDoubleKeyFrame KeyTime="0:0:12" Value="1"/>
-							<EasingDoubleKeyFrame KeyTime="0:0:13" Value="1"/>
-							<EasingDoubleKeyFrame KeyTime="0:0:14" Value="0"/>
+							<EasingDoubleKeyFrame KeyTime="0" Value="0">
+								<EasingDoubleKeyFrame.EasingFunction>
+									<ElasticEase EasingMode="EaseInOut"/>
+								</EasingDoubleKeyFrame.EasingFunction>
+							</EasingDoubleKeyFrame>
+							<EasingDoubleKeyFrame KeyTime="0:0:11" Value="0">
+								<EasingDoubleKeyFrame.EasingFunction>
+									<ElasticEase EasingMode="EaseInOut"/>
+								</EasingDoubleKeyFrame.EasingFunction>
+							</EasingDoubleKeyFrame>
+							<EasingDoubleKeyFrame KeyTime="0:0:12" Value="1">
+								<EasingDoubleKeyFrame.EasingFunction>
+									<ElasticEase EasingMode="EaseInOut"/>
+								</EasingDoubleKeyFrame.EasingFunction>
+							</EasingDoubleKeyFrame>
+							<EasingDoubleKeyFrame KeyTime="0:0:13" Value="1">
+								<EasingDoubleKeyFrame.EasingFunction>
+									<ElasticEase EasingMode="EaseInOut"/>
+								</EasingDoubleKeyFrame.EasingFunction>
+							</EasingDoubleKeyFrame>
+							<EasingDoubleKeyFrame KeyTime="0:0:14" Value="0">
+								<EasingDoubleKeyFrame.EasingFunction>
+									<ElasticEase EasingMode="EaseInOut"/>
+								</EasingDoubleKeyFrame.EasingFunction>
+							</EasingDoubleKeyFrame>
 						</DoubleAnimationUsingKeyFrames>
 						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="就">
-							<EasingDoubleKeyFrame KeyTime="0" Value="0"/>
-							<EasingDoubleKeyFrame KeyTime="0:0:11" Value="0"/>
-							<EasingDoubleKeyFrame KeyTime="0:0:12" Value="1"/>
-							<EasingDoubleKeyFrame KeyTime="0:0:13" Value="1"/>
-							<EasingDoubleKeyFrame KeyTime="0:0:14" Value="0"/>
+							<EasingDoubleKeyFrame KeyTime="0" Value="0">
+								<EasingDoubleKeyFrame.EasingFunction>
+									<ElasticEase EasingMode="EaseInOut"/>
+								</EasingDoubleKeyFrame.EasingFunction>
+							</EasingDoubleKeyFrame>
+							<EasingDoubleKeyFrame KeyTime="0:0:11" Value="0">
+								<EasingDoubleKeyFrame.EasingFunction>
+									<ElasticEase EasingMode="EaseInOut"/>
+								</EasingDoubleKeyFrame.EasingFunction>
+							</EasingDoubleKeyFrame>
+							<EasingDoubleKeyFrame KeyTime="0:0:12" Value="1">
+								<EasingDoubleKeyFrame.EasingFunction>
+									<ElasticEase EasingMode="EaseInOut"/>
+								</EasingDoubleKeyFrame.EasingFunction>
+							</EasingDoubleKeyFrame>
+							<EasingDoubleKeyFrame KeyTime="0:0:13" Value="1">
+								<EasingDoubleKeyFrame.EasingFunction>
+									<ElasticEase EasingMode="EaseInOut"/>
+								</EasingDoubleKeyFrame.EasingFunction>
+							</EasingDoubleKeyFrame>
+							<EasingDoubleKeyFrame KeyTime="0:0:14" Value="0">
+								<EasingDoubleKeyFrame.EasingFunction>
+									<ElasticEase EasingMode="EaseInOut"/>
+								</EasingDoubleKeyFrame.EasingFunction>
+							</EasingDoubleKeyFrame>
 						</DoubleAnimationUsingKeyFrames>
 						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="了">
-							<EasingDoubleKeyFrame KeyTime="0" Value="0"/>
-							<EasingDoubleKeyFrame KeyTime="0:0:11" Value="0"/>
-							<EasingDoubleKeyFrame KeyTime="0:0:12" Value="1"/>
-							<EasingDoubleKeyFrame KeyTime="0:0:13" Value="1"/>
-							<EasingDoubleKeyFrame KeyTime="0:0:14" Value="0"/>
+							<EasingDoubleKeyFrame KeyTime="0" Value="0">
+								<EasingDoubleKeyFrame.EasingFunction>
+									<ElasticEase EasingMode="EaseInOut"/>
+								</EasingDoubleKeyFrame.EasingFunction>
+							</EasingDoubleKeyFrame>
+							<EasingDoubleKeyFrame KeyTime="0:0:11" Value="0">
+								<EasingDoubleKeyFrame.EasingFunction>
+									<ElasticEase EasingMode="EaseInOut"/>
+								</EasingDoubleKeyFrame.EasingFunction>
+							</EasingDoubleKeyFrame>
+							<EasingDoubleKeyFrame KeyTime="0:0:12" Value="1">
+								<EasingDoubleKeyFrame.EasingFunction>
+									<ElasticEase EasingMode="EaseInOut"/>
+								</EasingDoubleKeyFrame.EasingFunction>
+							</EasingDoubleKeyFrame>
+							<EasingDoubleKeyFrame KeyTime="0:0:13" Value="1">
+								<EasingDoubleKeyFrame.EasingFunction>
+									<ElasticEase EasingMode="EaseInOut"/>
+								</EasingDoubleKeyFrame.EasingFunction>
+							</EasingDoubleKeyFrame>
+							<EasingDoubleKeyFrame KeyTime="0:0:14" Value="0">
+								<EasingDoubleKeyFrame.EasingFunction>
+									<ElasticEase EasingMode="EaseInOut"/>
+								</EasingDoubleKeyFrame.EasingFunction>
+							</EasingDoubleKeyFrame>
 						</DoubleAnimationUsingKeyFrames>
 						<ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Panel.Background).(SolidColorBrush.Color)" Storyboard.TargetName="MainGrid">
 							<EasingColorKeyFrame KeyTime="0" Value="#FFF9B763"/>
@@ -232,75 +632,287 @@
 							<EasingColorKeyFrame KeyTime="0:0:30" Value="White"/>
 						</ColorAnimationUsingKeyFrames>
 						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="有">
-							<EasingDoubleKeyFrame KeyTime="0:0:1" Value="0"/>
-							<EasingDoubleKeyFrame KeyTime="0:0:2" Value="0"/>
-							<EasingDoubleKeyFrame KeyTime="0:0:3" Value="0"/>
-							<EasingDoubleKeyFrame KeyTime="0:0:4" Value="0"/>
-							<EasingDoubleKeyFrame KeyTime="0:0:7" Value="-96"/>
-							<EasingDoubleKeyFrame KeyTime="0:0:8" Value="-96"/>
-							<EasingDoubleKeyFrame KeyTime="0:0:9" Value="-96"/>
-							<EasingDoubleKeyFrame KeyTime="0:0:10" Value="-96"/>
-							<EasingDoubleKeyFrame KeyTime="0:0:11" Value="-48"/>
-							<EasingDoubleKeyFrame KeyTime="0:0:13" Value="-48"/>
-							<EasingDoubleKeyFrame KeyTime="0:0:14" Value="-48"/>
+							<EasingDoubleKeyFrame KeyTime="0:0:1" Value="0">
+								<EasingDoubleKeyFrame.EasingFunction>
+									<ElasticEase EasingMode="EaseInOut"/>
+								</EasingDoubleKeyFrame.EasingFunction>
+							</EasingDoubleKeyFrame>
+							<EasingDoubleKeyFrame KeyTime="0:0:2" Value="0">
+								<EasingDoubleKeyFrame.EasingFunction>
+									<ElasticEase EasingMode="EaseInOut"/>
+								</EasingDoubleKeyFrame.EasingFunction>
+							</EasingDoubleKeyFrame>
+							<EasingDoubleKeyFrame KeyTime="0:0:3" Value="0">
+								<EasingDoubleKeyFrame.EasingFunction>
+									<ElasticEase EasingMode="EaseInOut"/>
+								</EasingDoubleKeyFrame.EasingFunction>
+							</EasingDoubleKeyFrame>
+							<EasingDoubleKeyFrame KeyTime="0:0:4" Value="0">
+								<EasingDoubleKeyFrame.EasingFunction>
+									<ElasticEase EasingMode="EaseInOut"/>
+								</EasingDoubleKeyFrame.EasingFunction>
+							</EasingDoubleKeyFrame>
+							<EasingDoubleKeyFrame KeyTime="0:0:7" Value="-96">
+								<EasingDoubleKeyFrame.EasingFunction>
+									<ElasticEase EasingMode="EaseInOut"/>
+								</EasingDoubleKeyFrame.EasingFunction>
+							</EasingDoubleKeyFrame>
+							<EasingDoubleKeyFrame KeyTime="0:0:8" Value="-96">
+								<EasingDoubleKeyFrame.EasingFunction>
+									<ElasticEase EasingMode="EaseInOut"/>
+								</EasingDoubleKeyFrame.EasingFunction>
+							</EasingDoubleKeyFrame>
+							<EasingDoubleKeyFrame KeyTime="0:0:9" Value="-96">
+								<EasingDoubleKeyFrame.EasingFunction>
+									<ElasticEase EasingMode="EaseInOut"/>
+								</EasingDoubleKeyFrame.EasingFunction>
+							</EasingDoubleKeyFrame>
+							<EasingDoubleKeyFrame KeyTime="0:0:10" Value="-96">
+								<EasingDoubleKeyFrame.EasingFunction>
+									<ElasticEase EasingMode="EaseInOut"/>
+								</EasingDoubleKeyFrame.EasingFunction>
+							</EasingDoubleKeyFrame>
+							<EasingDoubleKeyFrame KeyTime="0:0:11" Value="-48">
+								<EasingDoubleKeyFrame.EasingFunction>
+									<QuinticEase EasingMode="EaseInOut"/>
+								</EasingDoubleKeyFrame.EasingFunction>
+							</EasingDoubleKeyFrame>
+							<EasingDoubleKeyFrame KeyTime="0:0:13" Value="-48">
+								<EasingDoubleKeyFrame.EasingFunction>
+									<ElasticEase EasingMode="EaseInOut"/>
+								</EasingDoubleKeyFrame.EasingFunction>
+							</EasingDoubleKeyFrame>
+							<EasingDoubleKeyFrame KeyTime="0:0:14" Value="-48">
+								<EasingDoubleKeyFrame.EasingFunction>
+									<ElasticEase EasingMode="EaseInOut"/>
+								</EasingDoubleKeyFrame.EasingFunction>
+							</EasingDoubleKeyFrame>
 						</DoubleAnimationUsingKeyFrames>
 						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="无">
-							<EasingDoubleKeyFrame KeyTime="0:0:8" Value="0"/>
-							<EasingDoubleKeyFrame KeyTime="0:0:9" Value="0"/>
-							<EasingDoubleKeyFrame KeyTime="0:0:10" Value="0"/>
-							<EasingDoubleKeyFrame KeyTime="0:0:11" Value="144"/>
-							<EasingDoubleKeyFrame KeyTime="0:0:13" Value="144"/>
-							<EasingDoubleKeyFrame KeyTime="0:0:14" Value="144"/>
+							<EasingDoubleKeyFrame KeyTime="0:0:8" Value="0">
+								<EasingDoubleKeyFrame.EasingFunction>
+									<ElasticEase EasingMode="EaseInOut"/>
+								</EasingDoubleKeyFrame.EasingFunction>
+							</EasingDoubleKeyFrame>
+							<EasingDoubleKeyFrame KeyTime="0:0:9" Value="0">
+								<EasingDoubleKeyFrame.EasingFunction>
+									<ElasticEase EasingMode="EaseInOut"/>
+								</EasingDoubleKeyFrame.EasingFunction>
+							</EasingDoubleKeyFrame>
+							<EasingDoubleKeyFrame KeyTime="0:0:10" Value="0">
+								<EasingDoubleKeyFrame.EasingFunction>
+									<ElasticEase EasingMode="EaseInOut"/>
+								</EasingDoubleKeyFrame.EasingFunction>
+							</EasingDoubleKeyFrame>
+							<EasingDoubleKeyFrame KeyTime="0:0:11" Value="144">
+								<EasingDoubleKeyFrame.EasingFunction>
+									<QuinticEase EasingMode="EaseInOut"/>
+								</EasingDoubleKeyFrame.EasingFunction>
+							</EasingDoubleKeyFrame>
+							<EasingDoubleKeyFrame KeyTime="0:0:13" Value="144">
+								<EasingDoubleKeyFrame.EasingFunction>
+									<ElasticEase EasingMode="EaseInOut"/>
+								</EasingDoubleKeyFrame.EasingFunction>
+							</EasingDoubleKeyFrame>
+							<EasingDoubleKeyFrame KeyTime="0:0:14" Value="144">
+								<EasingDoubleKeyFrame.EasingFunction>
+									<ElasticEase EasingMode="EaseInOut"/>
+								</EasingDoubleKeyFrame.EasingFunction>
+							</EasingDoubleKeyFrame>
 						</DoubleAnimationUsingKeyFrames>
 						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="尽">
-							<EasingDoubleKeyFrame KeyTime="0:0:8" Value="0"/>
-							<EasingDoubleKeyFrame KeyTime="0:0:9" Value="0"/>
-							<EasingDoubleKeyFrame KeyTime="0:0:10" Value="0"/>
-							<EasingDoubleKeyFrame KeyTime="0:0:11" Value="144"/>
-							<EasingDoubleKeyFrame KeyTime="0:0:13" Value="144"/>
-							<EasingDoubleKeyFrame KeyTime="0:0:14" Value="144"/>
+							<EasingDoubleKeyFrame KeyTime="0:0:8" Value="0">
+								<EasingDoubleKeyFrame.EasingFunction>
+									<ElasticEase EasingMode="EaseInOut"/>
+								</EasingDoubleKeyFrame.EasingFunction>
+							</EasingDoubleKeyFrame>
+							<EasingDoubleKeyFrame KeyTime="0:0:9" Value="0">
+								<EasingDoubleKeyFrame.EasingFunction>
+									<ElasticEase EasingMode="EaseInOut"/>
+								</EasingDoubleKeyFrame.EasingFunction>
+							</EasingDoubleKeyFrame>
+							<EasingDoubleKeyFrame KeyTime="0:0:10" Value="0">
+								<EasingDoubleKeyFrame.EasingFunction>
+									<ElasticEase EasingMode="EaseInOut"/>
+								</EasingDoubleKeyFrame.EasingFunction>
+							</EasingDoubleKeyFrame>
+							<EasingDoubleKeyFrame KeyTime="0:0:11" Value="144">
+								<EasingDoubleKeyFrame.EasingFunction>
+									<QuinticEase EasingMode="EaseInOut"/>
+								</EasingDoubleKeyFrame.EasingFunction>
+							</EasingDoubleKeyFrame>
+							<EasingDoubleKeyFrame KeyTime="0:0:13" Value="144">
+								<EasingDoubleKeyFrame.EasingFunction>
+									<ElasticEase EasingMode="EaseInOut"/>
+								</EasingDoubleKeyFrame.EasingFunction>
+							</EasingDoubleKeyFrame>
+							<EasingDoubleKeyFrame KeyTime="0:0:14" Value="144">
+								<EasingDoubleKeyFrame.EasingFunction>
+									<ElasticEase EasingMode="EaseInOut"/>
+								</EasingDoubleKeyFrame.EasingFunction>
+							</EasingDoubleKeyFrame>
 						</DoubleAnimationUsingKeyFrames>
 						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="的">
-							<EasingDoubleKeyFrame KeyTime="0:0:8" Value="0"/>
-							<EasingDoubleKeyFrame KeyTime="0:0:9" Value="0"/>
-							<EasingDoubleKeyFrame KeyTime="0:0:10" Value="0"/>
-							<EasingDoubleKeyFrame KeyTime="0:0:11" Value="144"/>
-							<EasingDoubleKeyFrame KeyTime="0:0:13" Value="144"/>
-							<EasingDoubleKeyFrame KeyTime="0:0:14" Value="144"/>
+							<EasingDoubleKeyFrame KeyTime="0:0:8" Value="0">
+								<EasingDoubleKeyFrame.EasingFunction>
+									<ElasticEase EasingMode="EaseInOut"/>
+								</EasingDoubleKeyFrame.EasingFunction>
+							</EasingDoubleKeyFrame>
+							<EasingDoubleKeyFrame KeyTime="0:0:9" Value="0">
+								<EasingDoubleKeyFrame.EasingFunction>
+									<ElasticEase EasingMode="EaseInOut"/>
+								</EasingDoubleKeyFrame.EasingFunction>
+							</EasingDoubleKeyFrame>
+							<EasingDoubleKeyFrame KeyTime="0:0:10" Value="0">
+								<EasingDoubleKeyFrame.EasingFunction>
+									<ElasticEase EasingMode="EaseInOut"/>
+								</EasingDoubleKeyFrame.EasingFunction>
+							</EasingDoubleKeyFrame>
+							<EasingDoubleKeyFrame KeyTime="0:0:11" Value="144">
+								<EasingDoubleKeyFrame.EasingFunction>
+									<QuinticEase EasingMode="EaseInOut"/>
+								</EasingDoubleKeyFrame.EasingFunction>
+							</EasingDoubleKeyFrame>
+							<EasingDoubleKeyFrame KeyTime="0:0:13" Value="144">
+								<EasingDoubleKeyFrame.EasingFunction>
+									<ElasticEase EasingMode="EaseInOut"/>
+								</EasingDoubleKeyFrame.EasingFunction>
+							</EasingDoubleKeyFrame>
+							<EasingDoubleKeyFrame KeyTime="0:0:14" Value="144">
+								<EasingDoubleKeyFrame.EasingFunction>
+									<ElasticEase EasingMode="EaseInOut"/>
+								</EasingDoubleKeyFrame.EasingFunction>
+							</EasingDoubleKeyFrame>
 						</DoubleAnimationUsingKeyFrames>
 						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="橘">
-							<EasingDoubleKeyFrame KeyTime="0:0:8" Value="0"/>
-							<EasingDoubleKeyFrame KeyTime="0:0:9" Value="0"/>
-							<EasingDoubleKeyFrame KeyTime="0:0:10" Value="0"/>
-							<EasingDoubleKeyFrame KeyTime="0:0:11" Value="144"/>
-							<EasingDoubleKeyFrame KeyTime="0:0:13" Value="144"/>
-							<EasingDoubleKeyFrame KeyTime="0:0:14" Value="144"/>
+							<EasingDoubleKeyFrame KeyTime="0:0:8" Value="0">
+								<EasingDoubleKeyFrame.EasingFunction>
+									<ElasticEase EasingMode="EaseInOut"/>
+								</EasingDoubleKeyFrame.EasingFunction>
+							</EasingDoubleKeyFrame>
+							<EasingDoubleKeyFrame KeyTime="0:0:9" Value="0">
+								<EasingDoubleKeyFrame.EasingFunction>
+									<ElasticEase EasingMode="EaseInOut"/>
+								</EasingDoubleKeyFrame.EasingFunction>
+							</EasingDoubleKeyFrame>
+							<EasingDoubleKeyFrame KeyTime="0:0:10" Value="0">
+								<EasingDoubleKeyFrame.EasingFunction>
+									<ElasticEase EasingMode="EaseInOut"/>
+								</EasingDoubleKeyFrame.EasingFunction>
+							</EasingDoubleKeyFrame>
+							<EasingDoubleKeyFrame KeyTime="0:0:11" Value="144">
+								<EasingDoubleKeyFrame.EasingFunction>
+									<QuinticEase EasingMode="EaseInOut"/>
+								</EasingDoubleKeyFrame.EasingFunction>
+							</EasingDoubleKeyFrame>
+							<EasingDoubleKeyFrame KeyTime="0:0:13" Value="144">
+								<EasingDoubleKeyFrame.EasingFunction>
+									<ElasticEase EasingMode="EaseInOut"/>
+								</EasingDoubleKeyFrame.EasingFunction>
+							</EasingDoubleKeyFrame>
+							<EasingDoubleKeyFrame KeyTime="0:0:14" Value="144">
+								<EasingDoubleKeyFrame.EasingFunction>
+									<ElasticEase EasingMode="EaseInOut"/>
+								</EasingDoubleKeyFrame.EasingFunction>
+							</EasingDoubleKeyFrame>
 						</DoubleAnimationUsingKeyFrames>
 						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="子">
-							<EasingDoubleKeyFrame KeyTime="0:0:8" Value="0"/>
-							<EasingDoubleKeyFrame KeyTime="0:0:9" Value="0"/>
-							<EasingDoubleKeyFrame KeyTime="0:0:10" Value="0"/>
-							<EasingDoubleKeyFrame KeyTime="0:0:11" Value="144"/>
-							<EasingDoubleKeyFrame KeyTime="0:0:13" Value="144"/>
-							<EasingDoubleKeyFrame KeyTime="0:0:14" Value="144"/>
+							<EasingDoubleKeyFrame KeyTime="0:0:8" Value="0">
+								<EasingDoubleKeyFrame.EasingFunction>
+									<ElasticEase EasingMode="EaseInOut"/>
+								</EasingDoubleKeyFrame.EasingFunction>
+							</EasingDoubleKeyFrame>
+							<EasingDoubleKeyFrame KeyTime="0:0:9" Value="0">
+								<EasingDoubleKeyFrame.EasingFunction>
+									<ElasticEase EasingMode="EaseInOut"/>
+								</EasingDoubleKeyFrame.EasingFunction>
+							</EasingDoubleKeyFrame>
+							<EasingDoubleKeyFrame KeyTime="0:0:10" Value="0">
+								<EasingDoubleKeyFrame.EasingFunction>
+									<ElasticEase EasingMode="EaseInOut"/>
+								</EasingDoubleKeyFrame.EasingFunction>
+							</EasingDoubleKeyFrame>
+							<EasingDoubleKeyFrame KeyTime="0:0:11" Value="144">
+								<EasingDoubleKeyFrame.EasingFunction>
+									<QuinticEase EasingMode="EaseInOut"/>
+								</EasingDoubleKeyFrame.EasingFunction>
+							</EasingDoubleKeyFrame>
+							<EasingDoubleKeyFrame KeyTime="0:0:13" Value="144">
+								<EasingDoubleKeyFrame.EasingFunction>
+									<ElasticEase EasingMode="EaseInOut"/>
+								</EasingDoubleKeyFrame.EasingFunction>
+							</EasingDoubleKeyFrame>
+							<EasingDoubleKeyFrame KeyTime="0:0:14" Value="144">
+								<EasingDoubleKeyFrame.EasingFunction>
+									<ElasticEase EasingMode="EaseInOut"/>
+								</EasingDoubleKeyFrame.EasingFunction>
+							</EasingDoubleKeyFrame>
 						</DoubleAnimationUsingKeyFrames>
 						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="要">
-							<EasingDoubleKeyFrame KeyTime="0:0:10" Value="0"/>
-							<EasingDoubleKeyFrame KeyTime="0:0:11" Value="1"/>
+							<EasingDoubleKeyFrame KeyTime="0:0:10" Value="0">
+								<EasingDoubleKeyFrame.EasingFunction>
+									<ElasticEase EasingMode="EaseInOut"/>
+								</EasingDoubleKeyFrame.EasingFunction>
+							</EasingDoubleKeyFrame>
+							<EasingDoubleKeyFrame KeyTime="0:0:11" Value="1">
+								<EasingDoubleKeyFrame.EasingFunction>
+									<ElasticEase EasingMode="EaseInOut"/>
+								</EasingDoubleKeyFrame.EasingFunction>
+							</EasingDoubleKeyFrame>
 						</DoubleAnimationUsingKeyFrames>
 						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="Label">
-							<EasingDoubleKeyFrame KeyTime="0" Value="0"/>
-							<EasingDoubleKeyFrame KeyTime="0:0:19" Value="0"/>
-							<EasingDoubleKeyFrame KeyTime="0:0:20" Value="1"/>
-							<EasingDoubleKeyFrame KeyTime="0:0:25" Value="1"/>
-							<EasingDoubleKeyFrame KeyTime="0:0:26" Value="0"/>
+							<EasingDoubleKeyFrame KeyTime="0" Value="0">
+								<EasingDoubleKeyFrame.EasingFunction>
+									<ElasticEase EasingMode="EaseInOut"/>
+								</EasingDoubleKeyFrame.EasingFunction>
+							</EasingDoubleKeyFrame>
+							<EasingDoubleKeyFrame KeyTime="0:0:15" Value="0">
+								<EasingDoubleKeyFrame.EasingFunction>
+									<ElasticEase EasingMode="EaseInOut"/>
+								</EasingDoubleKeyFrame.EasingFunction>
+							</EasingDoubleKeyFrame>
+							<EasingDoubleKeyFrame KeyTime="0:0:20" Value="1">
+								<EasingDoubleKeyFrame.EasingFunction>
+									<ElasticEase EasingMode="EaseInOut"/>
+								</EasingDoubleKeyFrame.EasingFunction>
+							</EasingDoubleKeyFrame>
+							<EasingDoubleKeyFrame KeyTime="0:0:25" Value="1">
+								<EasingDoubleKeyFrame.EasingFunction>
+									<ElasticEase EasingMode="EaseInOut"/>
+								</EasingDoubleKeyFrame.EasingFunction>
+							</EasingDoubleKeyFrame>
+							<EasingDoubleKeyFrame KeyTime="0:0:26" Value="0">
+								<EasingDoubleKeyFrame.EasingFunction>
+									<ElasticEase EasingMode="EaseInOut"/>
+								</EasingDoubleKeyFrame.EasingFunction>
+							</EasingDoubleKeyFrame>
 						</DoubleAnimationUsingKeyFrames>
 						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="真高兴你来了">
-							<EasingDoubleKeyFrame KeyTime="0" Value="0"/>
-							<EasingDoubleKeyFrame KeyTime="0:0:26" Value="0"/>
-							<EasingDoubleKeyFrame KeyTime="0:0:27" Value="1"/>
-							<EasingDoubleKeyFrame KeyTime="0:0:28" Value="1"/>
-							<EasingDoubleKeyFrame KeyTime="0:0:29" Value="0"/>
+							<EasingDoubleKeyFrame KeyTime="0" Value="0">
+								<EasingDoubleKeyFrame.EasingFunction>
+									<ElasticEase EasingMode="EaseInOut"/>
+								</EasingDoubleKeyFrame.EasingFunction>
+							</EasingDoubleKeyFrame>
+							<EasingDoubleKeyFrame KeyTime="0:0:26" Value="0">
+								<EasingDoubleKeyFrame.EasingFunction>
+									<ElasticEase EasingMode="EaseInOut"/>
+								</EasingDoubleKeyFrame.EasingFunction>
+							</EasingDoubleKeyFrame>
+							<EasingDoubleKeyFrame KeyTime="0:0:27" Value="1">
+								<EasingDoubleKeyFrame.EasingFunction>
+									<ElasticEase EasingMode="EaseInOut"/>
+								</EasingDoubleKeyFrame.EasingFunction>
+							</EasingDoubleKeyFrame>
+							<EasingDoubleKeyFrame KeyTime="0:0:28" Value="1">
+								<EasingDoubleKeyFrame.EasingFunction>
+									<ElasticEase EasingMode="EaseInOut"/>
+								</EasingDoubleKeyFrame.EasingFunction>
+							</EasingDoubleKeyFrame>
+							<EasingDoubleKeyFrame KeyTime="0:0:29" Value="0">
+								<EasingDoubleKeyFrame.EasingFunction>
+									<ElasticEase EasingMode="EaseInOut"/>
+								</EasingDoubleKeyFrame.EasingFunction>
+							</EasingDoubleKeyFrame>
 						</DoubleAnimationUsingKeyFrames>
 					</Storyboard>
 				</VisualState>
@@ -308,7 +920,7 @@
 		</VisualStateManager.VisualStateGroups>
 
 		<Grid x:Name="AnimationGrid" HorizontalAlignment="Left" VerticalAlignment="Top" Loaded="AnimationGrid_Loaded" Width="1366" Height="768">
-			<TextBlock x:Name="有一天" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" Text="有一天" Margin="0" Foreground="White" FontFamily="Microsoft YaHei" FontSize="96" Visibility="Collapsed" d:IsHidden="True"/>
+			<TextBlock x:Name="有一天" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" Text="有一天" Margin="0" Foreground="White" FontFamily="Microsoft YaHei" FontSize="96" Visibility="Collapsed"/>
 			<TextBlock x:Name="Wencey说" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" Margin="0" Foreground="White" FontFamily="Microsoft YaHei" FontSize="96" d:IsHidden="True" Visibility="Collapsed">
 				<Run Text="Wencey说"/>
 			</TextBlock>

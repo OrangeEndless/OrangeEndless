@@ -91,17 +91,17 @@ namespace OrangeEndLess
 			}
 		}
 
-		public decimal Level
-		{
-			get
-			{
-				return Convert . ToDecimal ( GameData . Values [ "LevelOf" + Key ] ) + 1;
-			}
-			set
-			{
-				GameData . Values [ "LevelOf" + Key ] = ( value - 1 ) . ToString ( );
-			}
-		}
+		//public decimal Level
+		//{
+		//	get
+		//	{
+		//		return Convert . ToDecimal ( GameData . Values [ "LevelOf" + Key ] ) + 1;
+		//	}
+		//	set
+		//	{
+		//		GameData . Values [ "LevelOf" + Key ] = ( value - 1 ) . ToString ( );
+		//	}
+		//}
 
 		public decimal Price
 		{

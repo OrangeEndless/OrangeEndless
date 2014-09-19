@@ -63,6 +63,9 @@
     <PRIResource Include="$(MSBuildThisFileDirectory)Resource\ConsoleResources.resw" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="$(MSBuildThisFileDirectory)Money.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="$(MSBuildThisFileDirectory)a.jpg" />
     <Content Include="$(MSBuildThisFileDirectory)Images\ConsoleBlack.png" />
     <Content Include="$(MSBuildThisFileDirectory)Images\ConsoleWhite.png" />

@@ -7,6 +7,9 @@
     <RootPropertyPathName Name="TextConsoleCommand" />
     <RootPropertyPathName Name="ConsoleText" />
     <RootPropertyPathName Name="CommandRush" />
+    <RootPropertyPathName Name="NOM" />
+    <RootPropertyPathName Name="CPSOO" />
+    <RootPropertyPathName Name="CPSOOD" />
     <RootPropertyPathName Name="NOO" />
     <RootPropertyPathName Name="TextBlockNumberOfOrangeSmallOut" />
     <RootPropertyPathName Name="TextBlockNumberOfMoneySmallOut" />
@@ -42,6 +45,7 @@
       <RootProperty Name="Style" />
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Margin" />
+      <RootProperty Name="Visibility" />
       <RootProperty Name="MinHeight" />
       <RootProperty Name="AcceptsReturn" />
       <RootEvent Name="KeyUp" />
@@ -156,9 +160,8 @@
       <RootProperty Name="Foreground" />
       <RootProperty Name="Text" />
       <RootProperty Name="FontStyle" />
-      <RootProperty Name="Height" />
-      <RootProperty Name="Width" />
       <RootProperty Name="FontFamily" />
+      <RootProperty Name="Height" />
       <RootProperty Name="Visibility" />
       <RootProperty Name="Inlines" />
       <RootProperty Name="RenderTransformOrigin" />
@@ -275,6 +278,10 @@
       <RootProperty Name="Orientation" />
       <RootProperty Name="Children" />
     </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ToolTipService">
+      <RootMethod Name="GetToolTip" />
+      <RootMethod Name="SetToolTip" />
+    </RootType>
     <RootType FullName="Windows.UI.Xaml.Media.CompositeTransform">
       <RootProperty Name="ScaleX" />
       <RootProperty Name="ScaleY" />
@@ -297,10 +304,17 @@
     <RootType FullName="Windows.UI.Xaml.Media.Animation.EasingDoubleKeyFrame">
       <RootProperty Name="KeyTime" />
       <RootProperty Name="Value" />
+      <RootProperty Name="EasingFunction" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Media.Animation.EasingColorKeyFrame">
       <RootProperty Name="KeyTime" />
       <RootProperty Name="Value" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Media.Animation.ElasticEase">
+      <RootProperty Name="EasingMode" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Media.Animation.QuinticEase">
+      <RootProperty Name="EasingMode" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Documents.Run">
       <RootProperty Name="Text" />

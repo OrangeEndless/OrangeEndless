@@ -41,14 +41,35 @@ namespace OrangeEndLess
 
 		private void MainGird_Loaded ( object sender , RoutedEventArgs e )
 		{
+			#region LIOverView
 			LIOverView . TheControls . Add ( GridOverView );
 			LIOverView . TheControls . Add ( SPOverView );
+			#endregion
 
+			#region LIProduce
 			LIProduce . TheControls . Add ( GridProduce );
+			#endregion
+
+			#region LIStore
 			LIStore . TheControls . Add ( GridStore );
+			#endregion
+
+			#region LIAchievement
 			LIAchievement . TheControls . Add ( GridAchievement );
+			#endregion
+
+			#region LIConsole
 			LIConsole . TheControls . Add ( GridConsole );
+			#endregion
+
+			#region LIData
+			LIData . TheControls . Add ( GridData );
+			#endregion
+
+			#region LISetting
 			LISetting . TheControls . Add ( GridSetting );
+			#endregion
+
 		}
 
 		private void TBCommand_KeyUp ( object sender , KeyRoutedEventArgs e )

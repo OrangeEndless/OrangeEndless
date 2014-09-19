@@ -227,6 +227,7 @@ namespace OrangeEndLess
 				{
 					Setup ( );
 				}
+				Starting ( );
 			}
 
 		}

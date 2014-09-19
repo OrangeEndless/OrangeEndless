@@ -76,6 +76,9 @@
       <PackagePath>Assets\WideLogo.scale-240.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Class 4\Documents\Visual Studio 2013\Projects\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.Shared\Money.png">
+      <PackagePath>Money.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Class 4\Documents\Visual Studio 2013\Projects\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.Shared\Images\ConsoleBlack.png">
       <PackagePath>Images\ConsoleBlack.png</PackagePath>
     </AppxPackagedFile>
