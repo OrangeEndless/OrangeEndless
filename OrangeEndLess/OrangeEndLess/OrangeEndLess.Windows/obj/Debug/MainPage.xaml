@@ -186,6 +186,7 @@
 					<RowDefinition/>
 				</Grid.RowDefinitions>
 				<TextBlock Margin="0,10,0,0" TextWrapping="Wrap" Text="{StaticResource Overview}" FontSize="28"/>
+				<local:BuildingItemView HorizontalAlignment="Left" Margin="424,10,0,0" VerticalAlignment="Top" Height="357"/>
 				<ScrollViewer Margin="0" Grid.Row="1">
 					<StackPanel>
 						<TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="{Binding NOO}" VerticalAlignment="Top"/>

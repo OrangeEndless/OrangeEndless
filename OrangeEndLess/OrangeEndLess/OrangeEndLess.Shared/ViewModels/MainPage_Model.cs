@@ -38,6 +38,7 @@ namespace OrangeEndLess . ViewModels
 			GameCore . UpdateNumberOfMoney += GameCore_UpdateNumberOfMoney;
 			GameCore . UpdateNumberOfOrange += GameCore_UpdateNumberOfOrange;
 			GameCore . UpdateConsole += Consoles_UpdateConsole;
+			
 		}
 
 		void Consoles_UpdateConsole ( object sender , EventArgs e )
@@ -69,8 +70,6 @@ namespace OrangeEndLess . ViewModels
 			decimal _NOBK=0;
 			string _NOBD=string . Empty;
 
-
-
 			#region LoadCPSOOD
 			foreach ( var item in GameCore . Buildings )
 			{
@@ -86,19 +85,18 @@ namespace OrangeEndLess . ViewModels
 				}
 			}
 			#endregion
-
-			#region
+			#region LoadNOBD
 			_NOBD = _NOBD . Trim ( );
 			_NOBD += string . Format ( System . Environment . NewLine + "总和:{0}/s" , GameCore . NumberOfBuilding );
 			NOBD = _NOBD . Trim ( );
 			#endregion
-			#region
+			#region LoadCPSOOD
 			_CPSOOD = _CPSOOD . Trim ( );
 			_CPSOOD += string . Format ( System . Environment . NewLine + "总和:{0}/s" , GameCore . SpeedOfOrangeRise );
 			CPSOOD = _CPSOOD . Trim ( );
 			#endregion
-			_NOB = GameCore . NumberOfBuilding;
 
+			_NOB = GameCore . NumberOfBuilding;
 
 		}
 
@@ -124,7 +122,7 @@ namespace OrangeEndLess . ViewModels
 		protected Property<string> _NOM = new Property<string> { LocatorFunc = _NOMLocator };
 		static Func<BindableBase,ValueContainer<string>> _NOMLocator= RegisterContainerLocator<string> ( "NOM" , model => model . Initialize ( "NOM" , ref model . _NOM , ref _NOMLocator , _NOMDefaultValueFactory ) );
 		static Func<BindableBase,string> _NOMDefaultValueFactory = 
-            model =>
+			model =>
 			{
 				var vm = CastToCurrentType ( model );
 				//TODO: Add the logic that produce default value from vm current status.
@@ -144,7 +142,7 @@ namespace OrangeEndLess . ViewModels
 		protected Property<string> _NOMHG = new Property<string> { LocatorFunc = _NOMHGLocator };
 		static Func<BindableBase,ValueContainer<string>> _NOMHGLocator= RegisterContainerLocator<string> ( "NOMHG" , model => model . Initialize ( "NOMHG" , ref model . _NOMHG , ref _NOMHGLocator , _NOMHGDefaultValueFactory ) );
 		static Func<BindableBase,string> _NOMHGDefaultValueFactory = 
-            model =>
+			model =>
 			{
 				var vm = CastToCurrentType ( model );
 				return string . Format ( "你制造的钱总数：{0}" , decimal . Floor ( vm . GameCore . NumberOfMoneyHaveGet ) . ToString ( ) );
@@ -221,7 +219,7 @@ namespace OrangeEndLess . ViewModels
 		protected Property<string> _CPSOOD = new Property<string> { LocatorFunc = _CPSOODLocator };
 		static Func<BindableBase,ValueContainer<string>> _CPSOODLocator= RegisterContainerLocator<string> ( "CPSOOD" , model => model . Initialize ( "CPSOOD" , ref model . _CPSOOD , ref _CPSOODLocator , _CPSOODDefaultValueFactory ) );
 		static Func<BindableBase,string> _CPSOODDefaultValueFactory = 
-            model =>
+			model =>
 			{
 				var vm = CastToCurrentType ( model );
 				string Temp = string . Empty;
@@ -250,7 +248,7 @@ namespace OrangeEndLess . ViewModels
 		protected Property<string > _NOB = new Property<string> { LocatorFunc = _NOBLocator };
 		static Func<BindableBase,ValueContainer<string >> _NOBLocator= RegisterContainerLocator<string> ( "NOB" , model => model . Initialize ( "NOB" , ref model . _NOB , ref _NOBLocator , _NOBDefaultValueFactory ) );
 		static Func<BindableBase,string > _NOBDefaultValueFactory = 
-            model =>
+			model =>
 			{
 				var vm = CastToCurrentType ( model );
 				//TODO: Add the logic that produce default value from vm current status.
@@ -270,13 +268,33 @@ namespace OrangeEndLess . ViewModels
 		protected Property<string> _NOBD = new Property<string> { LocatorFunc = _NOBDLocator };
 		static Func<BindableBase,ValueContainer<string>> _NOBDLocator= RegisterContainerLocator<string> ( "NOBD" , model => model . Initialize ( "NOBD" , ref model . _NOBD , ref _NOBDLocator , _NOBDDefaultValueFactory ) );
 		static Func<BindableBase,string> _NOBDDefaultValueFactory = 
-            model =>
+			model =>
 			{
 				var vm = CastToCurrentType ( model );
 				//TODO: Add the logic that produce default value from vm current status.
 				return default ( string );
 			};
 		#endregion
+
+
+		
+		public List<Building> BL
+		{
+			get { return _BLLocator ( this ) . Value; }
+			set { _BLLocator ( this ) . SetValueAndTryNotify ( value ); }
+		}
+		#region Property List<Building> BL Setup
+		protected Property<List<Building>> _BL = new Property<List<Building>> { LocatorFunc = _BLLocator };
+		static Func<BindableBase,ValueContainer<List<Building>>> _BLLocator= RegisterContainerLocator<List<Building>> ( "BL" , model => model . Initialize ( "BL" , ref model . _BL , ref _BLLocator , _BLDefaultValueFactory ) );
+		static Func<BindableBase,List<Building>> _BLDefaultValueFactory = 
+            model =>
+			{
+				var vm = CastToCurrentType ( model );
+				//TODO: Add the logic that produce default value from vm current status.
+				return default ( List<Building> );
+			};
+		#endregion
+
 
 		#region Number Only
 
@@ -292,7 +310,7 @@ namespace OrangeEndLess . ViewModels
 		protected Property<string> _NOONO = new Property<string> { LocatorFunc = _NOONOLocator };
 		static Func<BindableBase,ValueContainer<string>> _NOONOLocator= RegisterContainerLocator<string> ( "NOONO" , model => model . Initialize ( "NOONO" , ref model . _NOONO , ref _NOONOLocator , _NOONODefaultValueFactory ) );
 		static Func<BindableBase,string> _NOONODefaultValueFactory = 
-            model =>
+			model =>
 			{
 				var vm = CastToCurrentType ( model );
 				//TODO: Add the logic that produce default value from vm current status.
@@ -312,7 +330,7 @@ namespace OrangeEndLess . ViewModels
 		protected Property<string> _NOMNO = new Property<string> { LocatorFunc = _NOMNOLocator };
 		static Func<BindableBase,ValueContainer<string>> _NOMNOLocator= RegisterContainerLocator<string> ( "NOMNO" , model => model . Initialize ( "NOMNO" , ref model . _NOMNO , ref _NOMNOLocator , _NOMNODefaultValueFactory ) );
 		static Func<BindableBase,string> _NOMNODefaultValueFactory = 
-            model =>
+			model =>
 			{
 				var vm = CastToCurrentType ( model );
 				//TODO: Add the logic that produce default value from vm current status.
@@ -332,7 +350,7 @@ namespace OrangeEndLess . ViewModels
 		protected Property<string> _NOOHGNO = new Property<string> { LocatorFunc = _NOOHGNOLocator };
 		static Func<BindableBase,ValueContainer<string>> _NOOHGNOLocator= RegisterContainerLocator<string> ( "NOOHGNO" , model => model . Initialize ( "NOOHGNO" , ref model . _NOOHGNO , ref _NOOHGNOLocator , _NOOHGNODefaultValueFactory ) );
 		static Func<BindableBase,string> _NOOHGNODefaultValueFactory = 
-            model =>
+			model =>
 			{
 				var vm = CastToCurrentType ( model );
 				//TODO: Add the logic that produce default value from vm current status.
@@ -352,7 +370,7 @@ namespace OrangeEndLess . ViewModels
 		protected Property<string> _NOBNO = new Property<string> { LocatorFunc = _NOBNOLocator };
 		static Func<BindableBase,ValueContainer<string>> _NOBNOLocator= RegisterContainerLocator<string> ( "NOBNO" , model => model . Initialize ( "NOBNO" , ref model . _NOBNO , ref _NOBNOLocator , _NOBNODefaultValueFactory ) );
 		static Func<BindableBase,string> _NOBNODefaultValueFactory = 
-            model =>
+			model =>
 			{
 				var vm = CastToCurrentType ( model );
 				//TODO: Add the logic that produce default value from vm current status.
@@ -372,7 +390,7 @@ namespace OrangeEndLess . ViewModels
 		protected Property<string> _NOBKNO = new Property<string> { LocatorFunc = _NOBKNOLocator };
 		static Func<BindableBase,ValueContainer<string>> _NOBKNOLocator= RegisterContainerLocator<string> ( "NOBKNO" , model => model . Initialize ( "NOBKNO" , ref model . _NOBKNO , ref _NOBKNOLocator , _NOBKNODefaultValueFactory ) );
 		static Func<BindableBase,string> _NOBKNODefaultValueFactory = 
-            model =>
+			model =>
 			{
 				var vm = CastToCurrentType ( model );
 				//TODO: Add the logic that produce default value from vm current status.
@@ -392,7 +410,7 @@ namespace OrangeEndLess . ViewModels
 		protected Property<string> _CPSOONO = new Property<string> { LocatorFunc = _CPSOONOLocator };
 		static Func<BindableBase,ValueContainer<string>> _CPSOONOLocator= RegisterContainerLocator<string> ( "CPSOONO" , model => model . Initialize ( "CPSOONO" , ref model . _CPSOONO , ref _CPSOONOLocator , _CPSOONODefaultValueFactory ) );
 		static Func<BindableBase,string> _CPSOONODefaultValueFactory = 
-            model =>
+			model =>
 			{
 				var vm = CastToCurrentType ( model );
 				//TODO: Add the logic that produce default value from vm current status.

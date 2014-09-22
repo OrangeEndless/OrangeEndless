@@ -101,7 +101,7 @@ namespace OrangeEndLess
                 rootFrame . ContentTransitions = null;
                 rootFrame . Navigated += this . RootFrame_FirstNavigated;
 #endif
-				GameData . Values [ "GameIsStartV2" ] = null;
+				GameData . Values [ "GameIsStartV2" ] = true;
 				// When the navigation stack isn't restored navigate to the first page,
 				// configuring the new page by passing required information as a navigation
 				// parameter

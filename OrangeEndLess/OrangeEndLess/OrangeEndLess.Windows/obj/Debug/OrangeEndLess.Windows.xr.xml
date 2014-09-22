@@ -258,6 +258,11 @@
     <RootType FullName="Windows.UI.Xaml.Controls.ItemsControl">
       <RootProperty Name="Margin" />
       <RootProperty Name="Items" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Width" />
+      <RootEvent Name="Loaded" />
     </RootType>
     <RootType FullName="OrangeEndLess.ListItem">
       <RootProperty Name="Text1" />
@@ -277,6 +282,12 @@
       <RootProperty Name="Margin" />
       <RootProperty Name="Orientation" />
       <RootProperty Name="Children" />
+    </RootType>
+    <RootType FullName="OrangeEndLess.BuildingItemView">
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Height" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ToolTipService">
       <RootMethod Name="GetToolTip" />
@@ -323,13 +334,14 @@
     <RootType FullName="Windows.UI.Xaml.Documents.LineBreak" />
     <RootType FullName="OrangeEndLess.StartPage" />
     <RootType FullName="Windows.UI.Xaml.Controls.UserControl">
+      <RootProperty Name="Content" />
       <RootProperty Name="Width" />
       <RootProperty Name="Height" />
-      <RootProperty Name="Content" />
       <RootEvent Name="PointerEntered" />
       <RootEvent Name="PointerExited" />
       <RootEvent Name="Tapped" />
     </RootType>
+    <RootType FullName="OrangeEndLess.BuildingItem" />
     <RootType FullName="OrangeEndLess.PageView" />
   </Roots.RootTypes>
 </Roots>

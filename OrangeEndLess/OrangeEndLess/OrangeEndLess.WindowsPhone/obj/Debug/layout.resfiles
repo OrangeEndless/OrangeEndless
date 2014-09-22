@@ -26,5 +26,7 @@ App.xbf
 MainPage.xbf
 OrangeEndLess.WindowsPhone.xr.xml
 StartPage.xbf
+UI\BuildingItem.xbf
+UI\BuildingItemView.xbf
 UI\ListItem.xbf
 UI\PageView.xbf
