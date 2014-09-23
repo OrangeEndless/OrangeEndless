@@ -15,9 +15,9 @@ namespace OrangeEndLess
     {
         //public Dictionary<string, RandomEvent > RandomEvents = new Dictionary<string , RandomEvent> ( );
 
-        void LoadRandomEvents ( )
-        {
+        //void LoadRandomEvents ( )
+        //{
 
-        }
+        //}
     }
 }

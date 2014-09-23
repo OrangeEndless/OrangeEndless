@@ -46,7 +46,6 @@ namespace OrangeEndLess
 
 		private void BuildingListView_Loaded ( object sender , RoutedEventArgs e )
 		{
-			this . BuildingListView . Items . Add ( TB );
 
 		}
 

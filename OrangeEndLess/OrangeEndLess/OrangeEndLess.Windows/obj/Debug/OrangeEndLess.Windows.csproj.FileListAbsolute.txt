@@ -351,7 +351,6 @@ C:\Users\Class 4\Source\Repos\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEn
 C:\Users\Class 4\Source\Repos\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.Windows\bin\Debug\System.Reactive.Linq.xml
 C:\Users\Class 4\Source\Repos\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.Windows\bin\Debug\System.Reactive.PlatformServices.xml
 C:\Users\Class 4\Source\Repos\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.Windows\bin\Debug\System.Reactive.Windows.Threading.xml
-C:\Users\Class 4\Source\Repos\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.Windows\obj\Debug\OrangeEndLess.Windows.csprojResolveAssemblyReference.cache
 C:\Users\Class 4\Source\Repos\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.Windows\obj\Debug\App.g.i.cs
 C:\Users\Class 4\Source\Repos\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.Windows\obj\Debug\App.g.cs
 C:\Users\Class 4\Source\Repos\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.Windows\obj\Debug\MainPage.g.i.cs

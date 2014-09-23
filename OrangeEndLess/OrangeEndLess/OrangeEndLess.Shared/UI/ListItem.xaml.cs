@@ -124,6 +124,7 @@ namespace OrangeEndLess
 
 		private void UserControl_Tapped ( object sender , TappedRoutedEventArgs e )
 		{
+
 		}
 
 		private void Grid_Loaded ( object sender , RoutedEventArgs e )

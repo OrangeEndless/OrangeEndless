@@ -9,127 +9,127 @@
 	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
 	xmlns:mvvm="using:MVVMSidekick.Views"
 	xmlns:vm="using:OrangeEndLess.ViewModels"
-	mc:Ignorable="d" Width="Auto">
-	<Page.Resources>
-		<ControlTemplate x:Key="ButtonConsole" TargetType="Button">
-			<Grid>
-				<VisualStateManager.VisualStateGroups>
-					<VisualStateGroup x:Name="CommonStates">
-						<VisualState x:Name="Normal"/>
-						<VisualState x:Name="Pressed">
-							<Storyboard>
-								<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill)" Storyboard.TargetName="rectangle">
-									<DiscreteObjectKeyFrame KeyTime="0">
-										<DiscreteObjectKeyFrame.Value>
-											<SolidColorBrush Color="#99FFFFFF"/>
-										</DiscreteObjectKeyFrame.Value>
-									</DiscreteObjectKeyFrame>
-								</ObjectAnimationUsingKeyFrames>
-							</Storyboard>
-						</VisualState>
-						<VisualState x:Name="Disabled"/>
-						<VisualState x:Name="PointerOver">
-							<Storyboard>
-								<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill)" Storyboard.TargetName="rectangle">
-									<DiscreteObjectKeyFrame KeyTime="0">
-										<DiscreteObjectKeyFrame.Value>
-											<SolidColorBrush Color="#66FFFFFF"/>
-										</DiscreteObjectKeyFrame.Value>
-									</DiscreteObjectKeyFrame>
-								</ObjectAnimationUsingKeyFrames>
-							</Storyboard>
-						</VisualState>
-					</VisualStateGroup>
-				</VisualStateManager.VisualStateGroups>
-				<Rectangle x:Name="rectangle" Fill="Black" StrokeThickness="0"/>
-				<TextBlock HorizontalAlignment="Center" Margin="0" TextWrapping="Wrap" Text="&gt;" VerticalAlignment="Center" FontSize="16"/>
-			</Grid>
-		</ControlTemplate>
-		<vm:MainPage_Model x:Key="DesignVM"/>
-		<Style x:Key="TextBoxConsole" TargetType="TextBox">
-			<Setter Property="MinWidth" Value="{ThemeResource TextControlThemeMinWidth}"/>
-			<Setter Property="MinHeight" Value="{ThemeResource TextControlThemeMinHeight}"/>
-			<Setter Property="Foreground" Value="{ThemeResource TextBoxForegroundThemeBrush}"/>
-			<Setter Property="Background" Value="{ThemeResource TextBoxBackgroundThemeBrush}"/>
-			<Setter Property="BorderBrush" Value="{ThemeResource TextBoxBorderThemeBrush}"/>
-			<Setter Property="SelectionHighlightColor" Value="{ThemeResource TextSelectionHighlightColorThemeBrush}"/>
-			<Setter Property="BorderThickness" Value="{ThemeResource TextControlBorderThemeThickness}"/>
-			<Setter Property="FontFamily" Value="{ThemeResource ContentControlThemeFontFamily}"/>
-			<Setter Property="FontSize" Value="{ThemeResource ControlContentThemeFontSize}"/>
-			<Setter Property="ScrollViewer.HorizontalScrollBarVisibility" Value="Hidden"/>
-			<Setter Property="ScrollViewer.VerticalScrollBarVisibility" Value="Hidden"/>
-			<Setter Property="ScrollViewer.IsDeferredScrollingEnabled" Value="False"/>
-			<Setter Property="Padding" Value="{ThemeResource TextControlThemePadding}"/>
-			<Setter Property="Template">
-				<Setter.Value>
-					<ControlTemplate TargetType="TextBox">
-						<Grid>
-							<Grid.Resources>
-								<Style x:Name="DeleteButtonStyle" TargetType="Button">
-									<Setter Property="Template">
-										<Setter.Value>
-											<ControlTemplate TargetType="Button">
-												<Grid>
+	mc:Ignorable="d" Width="Auto" Height="Auto">
+    <Page.Resources>
+        <ControlTemplate x:Key="ButtonConsole" TargetType="Button">
+            <Grid>
+                <VisualStateManager.VisualStateGroups>
+                    <VisualStateGroup x:Name="CommonStates">
+                        <VisualState x:Name="Normal"/>
+                        <VisualState x:Name="Pressed">
+                            <Storyboard>
+                                <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill)" Storyboard.TargetName="rectangle">
+                                    <DiscreteObjectKeyFrame KeyTime="0">
+                                        <DiscreteObjectKeyFrame.Value>
+                                            <SolidColorBrush Color="#99FFFFFF"/>
+                                        </DiscreteObjectKeyFrame.Value>
+                                    </DiscreteObjectKeyFrame>
+                                </ObjectAnimationUsingKeyFrames>
+                            </Storyboard>
+                        </VisualState>
+                        <VisualState x:Name="Disabled"/>
+                        <VisualState x:Name="PointerOver">
+                            <Storyboard>
+                                <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill)" Storyboard.TargetName="rectangle">
+                                    <DiscreteObjectKeyFrame KeyTime="0">
+                                        <DiscreteObjectKeyFrame.Value>
+                                            <SolidColorBrush Color="#66FFFFFF"/>
+                                        </DiscreteObjectKeyFrame.Value>
+                                    </DiscreteObjectKeyFrame>
+                                </ObjectAnimationUsingKeyFrames>
+                            </Storyboard>
+                        </VisualState>
+                    </VisualStateGroup>
+                </VisualStateManager.VisualStateGroups>
+                <Rectangle x:Name="rectangle" Fill="Black" StrokeThickness="0"/>
+                <TextBlock HorizontalAlignment="Center" Margin="0" TextWrapping="Wrap" Text="&gt;" VerticalAlignment="Center" FontSize="16"/>
+            </Grid>
+        </ControlTemplate>
+        <vm:MainPage_Model x:Key="DesignVM"/>
+        <Style x:Key="TextBoxConsole" TargetType="TextBox">
+            <Setter Property="MinWidth" Value="{ThemeResource TextControlThemeMinWidth}"/>
+            <Setter Property="MinHeight" Value="{ThemeResource TextControlThemeMinHeight}"/>
+            <Setter Property="Foreground" Value="{ThemeResource TextBoxForegroundThemeBrush}"/>
+            <Setter Property="Background" Value="{ThemeResource TextBoxBackgroundThemeBrush}"/>
+            <Setter Property="BorderBrush" Value="{ThemeResource TextBoxBorderThemeBrush}"/>
+            <Setter Property="SelectionHighlightColor" Value="{ThemeResource TextSelectionHighlightColorThemeBrush}"/>
+            <Setter Property="BorderThickness" Value="{ThemeResource TextControlBorderThemeThickness}"/>
+            <Setter Property="FontFamily" Value="{ThemeResource ContentControlThemeFontFamily}"/>
+            <Setter Property="FontSize" Value="{ThemeResource ControlContentThemeFontSize}"/>
+            <Setter Property="ScrollViewer.HorizontalScrollBarVisibility" Value="Hidden"/>
+            <Setter Property="ScrollViewer.VerticalScrollBarVisibility" Value="Hidden"/>
+            <Setter Property="ScrollViewer.IsDeferredScrollingEnabled" Value="False"/>
+            <Setter Property="Padding" Value="{ThemeResource TextControlThemePadding}"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="TextBox">
+                        <Grid>
+                            <Grid.Resources>
+                                <Style x:Name="DeleteButtonStyle" TargetType="Button">
+                                    <Setter Property="Template">
+                                        <Setter.Value>
+                                            <ControlTemplate TargetType="Button">
+                                                <Grid>
 
-													<Border x:Name="BorderElement" BorderBrush="{ThemeResource TextBoxButtonBorderThemeBrush}" BorderThickness="{TemplateBinding BorderThickness}"/>
-													<Border x:Name="BackgroundElement" Background="{ThemeResource TextBoxButtonBackgroundThemeBrush}" Margin="{TemplateBinding BorderThickness}">
-														<TextBlock x:Name="GlyphElement" AutomationProperties.AccessibilityView="Raw" Foreground="{ThemeResource TextBoxButtonForegroundThemeBrush}" FontStyle="Normal" HorizontalAlignment="Center" Text="&#xE0A4;" VerticalAlignment="Center"/>
-													</Border>
-												</Grid>
-											</ControlTemplate>
-										</Setter.Value>
-									</Setter>
-								</Style>
-							</Grid.Resources>
-							<Grid.ColumnDefinitions>
-								<ColumnDefinition Width="*"/>
-								<ColumnDefinition Width="Auto"/>
-							</Grid.ColumnDefinitions>
-							<Grid.RowDefinitions>
-								<RowDefinition Height="Auto"/>
-								<RowDefinition Height="*"/>
-							</Grid.RowDefinitions>
-							<Border x:Name="BackgroundElement" Grid.ColumnSpan="2" Margin="{TemplateBinding BorderThickness}" Grid.Row="1" Grid.RowSpan="1" Background="Black"/>
-							<Border x:Name="BorderElement" BorderThickness="{TemplateBinding BorderThickness}" Grid.ColumnSpan="2" Grid.Row="1" Grid.RowSpan="1"/>
-							<ContentPresenter x:Name="HeaderContentPresenter" Grid.ColumnSpan="2" ContentTemplate="{TemplateBinding HeaderTemplate}" Content="{TemplateBinding Header}" Foreground="{ThemeResource TextBoxForegroundHeaderThemeBrush}" FontWeight="Semilight" Margin="0,4,0,4" Grid.Row="0"/>
-							<ScrollViewer x:Name="ContentElement" AutomationProperties.AccessibilityView="Raw" HorizontalScrollMode="{TemplateBinding ScrollViewer.HorizontalScrollMode}" HorizontalScrollBarVisibility="{TemplateBinding ScrollViewer.HorizontalScrollBarVisibility}" IsTabStop="False" IsHorizontalRailEnabled="{TemplateBinding ScrollViewer.IsHorizontalRailEnabled}" IsVerticalRailEnabled="{TemplateBinding ScrollViewer.IsVerticalRailEnabled}" IsDeferredScrollingEnabled="{TemplateBinding ScrollViewer.IsDeferredScrollingEnabled}" Margin="{TemplateBinding BorderThickness}" Padding="{TemplateBinding Padding}" Grid.Row="1" VerticalScrollBarVisibility="{TemplateBinding ScrollViewer.VerticalScrollBarVisibility}" VerticalScrollMode="{TemplateBinding ScrollViewer.VerticalScrollMode}" ZoomMode="Disabled" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="White"/>
-							<ContentControl x:Name="PlaceholderTextContentPresenter" Grid.ColumnSpan="2" Content="{TemplateBinding PlaceholderText}" Foreground="White" IsHitTestVisible="False" IsTabStop="False" Margin="{TemplateBinding BorderThickness}" Padding="{TemplateBinding Padding}" Grid.Row="1"/>
-							<Button x:Name="DeleteButton" BorderThickness="{TemplateBinding BorderThickness}" Grid.Column="1" FontSize="{TemplateBinding FontSize}" IsTabStop="False" Grid.Row="1" Style="{StaticResource DeleteButtonStyle}" Visibility="Collapsed" VerticalAlignment="Stretch"/>
-						</Grid>
-					</ControlTemplate>
-				</Setter.Value>
-			</Setter>
-		</Style>
-		<ControlTemplate x:Key="ButtonControl" TargetType="Button">
-			<Grid Width="85" Height="60">
-				<Grid.RowDefinitions>
-					<RowDefinition Height="Auto"/>
-					<RowDefinition/>
-				</Grid.RowDefinitions>
-				<VisualStateManager.VisualStateGroups>
-					<VisualStateGroup x:Name="CommonStates">
-						<VisualState x:Name="Normal"/>
-						<VisualState x:Name="Pressed">
-							<Storyboard>
-								<ColorAnimation Duration="0" To="#33FFFFFF" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="rectangle" d:IsOptimized="True"/>
-							</Storyboard>
-						</VisualState>
-						<VisualState x:Name="Disabled"/>
-						<VisualState x:Name="PointerOver">
-							<Storyboard>
-								<ColorAnimation Duration="0" To="#33FFFFFF" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="rectangle" d:IsOptimized="True"/>
-							</Storyboard>
-						</VisualState>
-					</VisualStateGroup>
-				</VisualStateManager.VisualStateGroups>
-				<Rectangle x:Name="rectangle" Grid.RowSpan="2" StrokeThickness="0" Fill="Transparent"/>
-				<Image HorizontalAlignment="Center" Height="32" Margin="0" Width="32" Source="{Binding Tag, RelativeSource={RelativeSource Mode=TemplatedParent}}"/>
-				<TextBlock HorizontalAlignment="Center" Margin="0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="9" Foreground="White" Grid.Row="1" Text="摇！"/>
-			</Grid>
-		</ControlTemplate>
-	</Page.Resources>
-	<!--Begin App Bar Binding Patch. If you don't need Binding Top/Bottom Appbar please ignore these code -->
-	<!--<Page.DataContext>
+                                                    <Border x:Name="BorderElement" BorderBrush="{ThemeResource TextBoxButtonBorderThemeBrush}" BorderThickness="{TemplateBinding BorderThickness}"/>
+                                                    <Border x:Name="BackgroundElement" Background="{ThemeResource TextBoxButtonBackgroundThemeBrush}" Margin="{TemplateBinding BorderThickness}">
+                                                        <TextBlock x:Name="GlyphElement" AutomationProperties.AccessibilityView="Raw" Foreground="{ThemeResource TextBoxButtonForegroundThemeBrush}" FontStyle="Normal" HorizontalAlignment="Center" Text="&#xE0A4;" VerticalAlignment="Center"/>
+                                                    </Border>
+                                                </Grid>
+                                            </ControlTemplate>
+                                        </Setter.Value>
+                                    </Setter>
+                                </Style>
+                            </Grid.Resources>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="Auto"/>
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="*"/>
+                            </Grid.RowDefinitions>
+                            <Border x:Name="BackgroundElement" Grid.ColumnSpan="2" Margin="{TemplateBinding BorderThickness}" Grid.Row="1" Grid.RowSpan="1" Background="Black"/>
+                            <Border x:Name="BorderElement" BorderThickness="{TemplateBinding BorderThickness}" Grid.ColumnSpan="2" Grid.Row="1" Grid.RowSpan="1"/>
+                            <ContentPresenter x:Name="HeaderContentPresenter" Grid.ColumnSpan="2" ContentTemplate="{TemplateBinding HeaderTemplate}" Content="{TemplateBinding Header}" Foreground="{ThemeResource TextBoxForegroundHeaderThemeBrush}" FontWeight="Semilight" Margin="0,4,0,4" Grid.Row="0"/>
+                            <ScrollViewer x:Name="ContentElement" AutomationProperties.AccessibilityView="Raw" HorizontalScrollMode="{TemplateBinding ScrollViewer.HorizontalScrollMode}" HorizontalScrollBarVisibility="{TemplateBinding ScrollViewer.HorizontalScrollBarVisibility}" IsTabStop="False" IsHorizontalRailEnabled="{TemplateBinding ScrollViewer.IsHorizontalRailEnabled}" IsVerticalRailEnabled="{TemplateBinding ScrollViewer.IsVerticalRailEnabled}" IsDeferredScrollingEnabled="{TemplateBinding ScrollViewer.IsDeferredScrollingEnabled}" Margin="{TemplateBinding BorderThickness}" Padding="{TemplateBinding Padding}" Grid.Row="1" VerticalScrollBarVisibility="{TemplateBinding ScrollViewer.VerticalScrollBarVisibility}" VerticalScrollMode="{TemplateBinding ScrollViewer.VerticalScrollMode}" ZoomMode="Disabled" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="White"/>
+                            <ContentControl x:Name="PlaceholderTextContentPresenter" Grid.ColumnSpan="2" Content="{TemplateBinding PlaceholderText}" Foreground="White" IsHitTestVisible="False" IsTabStop="False" Margin="{TemplateBinding BorderThickness}" Padding="{TemplateBinding Padding}" Grid.Row="1"/>
+                            <Button x:Name="DeleteButton" BorderThickness="{TemplateBinding BorderThickness}" Grid.Column="1" FontSize="{TemplateBinding FontSize}" IsTabStop="False" Grid.Row="1" Style="{StaticResource DeleteButtonStyle}" Visibility="Collapsed" VerticalAlignment="Stretch"/>
+                        </Grid>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <ControlTemplate x:Key="ButtonControl" TargetType="Button">
+            <Grid Width="85" Height="60">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <VisualStateManager.VisualStateGroups>
+                    <VisualStateGroup x:Name="CommonStates">
+                        <VisualState x:Name="Normal"/>
+                        <VisualState x:Name="Pressed">
+                            <Storyboard>
+                                <ColorAnimation Duration="0" To="#33FFFFFF" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="rectangle" d:IsOptimized="True"/>
+                            </Storyboard>
+                        </VisualState>
+                        <VisualState x:Name="Disabled"/>
+                        <VisualState x:Name="PointerOver">
+                            <Storyboard>
+                                <ColorAnimation Duration="0" To="#33FFFFFF" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="rectangle" d:IsOptimized="True"/>
+                            </Storyboard>
+                        </VisualState>
+                    </VisualStateGroup>
+                </VisualStateManager.VisualStateGroups>
+                <Rectangle x:Name="rectangle" Grid.RowSpan="2" StrokeThickness="0" Fill="Transparent"/>
+                <Image HorizontalAlignment="Center" Height="32" Margin="0" Width="32" Source="{Binding Tag, RelativeSource={RelativeSource Mode=TemplatedParent}}"/>
+                <TextBlock HorizontalAlignment="Center" Margin="0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="9" Foreground="White" Grid.Row="1" Text="摇！"/>
+            </Grid>
+        </ControlTemplate>
+    </Page.Resources>
+    <!--Begin App Bar Binding Patch. If you don't need Binding Top/Bottom Appbar please ignore these code -->
+    <!--<Page.DataContext>
 		<Binding  RelativeSource="{RelativeSource Mode=Self}" Path="ViewModel"/>
 	</Page.DataContext>
 	<mvvm:MVVMPage.ViewModel>
@@ -139,129 +139,135 @@
 		<AppBar d:DataContext="{StaticResource DesignVM}"><TextBlock TextWrapping="Wrap" Text="{Binding BindableInstanceId, Mode=OneWay}"/></AppBar>
 	</mvvm:MVVMPage.BottomAppBar>
 	-->
-	<!--End App Bar Binding Patch. If you don't need Binding  Top/Bottom Appbar please ignore these code -->
-	<Grid>
-		<Grid x:Name="MainGird" Background="White" DataContext="{Binding Source={StaticResource DesignVM}}" Loaded="MainGird_Loaded">
-			<Grid.ColumnDefinitions>
-				<ColumnDefinition Width="200"/>
-				<ColumnDefinition/>
-			</Grid.ColumnDefinitions>
-			<Grid.RowDefinitions>
-				<RowDefinition Height="30"/>
-				<RowDefinition/>
-				<RowDefinition Height="60"/>
-			</Grid.RowDefinitions>
-			<Rectangle Fill="#FFF9B763" Stroke="Black" StrokeThickness="0" Grid.RowSpan="3"/>
-			<Rectangle Fill="#FFFF8E41" Grid.Row="2" Stroke="Black" StrokeThickness="0" Grid.ColumnSpan="3"/>
-			<Grid x:Name="GridTitle" Grid.ColumnSpan="3">
-				<Grid.ColumnDefinitions>
-					<ColumnDefinition Width="20"/>
-					<ColumnDefinition Width="Auto"/>
-					<ColumnDefinition/>
-					<ColumnDefinition Width="30"/>
-					<ColumnDefinition Width="Auto"/>
-					<ColumnDefinition Width="40"/>
-					<ColumnDefinition Width="Auto"/>
-					<ColumnDefinition Width="Auto"/>
-					<ColumnDefinition Width="40"/>
-				</Grid.ColumnDefinitions>
-				<Rectangle Fill="#FFFF8E41" Stroke="Black" StrokeThickness="0" Grid.ColumnSpan="9"/>
-				<TextBlock x:Name="TextBlockTitle" HorizontalAlignment="Left" TextWrapping="Wrap" Text="{StaticResource Title}" VerticalAlignment="Center" FontSize="18.667" FontFamily="Segoe UI" Grid.Column="1" Foreground="White" Margin="0"/>
-				<TextBlock x:Name="TextBlockNumberOfMoneySmallOut" Grid.Column="4" Margin="0,2,0,0" TextWrapping="Wrap" Text="{Binding TextBlockNumberOfMoneySmallOut}" FontFamily="Microsoft YaHei" FontSize="21.333" VerticalAlignment="Center" Foreground="White" Height="28"/>
-				<TextBlock x:Name="TextBlockNumberOfOrangeSmallOut" TextWrapping="Wrap" Text="{Binding TextBlockNumberOfOrangeSmallOut}" FontSize="21.333" FontFamily="Microsoft YaHei" Grid.Column="7" Margin="0,2,0,0" VerticalAlignment="Center" Foreground="White" Height="28"/>
-				<Image Grid.Column="6" Margin="0" Source="Logo.png" RenderTransformOrigin="0.5,0.5">
-					<Image.RenderTransform>
-						<CompositeTransform ScaleX="0.8" ScaleY="0.8"/>
-					</Image.RenderTransform>
-				</Image>
-				<Image Grid.Column="3" Margin="0" Source="ms-appx:///Money.png" RenderTransformOrigin="0.5,0.5">
-					<Image.RenderTransform>
-						<CompositeTransform ScaleX="0.8" ScaleY="0.8"/>
-					</Image.RenderTransform>
-				</Image>
-			</Grid>
-			<Grid x:Name="GridOverView" Grid.Column="1" Margin="30,20,0,0" Grid.Row="1">
-				<Grid.RowDefinitions>
-					<RowDefinition Height="Auto"/>
-					<RowDefinition/>
-				</Grid.RowDefinitions>
-				<TextBlock Margin="0,10,0,0" TextWrapping="Wrap" Text="{StaticResource Overview}" FontSize="28"/>
-				<local:BuildingItemView HorizontalAlignment="Left" Margin="424,10,0,0" VerticalAlignment="Top" Height="357"/>
-				<ScrollViewer Margin="0" Grid.Row="1">
-					<StackPanel>
-						<TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="{Binding NOO}" VerticalAlignment="Top"/>
-						<TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="{Binding CPSOO}" VerticalAlignment="Top" ToolTipService.ToolTip="{Binding CPSOOD}"/>
-						<TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="{Binding NOM}" VerticalAlignment="Top"/>
-					</StackPanel>
-				</ScrollViewer>
-			</Grid>
-			<Grid x:Name="ButtonsOverView" Grid.Row="2" Grid.Column="1">
-				<StackPanel x:Name="SPOverView" HorizontalAlignment="Center" Margin="0" Orientation="Horizontal">
-					<Button HorizontalAlignment="Stretch" VerticalAlignment="Top" Template="{StaticResource ButtonControl}" Command="{Binding CommandRush}"/>
-				</StackPanel>
-			</Grid>
-			<Grid x:Name="GridProduce" Grid.Column="1" Margin="0" Grid.Row="1" Visibility="Collapsed"/>
-			<Grid x:Name="GridStore" Grid.Column="1" Margin="0" Grid.Row="1" Visibility="Collapsed"/>
-			<Grid x:Name="GridAchievement" Grid.Column="1" Margin="0" Grid.Row="1" Visibility="Collapsed"/>
-			<Grid x:Name="GridConsole" Grid.Column="1" Margin="0" Grid.Row="1" Visibility="Collapsed">
-				<Grid.ColumnDefinitions>
-					<ColumnDefinition Width="1109*"/>
-					<ColumnDefinition Width="70*"/>
-				</Grid.ColumnDefinitions>
-				<Grid.RowDefinitions>
-					<RowDefinition/>
-					<RowDefinition Height="Auto"/>
-				</Grid.RowDefinitions>
-				<TextBox TextWrapping="Wrap" Text="{Binding ConsoleText, Mode=TwoWay}" BorderThickness="0" Background="Black" BorderBrush="{x:Null}" Foreground="White" FontFamily="Microsoft YaHei UI" IsReadOnly="True" Padding="0" IsEnabled="False" Style="{StaticResource TextBoxConsole}" VerticalAlignment="Stretch" Margin="0" Grid.ColumnSpan="2" Visibility="Collapsed"/>
-				<TextBox x:Name="TBCommand" Margin="0" TextWrapping="Wrap" Text="{Binding TextConsoleCommand, Mode=TwoWay}" BorderThickness="0" BorderBrush="{x:Null}" Foreground="White" Grid.Row="1" Padding="0" MinHeight="10" Style="{StaticResource TextBoxConsole}" KeyUp="TBCommand_KeyUp" Background="Black" AcceptsReturn="True" Grid.ColumnSpan="2"/>
-				<Button Content="Button" HorizontalAlignment="Stretch" Margin="0" VerticalAlignment="Stretch" Command="{Binding CommandConsoleCommand}" MinHeight="0" MinWidth="0" BorderBrush="White" Foreground="White" Padding="0" Template="{StaticResource ButtonConsole}" Grid.Row="1" Grid.Column="1" BorderThickness="0"/>
-			</Grid>
+    <!--End App Bar Binding Patch. If you don't need Binding  Top/Bottom Appbar please ignore these code -->
+    <Grid>
+        <Grid x:Name="MainGird" Background="White" DataContext="{Binding Source={StaticResource DesignVM}}" Loaded="MainGird_Loaded">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="200"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="30"/>
+                <RowDefinition/>
+                <RowDefinition Height="60"/>
+            </Grid.RowDefinitions>
+            <Rectangle Fill="#FFF9B763" Stroke="Black" StrokeThickness="0" Grid.RowSpan="3"/>
+            <Rectangle Fill="#FFFF8E41" Grid.Row="2" Stroke="Black" StrokeThickness="0" Grid.ColumnSpan="3"/>
+            <Grid x:Name="GridTitle" Grid.ColumnSpan="3">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="20"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition Width="30"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="40"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="40"/>
+                </Grid.ColumnDefinitions>
+                <Rectangle Fill="#FFFF8E41" Stroke="Black" StrokeThickness="0" Grid.ColumnSpan="9"/>
+                <TextBlock x:Name="TextBlockTitle" HorizontalAlignment="Left" TextWrapping="Wrap" Text="{Binding TC}" VerticalAlignment="Center" FontSize="18.667" FontFamily="Segoe UI" Grid.Column="1" Foreground="White" Margin="0"/>
+                <TextBlock x:Name="TextBlockNumberOfMoneySmallOut" Grid.Column="4" Margin="0,2,0,0" TextWrapping="Wrap" Text="{Binding NOMNO}" FontFamily="Microsoft YaHei" FontSize="21.333" VerticalAlignment="Center" Foreground="White" Height="28"/>
+                <TextBlock x:Name="TextBlockNumberOfOrangeSmallOut" TextWrapping="Wrap" Text="{Binding NOONO}" FontSize="21.333" FontFamily="Microsoft YaHei" Grid.Column="7" Margin="0,2,0,0" VerticalAlignment="Center" Foreground="White" Height="28"/>
+                <Image Grid.Column="6" Margin="0" Source="Logo.png" RenderTransformOrigin="0.5,0.5">
+                    <Image.RenderTransform>
+                        <CompositeTransform ScaleX="0.8" ScaleY="0.8"/>
+                    </Image.RenderTransform>
+                </Image>
+                <Image Grid.Column="3" Margin="0" Source="ms-appx:///Money.png" RenderTransformOrigin="0.5,0.5">
+                    <Image.RenderTransform>
+                        <CompositeTransform ScaleX="0.8" ScaleY="0.8"/>
+                    </Image.RenderTransform>
+                </Image>
+            </Grid>
+            <Grid x:Name="GridOverView" Grid.Column="1" Margin="30,20,0,0" Grid.Row="1" d:IsHidden="True">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <TextBlock Margin="0,10,0,0" TextWrapping="Wrap" Text="{StaticResource Overview}" FontSize="28"/>
+                <ScrollViewer Margin="0" Grid.Row="1">
+                    <StackPanel>
+                        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="{Binding NOO}" VerticalAlignment="Top"/>
+                        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="{Binding CPSOO}" VerticalAlignment="Top" ToolTipService.ToolTip="{Binding CPSOOD}"/>
+                        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="{Binding NOM}" VerticalAlignment="Top"/>
+                    </StackPanel>
+                </ScrollViewer>
+            </Grid>
+            <Grid x:Name="ButtonsOverView" Grid.Row="2" Grid.Column="1" d:IsHidden="True">
+                <StackPanel x:Name="SPOverView" HorizontalAlignment="Center" Margin="0" Orientation="Horizontal">
+                    <Button HorizontalAlignment="Stretch" VerticalAlignment="Top" Template="{StaticResource ButtonControl}" Command="{Binding CommandRush}"/>
+                </StackPanel>
+            </Grid>
+            <Grid x:Name="GridProduce" Grid.Column="1" Margin="30,20,0,0" Grid.Row="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <TextBlock Margin="0,10,0,0" TextWrapping="Wrap" Text="{StaticResource Produce}" FontSize="28"/>
+                <local:BuildingItemView Margin="0" Grid.Row="1"/>
+            </Grid>
+            <Grid x:Name="GridStore" Grid.Column="1" Margin="0" Grid.Row="1" Visibility="Collapsed"/>
+            <Grid x:Name="GridAchievement" Grid.Column="1" Margin="0" Grid.Row="1" Visibility="Collapsed"/>
+            <Grid x:Name="GridConsole" Grid.Column="1" Margin="0" Grid.Row="1" Visibility="Collapsed">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1109*"/>
+                    <ColumnDefinition Width="70*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <TextBox TextWrapping="Wrap" Text="{Binding ConsoleText, Mode=TwoWay}" BorderThickness="0" Background="Black" BorderBrush="{x:Null}" Foreground="White" FontFamily="Microsoft YaHei UI" IsReadOnly="True" Padding="0" IsEnabled="False" Style="{StaticResource TextBoxConsole}" VerticalAlignment="Stretch" Margin="0" Grid.ColumnSpan="2"/>
+                <TextBox x:Name="TBCommand" Margin="0" TextWrapping="Wrap" Text="{Binding TextConsoleCommand, Mode=TwoWay}" BorderThickness="0" BorderBrush="{x:Null}" Foreground="White" Grid.Row="1" Padding="0" MinHeight="10" Style="{StaticResource TextBoxConsole}" KeyUp="TBCommand_KeyUp" Background="Black" AcceptsReturn="True" Grid.ColumnSpan="2"/>
+                <Button Content="Button" HorizontalAlignment="Stretch" Margin="0" VerticalAlignment="Stretch" Command="{Binding CommandConsoleCommand}" MinHeight="0" MinWidth="0" BorderBrush="White" Foreground="White" Padding="0" Template="{StaticResource ButtonConsole}" Grid.Row="1" Grid.Column="1" BorderThickness="0"/>
+            </Grid>
 
-			<Grid x:Name="GridData" Grid.Column="1" Grid.Row="1" Visibility="Collapsed">
-				<TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="{StaticResource Data}" VerticalAlignment="Top" FontSize="36"/>
-				<TextBlock HorizontalAlignment="Left" Margin="10,53,0,0" TextWrapping="Wrap" Text="{Binding NOOHG}" VerticalAlignment="Top"/>
-				<TextBlock HorizontalAlignment="Left" Margin="10,66,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
-			</Grid>
-			<Grid x:Name="GridAbout" Margin="0" Grid.Row="1" Grid.Column="1" Visibility="Collapsed"/>
-			<Grid x:Name="GridSetting" Grid.Column="1" Margin="0" Grid.Row="1" Visibility="Collapsed"/>
-			<ScrollViewer Margin="0" Grid.Row="1">
-				<ItemsControl x:Name="List" Margin="0,20,0,0">
-					<local:ListItem x:Name="LIOverView" Text1="{StaticResource Overview}" Text2="{StaticResource VOID}" ImageBlack="Images/OverviewBlack.png" ImageWhite="Images/OverviewWhite.png" Width="Auto" Height="Auto" IsChecked="True" Tapped="ListItem_Tapped"/>
-					<local:ListItem x:Name="LIProduce" ImageBlack="Images/ProduceBlack.png" Text1="{StaticResource Produce}" Text2="{StaticResource VOID}" ImageWhite="Images/ProduceWhite.png" Width="Auto" Height="Auto" Tapped="ListItem_Tapped"/>
-					<local:ListItem x:Name="LIStore" Text1="{StaticResource Store}" Text2="{StaticResource VOID}" ImageBlack="Images/MarketBlack.png" ImageWhite="Images/MarketWhite.png" Width="Auto" UseLayoutRounding="True" Margin="0" Height="Auto"  Tapped="ListItem_Tapped"/>
-					<local:ListItem x:Name="LIAchievement" Text1="{StaticResource Achievement}" Text2="{StaticResource VOID}" Width="Auto" Height="Auto" Tapped="ListItem_Tapped"/>
-					<local:ListItem x:Name="LIConsole" Text1="{StaticResource Console}" Text2="{StaticResource VOID}" ImageBlack="Images/ConsoleBlack.png" ImageWhite="Images/ConsoleWhite.png" Width="Auto" Height="Auto" Tapped="ListItem_Tapped"/>
-					<local:ListItem x:Name="LIData" HorizontalAlignment="Left" Text1="{StaticResource Data}" Text2="{StaticResource VOID}"/>
-					<local:ListItem x:Name="LIAbout" HorizontalAlignment="Left" Text1="{StaticResource About}" Text2="{StaticResource VOID}"/>
-					<local:ListItem x:Name="LISetting" Text1="{StaticResource Setting}" Text2="{StaticResource VOID}" ImageBlack="Images/SettingBlack.png" ImageWhite="Images/SettingWhite.png" Width="Auto" Height="Auto" Tapped="ListItem_Tapped"/>
-					<local:ListItem HorizontalAlignment="Left"/>
-				</ItemsControl>
-			</ScrollViewer>
-		</Grid>
-		<Grid x:Name="StartGrid" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"  DataContext="{StaticResource DesignVM}" Visibility="Collapsed" >
-			<Grid.ChildrenTransitions>
-				<TransitionCollection>
-					<EntranceThemeTransition/>
-				</TransitionCollection>
-			</Grid.ChildrenTransitions>
-			<Grid.RowDefinitions>
-				<RowDefinition/>
-			</Grid.RowDefinitions>
-			<Grid HorizontalAlignment="Center" Margin="0" VerticalAlignment="Center">
-				<Grid.RowDefinitions>
-					<RowDefinition Height="Auto"/>
-					<RowDefinition/>
-				</Grid.RowDefinitions>
-				<Image x:Name="ImageStating" Margin="0" Grid.Row="1" Source="Images/无标题-1.gif" Width="129" Height="134"  Visibility="Collapsed"/>
-				<Grid HorizontalAlignment="Center" Margin="0" VerticalAlignment="Top">
-					<TextBlock x:Name="TBWaiting" HorizontalAlignment="Left" Margin="0" TextWrapping="Wrap" Text="正在加载" VerticalAlignment="Top" FontSize="14"/>
-				</Grid>
-				<MediaElement Grid.Row="1" IsLooping="True" Source="无标题-1.mp4" Width="130" Height="136" RealTimePlayback="True" IsMuted="True" HorizontalAlignment="Left" VerticalAlignment="Top" Stretch="None"/>
-			</Grid>
-		</Grid>
+            <Grid x:Name="GridData" Grid.Column="1" Grid.Row="1" Visibility="Collapsed">
+                <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="{StaticResource Data}" VerticalAlignment="Top" FontSize="36"/>
+                <TextBlock HorizontalAlignment="Left" Margin="10,53,0,0" TextWrapping="Wrap" Text="{Binding NOOHG}" VerticalAlignment="Top"/>
+                <TextBlock HorizontalAlignment="Left" Margin="10,66,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
+            </Grid>
+            <Grid x:Name="GridAbout" Margin="0" Grid.Row="1" Grid.Column="1" Visibility="Collapsed"/>
+            <Grid x:Name="GridSetting" Grid.Column="1" Margin="0" Grid.Row="1" Visibility="Collapsed"/>
+            <ScrollViewer Margin="0" Grid.Row="1">
+                <ItemsControl x:Name="List" Margin="0,20,0,0">
+                    <local:ListItem x:Name="LIOverView" Text1="{StaticResource Overview}" Text2="{StaticResource VOID}" ImageBlack="Images/OverviewBlack.png" ImageWhite="Images/OverviewWhite.png" Width="Auto" Height="Auto" IsChecked="True" Tapped="ListItem_Tapped"/>
+                    <local:ListItem x:Name="LIProduce" ImageBlack="Images/ProduceBlack.png" Text1="{StaticResource Produce}" Text2="{StaticResource VOID}" ImageWhite="Images/ProduceWhite.png" Width="Auto" Height="Auto" Tapped="ListItem_Tapped"/>
+                    <local:ListItem x:Name="LIStore" Text1="{StaticResource Store}" Text2="{StaticResource VOID}" ImageBlack="Images/MarketBlack.png" ImageWhite="Images/MarketWhite.png" Width="Auto" UseLayoutRounding="True" Margin="0" Height="Auto"  Tapped="ListItem_Tapped"/>
+                    <local:ListItem x:Name="LIAchievement" Text1="{StaticResource Achievement}" Text2="{StaticResource VOID}" Width="Auto" Height="Auto" Tapped="ListItem_Tapped"/>
+                    <local:ListItem x:Name="LIConsole" Text1="{StaticResource Console}" Text2="{StaticResource VOID}" ImageBlack="Images/ConsoleBlack.png" ImageWhite="Images/ConsoleWhite.png" Width="Auto" Height="Auto" Tapped="ListItem_Tapped"/>
+                    <local:ListItem x:Name="LIData" HorizontalAlignment="Left" Text1="{StaticResource Data}" Text2="{StaticResource VOID}"/>
+                    <local:ListItem x:Name="LIAbout" HorizontalAlignment="Left" Text1="{StaticResource About}" Text2="{StaticResource VOID}"/>
+                    <local:ListItem x:Name="LISetting" Text1="{StaticResource Setting}" Text2="{StaticResource VOID}" ImageBlack="Images/SettingBlack.png" ImageWhite="Images/SettingWhite.png" Width="Auto" Height="Auto" Tapped="ListItem_Tapped"/>
+                    <local:ListItem HorizontalAlignment="Left"/>
+                </ItemsControl>
+            </ScrollViewer>
+        </Grid>
+        <Grid x:Name="StartGrid" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"  DataContext="{StaticResource DesignVM}" Visibility="Collapsed" >
+            <Grid.ChildrenTransitions>
+                <TransitionCollection>
+                    <EntranceThemeTransition/>
+                </TransitionCollection>
+            </Grid.ChildrenTransitions>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid HorizontalAlignment="Center" Margin="0" VerticalAlignment="Center">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Image x:Name="ImageStating" Margin="0" Grid.Row="1" Source="Images/无标题-1.gif" Width="129" Height="134"  Visibility="Collapsed"/>
+                <Grid HorizontalAlignment="Center" Margin="0" VerticalAlignment="Top">
+                    <TextBlock x:Name="TBWaiting" HorizontalAlignment="Left" Margin="0" TextWrapping="Wrap" Text="正在加载" VerticalAlignment="Top" FontSize="14"/>
+                </Grid>
+                <MediaElement Grid.Row="1" IsLooping="True" Source="无标题-1.mp4" Width="130" Height="136" RealTimePlayback="True" IsMuted="True" HorizontalAlignment="Left" VerticalAlignment="Top" Stretch="None"/>
+            </Grid>
+        </Grid>
 
-		<Grid x:Name="EULAGrid" Background="#7F000000" Visibility="Collapsed">
-			<Grid HorizontalAlignment="Left" Height="461" Margin="351,168,0,0" VerticalAlignment="Top" Width="707" Background="White" />
-		</Grid>
-	</Grid>
+        <Grid x:Name="EULAGrid" Background="#7F000000" Visibility="Collapsed">
+            <Grid HorizontalAlignment="Center" Height="461" Margin="0" VerticalAlignment="Center" Width="707" Background="White" />
+        </Grid>
+    </Grid>
 </mvvm:MVVMPage>

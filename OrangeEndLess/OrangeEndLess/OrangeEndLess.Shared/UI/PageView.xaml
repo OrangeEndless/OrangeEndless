@@ -12,10 +12,10 @@
 	<Grid>
 		<Grid.ColumnDefinitions>
 			<ColumnDefinition/>
-			<ColumnDefinition Width="70.833"/>
+			<ColumnDefinition Width="34"/>
 		</Grid.ColumnDefinitions>
 		<Rectangle Grid.Column="1" Fill="#FFA0E5FF" Margin="0" StrokeThickness="0"/>
-		<TextBlock Grid.Column="1" Margin="30.833,0,34,0" TextWrapping="Wrap" Text="1" Foreground="White" SelectionHighlightColor="{x:Null}" VerticalAlignment="Bottom" HorizontalAlignment="Center"/>
+		<TextBlock Grid.Column="1" TextWrapping="Wrap" Text="1" Foreground="White" SelectionHighlightColor="{x:Null}" VerticalAlignment="Bottom" HorizontalAlignment="Center" Height="13" Width="6"/>
 
 	</Grid>
 </UserControl>

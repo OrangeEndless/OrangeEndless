@@ -9,7 +9,7 @@
 	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
 	xmlns:mvvm="using:MVVMSidekick.Views"
 	xmlns:vm="using:OrangeEndLess.ViewModels"
-	mc:Ignorable="d" Width="Auto">
+	mc:Ignorable="d" Width="Auto" Height="Auto">
 	<Page.Resources>
 		<ControlTemplate x:Key="ButtonConsole" TargetType="Button">
 			<Grid>
@@ -166,9 +166,9 @@
 					<ColumnDefinition Width="40"/>
 				</Grid.ColumnDefinitions>
 				<Rectangle Fill="#FFFF8E41" Stroke="Black" StrokeThickness="0" Grid.ColumnSpan="9"/>
-				<TextBlock x:Name="TextBlockTitle" HorizontalAlignment="Left" TextWrapping="Wrap" Text="{StaticResource Title}" VerticalAlignment="Center" FontSize="18.667" FontFamily="Segoe UI" Grid.Column="1" Foreground="White" Margin="0"/>
-				<TextBlock x:Name="TextBlockNumberOfMoneySmallOut" Grid.Column="4" Margin="0,2,0,0" TextWrapping="Wrap" Text="{Binding TextBlockNumberOfMoneySmallOut}" FontFamily="Microsoft YaHei" FontSize="21.333" VerticalAlignment="Center" Foreground="White" Height="28"/>
-				<TextBlock x:Name="TextBlockNumberOfOrangeSmallOut" TextWrapping="Wrap" Text="{Binding TextBlockNumberOfOrangeSmallOut}" FontSize="21.333" FontFamily="Microsoft YaHei" Grid.Column="7" Margin="0,2,0,0" VerticalAlignment="Center" Foreground="White" Height="28"/>
+				<TextBlock x:Name="TextBlockTitle" HorizontalAlignment="Left" TextWrapping="Wrap" Text="{Binding TC}" VerticalAlignment="Center" FontSize="18.667" FontFamily="Segoe UI" Grid.Column="1" Foreground="White" Margin="0"/>
+				<TextBlock x:Name="TextBlockNumberOfMoneySmallOut" Grid.Column="4" Margin="0,2,0,0" TextWrapping="Wrap" Text="{Binding NOMNO}" FontFamily="Microsoft YaHei" FontSize="21.333" VerticalAlignment="Center" Foreground="White" Height="28"/>
+				<TextBlock x:Name="TextBlockNumberOfOrangeSmallOut" TextWrapping="Wrap" Text="{Binding NOONO}" FontSize="21.333" FontFamily="Microsoft YaHei" Grid.Column="7" Margin="0,2,0,0" VerticalAlignment="Center" Foreground="White" Height="28"/>
 				<Image Grid.Column="6" Margin="0" Source="Logo.png" RenderTransformOrigin="0.5,0.5">
 					<Image.RenderTransform>
 						<CompositeTransform ScaleX="0.8" ScaleY="0.8"/>
@@ -186,8 +186,7 @@
 					<RowDefinition/>
 				</Grid.RowDefinitions>
 				<TextBlock Margin="0,10,0,0" TextWrapping="Wrap" Text="{StaticResource Overview}" FontSize="28"/>
-				<local:BuildingItemView HorizontalAlignment="Left" Margin="424,10,0,0" VerticalAlignment="Top" Height="357"/>
-				<ScrollViewer Margin="0" Grid.Row="1">
+                <ScrollViewer Margin="0" Grid.Row="1">
 					<StackPanel>
 						<TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="{Binding NOO}" VerticalAlignment="Top"/>
 						<TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="{Binding CPSOO}" VerticalAlignment="Top" ToolTipService.ToolTip="{Binding CPSOOD}"/>
@@ -212,7 +211,7 @@
 					<RowDefinition/>
 					<RowDefinition Height="Auto"/>
 				</Grid.RowDefinitions>
-				<TextBox TextWrapping="Wrap" Text="{Binding ConsoleText, Mode=TwoWay}" BorderThickness="0" Background="Black" BorderBrush="{x:Null}" Foreground="White" FontFamily="Microsoft YaHei UI" IsReadOnly="True" Padding="0" IsEnabled="False" Style="{StaticResource TextBoxConsole}" VerticalAlignment="Stretch" Margin="0" Grid.ColumnSpan="2" Visibility="Collapsed"/>
+				<TextBox TextWrapping="Wrap" Text="{Binding ConsoleText, Mode=TwoWay}" BorderThickness="0" Background="Black" BorderBrush="{x:Null}" Foreground="White" FontFamily="Microsoft YaHei UI" IsReadOnly="True" Padding="0" IsEnabled="False" Style="{StaticResource TextBoxConsole}" VerticalAlignment="Stretch" Margin="0" Grid.ColumnSpan="2"/>
 				<TextBox x:ConnectionId='8' x:Name="TBCommand" Margin="0" TextWrapping="Wrap" Text="{Binding TextConsoleCommand, Mode=TwoWay}" BorderThickness="0" BorderBrush="{x:Null}" Foreground="White" Grid.Row="1" Padding="0" MinHeight="10" Style="{StaticResource TextBoxConsole}"                         Background="Black" AcceptsReturn="True" Grid.ColumnSpan="2"/>
 				<Button Content="Button" HorizontalAlignment="Stretch" Margin="0" VerticalAlignment="Stretch" Command="{Binding CommandConsoleCommand}" MinHeight="0" MinWidth="0" BorderBrush="White" Foreground="White" Padding="0" Template="{StaticResource ButtonConsole}" Grid.Row="1" Grid.Column="1" BorderThickness="0"/>
 			</Grid>
@@ -261,7 +260,7 @@
 		</Grid>
 
 		<Grid x:Name="EULAGrid" Background="#7F000000" Visibility="Collapsed">
-			<Grid HorizontalAlignment="Left" Height="461" Margin="351,168,0,0" VerticalAlignment="Top" Width="707" Background="White" />
+			<Grid HorizontalAlignment="Center" Height="461" Margin="0" VerticalAlignment="Center" Width="707" Background="White" />
 		</Grid>
 	</Grid>
 </mvvm:MVVMPage>
