@@ -140,6 +140,9 @@
     <AppxPackagedFile Include="C:\Users\Class 4\Source\Repos\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.Windows\bin\Debug\UI\ListItem.xbf">
       <PackagePath>UI\ListItem.xbf</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Class 4\Source\Repos\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.Windows\bin\Debug\UI\LoadingRing.xbf">
+      <PackagePath>UI\LoadingRing.xbf</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Class 4\Source\Repos\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.Windows\bin\Debug\UI\PageView.xbf">
       <PackagePath>UI\PageView.xbf</PackagePath>
     </AppxPackagedFile>

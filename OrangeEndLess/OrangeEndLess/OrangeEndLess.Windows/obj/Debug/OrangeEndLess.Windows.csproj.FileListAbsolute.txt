@@ -411,6 +411,12 @@ C:\Users\Class 4\Source\Repos\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEn
 C:\Users\Class 4\Source\Repos\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.Windows\obj\Debug\UI\BuildingItemView.g.cs
 C:\Users\Class 4\Source\Repos\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.Windows\obj\Debug\UI\BuildingItemView.xaml
 C:\Users\Class 4\Source\Repos\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.Windows\obj\Debug\UI\BuildingItemView.xbf
+C:\Users\Class 4\Source\Repos\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.Windows\obj\Debug\OrangeEndLess.Windows.csprojResolveAssemblyReference.cache
+C:\Users\Class 4\Source\Repos\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.Windows\bin\Debug\UI\LoadingRing.xbf
+C:\Users\Class 4\Source\Repos\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.Windows\obj\Debug\UI\LoadingRing.g.i.cs
+C:\Users\Class 4\Source\Repos\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.Windows\obj\Debug\UI\LoadingRing.g.cs
+C:\Users\Class 4\Source\Repos\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.Windows\obj\Debug\UI\LoadingRing.xaml
+C:\Users\Class 4\Source\Repos\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.Windows\obj\Debug\UI\LoadingRing.xbf
 C:\Users\Class 4\Source\Repos\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.Windows\obj\Debug\System.Reactive.Core\layout.resfiles
 C:\Users\Class 4\Source\Repos\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.Windows\obj\Debug\System.Reactive.Core\layout.resfiles.intermediate
 C:\Users\Class 4\Source\Repos\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.Windows\obj\Debug\System.Reactive.Core\Resources.resfiles
