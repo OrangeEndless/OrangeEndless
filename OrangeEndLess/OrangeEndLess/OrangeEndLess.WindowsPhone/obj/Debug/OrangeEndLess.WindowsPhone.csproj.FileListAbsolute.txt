@@ -482,3 +482,13 @@ C:\Users\Class 4\Source\Repos\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEn
 C:\Users\Class 4\Source\Repos\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.WindowsPhone\obj\Debug\System.Reactive.Windows.Threading\pri.resfiles.intermediate
 C:\Users\Class 4\Source\Repos\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.WindowsPhone\obj\Debug\System.Reactive.Windows.Threading\priconfig.xml
 C:\Users\Class 4\Source\Repos\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.WindowsPhone\obj\Debug\System.Reactive.Windows.Threading\priconfig.xml.intermediate
+C:\Users\Wang\Source\Repos\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.WindowsPhone\bin\Debug\UI\BuildingItemView.xbf
+C:\Users\Wang\Source\Repos\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.WindowsPhone\bin\Debug\UI\LoadingRing.xbf
+C:\Users\Wang\Source\Repos\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.WindowsPhone\obj\Debug\UI\BuildingItemView.g.i.cs
+C:\Users\Wang\Source\Repos\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.WindowsPhone\obj\Debug\UI\BuildingItemView.g.cs
+C:\Users\Wang\Source\Repos\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.WindowsPhone\obj\Debug\UI\LoadingRing.g.i.cs
+C:\Users\Wang\Source\Repos\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.WindowsPhone\obj\Debug\UI\LoadingRing.g.cs
+C:\Users\Wang\Source\Repos\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.WindowsPhone\obj\Debug\UI\BuildingItemView.xaml
+C:\Users\Wang\Source\Repos\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.WindowsPhone\obj\Debug\UI\LoadingRing.xaml
+C:\Users\Wang\Source\Repos\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.WindowsPhone\obj\Debug\UI\BuildingItemView.xbf
+C:\Users\Wang\Source\Repos\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.WindowsPhone\obj\Debug\UI\LoadingRing.xbf
