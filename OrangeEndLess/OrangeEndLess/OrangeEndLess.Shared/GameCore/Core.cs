@@ -14,6 +14,8 @@ namespace OrangeEndLess
     public partial class Core
     {
 
+        public static Core Current;
+
         Random Randoms = new Random ( );
 
         ApplicationDataContainer LocalData = ApplicationData . Current . LocalSettings;
@@ -211,6 +213,7 @@ namespace OrangeEndLess
 
         public Core ( )
         {
+            Current = this;
 #if DEBUG
            // Setup ( );
             GameData . Values [ "GameIsStartV2" ] = null;

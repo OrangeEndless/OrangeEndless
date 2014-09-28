@@ -20,7 +20,7 @@
     		</VisualStateGroup>
     	</VisualStateManager.VisualStateGroups>
     	<Canvas x:Name="canvas" HorizontalAlignment="Left" Height="129" VerticalAlignment="Top" Width="129">
-    		<Path Data="M127,63.5 C127,98.5701 98.5701,127 63.5,127 C28.4299,127 0,98.5701 0,63.5 C0,28.4299 28.4299,0 63.5,0 C98.5701,0 127,28.4299 127,63.5 z M119,63.5 C119,94.1518 94.1518,119 63.5,119 C32.8482,119 8,94.1518 8,63.5 C8,32.8482 32.8482,8 63.5,8 C94.1518,8 119,32.8482 119,63.5 z" Fill="White" Height="127" Canvas.Left="1" Stretch="Fill" Canvas.Top="1" Width="127" UseLayoutRounding="False"/>
+    		<Path Data="M127,63.5 C127,98.5701 98.5701,127 63.5,127 C28.4299,127 0,98.5701 0,63.5 C0,28.4299 28.4299,0 63.5,0 C98.5701,0 127,28.4299 127,63.5 z M119,63.5 C119,94.1518 94.1518,119 63.5,119 C32.8482,119 8,94.1518 8,63.5 C8,32.8482 32.8482,8 63.5,8 C94.1518,8 119,32.8482 119,63.5 z" Fill="White" Height="127" Canvas.Left="1" Stretch="Fill" Canvas.Top="1" Width="127" UseLayoutRounding="False" RenderTransformOrigin="0.5,0.5"/>
     	</Canvas>
     </Grid>
 </UserControl>

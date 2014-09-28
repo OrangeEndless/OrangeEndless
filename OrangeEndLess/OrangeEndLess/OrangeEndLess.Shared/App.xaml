@@ -72,6 +72,7 @@
 
 		<x:String x:Key="About">关于</x:String>
 
+        <x:String x:Key="Title2">橘子大爆炸</x:String>
 
         <x:String x:Key="VOID"></x:String>
 

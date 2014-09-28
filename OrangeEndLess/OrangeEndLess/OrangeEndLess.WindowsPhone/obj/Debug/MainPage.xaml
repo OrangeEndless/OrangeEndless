@@ -266,7 +266,7 @@
             </Grid>
         </Grid>
 
-        <Grid x:Name="EULAGrid" Background="#7F000000" Visibility="Collapsed">
+        <Grid x:Name="EULAGrid" Background="#7F000000">
             <Grid HorizontalAlignment="Center" Height="461" Margin="0" VerticalAlignment="Center" Width="707" Background="White" />
         </Grid>
     </Grid>

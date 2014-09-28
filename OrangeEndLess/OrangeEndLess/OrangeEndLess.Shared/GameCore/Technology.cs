@@ -15,8 +15,6 @@
 //    {
 //        ApplicationDataContainer GameData = ApplicationData . Current . RoamingSettings;
 
-//        Core GameCore;
-
 //        Action<Core> ActionBeforePromote;
 
 //        Action<Core> ActionAfterPromote;

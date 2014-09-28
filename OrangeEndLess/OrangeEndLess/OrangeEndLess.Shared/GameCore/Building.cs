@@ -22,8 +22,6 @@ namespace OrangeEndLess
 
 		Func<Core,bool> FuncShow;
 
-		Core GameCore;
-
 		public string Title;
 
 		public string Key;
@@ -38,15 +36,15 @@ namespace OrangeEndLess
 		{
 			get
 			{
-				if ( FuncShow ( GameCore ) && FuncBlack ( GameCore ) && GameCore . NumberOfMoney >= Price )
+				if ( FuncShow ( Core.Current ) && FuncBlack ( Core.Current ) && Core.Current . NumberOfMoney >= Price )
 				{
 					return Status . Active;
 				}
-				if ( FuncShow ( GameCore ) && FuncBlack ( GameCore ) && GameCore . NumberOfMoney < Price )
+				if ( FuncShow ( Core.Current ) && FuncBlack ( Core.Current ) && Core.Current . NumberOfMoney < Price )
 				{
 					return Status . Dark;
 				}
-				if ( FuncBlack ( GameCore ) && ( FuncShow ( GameCore ) == false ) )
+				if ( FuncBlack ( Core.Current ) && ( FuncShow ( Core.Current ) == false ) )
 				{
 					return Status . Black;
 				}
@@ -115,16 +113,16 @@ namespace OrangeEndLess
 		{
 			decimal _havebuy = 0;
 			decimal _havecost = 0;
-			while ( GameCore . NumberOfMoney >= Price )
+			while ( Core.Current . NumberOfMoney >= Price )
 			{
 				_havecost += Price;
 				_havebuy++;
 			}
-			GameCore . NumberOfMoney -= _havecost;
+			Core.Current . NumberOfMoney -= _havecost;
 			Number += _havebuy;
 			havebuy = _havebuy;
 			havecost = _havecost;
-			GameCore . UpdateBuildingsFromBuilding ( this );
+			Core.Current . UpdateBuildingsFromBuilding ( this );
 		}
 
 		public void Sell ( decimal number , out decimal havesell , out decimal haveget )
@@ -138,11 +136,11 @@ namespace OrangeEndLess
 				_haveget += _priceran;
 				_havesell++;
 			}
-			GameCore . NumberOfMoney += _haveget;
+			Core.Current . NumberOfMoney += _haveget;
 			Number -= _havesell;
 			havesell = _havesell;
 			haveget = _haveget;
-			GameCore . UpdateBuildingsFromBuilding ( this );
+			Core.Current . UpdateBuildingsFromBuilding ( this );
 		}
 
 
@@ -152,10 +150,9 @@ namespace OrangeEndLess
 		/// <param name="key">建筑的标识</param>
 		/// <param name="startprice">价格的初始值</param>
 		/// <param name="startcps"></param>
-		/// <param name="gamecore">传入当前核心</param>
 		/// <param name="funcshow">判断建筑是否显示详细信息</param>
 		/// <param name="funcdark">判断建筑是否显示轮廓</param>
-		public Building ( string key , decimal startprice , decimal startcps , Core gamecore , Func<Core , bool> funcshow , Func<Core , bool> funcdark )
+		public Building ( string key , decimal startprice , decimal startcps  , Func<Core , bool> funcshow , Func<Core , bool> funcdark )
 		{			
 			Key = key;
 			ResourceLoader  Resources= ResourceLoader . GetForCurrentView ( "BuildingsResources" );
@@ -163,7 +160,6 @@ namespace OrangeEndLess
 			Label = Resources . GetString ( "LabelOf" + Key );
 			PriceBase = startprice;
 			StartCPS = startcps;
-			GameCore = gamecore;
 			FuncShow = funcshow;
 			FuncBlack = funcdark;
 			if ( GameData . Values [ "LevelOf" + Key ] == null )
