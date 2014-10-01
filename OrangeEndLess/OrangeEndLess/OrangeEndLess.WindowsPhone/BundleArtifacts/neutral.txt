@@ -1,3 +1,0 @@
-MainPackage=C:\Users\Wang\Source\Repos\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.WindowsPhone\bin\Release\OrangeEndLess.WindowsPhone_2.0.0.3_Bundle\OrangeEndLess.WindowsPhone_2.0.0.3_AnyCPU.appx
-SymbolPackage=E:\a\OrangeEndLess.WindowsPhone_2.0.0.3_Test\OrangeEndLess.WindowsPhone_2.0.0.3_AnyCPU.appxsym
-ResourcePack=C:\Users\Wang\Source\Repos\OrangeEndless\OrangeEndLess\OrangeEndLess\OrangeEndLess.WindowsPhone\bin\Release\OrangeEndLess.WindowsPhone_2.0.0.3_Bundle\OrangeEndLess.WindowsPhone_2.0.0.3_language-zh-hans.appx

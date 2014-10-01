@@ -1,0 +1,17 @@
+C:\Users\Wang\Source\Repos\OEL\OEL\OrangeEndLessCore\obj\Debug\OrangeEndLessCore.csprojResolveAssemblyReference.cache
+C:\Users\Wang\Source\Repos\OEL\OEL\OrangeEndLessCore\bin\Debug\OrangeEndLessCore.dll
+C:\Users\Wang\Source\Repos\OEL\OEL\OrangeEndLessCore\bin\Debug\OrangeEndLessCore.pdb
+C:\Users\Wang\Source\Repos\OEL\OEL\OrangeEndLessCore\bin\Debug\OrangeEndLessCore.pri
+C:\Users\Wang\Source\Repos\OEL\OEL\OrangeEndLessCore\obj\Debug\OrangeEndLessCore.dll
+C:\Users\Wang\Source\Repos\OEL\OEL\OrangeEndLessCore\obj\Debug\OrangeEndLessCore.pdb
+C:\Users\Wang\Source\Repos\OEL\OEL\OrangeEndLessCore\obj\Debug\priconfig.xml
+C:\Users\Wang\Source\Repos\OEL\OEL\OrangeEndLessCore\obj\Debug\priconfig.xml.intermediate
+C:\Users\Wang\Source\Repos\OEL\OEL\OrangeEndLessCore\obj\Debug\layout.resfiles
+C:\Users\Wang\Source\Repos\OEL\OEL\OrangeEndLessCore\obj\Debug\layout.resfiles.intermediate
+C:\Users\Wang\Source\Repos\OEL\OEL\OrangeEndLessCore\obj\Debug\resources.resfiles
+C:\Users\Wang\Source\Repos\OEL\OEL\OrangeEndLessCore\obj\Debug\resources.resfiles.intermediate
+C:\Users\Wang\Source\Repos\OEL\OEL\OrangeEndLessCore\obj\Debug\pri.resfiles
+C:\Users\Wang\Source\Repos\OEL\OEL\OrangeEndLessCore\obj\Debug\pri.resfiles.intermediate
+C:\Users\Wang\Source\Repos\OEL\OEL\OrangeEndLessCore\obj\Debug\qualifiers.txt
+C:\Users\Wang\Source\Repos\OEL\OEL\OrangeEndLessCore\obj\Debug\qualifiers.txt.intermediate
+C:\Users\Wang\Source\Repos\OEL\OEL\OrangeEndLessCore\obj\Debug\MultipleQualifiersPerDimensionFound.txt
