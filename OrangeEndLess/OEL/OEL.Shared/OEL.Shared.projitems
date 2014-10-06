@@ -28,11 +28,6 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <PRIResource Include="$(MSBuildThisFileDirectory)Resources\AchievementsResource.resw" />
-    <PRIResource Include="$(MSBuildThisFileDirectory)Resources\BuildingsResources.resw" />
-    <PRIResource Include="$(MSBuildThisFileDirectory)Resources\ConsoleResources.resw" />
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="$(MSBuildThisFileDirectory)UI\Image\ConsoleBlack.png" />
     <Content Include="$(MSBuildThisFileDirectory)UI\Image\ConsoleWhite.png" />
     <Content Include="$(MSBuildThisFileDirectory)UI\Image\MarketBlack.png" />
@@ -46,5 +41,10 @@
     <Content Include="$(MSBuildThisFileDirectory)UI\Photo\HuoFa.jpg" />
     <Content Include="$(MSBuildThisFileDirectory)UI\Photo\Orange.jpg" />
     <Content Include="$(MSBuildThisFileDirectory)UI\Photo\Wencey.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <PRIResource Include="$(MSBuildThisFileDirectory)Resources\AchievementsResource.resw" />
+    <PRIResource Include="$(MSBuildThisFileDirectory)Resources\BuildingsResources.resw" />
+    <PRIResource Include="$(MSBuildThisFileDirectory)Resources\ConsoleResources.resw" />
   </ItemGroup>
 </Project>

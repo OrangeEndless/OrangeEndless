@@ -1,1 +1,2 @@
-C:\Users\Wang\Source\Repos\OEL\OEL\OEL\OEL.WindowsPhone\OEL.WindowsPhone.csproj;neutral
+C:\Users\Wang\Source\Repos\OrangeEndless\OrangeEndLess\OEL\OEL.WindowsPhone\OEL.WindowsPhone.csproj;neutral
+C:\Users\Wang\Source\Repos\OrangeEndless\OrangeEndLess\OrangeEndLessCore\OrangeEndLessCore.csproj;neutral

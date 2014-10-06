@@ -13,7 +13,7 @@
     mc:Ignorable="d">
     <Page.Resources>
         <!-- TODO: Delete this line if the key AppName is declared in App.xaml -->
-       
+
         <vm:MainPage_Model x:Key="DesignVM"/>
     </Page.Resources>
     <!--Begin App Bar Binding Patch. If you don't need Binding Top/Bottom Appbar please ignore these code -->
@@ -28,6 +28,13 @@
 	</mvvm:MVVMPage.BottomAppBar>
     -->
     <!--End App Bar Binding Patch. If you don't need Binding  Top/Bottom Appbar please ignore these code -->
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"  DataContext="{StaticResource DesignVM}"/>
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"  DataContext="{StaticResource DesignVM}">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="40"/>
+        </Grid.RowDefinitions>
+        <TextBlock x:Name="CTC" TextWrapping="Wrap" Text="TextBlock" FontSize="16"/>
+        <TextBox x:ConnectionId='1' x:Name="CommandTB" TextWrapping="Wrap" Text="TextBox" Margin="0" Grid.Row="1"                      />
+    </Grid>
 </mvvm:MVVMPage>
 

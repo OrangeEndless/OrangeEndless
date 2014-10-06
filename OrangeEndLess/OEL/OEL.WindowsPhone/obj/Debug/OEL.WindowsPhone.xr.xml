@@ -14,9 +14,27 @@
     <RootType FullName="Windows.UI.Xaml.Controls.Grid">
       <RootProperty Name="Background" />
       <RootProperty Name="DataContext" />
+      <RootProperty Name="RowDefinitions" />
+      <RootProperty Name="Children" />
+      <RootMethod Name="GetRow" />
+      <RootMethod Name="SetRow" />
     </RootType>
     <RootType FullName="Microsoft.Xaml.Tools.DirectUI.ProxyTypes.ThemeResourceExtension" />
     <RootType FullName="Microsoft.Xaml.Tools.DirectUI.ProxyTypes.StaticResourceExtension" />
+    <RootType FullName="Windows.UI.Xaml.Controls.RowDefinition">
+      <RootProperty Name="Height" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.TextBlock">
+      <RootProperty Name="TextWrapping" />
+      <RootProperty Name="Text" />
+      <RootProperty Name="FontSize" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.TextBox">
+      <RootProperty Name="TextWrapping" />
+      <RootProperty Name="Text" />
+      <RootProperty Name="Margin" />
+      <RootEvent Name="KeyUp" />
+    </RootType>
     <RootType FullName="OEL.MainPage" />
   </Roots.RootTypes>
 </Roots>

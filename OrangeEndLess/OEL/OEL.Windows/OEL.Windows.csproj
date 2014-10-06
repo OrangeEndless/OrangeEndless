@@ -152,6 +152,12 @@
       <Name>Behaviors SDK %28XAML%29</Name>
     </SDKReference>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\OrangeEndLessCore\OrangeEndLessCore.csproj">
+      <Project>{335ee55e-8022-4da3-bf4f-42c521e9c640}</Project>
+      <Name>OrangeEndLessCore</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '12.0' ">
     <VisualStudioVersion>12.0</VisualStudioVersion>
   </PropertyGroup>

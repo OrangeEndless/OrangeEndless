@@ -156,7 +156,7 @@ namespace OrangeEndLess
                 decimal TEMP = 0;
                 foreach ( var item in Buildings )
                 {
-                    TEMP += item . Value . CPS;
+                    TEMP += item . Value . AllCPS;
                 }
                 return TEMP;
             }
@@ -224,7 +224,7 @@ namespace OrangeEndLess
 #endif
             if ( GameData . Values [ "GameIsStartV2" ] == null )
             {
-                ApplicationData . Current . ClearAsync ( ) . GetResults ( );
+                ApplicationData . Current . ClearAsync ( ) ;
                 Setup ( );
             }
             else
@@ -240,5 +240,6 @@ namespace OrangeEndLess
             }
         }
     }
+
 
 }

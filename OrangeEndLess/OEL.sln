@@ -8,8 +8,14 @@ EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "OEL.Shared", "OEL\OEL.Shared\OEL.Shared.shproj", "{78784A54-2123-4915-856F-2905A3C88EC3}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OEL.Windows", "OEL\OEL.Windows\OEL.Windows.csproj", "{6A1E2DBA-0BA7-41AB-84B2-C74A120BA08D}"
+	ProjectSection(ProjectDependencies) = postProject
+		{335EE55E-8022-4DA3-BF4F-42C521E9C640} = {335EE55E-8022-4DA3-BF4F-42C521E9C640}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OEL.WindowsPhone", "OEL\OEL.WindowsPhone\OEL.WindowsPhone.csproj", "{309FC3B2-5018-4BF3-9673-762F4EA4847C}"
+	ProjectSection(ProjectDependencies) = postProject
+		{335EE55E-8022-4DA3-BF4F-42C521E9C640} = {335EE55E-8022-4DA3-BF4F-42C521E9C640}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrangeEndLessCore", "OrangeEndLessCore\OrangeEndLessCore.csproj", "{335EE55E-8022-4DA3-BF4F-42C521E9C640}"
 EndProject
