@@ -26,7 +26,7 @@
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Wang\Source\Repos\OrangeEndless\OrangeEndLess\OEL\OEL.Windows\bin\Debug\OEL.Windows.exe">
       <PackagePath>OEL.Windows.exe</PackagePath>
-      <Modified>2014-10-06T14:00:47.912</Modified>
+      <Modified>2014-10-07T08:04:57.711</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\BehaviorsXamlSDKManaged\12.0\References\CommonConfiguration\Neutral\Microsoft.Xaml.Interactions.dll">
       <PackagePath>Microsoft.Xaml.Interactions.dll</PackagePath>
@@ -54,7 +54,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Wang\Source\Repos\OrangeEndless\OrangeEndLess\OrangeEndLessCore\bin\Debug\OrangeEndLessCore.dll">
       <PackagePath>OrangeEndLessCore.dll</PackagePath>
-      <Modified>2014-10-06T14:00:45.304</Modified>
+      <Modified>2014-10-07T07:24:14.148</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Wang\Source\Repos\OrangeEndless\OrangeEndLess\packages\Rx-Core.2.2.5\lib\windows8\System.Reactive.Core.dll">
       <PackagePath>System.Reactive.Core.dll</PackagePath>
@@ -154,15 +154,15 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Wang\Source\Repos\OrangeEndless\OrangeEndLess\OEL\OEL.Windows\bin\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2014-10-06T13:59:22.842</Modified>
+      <Modified>2014-10-07T08:04:56.845</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Wang\Source\Repos\OrangeEndless\OrangeEndLess\OEL\OEL.Windows\bin\Debug\OEL.Windows.xr.xml">
       <PackagePath>OEL.Windows.xr.xml</PackagePath>
-      <Modified>2014-10-06T09:00:43.229</Modified>
+      <Modified>2014-10-07T08:04:56.681</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Wang\Source\Repos\OrangeEndless\OrangeEndLess\OEL\OEL.Windows\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2014-10-06T13:59:25.382</Modified>
+      <Modified>2014-10-07T08:04:59.234</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

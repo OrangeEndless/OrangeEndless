@@ -33,7 +33,7 @@
             <RowDefinition/>
             <RowDefinition Height="40"/>
         </Grid.RowDefinitions>
-        <TextBlock x:Name="CTC" TextWrapping="Wrap" Text="TextBlock" FontSize="16"/>
-        <TextBox x:Name="CommandTB" TextWrapping="Wrap" Text="TextBox" Margin="0" Grid.Row="1" KeyUp="TextBox_KeyUp"/>
+        <TextBox x:Name="CTC" TextWrapping="Wrap" Text="TextBlock" FontSize="16" ScrollViewer.HorizontalScrollBarVisibility="Visible" ScrollViewer.VerticalScrollBarVisibility="Visible" IsReadOnly="True"/>
+        <TextBox x:Name="CommandTB" TextWrapping="Wrap" Text="" Margin="0" Grid.Row="1" KeyUp="TextBox_KeyUp" TextChanged="CommandTB_TextChanged"/>
     </Grid>
 </mvvm:MVVMPage>

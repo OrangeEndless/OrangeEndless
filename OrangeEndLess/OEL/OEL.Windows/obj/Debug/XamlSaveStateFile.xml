@@ -1,13 +1,13 @@
 <XamlCompilerSaveState>
   <ReferenceAssemblyList>
-    <LocalAssembly PathName="c:\users\wang\source\repos\orangeendless\orangeendless\oel\oel.windows\obj\debug\intermediatexaml\oel.windows.exe" HashGuid="266b0dae-181f-d44a-2c4c-fcddf92d0463" />
+    <LocalAssembly PathName="c:\users\wang\source\repos\orangeendless\orangeendless\oel\oel.windows\obj\debug\intermediatexaml\oel.windows.exe" HashGuid="3c8b5200-7825-bd93-1d6d-0f4fdfa18680" />
     <ReferenceAssembly PathName="c:\program files (x86)\microsoft sdks\windows\v8.1\extensionsdks\behaviorsxamlsdkmanaged\12.0\references\commonconfiguration\neutral\microsoft.xaml.interactions.dll" HashGuid="95a94f94-3917-d473-4f7c-18c4bd437046" />
     <ReferenceAssembly PathName="c:\program files (x86)\microsoft sdks\windows\v8.1\extensionsdks\behaviorsxamlsdkmanaged\12.0\references\commonconfiguration\neutral\microsoft.xaml.interactivity.dll" HashGuid="d25f59e6-dd81-900a-0dfc-55b39f6898ef" />
     <ReferenceAssembly PathName="c:\users\wang\source\repos\orangeendless\orangeendless\packages\microsoft.bcl.async.1.0.168\lib\win8\microsoft.threading.tasks.dll" HashGuid="3a1beea5-1547-d5c6-af32-3b5c761c2a6a" />
     <ReferenceAssembly PathName="c:\users\wang\source\repos\orangeendless\orangeendless\packages\microsoft.bcl.async.1.0.168\lib\win8\microsoft.threading.tasks.extensions.dll" HashGuid="79a01987-c06c-c9d7-37eb-629809787680" />
     <ReferenceAssembly PathName="c:\users\wang\source\repos\orangeendless\orangeendless\packages\mvvm-sidekick.behaviors.0.3.0.0\lib\netcore45\mvvmsidekick.behaviors_rt.dll" HashGuid="68e77e82-f937-fc70-aafb-501596aee53e" />
     <ReferenceAssembly PathName="c:\users\wang\source\repos\orangeendless\orangeendless\packages\mvvm-sidekick.1.3.0.3\lib\win8\mvvmsidekick_metro.dll" HashGuid="2fdcaa9b-4541-f46f-7fa6-9746116148bd" />
-    <ReferenceAssembly PathName="c:\users\wang\source\repos\orangeendless\orangeendless\orangeendlesscore\bin\debug\orangeendlesscore.dll" HashGuid="69bf6a3f-1196-c831-95aa-ca04c8d91377" />
+    <ReferenceAssembly PathName="c:\users\wang\source\repos\orangeendless\orangeendless\orangeendlesscore\bin\debug\orangeendlesscore.dll" HashGuid="155c9827-06e7-003c-6804-9f0ca64b8565" />
     <ReferenceAssembly PathName="c:\users\wang\source\repos\orangeendless\orangeendless\packages\rx-core.2.2.5\lib\windows8\system.reactive.core.dll" HashGuid="ec7f411f-44b1-aa5a-2e4a-567914f585df" />
     <ReferenceAssembly PathName="c:\users\wang\source\repos\orangeendless\orangeendless\packages\rx-interfaces.2.2.5\lib\windows8\system.reactive.interfaces.dll" HashGuid="2fd855ee-8440-f81f-a427-ceb8eb15ce8f" />
     <ReferenceAssembly PathName="c:\users\wang\source\repos\orangeendless\orangeendless\packages\rx-linq.2.2.5\lib\windows8\system.reactive.linq.dll" HashGuid="e9d27cf9-55fa-d3f2-4919-e5eb0cb815d8" />

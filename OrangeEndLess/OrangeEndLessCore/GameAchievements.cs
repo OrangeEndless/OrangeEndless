@@ -106,12 +106,12 @@ namespace OrangeEndLess
             Achievements . Add ( new Achievement ( Achievements . Count + 1 , ( ) => Core . Current . Buildings [ "TimeMachine" ] . Number >= 150 ) );
             Achievements . Add ( new Achievement ( Achievements . Count + 1 , ( ) => Core . Current . Buildings [ "TimeMachine" ] . Number >= 200 ) );
             Achievements . Add ( new Achievement ( Achievements . Count + 1 , ( ) => Core . Current . Buildings [ "TimeMachine" ] . NumberOfOrangeHaveMade >= 10000000000000 ) );
-            Achievements . Add ( new Achievement ( Achievements . Count + 1 , ( ) => Core . Current . Buildings [ "DreamReCore.Currentder" ] . Number >= 1 ) );
-            Achievements . Add ( new Achievement ( Achievements . Count + 1 , ( ) => Core . Current . Buildings [ "DreamReCore.Currentder" ] . Number >= 50 ) );
-            Achievements . Add ( new Achievement ( Achievements . Count + 1 , ( ) => Core . Current . Buildings [ "DreamReCore.Currentder" ] . Number >= 100 ) );
-            Achievements . Add ( new Achievement ( Achievements . Count + 1 , ( ) => Core . Current . Buildings [ "DreamReCore.Currentder" ] . Number >= 150 ) );
-            Achievements . Add ( new Achievement ( Achievements . Count + 1 , ( ) => Core . Current . Buildings [ "DreamReCore.Currentder" ] . Number >= 200 ) );
-            Achievements . Add ( new Achievement ( Achievements . Count + 1 , ( ) => Core . Current . Buildings [ "DreamReCore.Currentder" ] . NumberOfOrangeHaveMade >= 10000000000000 ) );
+            Achievements . Add ( new Achievement ( Achievements . Count + 1 , ( ) => Core . Current . Buildings [ "DreamRecorder" ] . Number >= 1 ) );
+            Achievements . Add ( new Achievement ( Achievements . Count + 1 , ( ) => Core . Current . Buildings [ "DreamRecorder" ] . Number >= 50 ) );
+            Achievements . Add ( new Achievement ( Achievements . Count + 1 , ( ) => Core . Current . Buildings [ "DreamRecorder" ] . Number >= 100 ) );
+            Achievements . Add ( new Achievement ( Achievements . Count + 1 , ( ) => Core . Current . Buildings [ "DreamRecorder" ] . Number >= 150 ) );
+            Achievements . Add ( new Achievement ( Achievements . Count + 1 , ( ) => Core . Current . Buildings [ "DreamRecorder" ] . Number >= 200 ) );
+            Achievements . Add ( new Achievement ( Achievements . Count + 1 , ( ) => Core . Current . Buildings [ "DreamRecorder" ] . NumberOfOrangeHaveMade >= 10000000000000 ) );
             Achievements . Add ( new Achievement ( Achievements . Count + 1 , ( ) => Core . Current . Buildings [ "Prism" ] . Number >= 1 ) );
             Achievements . Add ( new Achievement ( Achievements . Count + 1 , ( ) => Core . Current . Buildings [ "Prism" ] . Number >= 50 ) );
             Achievements . Add ( new Achievement ( Achievements . Count + 1 , ( ) => Core . Current . Buildings [ "Prism" ] . Number >= 100 ) );

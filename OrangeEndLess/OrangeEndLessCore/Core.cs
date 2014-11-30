@@ -35,89 +35,31 @@ namespace OrangeEndLess
 
         public event EventHandler CheatChanged;
 
-        long _APM = 0;
+        int _APM = 0;
 
         public void Cheat ( )
         {
             Cheated = true;
         }
 
-        public bool Cheated
-        {
-            get { return ( bool ) GameData . Values [ "Cheated" ]; }
-            private set
-            {
-                GameData . Values [ "Cheated" ] = value;
-                CheatChanged ( this , new EventArgs ( ) );
-            }
-        }
+        public bool Cheated { get; private set; }
 
         public void PlusAPM ( )
         {
-            _APM++;
+            APM++;
         }
 
         public long APM { get; set; }
 
-        //public decimal NumberOfUpdateHavePromote
-        //{
-        //	get
-        //	{
-        //		return Convert . ToDecimal ( GameData . Values [ "NumberOfUpdateHavePromote" ] );
-        //	}
-        //	set
-        //	{
-        //		GameData . Values [ "NumberOfUpdateHavePromote" ] = value;
-        //	}
-        //}
+        public decimal MyProperty { get; set; }
 
-        public decimal NumberOfOrangeHaveGet
-        {
-            get
-            {
-                return Convert . ToDecimal ( GameData . Values [ "NumberOfOrangeHaveGet" ] );
-            }
-            set
-            {
-                GameData . Values [ "NumberOfOrangeHaveGet" ] = value . ToString ( );
-            }
-        }
+        public decimal NumberOfOrangeHaveGet { get; set; }
 
-        public decimal NumberOfMoneyHaveGet
-        {
-            get
-            {
-                return Convert . ToDecimal ( GameData . Values [ "NumberOfMoneyHaveGet" ] );
-            }
-            set
-            {
-                GameData . Values [ "NumberOfMoneyHaveGet" ] = value . ToString ( );
-            }
-        }
+        public decimal NumberOfMoneyHaveGet { get; set; }
 
-        public decimal NumberOfOrangeHaveMadeFromRush
-        {
-            get
-            {
-                return Convert . ToDecimal ( GameData . Values [ "ButtonRushTip" ] );
-            }
-            set
-            {
-                GameData . Values [ "ButtonRushTip" ] = value . ToString ( );
-            }
-        }
+        public decimal NumberOfOrangeHaveMadeFromRush { get; set; }
 
-        public decimal LevelOfRush
-        {
-            get
-            {
-                return Convert . ToDecimal ( GameData . Values [ "LevelOfRush" ] ) + 1;
-            }
-            set
-            {
-                GameData . Values [ "LevelOfRush" ] = ( value - 1 ) . ToString ( );
-            }
-        }
+        public decimal LevelOfRush { get; set; }
 
         public decimal NumberOfBuilding
         {
@@ -132,11 +74,13 @@ namespace OrangeEndLess
             }
         }
 
+        decimal _NumberOfOrange;
+
         public decimal NumberOfOrange
         {
             get
             {
-                return Convert . ToDecimal ( GameData . Values [ "NumberOfOrange" ] );
+                return _NumberOfOrange;
             }
             set
             {
@@ -144,8 +88,7 @@ namespace OrangeEndLess
                 {
                     NumberOfOrangeHaveGet += value - NumberOfOrange;
                 }
-                GameData . Values [ "NumberOfOrange" ] = value . ToString ( );
-                UpdateNumberOfOrange ( this , new EventArgs ( ) );
+                _NumberOfOrange = value;
             }
         }
 
@@ -153,12 +96,12 @@ namespace OrangeEndLess
         {
             get
             {
-                decimal TEMP = 0;
+                decimal temp = 0;
                 foreach ( var item in Buildings )
                 {
-                    TEMP += item . Value . AllCPS;
+                    temp += item . Value . AllCPS;
                 }
-                return TEMP;
+                return temp;
             }
         }
 
@@ -166,7 +109,6 @@ namespace OrangeEndLess
         {
             NumberOfOrange += ( LevelOfRush );
             NumberOfOrangeHaveMadeFromRush += LevelOfRush;
-
         }
 
         public decimal NumberOfMoney
@@ -224,7 +166,7 @@ namespace OrangeEndLess
 #endif
             if ( GameData . Values [ "GameIsStartV2" ] == null )
             {
-                ApplicationData . Current . ClearAsync ( ) ;
+                ApplicationData . Current . ClearAsync ( ) . GetResults ( );
                 Setup ( );
             }
             else

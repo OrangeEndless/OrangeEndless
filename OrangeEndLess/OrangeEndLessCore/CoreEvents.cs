@@ -18,20 +18,20 @@ namespace OrangeEndLess
             NumberOfOrange += ( decimal ) ( SpeedOfOrangeRise * ( decimal ) ( TimersUpdateNumberOfOrange . Interval . TotalMilliseconds / 1000 ) );
         }
 
-		//void TimersRandom_Tick ( object sender , object e )
-		//{
-		//	int Ran=Randoms . Next ( 0 , 100000 );
-		//	int _Loop=0;
-		//	foreach ( var item in RandomEvents )
-		//	{
-		//		if ( Ran >= _Loop && Ran < _Loop + item . Value . Probability )
-		//		{
-		//			item . Value . Event ( this );
-		//			RandomEvent ( this , new RandomArgs ( item . Value . Title , item . Value . Text ) );
-		//			return;
-		//		}
-		//	}
-		//}
+        void TimersRandom_Tick ( object sender , object e )
+        {
+            int Ran=Randoms . Next ( 0 , 100000 );
+            int _Loop=0;
+            //foreach ( var item in RandomEvents )
+            //{
+            //    if ( Ran >= _Loop && Ran < _Loop + item . Value . Probability )
+            //    {
+            //        item . Value . Event ( this );
+            //        RandomEvent ( this , new RandomArgs ( item . Value . Title , item . Value . Text ) );
+            //        return;
+            //    }
+            //}
+        }
 
         void TimersUpdateAchevement_Tick ( object sender , object e )
         {
@@ -48,9 +48,9 @@ namespace OrangeEndLess
         }
 
         void TimersAPM_Tick ( object sender , object e )
-        {
+		{
             //TimersRandom . Interval = new TimeSpan ( 0 , 0 , 0 , 0 , Convert . ToInt32 ( 60 / ( ( _APM * 1000 ) + 1 ) ) );
-            GameData . Values [ "BestAPM" ] = Math . Max ( ( ( long ) GameData . Values [ "BestAPM" ] ) , _APM );
+            GameData . Values [ "BestAPM" ] = Math . Max ( ( ( int ) GameData . Values [ "BestAPM" ] ) , _APM );
             _APM = 0;
         }
 

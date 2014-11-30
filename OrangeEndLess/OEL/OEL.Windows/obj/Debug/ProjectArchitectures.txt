@@ -1,2 +1,2 @@
-C:\Users\Wang\Source\Repos\OrangeEndless\OrangeEndLess\OEL\OEL.Windows\OEL.Windows.csproj;neutral
-C:\Users\Wang\Source\Repos\OrangeEndless\OrangeEndLess\OrangeEndLessCore\OrangeEndLessCore.csproj;neutral
+C:\Users\Class 4\Source\Repos\OrangeEndless\OrangeEndLess\OEL\OEL.Windows\OEL.Windows.csproj;neutral
+C:\Users\Class 4\Source\Repos\OrangeEndless\OrangeEndLess\OrangeEndLessCore\OrangeEndLessCore.csproj;neutral

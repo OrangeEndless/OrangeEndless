@@ -33,8 +33,8 @@
             <RowDefinition/>
             <RowDefinition Height="40"/>
         </Grid.RowDefinitions>
-        <TextBlock x:Name="CTC" TextWrapping="Wrap" Text="TextBlock" FontSize="16"/>
-        <TextBox x:ConnectionId='1' x:Name="CommandTB" TextWrapping="Wrap" Text="TextBox" Margin="0" Grid.Row="1"                      />
+        <TextBox x:Name="CTC" TextWrapping="Wrap" Text="TextBlock" FontSize="16" ScrollViewer.HorizontalScrollBarVisibility="Visible" ScrollViewer.VerticalScrollBarVisibility="Visible" IsReadOnly="True"/>
+        <TextBox x:ConnectionId='1' x:Name="CommandTB" TextWrapping="Wrap" Text="" Margin="0" Grid.Row="1"                                                          />
     </Grid>
 </mvvm:MVVMPage>
 

@@ -32,3 +32,20 @@ C:\Users\Wang\Source\Repos\OrangeEndless\OrangeEndLess\OrangeEndLessCore\obj\Deb
 C:\Users\Wang\Source\Repos\OrangeEndless\OrangeEndLess\OrangeEndLessCore\obj\Debug\qualifiers.txt.intermediate
 C:\Users\Wang\Source\Repos\OrangeEndless\OrangeEndLess\OrangeEndLessCore\obj\Debug\MultipleQualifiersPerDimensionFound.txt
 C:\Users\Wang\Source\Repos\OrangeEndless\OrangeEndLess\OrangeEndLessCore\obj\Debug\OrangeEndLessCore.csprojResolveAssemblyReference.cache
+C:\Users\Class 4\Source\Repos\OrangeEndless\OrangeEndLess\OrangeEndLessCore\bin\Debug\OrangeEndLessCore.dll
+C:\Users\Class 4\Source\Repos\OrangeEndless\OrangeEndLess\OrangeEndLessCore\bin\Debug\OrangeEndLessCore.pdb
+C:\Users\Class 4\Source\Repos\OrangeEndless\OrangeEndLess\OrangeEndLessCore\bin\Debug\OrangeEndLessCore.pri
+C:\Users\Class 4\Source\Repos\OrangeEndless\OrangeEndLess\OrangeEndLessCore\obj\Debug\OrangeEndLessCore.csprojResolveAssemblyReference.cache
+C:\Users\Class 4\Source\Repos\OrangeEndless\OrangeEndLess\OrangeEndLessCore\obj\Debug\OrangeEndLessCore.dll
+C:\Users\Class 4\Source\Repos\OrangeEndless\OrangeEndLess\OrangeEndLessCore\obj\Debug\OrangeEndLessCore.pdb
+C:\Users\Class 4\Source\Repos\OrangeEndless\OrangeEndLess\OrangeEndLessCore\obj\Debug\priconfig.xml
+C:\Users\Class 4\Source\Repos\OrangeEndless\OrangeEndLess\OrangeEndLessCore\obj\Debug\priconfig.xml.intermediate
+C:\Users\Class 4\Source\Repos\OrangeEndless\OrangeEndLess\OrangeEndLessCore\obj\Debug\layout.resfiles
+C:\Users\Class 4\Source\Repos\OrangeEndless\OrangeEndLess\OrangeEndLessCore\obj\Debug\layout.resfiles.intermediate
+C:\Users\Class 4\Source\Repos\OrangeEndless\OrangeEndLess\OrangeEndLessCore\obj\Debug\resources.resfiles
+C:\Users\Class 4\Source\Repos\OrangeEndless\OrangeEndLess\OrangeEndLessCore\obj\Debug\resources.resfiles.intermediate
+C:\Users\Class 4\Source\Repos\OrangeEndless\OrangeEndLess\OrangeEndLessCore\obj\Debug\pri.resfiles
+C:\Users\Class 4\Source\Repos\OrangeEndless\OrangeEndLess\OrangeEndLessCore\obj\Debug\pri.resfiles.intermediate
+C:\Users\Class 4\Source\Repos\OrangeEndless\OrangeEndLess\OrangeEndLessCore\obj\Debug\qualifiers.txt
+C:\Users\Class 4\Source\Repos\OrangeEndless\OrangeEndLess\OrangeEndLessCore\obj\Debug\qualifiers.txt.intermediate
+C:\Users\Class 4\Source\Repos\OrangeEndless\OrangeEndLess\OrangeEndLessCore\obj\Debug\MultipleQualifiersPerDimensionFound.txt

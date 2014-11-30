@@ -33,7 +33,7 @@ namespace OrangeEndLess
         {
             GameData . Values [ "Cheated" ] = false;
             GameData . Values [ "LevelOfRush" ] = 0;
-            GameData . Values [ "BestAPM" ] = 0L;
+            GameData . Values [ "BestAPM" ] = 0;
             GameData . Values [ "NumberOfOrange" ] = 0m . ToString();
             GameData . Values [ "Money" ] = 0m . ToString();
             GameData . Values [ "LevelOfRush" ] = 0;
@@ -45,7 +45,6 @@ namespace OrangeEndLess
             GameData . Values [ "TimeToUpdateAchevement" ] = 5000;
             GameData . Values [ "TimeToUpdateBuilding" ] = 10000;
             GameData . Values [ "LastShutdown" ] = Convert . ToString(DateTime . Now);
-
 
             foreach ( var item in Buildings )
             {
