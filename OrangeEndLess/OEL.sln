@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.30723.0
+VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "OEL", "OEL", "{DD3AC7F0-9B0C-4C74-AA43-429375BA4B1B}"
 EndProject
@@ -18,6 +18,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OEL.WindowsPhone", "OEL\OEL
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrangeEndLessCore", "OrangeEndLessCore\OrangeEndLessCore.csproj", "{335EE55E-8022-4DA3-BF4F-42C521E9C640}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OELC", "OELC\OELC.csproj", "{DFFE8610-FD7E-4B11-82E8-CADBACE55BF1}"
 EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
@@ -90,6 +92,16 @@ Global
 		{335EE55E-8022-4DA3-BF4F-42C521E9C640}.Release|ARM.ActiveCfg = Release|Any CPU
 		{335EE55E-8022-4DA3-BF4F-42C521E9C640}.Release|x64.ActiveCfg = Release|Any CPU
 		{335EE55E-8022-4DA3-BF4F-42C521E9C640}.Release|x86.ActiveCfg = Release|Any CPU
+		{DFFE8610-FD7E-4B11-82E8-CADBACE55BF1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DFFE8610-FD7E-4B11-82E8-CADBACE55BF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DFFE8610-FD7E-4B11-82E8-CADBACE55BF1}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{DFFE8610-FD7E-4B11-82E8-CADBACE55BF1}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{DFFE8610-FD7E-4B11-82E8-CADBACE55BF1}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{DFFE8610-FD7E-4B11-82E8-CADBACE55BF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DFFE8610-FD7E-4B11-82E8-CADBACE55BF1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DFFE8610-FD7E-4B11-82E8-CADBACE55BF1}.Release|ARM.ActiveCfg = Release|Any CPU
+		{DFFE8610-FD7E-4B11-82E8-CADBACE55BF1}.Release|x64.ActiveCfg = Release|Any CPU
+		{DFFE8610-FD7E-4B11-82E8-CADBACE55BF1}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -99,5 +111,6 @@ Global
 		{6A1E2DBA-0BA7-41AB-84B2-C74A120BA08D} = {DD3AC7F0-9B0C-4C74-AA43-429375BA4B1B}
 		{309FC3B2-5018-4BF3-9673-762F4EA4847C} = {DD3AC7F0-9B0C-4C74-AA43-429375BA4B1B}
 		{335EE55E-8022-4DA3-BF4F-42C521E9C640} = {DD3AC7F0-9B0C-4C74-AA43-429375BA4B1B}
+		{DFFE8610-FD7E-4B11-82E8-CADBACE55BF1} = {DD3AC7F0-9B0C-4C74-AA43-429375BA4B1B}
 	EndGlobalSection
 EndGlobal

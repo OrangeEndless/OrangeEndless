@@ -6,8 +6,16 @@ using System . Threading . Tasks;
 
 namespace OrangeEndLessCore
 {
-    class Mod
-    {
+	class Mod
+	{
+		Action Loaded;
 
-    }
+		Action Tick;
+
+		string Name;
+
+		string Author;
+
+		string Introduction;
+	}
 }
